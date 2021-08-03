@@ -11,7 +11,7 @@
                 <button id="play" class="playpause"></button>
                 <input id="scrubber" type="range" min="0" max="100" value="0" width="80%">
             </div>
-            <textarea id="script">
+            <div id="script" class="script">
 
             </textarea>
         </div>
@@ -21,7 +21,7 @@
                 let $btn = $('#play');
                 $btn.click(() => {
                     $btn.toggleClass('pause');
-                    playback.play();
+                    playback.togglePlay();
                 });
             });
         </script>

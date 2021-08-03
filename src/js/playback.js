@@ -11,6 +11,8 @@ export class Playback {
         this.loader.onLoaded = (script) => {
             this.script = script;
             this.events = script.events;
+            this.addScript();
+            this.restart();
         }
         this.audio = $('#audio')[0];
         this.$scrubber = $('#scrubber');
@@ -44,24 +46,51 @@ export class Playback {
         //waiting...
     };
 
+    addScript() {
+        this.events.forEach(event => {
+            if (event.type !== Script.TEXT) return;
+            let $div = $(document.createElement('div'));
+            $div.text(event.description);
+            $div.attr('id', 'script-' + event.startIndex);
+            this.$script.append($div);
+        });
+    }
+
+    restart() {
+        this.time = 0;
+        this.index = 0;
+        this.duration = Math.max(this.duration, this.events[this.events.length - 1].endTime * 1000);
+        this.$scrubber.attr('max', Math.round(this.duration));
+        this.playStartDuration = 0;
+        this.$scrubber.val(0);
+        console.log(this.$scrubber.val())
+    }
+
+    togglePlay() {
+        if (this.playing) {
+            this.pause();
+        } else {
+            this.play();
+        }
+    }
+
     play() {
         if (this.events.length == 0) return;
         this.recorder = this.snapWindow.recorder;
-        console.log('Recorder: ', this.recorder);
         if (!this.recorder) return;
-        this.time = 0;
-        this.index = 0;
-        this.playing = true;
-        this.duration = Math.max(this.duration, this.events[this.events.length - 1].endTime * 1000);
-        console.log('Duration: ' + this.duration);
         this.playStartTime = new Date().getTime();
-        this.playStartDuration = 0;
         this.playNext();
         this.audio.play();
-        this.$scrubber.attr('max', Math.round(this.duration));
+        this.playing = true;
         this.tickTimeout = setInterval(() => {
             this.update();
         }, 50);
+    }
+
+    pause() {
+        this.audio.pause();
+        this.playing = false;
+        this.playStartDuration = this.getCurrentDuration();
     }
 
     update() {
@@ -73,16 +102,13 @@ export class Playback {
         return this.playStartDuration + new Date().getTime() - this.playStartTime;
     }
 
-    pause() {
-
-    }
-
     playNext() {
         this.update();
         if (this.index >= this.events.length) {
             return;
         }
         let event = this.events[this.index];
+        // TODO: First check if it's time - otherwise skip
         if (event.type === Script.LOG) {
             console.log('Event: ', event);
             let record = this.script.getLog(event);
