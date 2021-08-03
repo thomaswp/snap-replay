@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/bundle.js"></script>
+        <script type="text/javascript" src="lib/ace/ace.js"></script>
+    </head>
+    <body>
+        <audio id="audio"></audio>
+        <div style="width: 100%; height: 500px" id="script"></div>
+        <script>
+            const editor = ace.edit("script");
+            editor.setTheme("ace/theme/monokai");
+            editor.session.setMode("ace/mode/yaml");
+        </script> 
+    </body>
+</html>
