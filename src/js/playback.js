@@ -26,6 +26,14 @@ export class Playback {
         this.time = 0;
         this.playing = false;
         this.duration = 0;
+
+        $('body').keyup((e) => {
+            console.log(e);
+            if (e.keyCode == 32) {
+                this.togglePlay();
+            }
+        });
+
         // Playback.getDuration(this.loader.audioPath, (duration) => {
         //     this.duration = Math.max(this.duration, duration * 1000);
         //     this.$scrubber.attr('max', Math.round(this.duration));
@@ -67,8 +75,10 @@ export class Playback {
             }
             this.texts.push(event);
             let $div = $(document.createElement('div'));
+            $div.addClass('text');
             $div.text(event.description);
             $div.attr('id', 'script-' + event.startIndex);
+            event.div = $div;
             this.$script.append($div);
         });
     }
@@ -76,13 +86,13 @@ export class Playback {
     restart() {
         this.resetSnap();
         this.time = 0;
-        this.currentText = null;
+        this.clearCurrentText();
         let duration = Math.max(...this.events.map(e => e.endTime)) * 1000 + Playback.BUFFER_MS;
         this.duration = Math.max(this.duration, duration);
         this.$scrubber.attr('max', Math.round(this.duration));
         this.playStartDuration = 0;
         this.$scrubber.val(0);
-        console.log(this.$scrubber.val())
+        $('.text').removeClass('.highlight');
     }
 
     resetSnap() {
@@ -132,8 +142,8 @@ export class Playback {
         $('#play').addClass('pause');
         this.playStartTime = new Date().getTime();
         this.playing = true;
+        this.clearCurrentText();
         this.update();
-        this.currentText = null;
         this.tickTimeout = setInterval(() => {
             this.update();
         }, 50);
@@ -158,10 +168,12 @@ export class Playback {
         }
         this.playStartDuration = this.getCurrentDuration();
         this.updateLogs(true);
+        this.updateText();
     }
 
     finishSettingDuration() {
         this.updateLogs();
+        this.updateText();
         if (this.wasPlaying)  {
             setTimeout(() => this.play(), 1);
         }
@@ -184,26 +196,40 @@ export class Playback {
         return this.playStartDuration + new Date().getTime() - this.playStartTime;
     }
 
+    clearCurrentText() {
+        if (this.currentText) {
+            this.currentText.div.removeClass('highlight');
+        }
+        this.currentText = null;
+    }
+
     updateText() {
-        if (!this.playing) return;
         let buf = Playback.BUFFER_MS / 1000;
         let durationS = this.getCurrentDuration() / 1000;
         if (this.currentText != null) {
             if (this.currentText.endTime < durationS - buf || this.currentText.startTime > durationS + buf) {
-                this.currentText = null;
-                this.audio.pause();
+                this.clearCurrentText();
+                if (this.playing) this.audio.pause();
             }
         }
         if (!this.currentText) {
             let active = this.texts.filter(t => t.startTime <= durationS + buf && t.endTime >= durationS - buf);
             if (active.length > 0) {
                 this.currentText = active[active.length - 1];
+                this.currentText.div.addClass('highlight');
+                let scroll = this.$script.scrollTop() + 
+                    this.currentText.div.position().top - this.$script.position().top;
+                this.$script.animate({
+                    scrollTop: scroll,
+                }, 500);
                 // TODO: At some point need to calculate relative duration to 
                 // find the right time in the audio
                 // The edited events should all use deltas (so you can easily delete),
                 // but the audio needs to keep a reference to the start/end time in the original file
-                this.audio.currentTime = durationS;
-                this.audio.play();
+                if (this.playing)  {
+                    this.audio.currentTime = durationS;
+                    this.audio.play();
+                }
             }
         }
     }
@@ -218,7 +244,6 @@ export class Playback {
                 if (noReset) {
                     return;
                 }
-                console.log('Reset!', this.currentLogIndex);
                 this.resetSnap();
                 this.nextTimeout = setTimeout(() => this.update(), 1);
                 return;
