@@ -16,12 +16,13 @@ export class Script {
             const evt = new Event(Script.LOG, time, time, index, 1, log.type);
             this.events.push(evt);
         });
+        this.logs = logs;
         this.sort();
     }
 
     addTranscript(words) {
+        this.words = words;
         if (words.length == 0) return;
-        console.log(words);
         words = words.slice();
         // Add a null word at the end to ensure the final group is pushed
         words.push(null);
@@ -48,6 +49,12 @@ export class Script {
             }
         });
         this.sort();
+    }
+
+    getLog(event) {
+        if (event.type !== Script.LOG) return null;
+        // console.log('Fetching...', event.startIndex, this.logs)
+        return this.logs[event.startIndex];
     }
 
     toYAML() {

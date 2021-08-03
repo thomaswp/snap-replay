@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/bundle.js"></script>
+        <link rel="stylesheet" href="css/playback.css"/>
+    </head>
+    <body>
+        <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
+        <div class="footer">
+            <audio id="audio" style="display: none"></audio>
+            <div>
+                <button id="play" class="playpause"></button>
+                <input id="scrubber" type="range" min="0" max="100" value="0" width="80%">
+            </div>
+            <textarea id="script">
+
+            </textarea>
+        </div>
+        <script>
+            $(document).ready(() => {
+                let playback = window.playback = new Playback('sample/1627046605547/');
+                let $btn = $('#play');
+                $btn.click(() => {
+                    $btn.toggleClass('pause');
+                    playback.play();
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -41,7 +41,7 @@
                 "objType": "Object"
             }
         },
-        "timeDelta": 2000
+        "timeDelta": 5500
     },
     {
         "type": "blockDrop",

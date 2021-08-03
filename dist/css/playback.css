@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+#isnap {
+    width: 100%;
+    height: calc(100% - 150px);
+}
+
+.playpause.pause {
+    border-style: double;
+    border-width: 0px 0 0px 32px;
+}
+
+.playpause {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 40px;
+  
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    cursor: pointer;
+  
+    border-style: solid;
+    border-width: 20px 0 20px 32px;
+
+    margin: 3px;
+  }
+
+.playpause:hover {
+    border-color: transparent transparent transparent #404040;
+}
+
+#scrubber {
+    width: calc(100% - 80px);
+}
