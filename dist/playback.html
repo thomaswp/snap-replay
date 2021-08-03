@@ -7,7 +7,7 @@
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
         <div class="footer">
             <audio id="audio" style="display: none"></audio>
-            <div>
+            <div class="scrub-container">
                 <button id="play" class="playpause"></button>
                 <input id="scrubber" type="range" min="0" max="100" value="0" width="80%">
             </div>
@@ -18,9 +18,7 @@
         <script>
             $(document).ready(() => {
                 let playback = window.playback = new Playback('sample/1627046605547/');
-                let $btn = $('#play');
-                $btn.click(() => {
-                    $btn.toggleClass('pause');
+                $('#play').click(() => {
                     playback.togglePlay();
                 });
             });

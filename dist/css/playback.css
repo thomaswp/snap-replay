@@ -35,6 +35,13 @@ body {
 
 #scrubber {
     width: calc(100% - 80px);
+    margin-top: 17px;
+    float: right;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+.scrub-container {
+    height: 50px;
 }
 
 .script {
