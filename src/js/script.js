@@ -56,11 +56,13 @@ export class Script {
         words = words.slice();
         // Add a null word at the end to ensure the final group is pushed
         words.push(null);
-        const MAX_SEG_GAP = 0.75;
+        const MAX_SEG_GAP = 0.5;
+        const MAX_WORDS = 15;
         let lastWordTime = words[0].start_time;
         let startWordIndex = 0;
         words.forEach((word, index) => {
-            if (word && word.start_time - lastWordTime <= MAX_SEG_GAP) {
+            if (word && word.start_time - lastWordTime <= MAX_SEG_GAP &&
+                    index - startWordIndex + 1< MAX_WORDS) {
                 lastWordTime = word.start_time + word.duration;
                 return;
             }
