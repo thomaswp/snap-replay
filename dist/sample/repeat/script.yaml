@@ -139,10 +139,14 @@
   description: drop doRepeat(92)
   logIndex: 33
   timeDelta: 7.439000000000007
+- type: highlight
+  duration: 3
+  blockID: 92
+  timeDelta: 1
 - type: log
   description: drop forward(44)
   logIndex: 34
-  timeDelta: 11.799999999999997
+  timeDelta: 10.799999999999997
 - type: log
   description: drop forward(25) -> doRepeat(92)[1]
   logIndex: 35
