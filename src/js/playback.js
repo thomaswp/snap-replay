@@ -296,6 +296,8 @@ export class Playback {
             return;
         }
         
+        // We go faster if the playback is more than .25s behind
+        let fast = durationS - event.startTime > 0.25;
         this.nextTimeout = null;
         // console.log('Event: ', event);
         let record = this.script.getLog(event);
@@ -307,7 +309,7 @@ export class Playback {
             // console.log('Clear playing');
             this.playingLog = null;
             this.updateLogs();
-        });
+        }, fast);
         this.currentLogIndex++;
     }
 
