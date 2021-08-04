@@ -4,7 +4,8 @@ const { Script } = require('./script');
 
 export class Playback {
 
-    static BUFFER_MS = 500;
+    // 0 because we do this in the script itself now
+    static BUFFER_MS = 0;
 
     constructor(path) {
         this.path = path;
@@ -14,7 +15,8 @@ export class Playback {
         this.loader.loadAudio('#audio');
         this.loader.onLoaded = (script) => {
             this.script = script;
-            this.events = script.events;
+            this.events = script.getEvents();
+            console.log(this.events);
             this.addScript();
             this.restart();
         }
@@ -25,7 +27,10 @@ export class Playback {
         this.$script = $('#script');
         this.time = 0;
         this.playing = false;
+        this.snapEdits = 0;
         this.duration = 0;
+        this.highlightedBlocks = [];
+        this.highlights = [];
 
         $('body').keyup((e) => {
             console.log(e);
@@ -45,6 +50,14 @@ export class Playback {
             this.snapWindow.Trace.addLoggingHandler('Block.snapped',
                 () => this.snapEdits++);
         }, 2000);
+
+        let noop = () => {};
+        navigator.mediaSession.setActionHandler('play', noop);
+        navigator.mediaSession.setActionHandler('pause', noop);
+        navigator.mediaSession.setActionHandler('seekbackward', noop);
+        navigator.mediaSession.setActionHandler('seekforward', noop);
+        navigator.mediaSession.setActionHandler('previoustrack', noop);
+        navigator.mediaSession.setActionHandler('nexttrack', noop);
     }
 
     static getDuration = function (url, next) {
@@ -68,9 +81,13 @@ export class Playback {
     addScript() {
         this.texts = [];
         this.logs = [];
+        this.highlights = [];
         this.events.forEach(event => {
             if (event.type === Script.LOG) {
                 this.logs.push(event);    
+                return;
+            } else if (event.type === Script.HIGHLIGHT) {
+                this.highlights.push(event);
                 return;
             }
             this.texts.push(event);
@@ -92,10 +109,12 @@ export class Playback {
         this.$scrubber.attr('max', Math.round(this.duration));
         this.playStartDuration = 0;
         this.$scrubber.val(0);
+        this.updateHighlights();
         $('.text').removeClass('.highlight');
     }
 
     resetSnap() {
+        this.highlightedBlocks = []
         if (this.snapWindow.ide) {
             this.snapWindow.ide.newProject();
         }
@@ -108,9 +127,12 @@ export class Playback {
     }
 
     snapFocused() {
+        this.clearHighlights();
+        if (this.getCurrentDuration() > 0) {
+            this.warnResume = true;
+        }
         if (this.playing) {
             this.pause();
-            this.warnResume = true;
             this.snapEdits = 0;
         }
     }
@@ -167,13 +189,11 @@ export class Playback {
             this.wasPlaying = true;
         }
         this.playStartDuration = this.getCurrentDuration();
-        this.updateLogs(true);
-        this.updateText();
+        this.updateEvents(true);
     }
 
     finishSettingDuration() {
-        this.updateLogs();
-        this.updateText();
+        this.updateEvents();
         if (this.wasPlaying)  {
             setTimeout(() => this.play(), 1);
         }
@@ -184,9 +204,14 @@ export class Playback {
         if (!this.playing) return;
         let duration = this.getCurrentDuration();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
-        this.updateLogs();
-        this.updateText();   
+        this.updateEvents();
         if (duration > this.duration) this.pause();
+    }
+
+    updateEvents(noReset) {
+        this.updateLogs(noReset);
+        this.updateText();
+        this.updateHighlights();
     }
 
     getCurrentDuration() {
@@ -203,6 +228,10 @@ export class Playback {
         this.currentText = null;
     }
 
+    getActiveEvents(events, timeS, buf) {
+        return events.filter(t => t.startTime <= timeS + buf && t.endTime >= timeS - buf);
+    }
+
     updateText() {
         let buf = Playback.BUFFER_MS / 1000;
         let durationS = this.getCurrentDuration() / 1000;
@@ -213,7 +242,7 @@ export class Playback {
             }
         }
         if (!this.currentText) {
-            let active = this.texts.filter(t => t.startTime <= durationS + buf && t.endTime >= durationS - buf);
+            let active = this.getActiveEvents(this.texts, durationS, buf);
             if (active.length > 0) {
                 this.currentText = active[active.length - 1];
                 this.currentText.div.addClass('highlight');
@@ -227,7 +256,13 @@ export class Playback {
                 // The edited events should all use deltas (so you can easily delete),
                 // but the audio needs to keep a reference to the start/end time in the original file
                 if (this.playing)  {
-                    this.audio.currentTime = durationS;
+                    let time = this.currentText.audioStart + durationS - this.currentText.startTime;
+                    if (isNaN(time) || !isFinite(time)) {
+                        console.error('NaN time', time, this.currentText, this.currentText.audioStart, durationS, this.currentText.startTime);
+                        return;
+                    }
+                    this.audio.currentTime = time;
+                    console.log('Audio to ', this.audio.currentTime);
                     this.audio.play();
                 }
             }
@@ -262,19 +297,53 @@ export class Playback {
         }
         
         this.nextTimeout = null;
-        console.log('Event: ', event);
+        // console.log('Event: ', event);
         let record = this.script.getLog(event);
-        console.log('Playing', record);
+        // console.log('Playing', record);
         [record] = this.recorder.loadRecords([record]);
         // TODO: First confirm that the last event finished
         this.playingLog = event;
         record.replay(() => {
-            console.log('Clear playing');
+            // console.log('Clear playing');
             this.playingLog = null;
             this.updateLogs();
         });
         this.currentLogIndex++;
     }
 
+    updateHighlights() {
+        if (this.warnResume) return;
+        let blocksToHighlight = [];
+        let active = this.getActiveEvents(this.highlights, this.getCurrentDuration() / 1000, 0);
+        active.forEach(h => {
+            if (!blocksToHighlight.includes(h.blockID)) blocksToHighlight.push(h.blockID);
+        });
+        this.highlightedBlocks.forEach(id => {
+            if (!blocksToHighlight.includes(id)) {
+                this.setHighlight(id, false);
+            };
+        });
+        blocksToHighlight.forEach(id => {
+            if (!this.highlightedBlocks.includes(id)) {
+                this.setHighlight(id, true);
+            };
+        });
+        this.highlightedBlocks = blocksToHighlight;
+    }
 
+    setHighlight(blockID, highlighted) {
+        var block = this.recorder.constructor.blockMap.get(blockID);
+        console.log('setHighlight', blockID, highlighted, block);
+        if (!block) return;
+        if (highlighted) {
+            block.addHighlight();
+        } else {
+            block.removeHighlight();
+        }
+    }
+
+    clearHighlights() {
+        this.highlightedBlocks.forEach(b => this.setHighlight(b, false));
+        this.highlightedBlocks = [];
+    }
 }

@@ -6,7 +6,7 @@ export class Editor {
         this.loader = new ScriptLoader(path);
         this.loader.loadAudio('#audio');
         this.loader.onLoaded = (script) => {
-            editor.setValue(script.toYAML());
+            editor.setValue(script.toYAML(), -1);
         }
     }
 }
