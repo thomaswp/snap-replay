@@ -1,0 +1,25 @@
+{
+  "name": "snap-playback",
+  "version": "1.0.0",
+  "description": "A recorder and replayer for Snap!",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "ace-code-editor": "^1.2.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "jquery": "^3.6.0",
+    "webpack": "^5.48.0",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ncsu.edu/iSnap/snap-playback.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
