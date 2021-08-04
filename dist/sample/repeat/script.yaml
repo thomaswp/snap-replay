@@ -1,20 +1,30 @@
 - type: text
-  description: text tbd...
-  audioStart: 0
-  audioEnd: 154
-  timeDelta: 0
+  description: little son on the repeat back often times in step we do something multiple
+  audioStart: 0.76
+  audioEnd: 8.440000000000001
+  timeDelta: 0.76
+- type: text
+  description: times for example to draw a square we have to move and then turn
+  audioStart: 7.52
+  audioEnd: 14.879999999999999
+  timeDelta: 6.76
 - type: log
   description: drop forward(25)
   logIndex: 0
-  timeDelta: 10.484
+  timeDelta: 2.9640000000000004
 - type: log
   description: drop turn(26) -> forward(25)
   logIndex: 1
   timeDelta: 2.1500000000000004
+- type: text
+  description: our times preamble of fine move one hundred steps and then turn and degrees
+  audioStart: 14.02
+  audioEnd: 21.979999999999997
+  timeDelta: 1.3859999999999992
 - type: log
   description: inputSlotEdit
   logIndex: 2
-  timeDelta: 4.347000000000001
+  timeDelta: 2.961000000000002
 - type: log
   description: inputSlotEdit
   logIndex: 3
@@ -23,10 +33,15 @@
   description: inputSlotEdit
   logIndex: 4
   timeDelta: 1.9789999999999992
+- type: text
+  description: i endow first then i dragonette four sides of a square but if i
+  audioStart: 21.06
+  audioEnd: 30
+  timeDelta: 2.0959999999999965
 - type: log
   description: drop down(43) -> forward(25)
   logIndex: 5
-  timeDelta: 2.766000000000002
+  timeDelta: 0.6700000000000053
 - type: log
   description: run
   logIndex: 6
@@ -43,22 +58,42 @@
   description: run
   logIndex: 9
   timeDelta: 0.8079999999999998
+- type: text
+  description: wanted this to happen with just one clay i would have to duplicate my
+  audioStart: 29.06
+  audioEnd: 34.519999999999996
+  timeDelta: 2.6909999999999954
+- type: text
+  description: move and turn blocks and that's a bit of a pain i have to
+  audioStart: 33.68
+  audioEnd: 38.96
+  timeDelta: 4.620000000000001
 - type: log
   description: drop forward(44) -> turn(26)
   logIndex: 10
-  timeDelta: 10.626000000000001
+  timeDelta: 3.315000000000005
+- type: text
+  description: drag out move turn
+  audioStart: 38.02
+  audioEnd: 41.28
+  timeDelta: 1.0249999999999986
 - type: log
   description: drop turn(45) -> forward(44)
   logIndex: 11
-  timeDelta: 1.6869999999999976
+  timeDelta: 0.661999999999999
 - type: log
   description: drop forward(46) -> turn(45)
   logIndex: 12
   timeDelta: 1.7689999999999984
+- type: text
+  description: turn turn and then of course i would have to change all of these
+  audioStart: 41.76
+  audioEnd: 48.86
+  timeDelta: 1.3089999999999975
 - type: log
   description: drop turn(47) -> forward(46)
   logIndex: 13
-  timeDelta: 1.5110000000000028
+  timeDelta: 0.2020000000000053
 - type: log
   description: drop forward(48) -> turn(47)
   logIndex: 14
@@ -67,10 +102,15 @@
   description: drop turn(49) -> forward(48)
   logIndex: 15
   timeDelta: 1.5690000000000026
+- type: text
+  description: premeditated it have to superintend if i do that a clear rout here queer
+  audioStart: 47.92
+  audioEnd: 63.04
+  timeDelta: 2.6769999999999925
 - type: log
   description: inputSlotEdit
   logIndex: 16
-  timeDelta: 5.278999999999996
+  timeDelta: 2.602000000000004
 - type: log
   description: inputSlotEdit
   logIndex: 17
@@ -111,14 +151,39 @@
   description: run
   logIndex: 26
   timeDelta: 0.7920000000000016
+- type: text
+  description: my screen on my cot again and i get that square with just a
+  audioStart: 62.08
+  audioEnd: 67.14
+  timeDelta: 0.9979999999999762
 - type: log
   description: run
   logIndex: 27
-  timeDelta: 2.2959999999999994
+  timeDelta: 1.2980000000000231
+- type: text
+  description: single run of my coat and that's nice but where programmers and that means
+  audioStart: 66.18
+  audioEnd: 73.18
+  timeDelta: 2.8019999999999854
+- type: text
+  description: we want to do things in a way that's maintainable and efficient and frankly
+  audioStart: 72.24
+  audioEnd: 77.17999999999999
+  timeDelta: 6.059999999999988
+- type: text
+  description: speaking a little bit lazy for example if i wanted to change the size
+  audioStart: 76.24
+  audioEnd: 81.24
+  timeDelta: 4
+- type: text
+  description: of my square i would have to change all of these moves buffeted to
+  audioStart: 80.3
+  audioEnd: 88.38
+  timeDelta: 4.060000000000002
 - type: log
   description: inputSlotEdit
   logIndex: 28
-  timeDelta: 20.714999999999996
+  timeDelta: 3.7930000000000206
 - type: log
   description: inputSlotEdit
   logIndex: 29
@@ -127,30 +192,52 @@
   description: inputSlotEdit
   logIndex: 30
   timeDelta: 0.9509999999999934
+- type: text
+  description: change the sides i have a smaller square it took a lot of work
+  audioStart: 87.42
+  audioEnd: 92.46000000000001
+  timeDelta: 0.617999999999995
 - type: log
   description: inputSlotEdit
   logIndex: 31
-  timeDelta: 0.6500000000000057
+  timeDelta: 0.03200000000001069
 - type: log
   description: run
   logIndex: 32
   timeDelta: 1.0949999999999989
+- type: text
+  description: to get there to address this tampassook called repeat repeat as a block that
+  audioStart: 91.5
+  audioEnd: 99.34
+  timeDelta: 2.9529999999999887
 - type: log
   description: drop doRepeat(92)
   logIndex: 33
-  timeDelta: 7.439000000000007
-- type: highlight
-  duration: 3
-  blockID: 92
-  timeDelta: 1
+  timeDelta: 4.486000000000018
+- type: text
+  description: allows us to run code multiple times the exact same code over and over
+  audioStart: 98.4
+  audioEnd: 104.8
+  timeDelta: 2.4139999999999873
+- type: text
+  description: this is called iteration so i get rid of these moves and turns that
+  audioStart: 103.86
+  audioEnd: 110.89999999999999
+  timeDelta: 5.459999999999994
 - type: log
   description: drop forward(44)
   logIndex: 34
-  timeDelta: 10.799999999999997
+  timeDelta: 3.926000000000016
+- type: text
+  description: are duplicated and instead put them inside of a repeat intelletto
+    repeat four times
+  audioStart: 109.96
+  audioEnd: 117.7
+  timeDelta: 2.173999999999978
 - type: log
   description: drop forward(25) -> doRepeat(92)[1]
   logIndex: 35
-  timeDelta: 3.593999999999994
+  timeDelta: 1.420000000000016
 - type: log
   description: drop doRepeat(92) -> down(43)
   logIndex: 36
@@ -159,38 +246,70 @@
   description: inputSlotEdit
   logIndex: 37
   timeDelta: 2.625
+- type: text
+  description: then i can get the exact same effect i run that i get my
+  audioStart: 116.76
+  audioEnd: 122.14
+  timeDelta: 0.9969999999999999
 - type: log
   description: run
   logIndex: 38
-  timeDelta: 3.1580000000000013
+  timeDelta: 2.1610000000000014
 - type: log
   description: run
   logIndex: 39
   timeDelta: 0.9609999999999985
+- type: text
+  description: square and if i want to make it bigger i can do so no
+  audioStart: 121.18
+  audioEnd: 129.55999999999997
+  timeDelta: 1.2980000000000018
 - type: log
   description: inputSlotEdit
   logIndex: 40
-  timeDelta: 4.233000000000004
+  timeDelta: 2.9350000000000023
 - type: log
   description: run
   logIndex: 41
   timeDelta: 0.9740000000000038
+- type: text
+  description: importantly the things that come before the peat will happen
+    beforehand so my pen
+  audioStart: 128.7
+  audioEnd: 135.02
+  timeDelta: 3.610999999999976
+- type: text
+  description: down comes before and anything that happens after the repeater
+    example if i sechemites
+  audioStart: 134.04
+  audioEnd: 145.68
+  timeDelta: 5.340000000000003
 - type: log
   description: drop forward(93) -> doRepeat(92)
   logIndex: 42
-  timeDelta: 13.97699999999999
+  timeDelta: 5.0260000000000105
+- type: text
+  description: after i draw my square them that will happen only after all for sights
+  audioStart: 144.78
+  audioEnd: 150.18
+  timeDelta: 5.713999999999999
 - type: log
   description: inputSlotEdit
   logIndex: 43
-  timeDelta: 6.209000000000003
+  timeDelta: 0.49500000000000455
 - type: log
   description: run
   logIndex: 44
   timeDelta: 1.4070000000000107
+- type: text
+  description: have been drawn ironware to squares three squares and so on so that it
+  audioStart: 149.24
+  audioEnd: 158.76000000000002
+  timeDelta: 2.5579999999999927
 - type: log
   description: run
   logIndex: 45
-  timeDelta: 4.007000000000005
+  timeDelta: 1.4490000000000123
 - type: log
   description: run
   logIndex: 46
@@ -199,3 +318,8 @@
   description: run
   logIndex: 47
   timeDelta: 0.8009999999999877
+- type: text
+  description: for the repeat block
+  audioStart: 157.82
+  audioEnd: 159.8
+  timeDelta: 5.281999999999982
