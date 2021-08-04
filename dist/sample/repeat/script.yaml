@@ -1,10 +1,10 @@
 - type: text
-  description: little son on the repeat back often times in step we do something multiple
+  description: This is a lesson on the repeat back. Often times in Snap! we do something multiple
   audioStart: 0.76
   audioEnd: 8.440000000000001
   timeDelta: 0.76
 - type: text
-  description: times for example to draw a square we have to move and then turn
+  description: times. For example to draw a square we have to move and then turn
   audioStart: 7.52
   audioEnd: 14.879999999999999
   timeDelta: 6.76
@@ -214,6 +214,10 @@
   description: drop doRepeat(92)
   logIndex: 33
   timeDelta: 4.486000000000018
+- type: highlight
+  blockID: 92
+  duration: 5
+  timeDelta: 1
 - type: text
   description: allows us to run code multiple times the exact same code over and over
   audioStart: 98.4
