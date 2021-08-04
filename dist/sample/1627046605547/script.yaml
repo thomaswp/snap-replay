@@ -1,11 +1,11 @@
 - type: text
-  description: this amiable
+  description: This is an example of
   audioStart: 0.8400000000000001
   audioEnd: 3.2199999999999998
   timeDelta: 0.8400000000000001
 - type: text
-  description: lassen that one could record the various blocks all working in and
-    recording mariotte same time
+  description: a lesson that one could record with various blocks while working in Snap and
+    recording audio at the same time.
   audioStart: 3.1
   audioEnd: 17.2
   timeDelta: 2.26

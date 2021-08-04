@@ -18,11 +18,11 @@ export class ScriptLoader {
             url: path + 'script.yaml',
         }).done(scriptYAML => this.scriptYAML = scriptYAML);
         $(document).ajaxStop(() => {
-            if (!this.words || !this.logs) {
-                console.error('Missing transcript or logs!');
+            if (!this.logs) {
+                console.error('Missing logs!');
                 return;
             }
-            this.script = new Script(this.logs, this.words, this.scriptYAML);
+            this.script = new Script(this.logs, this.words || [], this.scriptYAML);
             if (this.onLoaded) this.onLoaded(this.script);
         });
     }

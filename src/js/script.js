@@ -31,7 +31,7 @@ export class Script {
     addLogs(logs) {
         let time = 0;
         logs.forEach((log, index) => {
-            console.log(log);
+            // console.log(log);
             time += log.timeDelta / 1000;
             let desc = log.type;
             if (log.type === 'blockDrop') {

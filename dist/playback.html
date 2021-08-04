@@ -16,7 +16,9 @@
         </div>
         <script>
             $(document).ready(() => {
-                let playback = window.playback = new Playback('sample/1627046605547/');
+                // let sample = '1627046605547';
+                let sample = 'bug1';
+                let playback = window.playback = new Playback('sample/' + sample + '/');
                 $('#play').click(() => {
                     playback.togglePlay();
                 });
