@@ -248,6 +248,7 @@ export class Playback {
                 this.currentText.div.addClass('highlight');
                 let scroll = this.$script.scrollTop() + 
                     this.currentText.div.position().top - this.$script.position().top;
+                this.$script.stop();
                 this.$script.animate({
                     scrollTop: scroll,
                 }, 500);
