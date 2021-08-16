@@ -1,3 +1,6 @@
+config:
+  blockScale: 1.5
+events:
 - type: text
   description: This is a lesson on the repeat back. Often times in Snap! we do something multiple
   audioStart: 0.76

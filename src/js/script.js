@@ -1,5 +1,3 @@
-import { throwStatement } from 'babel-types';
-
 const YAML = require('../../node_modules/yaml');
 
 export class Script {
@@ -9,11 +7,17 @@ export class Script {
     static HIGHLIGHT = 'highlight';
     static AUDIO_BUFFER = 0.5;
 
-    constructor(logs, words, events) {
+    constructor(logs, words, scriptYAML) {
         this.logs = logs;
         this.words = words;
-        if (events) {
-            this.events = YAML.parse(events);
+        this.config = {
+            blockScale: 1,
+        }
+        if (scriptYAML) {
+            let script = YAML.parse(scriptYAML);
+            console.log(script);
+            this.config = script.config;
+            this.events = script.events;
         } else {
             this.events = [];
             this.addLogs(logs);
@@ -32,6 +36,10 @@ export class Script {
         let time = 0;
         logs.forEach((log, index) => {
             // console.log(log);
+            if (log.type === 'setBlockScale') {
+                this.config.blockScale = log.data.scale;
+                return;
+            }
             time += log.timeDelta / 1000;
             let desc = log.type;
             if (log.type === 'blockDrop') {
@@ -89,7 +97,10 @@ export class Script {
     }
 
     toYAML() {
-        return YAML.stringify(this.events);
+        return YAML.stringify({
+            'config': this.config,
+            'events': this.events,
+        });
     }
 
     sort() {

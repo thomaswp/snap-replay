@@ -20,6 +20,15 @@ export class Playback {
             this.addScript();
             this.restart();
         }
+        $('#isnap').on('load', () => {
+            if (this.snapWindow.recorder) {
+                this.restart();
+            } else {
+                this.snapWindow.onWorldLoaded = () => {
+                    this.restart();
+                };
+            }
+        });
         this.audio = $('#audio')[0];
         this.$scrubber = $('#scrubber');
         this.$scrubber.on("change", () => this.finishSettingDuration());
@@ -101,6 +110,7 @@ export class Playback {
     }
 
     restart() {
+        if (!this.script) return;
         this.resetSnap();
         this.time = 0;
         this.clearCurrentText();
@@ -123,6 +133,7 @@ export class Playback {
         this.recorder = this.snapWindow.recorder;
         if (this.snapWindow.recorder) {
             this.recorder.resetBlockMap();
+            this.recorder.setRecordScale(this.script.config.blockScale);
         }
     }
 
