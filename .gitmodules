@@ -1,3 +1,4 @@
 [submodule "dist/isnap"]
 	path = dist/isnap
 	url = https://github.com/thomaswp/iSnap
+    branch = record
