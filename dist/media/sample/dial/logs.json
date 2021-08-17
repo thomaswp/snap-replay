@@ -1,0 +1,540 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 148.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 155.5,
+                    "y": 152.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 2064
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 60
+        },
+        "timeDelta": 1157
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 75
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 90
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 105
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 120
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 135
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 150
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 165
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 180
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 195
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 210
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 225
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 240
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 255
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 270
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 285
+        },
+        "timeDelta": 101
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 300
+        },
+        "timeDelta": 116
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 315
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 330
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 345
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 0
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 15
+        },
+        "timeDelta": 99
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 30
+        },
+        "timeDelta": 51
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 45
+        },
+        "timeDelta": 49
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 60
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 75
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": 90
+        },
+        "timeDelta": 51
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "item": -90,
+            "value": -90
+        },
+        "timeDelta": 985
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "item": [
+                "random"
+            ],
+            "value": [
+                "random"
+            ]
+        },
+        "timeDelta": 2289
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setHeading",
+                "id": 25,
+                "template": false,
+                "spec": "point in direction %dir",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "123",
+            "value": "123"
+        },
+        "timeDelta": 5941
+    }
+]
