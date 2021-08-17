@@ -18,11 +18,11 @@
             $(document).ready(() => {
                 // let sample = '1627046605547';
                 let searchParams = new URLSearchParams(window.location.search)
-                let sample = 'repeat';
+                let sample = 'sample/repeat';
                 if (searchParams.has('video')) {
                     sample = searchParams.get('video');
                 }
-                let playback = window.playback = new Playback('sample/' + sample + '/');
+                let playback = window.playback = new Playback('media/' + sample + '/');
                 $('#play').click(() => {
                     playback.togglePlay();
                 });

@@ -11,12 +11,12 @@
             editor.setTheme("ace/theme/monokai");
             editor.session.setMode("ace/mode/yaml");
             let searchParams = new URLSearchParams(window.location.search)
-            let sample = 'repeat';
+            let sample = 'sample/repeat';
             if (searchParams.has('video')) {
                 sample = searchParams.get('video');
             }
             $(document).ready(() => {
-                new Editor('sample/' + sample + '/');
+                new Editor('media/' + sample + '/');
             });
         </script> 
     </body>
