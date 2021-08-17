@@ -346,7 +346,7 @@ export class Playback {
     }
 
     setHighlight(blockID, highlighted) {
-        var block = this.recorder.constructor.blockMap.get(blockID);
+        var block = this.recorder.constructor.getBlock(blockID);
         console.log('setHighlight', blockID, highlighted, block);
         if (!block) return;
         if (highlighted) {

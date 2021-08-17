@@ -1,0 +1,377 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "operators",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 936
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 549.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 339.5,
+                    "y": 290.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1872
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": false
+        },
+        "timeDelta": 631
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 339.5,
+                    "y": 290.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 245.5,
+                    "y": 356.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1209
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": true
+        },
+        "timeDelta": 352
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportModulus",
+                "id": 54,
+                "template": false,
+                "spec": "%n mod %n",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 218.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 144.5,
+                    "y": 230.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1224
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": {
+                "selector": "reportModulus",
+                "id": 54,
+                "template": false,
+                "spec": "%n mod %n",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "ArgMorph"
+            },
+            "lastDropTarget": {
+                "selector": "reportModulus",
+                "id": 54,
+                "template": false,
+                "spec": "%n mod %n",
+                "objType": "BlockMorph"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 245.5,
+                    "y": 356.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 152,
+                    "y": 233.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 905
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": false
+        },
+        "timeDelta": 502
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": {
+                "selector": "reportModulus",
+                "id": 54,
+                "template": false,
+                "spec": "%n mod %n",
+                "argIndex": 1,
+                "argType": "object",
+                "objType": "ArgMorph"
+            },
+            "lastDropTarget": {
+                "selector": "reportModulus",
+                "id": 54,
+                "template": false,
+                "spec": "%n mod %n",
+                "objType": "BlockMorph"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 152,
+                    "y": 233.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 226.65771484375,
+                    "y": 233.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1112
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "value": true
+        },
+        "timeDelta": 408
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportBoolean",
+                "id": 53,
+                "template": false,
+                "spec": "%bool",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 226.65771484375,
+                    "y": 233.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 231.65771484375,
+                    "y": 329.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 816
+    }
+]
