@@ -1,0 +1,728 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": {
+                "source": "Sprite",
+                "spriteName": "Sprite",
+                "objType": "ScriptsMorph"
+            },
+            "open": true,
+            "position": {
+                "x": 328,
+                "y": 206,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 367
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 1041
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 120
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false
+        },
+        "timeDelta": 151
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 248
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 41
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 247
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 371,
+                "y": 293,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 384
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 591,
+                "y": 324,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 592
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": {
+                "source": "Sprite",
+                "spriteName": "Sprite",
+                "objType": "ScriptsMorph"
+            },
+            "open": true,
+            "position": {
+                "x": 591,
+                "y": 324,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 632
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 168
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false
+        },
+        "timeDelta": 88
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 136
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 64
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 193
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 644,
+                "y": 415,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 1160
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "turn",
+                "id": 25,
+                "template": false,
+                "spec": "turn %clockwise %n degrees",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 50,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 132.5,
+                    "y": 122,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 2416
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 520,
+                "y": 230,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 1032
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": {
+                "selector": "turn",
+                "id": 25,
+                "template": false,
+                "spec": "turn %clockwise %n degrees",
+                "objType": "BlockMorph"
+            },
+            "open": true,
+            "position": {
+                "x": 520,
+                "y": 230,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 367
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 272
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 96
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 152
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 176
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 176
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 7,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 7,
+            "highlight": false
+        },
+        "timeDelta": 160
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 192
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 392
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 71
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 7,
+            "highlight": true
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 7,
+            "highlight": false
+        },
+        "timeDelta": 49
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 2
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 53
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 55
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 135
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 107
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 79
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 610,
+                "y": 202,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 497
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 1517
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true
+        },
+        "timeDelta": 9
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 55
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false
+        },
+        "timeDelta": 72
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false
+        },
+        "timeDelta": 103
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 201,
+                "y": 210,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 353
+    }
+]
