@@ -62,3 +62,21 @@ body {
     background-color: #ddd;
     border-top: 2px rgb(26, 0, 75) solid;
 }
+
+#clickHighlight {
+    cursor: pointer;
+    pointer-events: none;
+    background: rgba(255, 255, 10, 0.3);
+    border: 3px solid rgba(255, 255, 10);
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50px;
+    transform: scale(0, 0);
+    transition: transform 0.25s linear;
+}
+#clickHighlight.down {
+    transform: scale(1, 1);
+    /* opacity: 0.3; */
+}

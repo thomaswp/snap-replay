@@ -67,6 +67,28 @@ export class Playback {
         navigator.mediaSession.setActionHandler('seekforward', noop);
         navigator.mediaSession.setActionHandler('previoustrack', noop);
         navigator.mediaSession.setActionHandler('nexttrack', noop);
+
+        this.createClickHighlight();
+    }
+
+    createClickHighlight() {
+        // create a DIV element, give it an ID and add it
+        // to the body
+        this.clickHighlight = document.createElement('div');
+        this.clickHighlight.id = 'clickHighlight';
+        document.body.appendChild(this.clickHighlight);
+        // define offset as half the width of the DIV
+        // (this is needed to put the mouse cursor in
+        // its centre)
+        var plot = this.clickHighlight;
+        var offset = plot.offsetWidth / 2;
+        // move the DIV to x and y with the correct offset
+        this.clickHighlight.trigger = (x, y) => {
+            plot.style.left = x - offset + 'px';
+            plot.style.top = y - offset + 'px';
+            plot.classList.add('down');
+            setTimeout(() => plot.classList.remove('down'), 250);
+        }
     }
 
     static getDuration = function (url, next) {
@@ -109,6 +131,10 @@ export class Playback {
         });
     }
 
+    animateClick(x, y) {
+        console.log('Click: ', x, y);
+    }
+
     restart() {
         if (!this.script) return;
         this.resetSnap();
@@ -127,13 +153,16 @@ export class Playback {
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
             this.snapWindow.ide.newProject();
+            this.snapWindow.ide.changeCategory('motion');
         }
         this.currentLogIndex = 0;
         this.playingLog = null;
         this.recorder = this.snapWindow.recorder;
         if (this.snapWindow.recorder) {
-            this.recorder.resetBlockMap();
-            this.recorder.setRecordScale(this.script.config.blockScale);
+            this.recorder.constructor.resetBlockMap();
+            this.recorder.constructor.setRecordScale(this.script.config.blockScale);
+            this.recorder.constructor.setOnClickCallback(
+                (x, y) => this.clickHighlight.trigger(x, y));
         }
     }
 
