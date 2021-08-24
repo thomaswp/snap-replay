@@ -154,6 +154,9 @@ export class Playback {
         if (this.snapWindow.ide) {
             this.snapWindow.ide.newProject();
             this.snapWindow.ide.changeCategory('motion');
+            // Clear console logging
+            // TODO: may want to remove this for deploy
+            this.snapWindow.Trace = new this.snapWindow.Logger(1000);
         }
         this.currentLogIndex = 0;
         this.playingLog = null;
