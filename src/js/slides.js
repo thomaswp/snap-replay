@@ -21,6 +21,7 @@ export class Slides {
 
         $('#slides').removeClass('hidden');
         $('#slides-toggle').removeClass('hidden');
+        $('#slides-toggle').attr('title', 'Toggle the slides.');
         
         $('#slides-toggle').on('click', () => {
             this.toggleMaximized();
