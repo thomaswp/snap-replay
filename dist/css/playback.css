@@ -1,10 +1,11 @@
 body {
     margin: 0px;
+    overflow: hidden;
 }
 
 #isnap {
     width: 100%;
-    height: calc(100% - 150px);
+    height: calc(100% - 152px);
 }
 
 .playpause.pause {
@@ -34,12 +35,13 @@ body {
 }
 
 #scrubber {
-    width: calc(100% - 80px);
+    width: calc(100% - 110px);
     margin-top: 17px;
     float: right;
     margin-bottom: auto;
-    margin-right: 20px;
+    margin-right: 50px;
 }
+
 .scrub-container {
     height: 50px;
 }
@@ -79,4 +81,41 @@ body {
 #clickHighlight.down {
     transform: scale(1, 1);
     /* opacity: 0.3; */
+}
+
+#slides {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 150px);
+    transition: all 0.5s ease;
+}
+
+#slides.minimized {
+    top: calc(100% - 280px);
+    left: calc(100% - 205px);
+    width: 198px;
+    height: 123px;
+    border: 1px solid rgb(26, 0, 75);
+}
+
+#slides.hidden {
+    opacity: 0;
+}
+
+/* .minimized #slides-toggle {
+    margin-top: -30px;
+    margin-bottom: 0px;
+} */
+
+#slides-toggle {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-bottom: -30px;
+}
+
+#slides-toggle.hidden {
+    display: none;
 }

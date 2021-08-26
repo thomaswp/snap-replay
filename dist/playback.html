@@ -2,11 +2,25 @@
     <head>
         <script type="text/javascript" src="js/bundle.js"></script>
         <link rel="stylesheet" href="css/playback.css"/>
+        <link rel="stylesheet" href="css/playback.css"/>
+        <link rel="stylesheet" href="css/reveal.js/dist/reveal.css">
+        <link rel="stylesheet" href="css/reveal.js/dist/theme/black.css">
     </head>
     <body>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
+        <div id="slides" class="minimized hidden">
+            <div class="reveal">
+                <div class="slides">
+                    <section data-markdown>
+                        <textarea data-template id="markdown">
+                        </textarea>
+                      </section>
+                </div>
+            </div>
+        </div>
         <div class="footer">
             <audio id="audio" style="display: none"></audio>
+            <button id="slides-toggle" class="hidden">&nwarr;</button>
             <div class="scrub-container">
                 <button id="play" class="playpause"></button>
                 <input id="scrubber" type="range" min="0" max="100" value="0" width="80%">
@@ -18,7 +32,7 @@
             $(document).ready(() => {
                 // let sample = '1627046605547';
                 let searchParams = new URLSearchParams(window.location.search)
-                let sample = 'sample/repeat';
+                let sample = 'csc110/repeat';
                 if (searchParams.has('video')) {
                     sample = searchParams.get('video');
                 }

@@ -17,12 +17,16 @@ export class ScriptLoader {
         $.ajax({
             url: path + 'script.yaml',
         }).done(scriptYAML => this.scriptYAML = scriptYAML);
+        $.ajax({
+            url: path + 'slides.md',
+        }).done(slidesMD => this.slidesMD = slidesMD);
         $(document).ajaxStop(() => {
             if (!this.logs) {
                 console.error('Missing logs!');
                 return;
             }
             this.script = new Script(this.logs, this.words || [], this.scriptYAML);
+            this.script.slidesMD = this.slidesMD;
             if (this.onLoaded) this.onLoaded(this.script);
         });
     }

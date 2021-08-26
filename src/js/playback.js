@@ -1,6 +1,10 @@
 const $ = require('../../node_modules/jquery');
 const { ScriptLoader } = require('./loader');
 const { Script } = require('./script');
+// import Reveal from '../../node_modules/reveal.js';
+// import Markdown from '../../node_modules/reveal.js/plugin/markdown/markdown.esm.js';
+const Reveal = require('../../node_modules/reveal.js').default;
+const Markdown = require('../../node_modules/reveal.js/plugin/markdown/markdown.esm.js').default;
 
 export class Playback {
 
@@ -19,6 +23,7 @@ export class Playback {
             console.log(this.events);
             this.addScript();
             this.restart();
+            this.createSlides();
         }
         $('#isnap').on('load', () => {
             if (this.snapWindow.recorder) {
@@ -69,6 +74,35 @@ export class Playback {
         navigator.mediaSession.setActionHandler('nexttrack', noop);
 
         this.createClickHighlight();
+    }
+
+    createSlides() {
+        console.log(this.script.slidesMD)
+        if (!this.script.slidesMD) return;
+        $('#markdown').html(this.script.slidesMD);
+        let deck = new Reveal({
+            plugins: [Markdown],
+        })
+        deck.initialize({
+            'embedded': true,
+        });
+        this.slides = deck; 
+        this.slidesMaximized = false;
+
+        $('#slides').removeClass('hidden');
+        $('#slides-toggle').removeClass('hidden');
+        
+        $('#slides-toggle').on('click', () => {
+            this.slidesMaximized = !this.slidesMaximized;
+            if (this.slidesMaximized) {
+                $('#slides').removeClass('minimized');
+                $('#slides-toggle').text('\u2198');
+            } else {
+                $('#slides').addClass('minimized');
+                $('#slides-toggle').text('\u2196');
+            }
+            setTimeout(() => this.slides.layout(), 500);
+        });
     }
 
     createClickHighlight() {
