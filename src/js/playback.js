@@ -12,7 +12,7 @@ export class Playback {
     constructor(path) {
         this.path = path;
         this.snapWindow = document.getElementById('isnap').contentWindow;
-        $(this.snapWindow).on('focus', () => this.snapFocused());
+        $(this.snapWindow).on('click', () => this.snapFocused());
         this.loader = new ScriptLoader(path);
         this.loader.loadAudio('#audio');
         this.loader.onLoaded = (script) => {
@@ -43,9 +43,9 @@ export class Playback {
         this.duration = 0;
         this.highlightedBlocks = [];
         this.highlights = [];
+        this.playingAction = false;
 
         $('body').keyup((e) => {
-            console.log(e);
             if (e.keyCode == 32) {
                 this.togglePlay();
             }
@@ -96,7 +96,7 @@ export class Playback {
             plot.style.left = x - offset + 'px';
             plot.style.top = y - offset + 'px';
             plot.classList.add('down');
-            setTimeout(() => plot.classList.remove('down'), 250);
+            setTimeout(() => plot.classList.remove('down'), 200);
         }
     }
 
@@ -140,10 +140,6 @@ export class Playback {
         });
     }
 
-    animateClick(x, y) {
-        console.log('Click: ', x, y);
-    }
-
     restart() {
         if (!this.script) return;
         this.resetSnap();
@@ -163,6 +159,16 @@ export class Playback {
         if (this.snapWindow.ide) {
             this.snapWindow.ide.newProject();
             this.snapWindow.ide.changeCategory('motion');
+            let instances = this.snapWindow.DialogBoxMorph.prototype.instances;
+            Object.keys(instances).forEach(stamp => {
+                if (!instances.hasOwnProperty(stamp)) return;
+                let dialogs = instances[stamp];
+                Object.keys(dialogs).forEach(key => {
+                    if (dialogs[key].destroy) {
+                        dialogs[key].destroy();
+                    }
+                });
+            });
             // Clear console logging
             // TODO: may want to remove this for deploy
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
@@ -179,6 +185,15 @@ export class Playback {
     }
 
     snapFocused() {
+        // console.log('focus', this.playingAction);
+        // if (this.playingAction) {
+        //     setTimeout(() => {
+        //         this.snapWindow.document.activeElement.blur();
+        //         $('play').focus();
+        //         console.log('focus play');
+        //     }, 1);
+        //     return;
+        // }
         this.clearHighlights();
         if (this.getCurrentDuration() > 0) {
             this.warnResume = true;
@@ -209,8 +224,10 @@ export class Playback {
                 return;
             }
         }
+        this.playingAction = false;
         this.warnResume = false;
-        if (this.getCurrentDuration() >=  this.duration) {
+        // Subtract 0.1 to avoid float rounding issues
+        if (this.getCurrentDuration() >= this.duration - 0.1) {
             this.restart();
         }
         $('#play').addClass('pause');
@@ -358,11 +375,18 @@ export class Playback {
         [record] = this.recorder.loadRecords([record]);
         // TODO: First confirm that the last event finished
         this.playingLog = event;
-        record.replay(() => {
-            // console.log('Clear playing');
+        this.playingAction = true;
+        try {
+            record.replay(() => {
+                // console.log('Clear playing');
+                this.playingLog = null;
+                this.updateLogs();
+            }, fast);
+        } catch (e) {
+            console.error(e);
             this.playingLog = null;
-            this.updateLogs();
-        }, fast);
+        }
+        this.playingAction = false;
         this.currentLogIndex++;
     }
 
@@ -388,7 +412,7 @@ export class Playback {
 
     setHighlight(blockID, highlighted) {
         var block = this.recorder.constructor.getBlock(blockID);
-        console.log('setHighlight', blockID, highlighted, block);
+        // console.log('setHighlight', blockID, highlighted, block);
         if (!block) return;
         if (highlighted) {
             block.addHighlight();

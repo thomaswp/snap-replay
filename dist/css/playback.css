@@ -76,9 +76,9 @@ body {
     position: absolute;
     border-radius: 50px;
     transform: scale(0, 0);
-    transition: transform 0.25s linear;
+    transition: transform 0.15s linear;
 }
 #clickHighlight.down {
-    transform: scale(1, 1);
+    transform: scale(0.5, 0.5);
     /* opacity: 0.3; */
 }

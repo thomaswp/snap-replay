@@ -1,0 +1,330 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 132
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "operators",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 1654
+    },
+    {
+        "type": "blockType_newBlock",
+        "data": {},
+        "timeDelta": 917
+    },
+    {
+        "type": "blockType_changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "BlockTypeDialog.changeCategory"
+        },
+        "timeDelta": 1506
+    },
+    {
+        "type": "blockType_changeCategory",
+        "data": {
+            "value": "variables",
+            "message": "BlockTypeDialog.changeCategory"
+        },
+        "timeDelta": 1297
+    },
+    {
+        "type": "blockType_changeCategory",
+        "data": {
+            "value": "pen",
+            "message": "BlockTypeDialog.changeCategory"
+        },
+        "timeDelta": 1358
+    },
+    {
+        "type": "blockType_setType",
+        "data": {
+            "value": "reporter",
+            "message": "BlockTypeDialog.setType"
+        },
+        "timeDelta": 1201
+    },
+    {
+        "type": "blockType_setType",
+        "data": {
+            "value": "predicate",
+            "message": "BlockTypeDialog.setType"
+        },
+        "timeDelta": 948
+    },
+    {
+        "type": "blockType_changeCategory",
+        "data": {
+            "value": "sensing",
+            "message": "BlockTypeDialog.changeCategory"
+        },
+        "timeDelta": 1115
+    },
+    {
+        "type": "blockType_setScope",
+        "data": {
+            "value": "local",
+            "message": "BlockTypeDialog.setScope"
+        },
+        "timeDelta": 1444
+    },
+    {
+        "type": "blockType_setScope",
+        "data": {
+            "value": "global",
+            "message": "BlockTypeDialog.setScope"
+        },
+        "timeDelta": 980
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "t"
+        },
+        "timeDelta": 2346
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "th"
+        },
+        "timeDelta": 116
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "thi"
+        },
+        "timeDelta": 70
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this"
+        },
+        "timeDelta": 108
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this"
+        },
+        "timeDelta": 89
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this i"
+        },
+        "timeDelta": 137
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is"
+        },
+        "timeDelta": 84
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is"
+        },
+        "timeDelta": 116
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a"
+        },
+        "timeDelta": 81
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a"
+        },
+        "timeDelta": 82
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a t"
+        },
+        "timeDelta": 159
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a te"
+        },
+        "timeDelta": 52
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a tes"
+        },
+        "timeDelta": 171
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "this is a test"
+        },
+        "timeDelta": 86
+    },
+    {
+        "type": "blockType_ok",
+        "data": {
+            "message": "BlockTypeDialog.ok"
+        },
+        "timeDelta": 6779
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 4384
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 39
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 9
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 377
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 111
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 18,
+            "highlight": true
+        },
+        "timeDelta": 298
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 203,
+                "y": 234,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 446
+    }
+]
