@@ -45,6 +45,7 @@ export class Playback {
         this.highlights = [];
         this.playingAction = false;
         this.answeredQs = [];
+        this.maxDuration = 0;
 
         $('body').keyup((e) => {
             if (e.keyCode == 32) {
@@ -282,12 +283,14 @@ export class Playback {
     setDuration() {
         this.recorder = this.snapWindow.recorder;
         this.askingQuestion = null;
+        
         if (!this.recorder) return;
         if (this.playing) {
             this.pause();
             this.wasPlaying = true;
         }
         this.playStartDuration = this.getCurrentDuration();
+        this.$scrubber.val(Math.round(this.playStartDuration));
         this.updateEvents(true);
     }
 
@@ -302,6 +305,11 @@ export class Playback {
     update() {
         if (!this.playing) return;
         let duration = this.getCurrentDuration();
+        this.maxDuration = Math.max(this.maxDuration, duration);
+        let margin = 0.005;
+        let perc = 100 * (margin + this.maxDuration / this.duration * (1 - margin * 2));
+        let left = Math.max(0, perc), right = Math.min(100, perc + 0.3);
+        $('#scrubber-bg').css('background', `linear-gradient(90deg, #444477 ${left}%, #bbbbbb ${right}%)`);
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
         if (duration > this.duration) this.pause();
@@ -315,7 +323,7 @@ export class Playback {
 
     getCurrentDuration() {
         if (!this.playing) {
-            return parseInt(this.$scrubber.val());
+            return Math.min(parseInt(this.$scrubber.val()), this.maxDuration);
         }
         return this.playStartDuration + new Date().getTime() - this.playStartTime;
     }

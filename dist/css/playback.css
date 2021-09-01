@@ -35,11 +35,18 @@ body {
 }
 
 #scrubber {
-    width: calc(100% - 110px);
-    margin-top: 17px;
+    width: 100%;
+}
+
+#scrubber-bg {
     float: right;
+    margin-top: 10px;
     margin-bottom: auto;
+    width: calc(100% - 110px);
     margin-right: 50px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, rgb(68, 68, 119) 0, rgb(187, 187, 187) 0.2);
+    /* padding: 3px; */
 }
 
 .scrub-container {
