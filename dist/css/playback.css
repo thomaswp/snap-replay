@@ -45,7 +45,7 @@ body {
     width: calc(100% - 110px);
     margin-right: 50px;
     border-radius: 9px;
-    background: linear-gradient(90deg, rgb(68, 68, 119) 0, rgb(187, 187, 187) 0.2);
+    background: linear-gradient(90deg, rgb(152, 203, 255) 0%, rgba(255, 255, 255, 0) 0.5%);
     /* padding: 3px; */
 }
 

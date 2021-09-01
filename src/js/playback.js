@@ -170,6 +170,7 @@ export class Playback {
         this.clearCurrentText();
         let duration = Math.max(...this.events.map(e => e.endTime)) * 1000 + Playback.BUFFER_MS;
         this.duration = Math.max(this.duration, duration);
+        this.updateScrubberBG();
         this.$scrubber.attr('max', Math.round(this.duration));
         this.playStartDuration = 0;
         this.$scrubber.val(0);
@@ -306,13 +307,17 @@ export class Playback {
         if (!this.playing) return;
         let duration = this.getCurrentDuration();
         this.maxDuration = Math.max(this.maxDuration, duration);
-        let margin = 0.005;
-        let perc = 100 * (margin + this.maxDuration / this.duration * (1 - margin * 2));
-        let left = Math.max(0, perc), right = Math.min(100, perc + 0.3);
-        $('#scrubber-bg').css('background', `linear-gradient(90deg, #444477 ${left}%, #bbbbbb ${right}%)`);
+        this.updateScrubberBG();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
         if (duration > this.duration) this.pause();
+    }
+
+    updateScrubberBG() {
+        let margin = 0.005;
+        let perc = 100 * (margin + this.maxDuration / this.duration * (1 - margin * 2));
+        let left = Math.max(0, perc), right = Math.min(100, perc + 0.5);
+        $('#scrubber-bg').css('background', `linear-gradient(90deg, rgb(152 203 255) ${left}%, #ffffff00 ${right}%)`);
     }
 
     updateEvents(noReset) {
