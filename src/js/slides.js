@@ -16,6 +16,9 @@ export class Slides {
         })
         deck.initialize({
             'embedded': true,
+            'markdown': {
+                smartLists: true,
+            }
         });
         this.deck = deck; 
 
@@ -26,6 +29,14 @@ export class Slides {
         $('#slides-toggle').on('click', () => {
             this.toggleMaximized();
         });
+
+        deck.on('q-finished', function() {
+            console.log( '"customevent" has fired' );
+        });
+
+        // deck.on('slidechanged', event => {
+        //     console.log("!!");
+        // });
     }
 
     loadURL(url) {

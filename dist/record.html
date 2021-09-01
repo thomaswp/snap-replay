@@ -31,17 +31,17 @@
     </head>
     <body>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
+        <button id="slides-toggle" class="hidden">&nwarr;</button>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
                 <div class="slides">
-                    <section data-markdown>
+                    <section data-markdown data-separator-vertical="\r?\nv---v">
                         <textarea data-template id="markdown">
                         </textarea>
                       </section>
                 </div>
             </div>
         </div>
-        <button id="slides-toggle" class="hidden">&nwarr;</button>
         <script>
             $(document).ready(() => {
                 let searchParams = new URLSearchParams(window.location.search)

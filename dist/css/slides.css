@@ -31,8 +31,38 @@
     height: 30px;
     float: right;
     margin-bottom: -30px;
+    z-index: 9999;
 }
 
 #slides-toggle.hidden {
     display: none;
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+    text-align: left
+}
+
+.reveal code {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.reveal .quiz a {
+    color: #ddd;
+    display: block;
+    background-color: #333;
+    padding: calc(0.2 * var(--r-main-font-size));
+    border-radius: calc(0.2 * var(--r-main-font-size));
+    transition: all 0.5s;
+    font-size: calc(0.7 * var(--r-main-font-size));
+}
+
+.reveal .quiz a:hover {
+    background-color: #444;
+    color: var(--r-link-color-hover);
 }
