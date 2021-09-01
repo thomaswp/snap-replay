@@ -1,0 +1,72 @@
+config:
+  blockScale: 1.5
+events:
+  - type: text
+    audioStart: 0
+    audioEnd: 60
+    timeDelta: 0
+    description:
+  - type: log
+    description: menuItemSelect
+    logIndex: 1
+    timeDelta: 0.222
+  - type: log
+    description: drop forward(25)
+    logIndex: 2
+    timeDelta: 1.37
+  - type: log
+    description: drop turn(26) -> forward(25)
+    logIndex: 3
+    timeDelta: 1.5029999999999997
+  - type: log
+    description: slidesToggled
+    logIndex: 4
+    timeDelta: 4.547
+  - type: log
+    description: slideChanged
+    logIndex: 5
+    timeDelta: 2.593
+  - type: log
+    description: slideChanged
+    logIndex: 6
+    timeDelta: 2.5440000000000005
+  - type: log
+    description: slideChanged
+    logIndex: 7
+    timeDelta: 0.9450000000000003
+  - type: log
+    description: slideChanged
+    logIndex: 8
+    timeDelta: 0.8689999999999998
+  - type: log
+    description: slideChanged
+    logIndex: 9
+    timeDelta: 2.408999999999999
+  - type: log
+    description: slideChanged
+    logIndex: 10
+    timeDelta: 1.436
+  - type: log
+    description: slideChanged
+    logIndex: 11
+    timeDelta: 1.3180000000000014
+  - type: log
+    description: waitForQuestion
+    logIndex: 12
+    timeDelta: 3.8069999999999986
+  - type: log
+    description: slidesToggled
+    logIndex: 14
+    timeDelta: 8.523000000000003
+  - type: log
+    description: slidesToggled
+    logIndex: 15
+    timeDelta: 1.1360000000000028
+  - type: log
+    description: slidesToggled
+    logIndex: 16
+    timeDelta: 1.110999999999997
+  - type: log
+    description: drop forward(25)
+    logIndex: 17
+    timeDelta: 2.2439999999999998

@@ -1,3 +1,8 @@
+## Review : Repeat
+
+The `Repeat ___` block...
+
+---
 <!-- .slide: id="q1" -->
 ## Knowledge Check: Repeat
 What will the following code say when it runs?
@@ -6,7 +11,7 @@ What will the following code say when it runs?
 
 <div class="col">
 
-![](media/sample/quiz/repeat.png)
+![](media/sample/quiz/q1.png)
 
 </div>
 

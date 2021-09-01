@@ -44,6 +44,7 @@ export class Playback {
         this.highlightedBlocks = [];
         this.highlights = [];
         this.playingAction = false;
+        this.answeredQs = [];
 
         $('body').keyup((e) => {
             if (e.keyCode == 32) {
@@ -78,6 +79,27 @@ export class Playback {
         if (!this.script.slidesMD) return;
         this.slides = new Slides();
         this.slides.loadMarkdown(this.script.slidesMD);
+        this.slides.onQStarted = (id) => this.waitForAnswer(id);
+        this.slides.onQFinished = (id) => this.answerReceived(id);
+    }
+
+    waitForAnswer(id) {
+        if (this.answeredQs.includes(id)) {
+            // console.log("Skipping answered", id);
+            this.slides.setSlideById(id);
+            return;
+        }
+        // console.log("Asking", id);
+        this.askingQuestion = id;
+        this.pause();
+    }
+
+    answerReceived(id) {
+        if (!this.askingQuestion) return;
+        // console.log("Answered", id);
+        this.answeredQs.push(id);
+        this.askingQuestion = null;
+        this.play();
     }
 
     createClickHighlight() {
@@ -155,6 +177,7 @@ export class Playback {
     }
 
     resetSnap() {
+        if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
             this.snapWindow.ide.newProject();
@@ -215,6 +238,12 @@ export class Playback {
     play() {
         if (this.playing) return;
         if (this.events.length == 0) return;
+
+        if (this.askingQuestion) {
+            alert("Please answer the question first.");
+            return;
+        }
+
         this.recorder = this.snapWindow.recorder;
         if (!this.recorder) return;
         if (this.warnResume && this.snapEdits > 0) {
@@ -252,6 +281,7 @@ export class Playback {
 
     setDuration() {
         this.recorder = this.snapWindow.recorder;
+        this.askingQuestion = null;
         if (!this.recorder) return;
         if (this.playing) {
             this.pause();
@@ -372,8 +402,13 @@ export class Playback {
         // console.log('Event: ', event);
         let record = this.script.getLog(event);
         // console.log('Playing', record);
-        [record] = this.recorder.loadRecords([record]);
-        // TODO: First confirm that the last event finished
+        // First, try to see if the Slides class can replay this
+        let slidesRecord = this.slides ? this.slides.loadRecord(record) : null;
+        if (slidesRecord == null) {
+            [record] = this.recorder.loadRecords([record]);
+        } else {
+            record = slidesRecord;
+        }
         this.playingLog = event;
         this.playingAction = true;
         try {
