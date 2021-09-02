@@ -170,6 +170,8 @@ export class Playback {
         this.clearCurrentText();
         let duration = Math.max(...this.events.map(e => e.endTime)) * 1000 + Playback.BUFFER_MS;
         this.duration = Math.max(this.duration, duration);
+        // TODO: make this configurable...
+        this.maxDuration = this.duration;
         this.updateScrubberBG();
         this.$scrubber.attr('max', Math.round(this.duration));
         this.playStartDuration = 0;
@@ -182,18 +184,6 @@ export class Playback {
         if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
-            this.snapWindow.ide.newProject();
-            this.snapWindow.ide.changeCategory('motion');
-            let instances = this.snapWindow.DialogBoxMorph.prototype.instances;
-            Object.keys(instances).forEach(stamp => {
-                if (!instances.hasOwnProperty(stamp)) return;
-                let dialogs = instances[stamp];
-                Object.keys(dialogs).forEach(key => {
-                    if (dialogs[key].destroy) {
-                        dialogs[key].destroy();
-                    }
-                });
-            });
             // Clear console logging
             // TODO: may want to remove this for deploy
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
@@ -202,6 +192,7 @@ export class Playback {
         this.playingLog = null;
         this.recorder = this.snapWindow.recorder;
         if (this.snapWindow.recorder) {
+            this.recorder.constructor.resetSnap();
             this.recorder.constructor.resetBlockMap();
             this.recorder.constructor.setRecordScale(this.script.config.blockScale);
             this.recorder.constructor.setOnClickCallback(
