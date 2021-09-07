@@ -12,7 +12,7 @@ export class Playback {
     constructor(path) {
         this.path = path;
         this.snapWindow = document.getElementById('isnap').contentWindow;
-        $(this.snapWindow).on('click', () => this.snapFocused());
+        $(this.snapWindow).on('click mousedown', () => this.snapFocused());
         this.loader = new ScriptLoader(path);
         this.loader.loadAudio('#audio');
         this.loader.onLoaded = (script) => {
@@ -58,12 +58,6 @@ export class Playback {
         //     this.$scrubber.attr('max', Math.round(this.duration));
         //     this.update();
         // });
-
-        // TODO: Use actual callback!
-        setTimeout(() => {
-            this.snapWindow.Trace.addLoggingHandler('Block.snapped',
-                () => this.snapEdits++);
-        }, 2000);
 
         let noop = () => {};
         navigator.mediaSession.setActionHandler('play', noop);
@@ -187,6 +181,8 @@ export class Playback {
             // Clear console logging
             // TODO: may want to remove this for deploy
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
+            this.snapWindow.Trace.addLoggingHandler('Block.snapped',
+                () => this.snapEdits++);
         }
         this.currentLogIndex = 0;
         this.playingLog = null;
