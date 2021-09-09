@@ -1,0 +1,1282 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "control",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 615
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doRepeat",
+                "id": 66,
+                "template": false,
+                "spec": "repeat %n %loop",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 709,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 212.5,
+                    "y": 211.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1921
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doRepeat",
+                "id": 66,
+                "template": false,
+                "spec": "repeat %n %loop",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "20",
+            "value": "20"
+        },
+        "timeDelta": 2651
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "motion",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 68
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 67,
+                "template": false,
+                "spec": "move %n steps",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 448,
+                    "y": 350.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "doRepeat",
+                    "id": 66,
+                    "template": false,
+                    "spec": "repeat %n %loop",
+                    "argIndex": 1,
+                    "argType": "object",
+                    "objType": "ArgMorph"
+                },
+                "loc": "bottom",
+                "type": "slot",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 223,
+                    "y": 242.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1673
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "turn",
+                "id": 68,
+                "template": false,
+                "spec": "turn %clockwise %n degrees",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 448,
+                    "y": 381.83333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 67,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 50,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 223,
+                    "y": 274,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1512
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 624
+    },
+    {
+        "type": "IDE_toggleSingleStepping",
+        "data": {
+            "value": true,
+            "message": "IDE.toggleSingleStepping"
+        },
+        "timeDelta": 1744
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1047
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 3128
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickStopRun"
+        },
+        "timeDelta": 817
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1327
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.02,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 906
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.03,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.08,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.09,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.14,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.16,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.17,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.19,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.22,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.24,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 116
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.25,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 217
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.27,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.28,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.3,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 83
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.32,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.33,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.35,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 83
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.36,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.38,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 267
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.39,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 83
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.41,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.38,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 1999
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.36,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.35,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.33,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.32,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 134
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.3,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 849
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.28,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.27,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.25,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.24,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 184
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.22,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 749
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.21,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.19,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.17,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.16,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.14,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.11,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.08,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.05,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.03,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doRepeat",
+            "id": 66,
+            "template": false,
+            "spec": "repeat %n %loop",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 2803
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.02,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 830
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.06,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.16,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.24,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.28,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.35,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.41,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.44,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.46,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.49,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.51,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.54,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.55,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.58,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.6,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_unpause",
+        "data": {
+            "message": "IDE.unpause"
+        },
+        "timeDelta": 1832
+    },
+    {
+        "type": "IDE_unpause",
+        "data": {
+            "message": "IDE.unpause"
+        },
+        "timeDelta": 871
+    },
+    {
+        "type": "IDE_unpause",
+        "data": {
+            "message": "IDE.unpause"
+        },
+        "timeDelta": 841
+    },
+    {
+        "type": "IDE_unpause",
+        "data": {
+            "message": "IDE.unpause"
+        },
+        "timeDelta": 2311
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.58,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 2459
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.57,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.55,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.54,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.52,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.51,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.49,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.47,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.46,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.44,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.43,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.41,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.39,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.38,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 51
+    },
+    {
+        "type": "IDE_unpause",
+        "data": {
+            "message": "IDE.unpause"
+        },
+        "timeDelta": 1745
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.36,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 2770
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.35,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 66
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.33,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.32,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 33
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.3,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.28,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 100
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.27,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 100
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.25,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.24,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 67
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.22,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 83
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.21,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.19,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 100
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.16,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.14,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.13,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.11,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 100
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.09,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 34
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.08,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 50
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.06,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 83
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.05,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.03,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0.02,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 18
+    },
+    {
+        "type": "IDE_updateSteppingSlider",
+        "data": {
+            "value": 0,
+            "message": "IDE.updateSteppingSlider"
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "IDE_toggleSingleStepping",
+        "data": {
+            "value": false,
+            "message": "IDE.toggleSingleStepping"
+        },
+        "timeDelta": 2209
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 3386
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 39
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 8
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 14
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 104
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 62
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 40
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false
+        },
+        "timeDelta": 40
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false
+        },
+        "timeDelta": 63
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 145,
+                "y": 210,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 353
+    }
+]
