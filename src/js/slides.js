@@ -2,9 +2,10 @@ const Reveal = require('../../node_modules/reveal.js').default;
 const Markdown = require('../../node_modules/reveal.js/plugin/markdown/markdown.esm.js').default;
 
 export class Slides {
-    constructor() {
+    constructor(useControls) {
         this.onQFinished = null;
         this.onQStarted = null;
+        this.useControls = useControls;
     }
 
     loadMarkdown(markdown) {
@@ -17,6 +18,7 @@ export class Slides {
         })
         deck.initialize({
             'embedded': true,
+            'controls': this.useControls,
             'markdown': {
                 smartLists: true,
             }
@@ -87,7 +89,14 @@ export class Slides {
                     if (fast) {
                         this.setSlideById(data.id);
                     } else if (this.onQStarted) {
-                        this.onQStarted(data.id);
+                        this.onQStarted(data.id, false);
+                    }
+                    setTimeout(callback, 1);
+                };
+            case 'questionPause':
+                return (callback, fast) => {
+                    if (!fast) {
+                        this.onQStarted(data.id, true);
                     }
                     setTimeout(callback, 1);
                 };

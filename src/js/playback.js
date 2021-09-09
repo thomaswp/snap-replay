@@ -72,21 +72,26 @@ export class Playback {
 
     createSlides() {
         if (!this.script.slidesMD) return;
-        this.slides = new Slides();
+        this.slides = new Slides(false);
         this.slides.loadMarkdown(this.script.slidesMD);
-        this.slides.onQStarted = (id) => this.waitForAnswer(id);
+        this.slides.onQStarted = (id, userControlled) => this.waitForAnswer(id, userControlled);
         this.slides.onQFinished = (id) => this.answerReceived(id);
     }
 
-    waitForAnswer(id) {
+    waitForAnswer(id, userControlled) {
         if (this.answeredQs.includes(id)) {
             // console.log("Skipping answered", id);
-            this.slides.setSlideById(id);
+            if (!userControlled) {
+                this.slides.setSlideById(id);
+            }
             return;
         }
         // console.log("Asking", id);
         this.askingQuestion = id;
         this.pause();
+        if (this.userControlled) {
+            // TODO: Add buttons / help for finishing qn
+        }
     }
 
     answerReceived(id) {

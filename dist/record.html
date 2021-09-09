@@ -27,11 +27,22 @@
                 top: calc(100% - 130px);
                 left: calc(100% - 205px);
             }
+
+            #question-pause {
+                position: absolute;
+                left: 10px;
+                top: calc(100% - 40px);
+                width: 30px;
+                height: 30px;
+                margin-bottom: 0;
+                z-index: 9999;
+            }
         </style>
     </head>
     <body>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
         <button id="slides-toggle" class="hidden">&nwarr;</button>
+        <button id="question-pause">?</button>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
                 <div class="slides">
@@ -47,8 +58,13 @@
                 let searchParams = new URLSearchParams(window.location.search)
                 if (searchParams.has('slides')) {
                     let slidesURL = searchParams.get('slides');
-                    let slides = new Slides();
+                    let slides = new Slides(true);
                     slides.loadURL('media/' + slidesURL + '/slides.md');
+
+                    let qn = 0;
+                    $('#question-pause').click(() => {
+                        slides.recordEvent('questionPause', {id: 'q' + qn++});
+                    });
                 }
             });
         </script>
