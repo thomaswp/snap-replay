@@ -3,6 +3,7 @@ const $ = require('../../node_modules/jquery');
 const { ScriptLoader } = require('./loader');
 const { Slides } = require('./slides');
 const { Script } = require('./script');
+const { rpcClient } = require('./rpc');
 
 export class Playback {
 
@@ -68,6 +69,19 @@ export class Playback {
         navigator.mediaSession.setActionHandler('nexttrack', noop);
 
         this.createClickHighlight();
+
+        console.log('sending echo to', rpcClient);
+        rpcClient
+            .request("echo", { text: "Hello, World!" })
+            .then((result) => console.log(result));
+
+        rpcClient
+            .request("double", { x: 3 })
+            .then((result) => console.log(result));
+
+        rpcClient
+            .request("getSnapshots", { userID: 3, videoID: path })
+            .then((result) => console.log(result));
     }
 
     createSlides() {
