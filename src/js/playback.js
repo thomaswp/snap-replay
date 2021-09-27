@@ -70,18 +70,18 @@ export class Playback {
 
         this.createClickHighlight();
 
-        console.log('sending echo to', rpcClient);
-        rpcClient
-            .request("echo", { text: "Hello, World!" })
-            .then((result) => console.log(result));
+        // console.log('sending echo to', rpcClient);
+        // rpcClient
+        //     .request("echo", { text: "Hello, World!" })
+        //     .then((result) => console.log(result));
 
-        rpcClient
-            .request("double", { x: 3 })
-            .then((result) => console.log(result));
+        // rpcClient
+        //     .request("double", { x: 3 })
+        //     .then((result) => console.log(result));
 
-        rpcClient
-            .request("getSnapshots", { userID: 3, videoID: path })
-            .then((result) => console.log(result));
+        // rpcClient
+        //     .request("getSnapshots", { userID: 3, videoID: path })
+        //     .then((result) => console.log(result));
     }
 
     createSlides() {
