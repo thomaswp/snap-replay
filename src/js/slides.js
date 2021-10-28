@@ -33,6 +33,13 @@ export class Slides {
             this.toggleMaximized();
         });
 
+        this.qn = 0;
+        $('#question-pause').on('click', () => {
+            let id = deck.getCurrentSlide().id;
+            if (!this.maximized) id = this.qn++;
+            slides.recordEvent('questionPause', {id: id});
+        });
+
         deck.on('q-finished', () => {
             let id = deck.getCurrentSlide().id;
             if (this.onQFinished) {
@@ -74,7 +81,7 @@ export class Slides {
         switch (record.type) {
             case 'slideChanged':
                 return (callback, fast) => {
-                    if (!this.setSlideById(data.id)) {
+                    if (!this.setSlideByID(data.id)) {
                         this.deck.slide(data.indexh, data.indexv);
                     }
                     setTimeout(callback, 1);
@@ -87,7 +94,7 @@ export class Slides {
             case 'waitForQuestion':
                 return (callback, fast) => {
                     if (fast) {
-                        this.setSlideById(data.id);
+                        this.setSlideByID(data.id);
                     } else if (this.onQStarted) {
                         this.onQStarted(data.id, false);
                     }
@@ -104,7 +111,18 @@ export class Slides {
         return null;
     }
 
-    setSlideById(id) {
+    showHint(questionID) {
+        console.log(questionID);
+        this.setSlideByID(questionID + '-hint');
+        this.setMaximized(true);
+    }
+
+    hasHint(questionID) {
+        let slide = document.getElementById(questionID + '-hint');
+        return !!slide;
+    }
+
+    setSlideByID(id) {
         let slide = document.getElementById(id);
         if (!slide) return false;
         let indices = this.deck.getIndices(slide);
@@ -136,11 +154,11 @@ export class Slides {
         this.recordEvent('slidesToggled', {value: this.maximized});
         if (maximized) {
             $('#slides').removeClass('minimized');
-            $('#slides-toggle').text('\u2198');
         } else {
             $('#slides').addClass('minimized');
-            $('#slides-toggle').text('\u2196');
         }
+        $('#slides-toggle-icon').toggleClass('bi-arrow-up-left', !maximized);
+        $('#slides-toggle-icon').toggleClass('bi-arrow-down-right', maximized);
         setTimeout(() => this.deck.layout(), 500);
     }
 }

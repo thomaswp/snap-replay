@@ -444,7 +444,7 @@
     },
     {
         "type": "questionPause",
-        "data": {"id": "q0"},
+        "data": {"id": "triangle"},
         "timeDelta": 9925
     },
     {

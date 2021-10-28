@@ -70,6 +70,10 @@ export class Playback {
 
         this.createClickHighlight();
 
+        $('#question-reset').on('click', () => this.loadCheckpoint());
+        $('#question-hint').on('click', () => this.slides.showHint(this.askingQuestion));
+        $('#question-finished').on('click', () => this.setCheckWorkVisible(true));
+
         // console.log('sending echo to', rpcClient);
         // rpcClient
         //     .request("echo", { text: "Hello, World!" })
@@ -96,16 +100,39 @@ export class Playback {
         if (this.answeredQs.includes(id)) {
             // console.log("Skipping answered", id);
             if (!userControlled) {
-                this.slides.setSlideById(id);
+                this.slides.setSlideByID(id);
             }
             return;
         }
         // console.log("Asking", id);
         this.askingQuestion = id;
         this.pause();
-        if (this.userControlled) {
-            // TODO: Add buttons / help for finishing qn
+        if (userControlled) {
+            this.setConstructQuestionPanelVisible(true);
+            let ide = this.snapWindow.ide;
+            this.checkpoint = ide.serializer.serialize(ide.stage);
         }
+    }
+
+    loadCheckpoint() {
+        if (this.checkpoint) {
+            let ide = this.snapWindow.ide;
+            ide.rawOpenProjectString(this.checkpoint);
+        }
+    }
+
+    setConstructQuestionPanelVisible(visible) {
+        $('#script').toggleClass('hidden', visible);
+        $('#question').toggleClass('hidden', !visible);
+        if (visible) {
+            console.log(this.slides.hasHint(this.askingQuestion));
+            $('#question-hint').toggleClass('hidden', 
+                !this.slides.hasHint(this.askingQuestion));
+        }
+    }
+
+    setCheckWorkVisible(visible) {
+        $('#question-check-work').toggleClass('hidden', !visible);
     }
 
     answerReceived(id) {
@@ -292,6 +319,7 @@ export class Playback {
         this.askingQuestion = null;
         
         if (!this.recorder) return;
+        this.setConstructQuestionPanelVisible(false);
         if (this.playing) {
             this.pause();
             this.wasPlaying = true;

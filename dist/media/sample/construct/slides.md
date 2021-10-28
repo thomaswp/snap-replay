@@ -12,12 +12,12 @@ The `Repeat ___` block...
 
 <div class="quiz">
 
-[Hints](#/triangle-hints)
+[Hints](#/triangle-hint)
 
 </div>
 
 v---v
-<!-- .slide: id="triangle-hints" -->
+<!-- .slide: id="triangle-hint" -->
 ## Hints
 
 * You will need to change two blocks' *inputs*, but not the structure of the code.

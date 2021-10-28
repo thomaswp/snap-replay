@@ -60,11 +60,6 @@
                     let slidesURL = searchParams.get('slides');
                     let slides = new Slides(true);
                     slides.loadURL('media/' + slidesURL + '/slides.md');
-
-                    let qn = 0;
-                    $('#question-pause').click(() => {
-                        slides.recordEvent('questionPause', {id: 'q' + qn++});
-                    });
                 }
             });
         </script>

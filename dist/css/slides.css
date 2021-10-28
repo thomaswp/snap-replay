@@ -29,6 +29,7 @@
 #slides-toggle {
     width: 30px;
     height: 30px;
+    padding: 0px;
     float: right;
     margin-bottom: -30px;
     z-index: 9999;
