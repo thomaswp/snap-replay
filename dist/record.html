@@ -37,12 +37,23 @@
                 margin-bottom: 0;
                 z-index: 9999;
             }
+
+            #question-answered {
+                position: absolute;
+                left: 50px;
+                top: calc(100% - 40px);
+                width: 30px;
+                height: 30px;
+                margin-bottom: 0;
+                z-index: 9999;
+            }
         </style>
     </head>
     <body>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
         <button id="slides-toggle" class="hidden">&nwarr;</button>
         <button id="question-pause">?</button>
+        <button id="question-answered">&#10003;</button>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
                 <div class="slides">
@@ -56,8 +67,8 @@
         <script>
             $(document).ready(() => {
                 let searchParams = new URLSearchParams(window.location.search)
-                if (searchParams.has('slides')) {
-                    let slidesURL = searchParams.get('slides');
+                if (searchParams.has('video')) {
+                    let slidesURL = searchParams.get('video');
                     let slides = new Slides(true);
                     slides.loadURL('media/' + slidesURL + '/slides.md');
                 }

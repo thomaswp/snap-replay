@@ -20,6 +20,10 @@ export class ScriptLoader {
         $.ajax({
             url: path + 'slides.md',
         }).done(slidesMD => this.slidesMD = slidesMD);
+        $.ajax({
+            url: path + 'start.xml',
+            converters: {"text xml": window.String},
+        }).done(startXML => this.startXML = startXML);
         $(document).ajaxStop(() => {
             if (!this.logs) {
                 console.error('Missing logs!');
@@ -27,6 +31,7 @@ export class ScriptLoader {
             }
             this.script = new Script(this.logs, this.words || [], this.scriptYAML);
             this.script.slidesMD = this.slidesMD;
+            this.script.startXML = this.startXML;
             if (this.onLoaded) this.onLoaded(this.script);
         });
     }

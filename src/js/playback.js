@@ -73,7 +73,7 @@ export class Playback {
         $('#question-reset').on('click', () => this.loadCheckpoint());
         $('#question-hint').on('click', () => this.slides.showHint(this.askingQuestion));
         $('#question-finished').on('click', () => this.setCheckWorkVisible(true));
-        $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion));
+        $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion, true));
         $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion));
         $('#q-modal-hint').on('click', () => this.slides.showHint(this.askingQuestion));
 
@@ -119,8 +119,7 @@ export class Playback {
 
     loadCheckpoint() {
         if (this.checkpoint) {
-            let ide = this.snapWindow.ide;
-            ide.rawOpenProjectString(this.checkpoint);
+            this.recorder.constructor.resetSnap(this.checkpoint);
         }
     }
 
@@ -131,30 +130,42 @@ export class Playback {
             $('#question-hint,#q-modal-hint').toggleClass('hidden', 
                 !this.slides.hasHint(this.askingQuestion));
             let image = this.path + this.askingQuestion + '.png';
-            console.log(image);
             $('#solution-image').attr('src', image);
-            $('#q-modal-solution-wrapper').attr('data-bs-original-title', 'Available after you make an attempt.');
-            $('#q-modal-solution').attr('disabled', true);
-            this.solutionTimeout = setTimeout(() => {
-                $('#q-modal-solution-wrapper').attr('data-bs-original-title', '');
-                $('#q-modal-solution').attr('disabled', false);
-            }, 60 * 1000);
-        } else {
-            clearTimeout(this.solutionTimeout);
-            this.solutionTimeout = null;
+            $('.q-modal-solution-wrapper').attr('data-bs-original-title', 'Try the problem first.');
+            $('.enabled-on-try').attr('disabled', true);
         }
+    }
+
+    checkEnableShowSolution() {
+        if (this.snapEdits < 2) return;
+        $('.q-modal-solution-wrapper').attr('data-bs-original-title', '');
+        $('.enabled-on-try').attr('disabled', false);
     }
 
     setCheckWorkVisible(visible) {
         $('#question-check-work').toggleClass('hidden', !visible);
     }
 
-    answerReceived(id) {
+    answerReceived(id, skipSolution) {
         if (!this.askingQuestion) return;
         // console.log("Answered", id);
         this.setConstructQuestionPanelVisible(false);
         this.answeredQs.push(id);
+        if (skipSolution) {
+            // console.log('skipping...');
+            for (let i = this.currentLogIndex; i < this.events.length; i++) {
+                let event = this.events[i];
+                if (!(event.type === 'log' && event.description === 'questionAnswered')) continue;
+                let log = this.script.getLog(event);
+                // console.log(log);
+                if (log.data.id !== this.askingQuestion) continue;
+                let time = event.endTime * 1000;
+                // console.log(this.getCurrentDuration(), '->', time);
+                this.setDuration(time);
+            }
+        }
         this.askingQuestion = null;
+        this.snapEdits = 0;
         this.play();
     }
 
@@ -242,15 +253,16 @@ export class Playback {
             // Clear console logging
             // TODO: may want to remove this for deploy
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
-            this.snapWindow.Trace.addLoggingHandler('Block.snapped',
-                () => this.snapEdits++);
+            this.snapWindow.Trace.addLoggingHandler('Block.snapped', () => {
+                this.snapEdits++
+                this.checkEnableShowSolution();
+            });
         }
         this.currentLogIndex = 0;
         this.playingLog = null;
         this.recorder = this.snapWindow.recorder;
         if (this.snapWindow.recorder) {
-            this.recorder.constructor.resetSnap();
-            this.recorder.constructor.resetBlockMap();
+            this.recorder.constructor.resetSnap(this.script.startXML);
             this.recorder.constructor.setRecordScale(this.script.config.blockScale);
             this.recorder.constructor.setOnClickCallback(
                 (x, y) => this.clickHighlight.trigger(x, y));
@@ -296,12 +308,13 @@ export class Playback {
 
         this.recorder = this.snapWindow.recorder;
         if (!this.recorder) return;
-        if (this.warnResume && this.snapEdits > 0) {
-            if (confirm('Playing will overwrite your changes to the code. Continue?')) {
-                this.resetSnap();
-            } else {
-                return;
+        if (this.warnResume) {
+            if (this.snapEdits > 0) {
+                if (!confirm('Playing will overwrite your changes to the code. Continue?')) {
+                    return;
+                }
             }
+            this.resetSnap();
         }
         this.playingAction = false;
         this.warnResume = false;
@@ -329,17 +342,20 @@ export class Playback {
         this.tickTimeout = null;
     }
 
-    setDuration() {
+    setDuration(duration) {
         this.recorder = this.snapWindow.recorder;
         this.askingQuestion = null;
         
         if (!this.recorder) return;
+        if (duration === undefined) {
+            duration = this.getCurrentDuration();
+        }
         this.setConstructQuestionPanelVisible(false);
         if (this.playing) {
             this.pause();
             this.wasPlaying = true;
         }
-        this.playStartDuration = this.getCurrentDuration();
+        this.playStartDuration = duration;
         this.$scrubber.val(Math.round(this.playStartDuration));
         this.updateEvents(true);
     }

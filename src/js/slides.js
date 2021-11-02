@@ -37,7 +37,11 @@ export class Slides {
         $('#question-pause').on('click', () => {
             let id = deck.getCurrentSlide().id;
             if (!this.maximized) id = this.qn++;
-            slides.recordEvent('questionPause', {id: id});
+            this.lastQuestionID = id;
+            this.recordEvent('questionPause', {id: id});
+        });
+        $('#question-answered').on('click', () => {
+            this.recordEvent('questionAnswered', {id: this.lastQuestionID});
         });
 
         deck.on('q-finished', () => {
@@ -105,6 +109,10 @@ export class Slides {
                     if (!fast) {
                         this.onQStarted(data.id, true);
                     }
+                    setTimeout(callback, 1);
+                };
+            case 'questionAnswered':
+                return (callback, fast) => {
                     setTimeout(callback, 1);
                 };
         }

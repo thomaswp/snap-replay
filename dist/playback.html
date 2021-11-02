@@ -28,10 +28,12 @@
                             Are you finished?
                         </div>
                         <div class="modal-footer">
-                            <button id="q-modal-finished" type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="bi button-icon bi-check-circle"></i>Yes</button>
+                            <div class="q-modal-solution-wrapper" data-bs-toggle="tooltip" title="...">
+                                <button id="q-modal-finished" type="button" class="btn btn-success enabled-on-try" data-bs-dismiss="modal" disabled><i class="bi button-icon bi-check-circle"></i>Yes</button>
+                            </div>
                             <button id="q-modal-hint" type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi button-icon bi-exclamation-circle"></i>Hint</button>
-                            <div id="q-modal-solution-wrapper" data-bs-toggle="tooltip" title="Available in...">
-                                <button id="q-modal-solution" type="button" class="btn btn-secondary" data-bs-dismiss="modal" disabled><i class="bi button-icon bi-key"></i>Show Solution</button>
+                            <div class="q-modal-solution-wrapper" data-bs-toggle="tooltip" title="...">
+                                <button id="q-modal-solution" type="button" class="btn btn-secondary enabled-on-try" data-bs-dismiss="modal" disabled><i class="bi button-icon bi-key"></i>Show Solution</button>
                             </div>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         </div>
