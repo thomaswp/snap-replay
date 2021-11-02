@@ -93,7 +93,7 @@ export class Playback {
 
     createSlides() {
         if (!this.script.slidesMD) return;
-        this.slides = new Slides(false);
+        this.slides = new Slides(this.path, false);
         this.slides.loadMarkdown(this.script.slidesMD);
         this.slides.onQStarted = (id, userControlled) => this.waitForAnswer(id, userControlled);
         this.slides.onQFinished = (id) => this.answerReceived(id);

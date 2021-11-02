@@ -2,7 +2,8 @@ const Reveal = require('../../node_modules/reveal.js').default;
 const Markdown = require('../../node_modules/reveal.js/plugin/markdown/markdown.esm.js').default;
 
 export class Slides {
-    constructor(useControls) {
+    constructor(path, useControls) {
+        this.path = path;
         this.onQFinished = null;
         this.onQStarted = null;
         this.useControls = useControls;
@@ -24,6 +25,14 @@ export class Slides {
             }
         });
         this.deck = deck; 
+
+        let path = this.path;
+        deck.on('ready', event => {
+            $('#slides img').each(function() {
+                let src = path + $(this).attr('src')
+                $(this).attr('src', src);
+            });
+        });
 
         $('#slides').removeClass('hidden');
         $('#slides-toggle').removeClass('hidden');
