@@ -1,3 +1,14 @@
+<!--
+Notes:
+- Draw a square manually, show challenge with resizing
+- Repeat slide
+- Show how to make a repeat square
+- Visible step to show how it works
+- Modify task to triangle
+- Show code after repeat
+- Quiz
+-->
+
 # The Repeat Block
 
 ![](repeat.png)
@@ -93,7 +104,7 @@ v---v
 
 Correct! Only the code inside of the loop gets repeated.
 
-<button class="navigate-right">Continue</button>
+<button class="navigate-right btn btn-success">Continue</button>
 
 
 ---
