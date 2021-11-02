@@ -4,39 +4,41 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="js/bundle.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/playback.css"/>
         <link rel="stylesheet" href="css/slides.css"/>
         <link rel="stylesheet" href="css/reveal.js/dist/reveal.css">
         <link rel="stylesheet" href="css/reveal.js/dist/theme/black.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
     <body>
-
         <div class="container">
-          
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Check your Work</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Check your Work</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Great job. Check your work by comparing it to the image below:
+                            <img id="solution-image" src="" alt="Solution output.">
+                            Are you finished?
+                        </div>
+                        <div class="modal-footer">
+                            <button id="q-modal-finished" type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="bi button-icon bi-check-circle"></i>Yes</button>
+                            <button id="q-modal-hint" type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi button-icon bi-exclamation-circle"></i>Hint</button>
+                            <div id="q-modal-solution-wrapper" data-bs-toggle="tooltip" title="Available in...">
+                                <button id="q-modal-solution" type="button" class="btn btn-secondary" data-bs-dismiss="modal" disabled><i class="bi button-icon bi-key"></i>Show Solution</button>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  Great job. Check your work by comparing it to the image below:
-                  <img src="media/sample/construct/triangle.png">
-                  Did it work?
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Not yet...</button>
-                  <button type="button" class="btn btn-primary">Yes</button>
-                </div>
-              </div>
             </div>
-          </div>
-          </div>
+        </div>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
@@ -50,7 +52,7 @@
         </div>
         <div class="footer">
             <audio id="audio" style="display: none"></audio>
-            <button id="slides-toggle" class="btn btn-secondary hidden">
+            <button id="slides-toggle" class="btn btn-dark hidden">
                 <!-- &nwarr; -->
                 <i id="slides-toggle-icon" class="bi bi-arrow-up-left"></i>
             </button>
@@ -65,7 +67,7 @@
                 </div>
                 <div id="question" class="hidden">
                     <p>Modify the code to complete the question:
-                        <button id="question-finished" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi button-icon bi-check-circle"></i> Finished</button>
+                        <button id="question-finished" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi button-icon bi-check-circle"></i> Finished</button>
                         <button id="question-reset" class="btn btn-secondary"><i class="bi button-icon bi-arrow-repeat"></i> Reset Code</button>
                         <button id="question-hint" class="btn btn-secondary"><i class="bi button-icon bi-exclamation-circle"></i> Hint</button>
                     </p>
@@ -74,7 +76,11 @@
         </div>
         <script>
             $(document).ready(() => {
-                // let sample = '1627046605547';
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+
                 let searchParams = new URLSearchParams(window.location.search)
                 let sample = 'csc110/repeat';
                 if (searchParams.has('video')) {

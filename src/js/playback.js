@@ -73,6 +73,9 @@ export class Playback {
         $('#question-reset').on('click', () => this.loadCheckpoint());
         $('#question-hint').on('click', () => this.slides.showHint(this.askingQuestion));
         $('#question-finished').on('click', () => this.setCheckWorkVisible(true));
+        $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion));
+        $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion));
+        $('#q-modal-hint').on('click', () => this.slides.showHint(this.askingQuestion));
 
         // console.log('sending echo to', rpcClient);
         // rpcClient
@@ -125,9 +128,20 @@ export class Playback {
         $('#script').toggleClass('hidden', visible);
         $('#question').toggleClass('hidden', !visible);
         if (visible) {
-            console.log(this.slides.hasHint(this.askingQuestion));
-            $('#question-hint').toggleClass('hidden', 
+            $('#question-hint,#q-modal-hint').toggleClass('hidden', 
                 !this.slides.hasHint(this.askingQuestion));
+            let image = this.path + this.askingQuestion + '.png';
+            console.log(image);
+            $('#solution-image').attr('src', image);
+            $('#q-modal-solution-wrapper').attr('data-bs-original-title', 'Available after you make an attempt.');
+            $('#q-modal-solution').attr('disabled', true);
+            this.solutionTimeout = setTimeout(() => {
+                $('#q-modal-solution-wrapper').attr('data-bs-original-title', '');
+                $('#q-modal-solution').attr('disabled', false);
+            }, 60 * 1000);
+        } else {
+            clearTimeout(this.solutionTimeout);
+            this.solutionTimeout = null;
         }
     }
 
@@ -138,6 +152,7 @@ export class Playback {
     answerReceived(id) {
         if (!this.askingQuestion) return;
         // console.log("Answered", id);
+        this.setConstructQuestionPanelVisible(false);
         this.answeredQs.push(id);
         this.askingQuestion = null;
         this.play();

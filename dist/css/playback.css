@@ -142,3 +142,11 @@ i.button-icon {
     margin-right: 5px;
     font-size: large;
 }
+
+.modal-backdrop.show {
+    opacity: 0.3;
+}
+
+#solution-image {
+    display: block;
+}
