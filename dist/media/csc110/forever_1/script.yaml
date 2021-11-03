@@ -1,0 +1,232 @@
+config:
+  blockScale: 1.5
+events:
+  - type: text
+    audioStart: 0
+    audioEnd: 314
+    timeDelta: 0
+    description:
+  - type: log
+    description: changeCategory
+    logIndex: 1
+    timeDelta: 7.656
+  - type: log
+    description: drop doForever(250)
+    logIndex: 2
+    timeDelta: 3.976
+  - type: log
+    description: changeCategory
+    logIndex: 3
+    timeDelta: 12.008000000000001
+  - type: log
+    description: drop forward(251)
+    logIndex: 4
+    timeDelta: 1.568999999999999
+  - type: log
+    description: drop turn(252) -> forward(251)
+    logIndex: 5
+    timeDelta: 1.7349999999999994
+  - type: log
+    description: run
+    logIndex: 6
+    timeDelta: 2.7600000000000016
+  - type: log
+    description: run
+    logIndex: 7
+    timeDelta: 6.4879999999999995
+  - type: log
+    description: run
+    logIndex: 8
+    timeDelta: 0.4799999999999969
+  - type: log
+    description: run
+    logIndex: 9
+    timeDelta: 0.47099999999999653
+  - type: log
+    description: run
+    logIndex: 10
+    timeDelta: 0.46399999999999864
+  - type: log
+    description: run
+    logIndex: 11
+    timeDelta: 0.8810000000000002
+  - type: log
+    description: run
+    logIndex: 12
+    timeDelta: 0.392000000000003
+  - type: log
+    description: run
+    logIndex: 13
+    timeDelta: 0.46399999999999864
+  - type: log
+    description: run
+    logIndex: 14
+    timeDelta: 0.4480000000000004
+  - type: log
+    description: drop forward(251) -> doForever(250)
+    logIndex: 15
+    timeDelta: 3.2250000000000014
+  - type: log
+    description: run
+    logIndex: 16
+    timeDelta: 6.423000000000002
+  - type: log
+    description: run
+    logIndex: 17
+    timeDelta: 11.319000000000003
+  - type: log
+    description: run
+    logIndex: 18
+    timeDelta: 7.1440000000000055
+  - type: log
+    description: stop
+    logIndex: 19
+    timeDelta: 5.665000000000006
+  - type: log
+    description: run
+    logIndex: 20
+    timeDelta: 37.239000000000004
+  - type: log
+    description: run
+    logIndex: 21
+    timeDelta: 1.1200000000000045
+  - type: log
+    description: drop forward(251)
+    logIndex: 22
+    timeDelta: 10.552999999999997
+  - type: log
+    description: changeCategory
+    logIndex: 23
+    timeDelta: 1.2800000000000011
+  - type: log
+    description: drop doRepeat(253)
+    logIndex: 24
+    timeDelta: 2.760000000000005
+  - type: log
+    description: drop turn(252)
+    logIndex: 25
+    timeDelta: 1.0870000000000033
+  - type: log
+    description: drop forward(251) -> doRepeat(253)[1]
+    logIndex: 26
+    timeDelta: 1.2489999999999952
+  - type: log
+    description: inputSlotEdit
+    logIndex: 27
+    timeDelta: 5.736999999999995
+  - type: log
+    description: inputSlotEdit
+    logIndex: 28
+    timeDelta: 2.8870000000000005
+  - type: log
+    description: drop turn(252) -> forward(251)
+    logIndex: 29
+    timeDelta: 1.759999999999991
+  - type: log
+    description: inputSlotEdit
+    logIndex: 30
+    timeDelta: 8.47999999999999
+  - type: log
+    description: run
+    logIndex: 31
+    timeDelta: 2.2549999999999955
+  - type: log
+    description: drop turn(252) -> doRepeat(253)
+    logIndex: 32
+    timeDelta: 3.530000000000001
+  - type: log
+    description: run
+    logIndex: 33
+    timeDelta: 6.174000000000007
+  - type: log
+    description: run
+    logIndex: 34
+    timeDelta: 2.1680000000000064
+  - type: log
+    description: inputSlotEdit
+    logIndex: 35
+    timeDelta: 7.312999999999988
+  - type: log
+    description: run
+    logIndex: 36
+    timeDelta: 0.8870000000000005
+  - type: log
+    description: drop doRepeat(253) -> doForever(250)
+    logIndex: 37
+    timeDelta: 3.490000000000009
+  - type: log
+    description: run
+    logIndex: 38
+    timeDelta: 2.430000000000007
+  - type: log
+    description: run
+    logIndex: 39
+    timeDelta: 31.96799999999999
+  - type: log
+    description: drop doStopThis(254)
+    logIndex: 40
+    timeDelta: 10.001000000000005
+  - type: log
+    description: inputSlotEdit
+    logIndex: 41
+    timeDelta: 11.486999999999995
+  - type: log
+    description: inputSlotEdit
+    logIndex: 42
+    timeDelta: 2.9439999999999884
+  - type: log
+    description: inputSlotEdit
+    logIndex: 43
+    timeDelta: 4.960000000000008
+  - type: log
+    description: run
+    logIndex: 44
+    timeDelta: 3.5279999999999916
+  - type: log
+    description: drop doIf(255)
+    logIndex: 45
+    timeDelta: 4.817000000000007
+  - type: log
+    description: drop doStopThis(254) -> doIf(255)[1]
+    logIndex: 46
+    timeDelta: 2.608000000000004
+  - type: log
+    description: changeCategory
+    logIndex: 47
+    timeDelta: 7.744
+  - type: log
+    description: drop reportMouseDown(279)
+    logIndex: 48
+    timeDelta: 5.360000000000014
+  - type: log
+    description: drop doIf(255)
+    logIndex: 49
+    timeDelta: 1.4150000000000205
+  - type: log
+    description: drop doIf(255) -> turn(252)
+    logIndex: 50
+    timeDelta: 3.673000000000002
+  - type: log
+    description: drop doIf(255) -> forward(251)
+    logIndex: 51
+    timeDelta: 3.3670000000000186
+  - type: log
+    description: run
+    logIndex: 52
+    timeDelta: 8.168999999999983
+  - type: log
+    description: run
+    logIndex: 53
+    timeDelta: 0.6870000000000118
+  - type: log
+    description: changeCategory
+    logIndex: 54
+    timeDelta: 2.680000000000007
+  - type: log
+    description: drop receiveGo(280) -> doForever(250)
+    logIndex: 55
+    timeDelta: 2.937999999999988
+  - type: log
+    description: run
+    logIndex: 56
+    timeDelta: 2.533999999999992

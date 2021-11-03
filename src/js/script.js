@@ -7,7 +7,7 @@ export class Script {
     static HIGHLIGHT = 'highlight';
     static AUDIO_BUFFER = 0.5;
 
-    constructor(logs, words, scriptYAML) {
+    constructor(logs, words, duration, scriptYAML) {
         this.logs = logs;
         this.words = words;
         this.config = {
@@ -15,13 +15,13 @@ export class Script {
         }
         if (scriptYAML) {
             let script = YAML.parse(scriptYAML);
-            console.log(script);
+            // console.log(script);
             this.config = script.config;
             this.events = script.events;
         } else {
             this.events = [];
             this.addLogs(logs);
-            this.addTranscript(words);
+            this.addTranscript(words, duration);
             this.sort();
         }
     }
@@ -58,9 +58,18 @@ export class Script {
         this.logs = logs;
     }
 
-    addTranscript(words) {
+    addTranscript(words, duration) {
         this.words = words;
-        if (words.length == 0) return;
+        if (words.length == 0) {
+            if (!duration) return;
+            // If we have a duration but no transcript,
+            // create a single audio event
+            const evt = new Event(Script.TEXT, 0, '');
+            evt.audioStart = 0;
+            evt.audioEnd = duration;
+            this.events.push(evt);
+            return;
+        }
         words = words.slice();
         // Add a null word at the end to ensure the final group is pushed
         words.push(null);

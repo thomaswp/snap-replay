@@ -1,3 +1,7 @@
+# The Repeat Block
+
+![](repeat.png)
+
 <!--
 Notes:
 - Draw a square manually, show challenge with resizing
@@ -8,10 +12,6 @@ Notes:
 - Show code after repeat
 - Quiz
 -->
-
-# The Repeat Block
-
-![](repeat.png)
 
 ---
 ## The Repeat Block
