@@ -47,10 +47,10 @@ export class Slides {
             let id = deck.getCurrentSlide().id;
             if (!this.maximized) id = this.qn++;
             this.lastQuestionID = id;
-            this.recordEvent('questionPause', {id: id});
+            Slides.recordEvent('questionPause', {id: id});
         });
         $('#question-answered').on('click', () => {
-            this.recordEvent('questionAnswered', {id: this.lastQuestionID});
+            Slides.recordEvent('questionAnswered', {id: this.lastQuestionID});
         });
 
         deck.on('q-finished', () => {
@@ -58,7 +58,7 @@ export class Slides {
             if (this.onQFinished) {
                 this.onQFinished(id);
             }
-            this.recordEvent('waitForQuestion', {
+            Slides.recordEvent('waitForQuestion', {
                 id: id,
             });
         });
@@ -68,7 +68,7 @@ export class Slides {
             if (event.currentSlide.classList.contains('q-finished')) {
                 return;
             }
-            this.recordEvent('slideChanged', {
+            Slides.recordEvent('slideChanged', {
                 id: event.currentSlide.id,
                 indexh: event.indexh,
                 indexv: event.indexv,
@@ -168,7 +168,7 @@ export class Slides {
 
     setMaximized(maximized) {
         this.maximized = maximized;
-        this.recordEvent('slidesToggled', {value: this.maximized});
+        Slides.recordEvent('slidesToggled', {value: this.maximized});
         if (maximized) {
             $('#slides').removeClass('minimized');
         } else {

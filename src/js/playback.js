@@ -155,7 +155,7 @@ export class Playback {
             // console.log('skipping...');
             for (let i = this.currentLogIndex; i < this.events.length; i++) {
                 let event = this.events[i];
-                if (!(event.type === 'log' && event.description === 'questionAnswered')) continue;
+                if (!(event.description === 'questionAnswered')) continue;
                 let log = this.script.getLog(event);
                 // console.log(log);
                 if (log.data.id !== this.askingQuestion) continue;
@@ -253,10 +253,13 @@ export class Playback {
             // Clear console logging
             // TODO: may want to remove this for deploy
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
-            this.snapWindow.Trace.addLoggingHandler('Block.snapped', () => {
+            let handler = () => {
                 this.snapEdits++
                 this.checkEnableShowSolution();
-            });
+            };
+            this.snapWindow.Trace.addLoggingHandler('Block.snapped', handler);
+            this.snapWindow.Trace.addLoggingHandler('InputSlot.edited', handler);
+
         }
         this.currentLogIndex = 0;
         this.playingLog = null;
