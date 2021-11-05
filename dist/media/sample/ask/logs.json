@@ -1,0 +1,650 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 70
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "sensing",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 3064
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doAsk",
+                "id": 48,
+                "template": false,
+                "spec": "ask %s and wait",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 117,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 128.5,
+                    "y": 117,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 3658
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doAsk",
+            "id": 48,
+            "template": false,
+            "spec": "ask %s and wait",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1350
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "T"
+        },
+        "timeDelta": 1254
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Ty"
+        },
+        "timeDelta": 176
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typ"
+        },
+        "timeDelta": 80
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typi"
+        },
+        "timeDelta": 202
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typin"
+        },
+        "timeDelta": 69
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing"
+        },
+        "timeDelta": 45
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing"
+        },
+        "timeDelta": 105
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing i"
+        },
+        "timeDelta": 45
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in"
+        },
+        "timeDelta": 78
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in"
+        },
+        "timeDelta": 63
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in a"
+        },
+        "timeDelta": 114
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an"
+        },
+        "timeDelta": 89
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an"
+        },
+        "timeDelta": 129
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an a"
+        },
+        "timeDelta": 139
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an an"
+        },
+        "timeDelta": 85
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an ans"
+        },
+        "timeDelta": 78
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an answ"
+        },
+        "timeDelta": 151
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an answe"
+        },
+        "timeDelta": 72
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Typing in an answer"
+        },
+        "timeDelta": 154
+    },
+    {
+        "type": "inputPromptAccept",
+        "data": {
+            "value": "Typing in an answer"
+        },
+        "timeDelta": 140
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "motion",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 1499
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 2257
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doSayFor",
+                "id": 71,
+                "template": false,
+                "spec": "say %s for %n secs",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 353.5,
+                    "y": 256.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "doAsk",
+                    "id": 48,
+                    "template": false,
+                    "spec": "ask %s and wait",
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 124.66666666666669,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 128.5,
+                    "y": 148.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1624
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "sensing",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 1424
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "getLastAnswer",
+                "id": 72,
+                "template": false,
+                "spec": "answer",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": {
+                "selector": "doSayFor",
+                "id": 71,
+                "template": false,
+                "spec": "say %s for %n secs",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "ArgMorph"
+            },
+            "lastDropTarget": {
+                "selector": "doSayFor",
+                "id": 71,
+                "template": false,
+                "spec": "say %s for %n secs",
+                "objType": "BlockMorph"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 29.833333333333336,
+                    "y": 157.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 171.681640625,
+                    "y": 154.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1528
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doAsk",
+            "id": 48,
+            "template": false,
+            "spec": "ask %s and wait",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 807
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "H"
+        },
+        "timeDelta": 1044
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "He"
+        },
+        "timeDelta": 154
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Hel"
+        },
+        "timeDelta": 97
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Hell"
+        },
+        "timeDelta": 157
+    },
+    {
+        "type": "inputPromptEdited",
+        "data": {
+            "value": "Hello"
+        },
+        "timeDelta": 183
+    },
+    {
+        "type": "inputPromptAccept",
+        "data": {
+            "value": "Hello"
+        },
+        "timeDelta": 393
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doAsk",
+            "id": 48,
+            "template": false,
+            "spec": "ask %s and wait",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 4965
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doAsk",
+            "id": 48,
+            "template": false,
+            "spec": "ask %s and wait",
+            "message": "Block.clickStopRun"
+        },
+        "timeDelta": 8440
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 2840
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 8
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 9
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 8
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 217
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 166,
+                "y": 210,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 270
+    }
+]

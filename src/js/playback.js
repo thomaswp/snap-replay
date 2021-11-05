@@ -35,8 +35,8 @@ export class Playback {
         });
         this.audio = $('#audio')[0];
         this.$scrubber = $('#scrubber');
-        this.$scrubber.on("change", () => this.finishSettingDuration());
         this.$scrubber.on("change input", () => this.setDuration());
+        this.$scrubber.on("change", () => this.finishSettingDuration());
         this.$script = $('#script');
         this.time = 0;
         this.playing = false;
@@ -212,7 +212,7 @@ export class Playback {
         this.logs = [];
         this.highlights = [];
         this.events.forEach(event => {
-            if (event.type === Script.LOG) {
+            if (event.type === Script.LOG || event.type === Script.CONTROL) {
                 this.logs.push(event);    
                 return;
             } else if (event.type === Script.HIGHLIGHT) {
@@ -338,6 +338,8 @@ export class Playback {
         this.playStartDuration = this.getCurrentDuration();
         this.audio.pause();
         this.playing = false;
+        this.snapEdits = 0;
+        this.warnResume = false;
         clearInterval(this.tickTimeout);
         this.tickTimeout = null;
     }
@@ -347,16 +349,17 @@ export class Playback {
         this.askingQuestion = null;
         
         if (!this.recorder) return;
-        if (duration === undefined) {
-            duration = this.getCurrentDuration();
-        }
         this.setConstructQuestionPanelVisible(false);
         if (this.playing) {
             this.pause();
             this.wasPlaying = true;
         }
+        if (duration === undefined) {
+            duration = this.getCurrentDuration();
+        }
         this.playStartDuration = duration;
-        this.$scrubber.val(Math.round(this.playStartDuration));
+        // Don't update the scrubber's value - it will stop dragging
+        // this.$scrubber.val(Math.round(this.playStartDuration));
         this.updateEvents(true);
     }
 
@@ -446,6 +449,21 @@ export class Playback {
             }
         }
     }
+   
+    handleEvent(event, fast) {
+        if (event.description === 'videoPause') {
+            if (!fast) this.pause();
+            return true;
+        }
+        return false;
+    }
+
+    getScriptTime() {
+        let log = this.logs[Math.min(this.currentLogIndex - 1, this.logs.length - 1)];
+        let eventIndex = this.events.indexOf(log);
+        let delta = this.getCurrentDuration() / 1000 - log.startTime
+        return `#${eventIndex} "${log.description}" + ${delta}s`;
+    }
 
     updateLogs(noReset) {
         if (this.playingLog || this.warnResume) return;
@@ -473,9 +491,16 @@ export class Playback {
             }, nextTime);
             return;
         }
-        
+
         // We go faster if the playback is more than .25s behind
         let fast = durationS - event.startTime > 0.25;
+
+        if (this.handleEvent(event, fast)) {
+            this.currentLogIndex++;
+            this.update();
+            return;
+        }
+        
         this.nextTimeout = null;
         // console.log('Event: ', event);
         let record = this.script.getLog(event);

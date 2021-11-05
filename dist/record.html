@@ -38,17 +38,22 @@
             #question-answered {
                 left: 50px;
             }
+            
+            #video-pause {
+                left: 90px;
+            }
 
             #slides-toggle {
-                left: 90px;
+                left: 130px;
             }
         </style>
     </head>
     <body>
         <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
-        <button id="slides-toggle" class="btn hidden">&#10529;</button>
         <button id="question-pause" class="btn">?</button>
         <button id="question-answered" class="btn">&#10003;</button>
+        <button id="video-pause" class="btn">&#9208;&#xfe0e;</button>
+        <button id="slides-toggle" class="btn hidden">&#10529;</button>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
                 <div class="slides">
@@ -61,13 +66,16 @@
         </div>
         <script>
             $(document).ready(() => {
-                let searchParams = new URLSearchParams(window.location.search)
+                let searchParams = new URLSearchParams(window.location.search);
                 if (searchParams.has('video')) {
                     let video = searchParams.get('video');
                     let path = 'media/' + video + '/';
                     let slides = new Slides(path, true);
                     slides.loadURL(path + 'slides.md');
                 }
+                $('#video-pause').on('click', () => {
+                    Slides.recordEvent('videoPause', {});
+                });
             });
         </script>
     </body>

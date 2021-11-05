@@ -156,7 +156,7 @@ export class Slides {
         this.setMaximized(!this.maximized);
     }
 
-    recordEvent(type, data) {
+    static recordEvent(type, data) {
         let iframe = document.getElementById('isnap');
         if (iframe) {
             let recorder = iframe.contentWindow.recorder;

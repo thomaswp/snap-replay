@@ -4,7 +4,9 @@ export class Script {
 
     static LOG = 'log';
     static TEXT = 'text';
+    static CONTROL = 'control';
     static HIGHLIGHT = 'highlight';
+    
     static AUDIO_BUFFER = 0.5;
 
     constructor(logs, words, duration, scriptYAML) {
@@ -101,6 +103,11 @@ export class Script {
     }
 
     getLog(event) {
+        if (event.type === Script.CONTROL) {
+            let record = Object.assign({}, event);
+            record.type = record.description;
+            return record;
+        }
         if (event.type !== Script.LOG) return null;
         return this.logs[event.logIndex];
     }
@@ -126,15 +133,16 @@ export class Script {
 
     getEvents() {
         let events = this.events.slice();
+        let lastTime = 0;
         for (let i = 0; i < events.length; i++)  {
-            events[i] = this.toReadableEvent(events[i], events[i-1]);
+            events[i] = this.toReadableEvent(events[i], lastTime);
+            if (!events[i].skipDelta) lastTime = events[i].startTime
         }
         return events;
     }
 
-    toReadableEvent(evt, lastEvent) {
+    toReadableEvent(evt, lastTime) {
         let event = Object.assign({}, evt);
-        let lastTime = lastEvent ? lastEvent.startTime : 0;
         event.startTime = lastTime + event.timeDelta;
         event.endTime = event.startTime;
         if (event.type == Script.TEXT) {

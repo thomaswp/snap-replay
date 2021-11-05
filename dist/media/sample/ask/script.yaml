@@ -1,0 +1,268 @@
+config:
+  blockScale: 1.5
+events:
+  - type: text
+    description: ""
+    audioStart: 0
+    audioEnd: 38.93997732426304
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 1
+    timeDelta: 0.07
+  - type: log
+    description: changeCategory
+    logIndex: 2
+    timeDelta: 3.064
+  - type: log
+    description: drop doAsk(48)
+    logIndex: 3
+    timeDelta: 3.658
+  - type: log
+    description: run
+    logIndex: 4
+    timeDelta: 1.3499999999999996
+  - type: log
+    description: inputPromptEdited
+    logIndex: 5
+    timeDelta: 1.2539999999999996
+  - type: log
+    description: inputPromptEdited
+    logIndex: 6
+    timeDelta: 0.17600000000000016
+  - type: log
+    description: inputPromptEdited
+    logIndex: 7
+    timeDelta: 0.08000000000000007
+  - type: log
+    description: inputPromptEdited
+    logIndex: 8
+    timeDelta: 0.20199999999999996
+  - type: log
+    description: inputPromptEdited
+    logIndex: 9
+    timeDelta: 0.06900000000000084
+  - type: log
+    description: inputPromptEdited
+    logIndex: 10
+    timeDelta: 0.04499999999999993
+  - type: log
+    description: inputPromptEdited
+    logIndex: 11
+    timeDelta: 0.10500000000000043
+  - type: log
+    description: inputPromptEdited
+    logIndex: 12
+    timeDelta: 0.04499999999999993
+  - type: log
+    description: inputPromptEdited
+    logIndex: 13
+    timeDelta: 0.0779999999999994
+  - type: log
+    description: inputPromptEdited
+    logIndex: 14
+    timeDelta: 0.06300000000000061
+  - type: log
+    description: inputPromptEdited
+    logIndex: 15
+    timeDelta: 0.11400000000000077
+  - type: log
+    description: inputPromptEdited
+    logIndex: 16
+    timeDelta: 0.08900000000000041
+  - type: log
+    description: inputPromptEdited
+    logIndex: 17
+    timeDelta: 0.12899999999999956
+  - type: log
+    description: inputPromptEdited
+    logIndex: 18
+    timeDelta: 0.13899999999999935
+  - type: log
+    description: inputPromptEdited
+    logIndex: 19
+    timeDelta: 0.08500000000000085
+  - type: log
+    description: inputPromptEdited
+    logIndex: 20
+    timeDelta: 0.0779999999999994
+  - type: log
+    description: inputPromptEdited
+    logIndex: 21
+    timeDelta: 0.1509999999999998
+  - type: log
+    description: inputPromptEdited
+    logIndex: 22
+    timeDelta: 0.07199999999999918
+  - type: log
+    description: inputPromptEdited
+    logIndex: 23
+    timeDelta: 0.15399999999999991
+  - type: log
+    description: inputPromptAccept
+    logIndex: 24
+    timeDelta: 0.14000000000000057
+  - type: log
+    description: changeCategory
+    logIndex: 25
+    timeDelta: 1.4990000000000006
+  - type: log
+    description: changeCategory
+    logIndex: 26
+    timeDelta: 2.2569999999999997
+  - type: log
+    description: drop doSayFor(71) -> doAsk(48)
+    logIndex: 27
+    timeDelta: 1.6239999999999988
+  - type: log
+    description: changeCategory
+    logIndex: 28
+    timeDelta: 1.4239999999999995
+  - type: log
+    description: drop getLastAnswer(72)
+    logIndex: 29
+    timeDelta: 1.5279999999999987
+  - type: log
+    description: run
+    logIndex: 30
+    timeDelta: 0.8069999999999986
+  - type: log
+    description: inputPromptEdited
+    logIndex: 31
+    timeDelta: 1.0440000000000005
+  - type: log
+    description: inputPromptEdited
+    logIndex: 32
+    timeDelta: 0.15399999999999991
+  - type: log
+    description: inputPromptEdited
+    logIndex: 33
+    timeDelta: 0.09700000000000131
+  - type: log
+    description: inputPromptEdited
+    logIndex: 34
+    timeDelta: 0.15700000000000003
+  - type: log
+    description: inputPromptEdited
+    logIndex: 35
+    timeDelta: 0.18299999999999983
+  - type: log
+    description: inputPromptAccept
+    logIndex: 36
+    timeDelta: 0.3930000000000007
+  - type: log
+    description: run
+    logIndex: 37
+    timeDelta: 4.965
+  - type: control
+    description: videoPause
+    timeDelta: 3.594
+    skipDelta: true
+  - type: log
+    description: run
+    logIndex: 38
+    timeDelta: 8.440000000000001
+  - type: log
+    description: menuItemSelect
+    logIndex: 39
+    timeDelta: 2.8400000000000034
+  - type: log
+    description: menuItemSelect
+    logIndex: 40
+    timeDelta: 0.017000000000003013
+  - type: log
+    description: menuItemSelect
+    logIndex: 41
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 42
+    timeDelta: 0.015000000000000568
+  - type: log
+    description: menuItemSelect
+    logIndex: 43
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 44
+    timeDelta: 0.008000000000002672
+  - type: log
+    description: menuItemSelect
+    logIndex: 45
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 46
+    timeDelta: 0.017000000000003013
+  - type: log
+    description: menuItemSelect
+    logIndex: 47
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 48
+    timeDelta: 0.015000000000000568
+  - type: log
+    description: menuItemSelect
+    logIndex: 49
+    timeDelta: 0.0009999999999976694
+  - type: log
+    description: menuItemSelect
+    logIndex: 50
+    timeDelta: 0.015999999999998238
+  - type: log
+    description: menuItemSelect
+    logIndex: 51
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 52
+    timeDelta: 0.02400000000000091
+  - type: log
+    description: menuItemSelect
+    logIndex: 53
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 54
+    timeDelta: 0.02300000000000324
+  - type: log
+    description: menuItemSelect
+    logIndex: 55
+    timeDelta: 0.009000000000000341
+  - type: log
+    description: menuItemSelect
+    logIndex: 56
+    timeDelta: 0.02300000000000324
+  - type: log
+    description: menuItemSelect
+    logIndex: 57
+    timeDelta: 0.0009999999999976694
+  - type: log
+    description: menuItemSelect
+    logIndex: 58
+    timeDelta: 0.02400000000000091
+  - type: log
+    description: menuItemSelect
+    logIndex: 59
+    timeDelta: 0
+  - type: log
+    description: menuItemSelect
+    logIndex: 60
+    timeDelta: 0.02400000000000091
+  - type: log
+    description: menuItemSelect
+    logIndex: 61
+    timeDelta: 0.008000000000002672
+  - type: log
+    description: menuItemSelect
+    logIndex: 62
+    timeDelta: 0.02300000000000324
+  - type: log
+    description: menuItemSelect
+    logIndex: 63
+    timeDelta: 0.21699999999999875
+  - type: log
+    description: menu
+    logIndex: 64
+    timeDelta: 0.2700000000000031
