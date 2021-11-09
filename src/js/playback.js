@@ -359,10 +359,11 @@ export class Playback {
         }
         if (duration === undefined) {
             duration = this.getCurrentDuration();
+        } else {
+            // Don't update the scrubber's value unless set manually - it will stop dragging
+            this.$scrubber.val(Math.round(duration));
         }
         this.playStartDuration = duration;
-        // Don't update the scrubber's value - it will stop dragging
-        // this.$scrubber.val(Math.round(this.playStartDuration));
         this.updateEvents(true);
     }
 
