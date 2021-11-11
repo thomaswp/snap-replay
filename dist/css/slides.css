@@ -75,3 +75,14 @@
     background-color: #444;
     color: var(--r-link-color-hover);
 }
+
+.reveal img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.reveal p img {
+    margin: inherit;
+}
