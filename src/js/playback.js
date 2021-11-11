@@ -129,7 +129,7 @@ export class Playback {
         if (visible) {
             $('#question-hint,#q-modal-hint').toggleClass('hidden', 
                 !this.slides.hasHint(this.askingQuestion));
-            let image = this.path + this.askingQuestion + '.png';
+            let image = this.path + 'img/' + this.askingQuestion + '.png';
             $('#solution-image').attr('src', image);
             $('.q-modal-solution-wrapper').attr('data-bs-original-title', 'Try the problem first.');
             $('.enabled-on-try').attr('disabled', true);

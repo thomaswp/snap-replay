@@ -18,7 +18,7 @@ Notes:
 
 The `repeat ___` block repeats all actions inside of it, in order, a number of times.
 
-![](repeatAB.png)
+![](img/repeatAB.png)
 
 **Example**: *This code will say*: `ABABAB`.
 
@@ -28,7 +28,7 @@ The `repeat ___` block repeats all actions inside of it, in order, a number of t
 
 **Goal**: Modify the current code so that it draws a *triangle* instead of a square:
 
-![](triangle.png)
+![](img/triangle.png)
 
 <div class="quiz">
 
@@ -57,7 +57,7 @@ What will the following code say when it runs?
 
 <div class="col">
 
-![](q1.png)
+![](img/q1.png)
 
 </div>
 

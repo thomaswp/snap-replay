@@ -1,6 +1,6 @@
 # The Repeat Until Block
 
-![](repeatUntil.png)
+![](img/repeatUntil.png)
 
 <!--
 Notes:
@@ -19,7 +19,7 @@ Notes:
 
 The `repeat until <___>` block repeats all actions inside of it, in order, **until** its condition is met.
 
-![](repeatUntilSpace.png)
+![](img/repeatUntilSpace.png)
 
 **Example**: *This code will move the Sprite forward **until** the space key is pressed.*
 
@@ -28,7 +28,7 @@ The `repeat until <___>` block repeats all actions inside of it, in order, **unt
 
 Hexagon-shaped blocks that always report either **true** or **false**.
 
-![](equalsAnswerYes.png)
+![](img/equalsAnswerYes.png)
 
 **Example**: *This code will report **true** if the user's `answer` is "Yes", and otherwise **false***
 
@@ -38,7 +38,7 @@ Hexagon-shaped blocks that always report either **true** or **false**.
 
 **Goal**: Modify the current code so that the Sprite stops moving when it's *y-position* is less than -150:
 
-![](goDown.gif) <!-- .element style="width: 40%" -->
+![](img/goDown.gif) <!-- .element style="width: 40%" -->
 
 <div class="quiz">
 
