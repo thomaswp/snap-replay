@@ -7,6 +7,7 @@ Notes:
 - Move forward until sprite hits edge (can't do with repeat)
 - Repeat until slide
 - Fix code to work w/ repeat until, randomness
+- Predicates: before right side
 - Modify: Sprite points down instead
 - Predicates
 - Modify task to go down
