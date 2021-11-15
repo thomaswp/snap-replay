@@ -1,0 +1,5179 @@
+{
+  "transcripts": [
+    {
+      "confidence": -2395.87060546875,
+      "words": [
+        {
+          "word": "little",
+          "start_time": 1.26,
+          "duration": 0.28
+        },
+        {
+          "word": "son",
+          "start_time": 1.68,
+          "duration": 0.4
+        },
+        {
+          "word": "on",
+          "start_time": 2.2,
+          "duration": 0.16
+        },
+        {
+          "word": "the",
+          "start_time": 2.48,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 2.66,
+          "duration": 0.48
+        },
+        {
+          "word": "back",
+          "start_time": 3.24,
+          "duration": 1.12
+        },
+        {
+          "word": "often",
+          "start_time": 4.52,
+          "duration": 0.34
+        },
+        {
+          "word": "times",
+          "start_time": 4.9,
+          "duration": 0.3
+        },
+        {
+          "word": "in",
+          "start_time": 5.3,
+          "duration": 0.18
+        },
+        {
+          "word": "step",
+          "start_time": 5.52,
+          "duration": 0.38
+        },
+        {
+          "word": "we",
+          "start_time": 5.96,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 6.12,
+          "duration": 0.18
+        },
+        {
+          "word": "something",
+          "start_time": 6.34,
+          "duration": 1.12
+        },
+        {
+          "word": "multiple",
+          "start_time": 7.54,
+          "duration": 0.4
+        },
+        {
+          "word": "times",
+          "start_time": 8.02,
+          "duration": 0.72
+        },
+        {
+          "word": "for",
+          "start_time": 8.84,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 8.98,
+          "duration": 0.56
+        },
+        {
+          "word": "to",
+          "start_time": 9.6,
+          "duration": 0.1
+        },
+        {
+          "word": "draw",
+          "start_time": 9.74,
+          "duration": 0.2
+        },
+        {
+          "word": "a",
+          "start_time": 9.98,
+          "duration": 0.02
+        },
+        {
+          "word": "square",
+          "start_time": 10.06,
+          "duration": 0.56
+        },
+        {
+          "word": "we",
+          "start_time": 10.72,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 10.88,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 11.12,
+          "duration": 0.32
+        },
+        {
+          "word": "move",
+          "start_time": 11.58,
+          "duration": 1.02
+        },
+        {
+          "word": "and",
+          "start_time": 12.7,
+          "duration": 0.12
+        },
+        {
+          "word": "then",
+          "start_time": 12.88,
+          "duration": 0.26
+        },
+        {
+          "word": "turn",
+          "start_time": 13.18,
+          "duration": 1.2
+        },
+        {
+          "word": "our",
+          "start_time": 14.52,
+          "duration": 0.14
+        },
+        {
+          "word": "times",
+          "start_time": 14.8,
+          "duration": 0.78
+        },
+        {
+          "word": "preamble",
+          "start_time": 15.64,
+          "duration": 0.48
+        },
+        {
+          "word": "of",
+          "start_time": 16.2,
+          "duration": 0.04
+        },
+        {
+          "word": "fine",
+          "start_time": 16.28,
+          "duration": 0.18
+        },
+        {
+          "word": "move",
+          "start_time": 16.5,
+          "duration": 0.18
+        },
+        {
+          "word": "one",
+          "start_time": 16.74,
+          "duration": 0.12
+        },
+        {
+          "word": "hundred",
+          "start_time": 16.9,
+          "duration": 0.44
+        },
+        {
+          "word": "steps",
+          "start_time": 17.4,
+          "duration": 0.34
+        },
+        {
+          "word": "and",
+          "start_time": 17.84,
+          "duration": 0.08
+        },
+        {
+          "word": "then",
+          "start_time": 17.98,
+          "duration": 0.18
+        },
+        {
+          "word": "turn",
+          "start_time": 18.22,
+          "duration": 0.44
+        },
+        {
+          "word": "and",
+          "start_time": 18.78,
+          "duration": 0.4
+        },
+        {
+          "word": "degrees",
+          "start_time": 19.22,
+          "duration": 2.26
+        },
+        {
+          "word": "i",
+          "start_time": 21.56,
+          "duration": 0.1
+        },
+        {
+          "word": "endow",
+          "start_time": 21.76,
+          "duration": 0.58
+        },
+        {
+          "word": "first",
+          "start_time": 22.44,
+          "duration": 1.58
+        },
+        {
+          "word": "then",
+          "start_time": 24.06,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 24.24,
+          "duration": 0.08
+        },
+        {
+          "word": "dragonette",
+          "start_time": 24.34,
+          "duration": 2.58
+        },
+        {
+          "word": "four",
+          "start_time": 27.02,
+          "duration": 0.26
+        },
+        {
+          "word": "sides",
+          "start_time": 27.38,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 27.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 27.92,
+          "duration": 0.08
+        },
+        {
+          "word": "square",
+          "start_time": 28.02,
+          "duration": 1.12
+        },
+        {
+          "word": "but",
+          "start_time": 29.18,
+          "duration": 0.06
+        },
+        {
+          "word": "if",
+          "start_time": 29.3,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 29.42,
+          "duration": 0.08
+        },
+        {
+          "word": "wanted",
+          "start_time": 29.56,
+          "duration": 0.3
+        },
+        {
+          "word": "this",
+          "start_time": 29.94,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 30.14,
+          "duration": 0.08
+        },
+        {
+          "word": "happen",
+          "start_time": 30.26,
+          "duration": 0.28
+        },
+        {
+          "word": "with",
+          "start_time": 30.62,
+          "duration": 0.14
+        },
+        {
+          "word": "just",
+          "start_time": 30.82,
+          "duration": 0.36
+        },
+        {
+          "word": "one",
+          "start_time": 31.3,
+          "duration": 0.14
+        },
+        {
+          "word": "clay",
+          "start_time": 31.54,
+          "duration": 0.42
+        },
+        {
+          "word": "i",
+          "start_time": 32.04,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 32.14,
+          "duration": 0.18
+        },
+        {
+          "word": "have",
+          "start_time": 32.36,
+          "duration": 0.22
+        },
+        {
+          "word": "to",
+          "start_time": 32.66,
+          "duration": 0.32
+        },
+        {
+          "word": "duplicate",
+          "start_time": 33.02,
+          "duration": 0.7
+        },
+        {
+          "word": "my",
+          "start_time": 33.8,
+          "duration": 0.22
+        },
+        {
+          "word": "move",
+          "start_time": 34.18,
+          "duration": 0.46
+        },
+        {
+          "word": "and",
+          "start_time": 34.78,
+          "duration": 0.14
+        },
+        {
+          "word": "turn",
+          "start_time": 34.98,
+          "duration": 0.26
+        },
+        {
+          "word": "blocks",
+          "start_time": 35.32,
+          "duration": 0.98
+        },
+        {
+          "word": "and",
+          "start_time": 36.44,
+          "duration": 0.28
+        },
+        {
+          "word": "that's",
+          "start_time": 36.76,
+          "duration": 0.16
+        },
+        {
+          "word": "a",
+          "start_time": 36.96,
+          "duration": 0.02
+        },
+        {
+          "word": "bit",
+          "start_time": 37.02,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 37.14,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 37.32,
+          "duration": 0.06
+        },
+        {
+          "word": "pain",
+          "start_time": 37.46,
+          "duration": 0.54
+        },
+        {
+          "word": "i",
+          "start_time": 38.1,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 38.22,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 38.38,
+          "duration": 0.08
+        },
+        {
+          "word": "drag",
+          "start_time": 38.52,
+          "duration": 0.22
+        },
+        {
+          "word": "out",
+          "start_time": 38.82,
+          "duration": 0.16
+        },
+        {
+          "word": "move",
+          "start_time": 39.08,
+          "duration": 0.34
+        },
+        {
+          "word": "turn",
+          "start_time": 39.54,
+          "duration": 1.24
+        },
+        {
+          "word": "turn",
+          "start_time": 42.26,
+          "duration": 3.12
+        },
+        {
+          "word": "turn",
+          "start_time": 45.48,
+          "duration": 0.72
+        },
+        {
+          "word": "and",
+          "start_time": 46.28,
+          "duration": 0.06
+        },
+        {
+          "word": "then",
+          "start_time": 46.38,
+          "duration": 0.1
+        },
+        {
+          "word": "of",
+          "start_time": 46.56,
+          "duration": 0.06
+        },
+        {
+          "word": "course",
+          "start_time": 46.68,
+          "duration": 0.28
+        },
+        {
+          "word": "i",
+          "start_time": 47.02,
+          "duration": 0.1
+        },
+        {
+          "word": "would",
+          "start_time": 47.14,
+          "duration": 0.12
+        },
+        {
+          "word": "have",
+          "start_time": 47.28,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 47.48,
+          "duration": 0.08
+        },
+        {
+          "word": "change",
+          "start_time": 47.64,
+          "duration": 0.22
+        },
+        {
+          "word": "all",
+          "start_time": 47.94,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 48.08,
+          "duration": 0.06
+        },
+        {
+          "word": "these",
+          "start_time": 48.18,
+          "duration": 0.18
+        },
+        {
+          "word": "premeditated",
+          "start_time": 48.42,
+          "duration": 5.1
+        },
+        {
+          "word": "it",
+          "start_time": 53.7,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 53.84,
+          "duration": 0.12
+        },
+        {
+          "word": "to",
+          "start_time": 54.0,
+          "duration": 0.06
+        },
+        {
+          "word": "superintend",
+          "start_time": 54.1,
+          "duration": 3.86
+        },
+        {
+          "word": "if",
+          "start_time": 58.02,
+          "duration": 0.08
+        },
+        {
+          "word": "i",
+          "start_time": 58.14,
+          "duration": 0.08
+        },
+        {
+          "word": "do",
+          "start_time": 58.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 58.4,
+          "duration": 2.04
+        },
+        {
+          "word": "a",
+          "start_time": 60.64,
+          "duration": 0.1
+        },
+        {
+          "word": "clear",
+          "start_time": 60.76,
+          "duration": 0.2
+        },
+        {
+          "word": "rout",
+          "start_time": 61.06,
+          "duration": 0.4
+        },
+        {
+          "word": "here",
+          "start_time": 61.5,
+          "duration": 0.76
+        },
+        {
+          "word": "queer",
+          "start_time": 62.32,
+          "duration": 0.22
+        },
+        {
+          "word": "my",
+          "start_time": 62.58,
+          "duration": 0.2
+        },
+        {
+          "word": "screen",
+          "start_time": 62.82,
+          "duration": 0.88
+        },
+        {
+          "word": "on",
+          "start_time": 63.82,
+          "duration": 0.08
+        },
+        {
+          "word": "my",
+          "start_time": 63.96,
+          "duration": 0.1
+        },
+        {
+          "word": "cot",
+          "start_time": 64.1,
+          "duration": 0.12
+        },
+        {
+          "word": "again",
+          "start_time": 64.28,
+          "duration": 0.38
+        },
+        {
+          "word": "and",
+          "start_time": 64.82,
+          "duration": 0.14
+        },
+        {
+          "word": "i",
+          "start_time": 65.06,
+          "duration": 0.06
+        },
+        {
+          "word": "get",
+          "start_time": 65.16,
+          "duration": 0.18
+        },
+        {
+          "word": "that",
+          "start_time": 65.38,
+          "duration": 0.22
+        },
+        {
+          "word": "square",
+          "start_time": 65.66,
+          "duration": 0.3
+        },
+        {
+          "word": "with",
+          "start_time": 66.02,
+          "duration": 0.16
+        },
+        {
+          "word": "just",
+          "start_time": 66.24,
+          "duration": 0.24
+        },
+        {
+          "word": "a",
+          "start_time": 66.56,
+          "duration": 0.08
+        },
+        {
+          "word": "single",
+          "start_time": 66.68,
+          "duration": 0.34
+        },
+        {
+          "word": "run",
+          "start_time": 67.1,
+          "duration": 0.18
+        },
+        {
+          "word": "of",
+          "start_time": 67.3,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 67.48,
+          "duration": 0.18
+        },
+        {
+          "word": "coat",
+          "start_time": 67.74,
+          "duration": 0.52
+        },
+        {
+          "word": "and",
+          "start_time": 68.38,
+          "duration": 0.08
+        },
+        {
+          "word": "that's",
+          "start_time": 68.5,
+          "duration": 0.2
+        },
+        {
+          "word": "nice",
+          "start_time": 68.76,
+          "duration": 1.42
+        },
+        {
+          "word": "but",
+          "start_time": 70.26,
+          "duration": 0.96
+        },
+        {
+          "word": "where",
+          "start_time": 71.28,
+          "duration": 0.16
+        },
+        {
+          "word": "programmers",
+          "start_time": 71.52,
+          "duration": 0.62
+        },
+        {
+          "word": "and",
+          "start_time": 72.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 72.4,
+          "duration": 0.1
+        },
+        {
+          "word": "means",
+          "start_time": 72.54,
+          "duration": 0.14
+        },
+        {
+          "word": "we",
+          "start_time": 72.74,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 72.86,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 73.06,
+          "duration": 0.06
+        },
+        {
+          "word": "do",
+          "start_time": 73.16,
+          "duration": 0.22
+        },
+        {
+          "word": "things",
+          "start_time": 73.48,
+          "duration": 0.28
+        },
+        {
+          "word": "in",
+          "start_time": 73.84,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 73.98,
+          "duration": 0.04
+        },
+        {
+          "word": "way",
+          "start_time": 74.06,
+          "duration": 0.14
+        },
+        {
+          "word": "that's",
+          "start_time": 74.26,
+          "duration": 0.16
+        },
+        {
+          "word": "maintainable",
+          "start_time": 74.46,
+          "duration": 0.8
+        },
+        {
+          "word": "and",
+          "start_time": 75.32,
+          "duration": 0.08
+        },
+        {
+          "word": "efficient",
+          "start_time": 75.5,
+          "duration": 0.58
+        },
+        {
+          "word": "and",
+          "start_time": 76.18,
+          "duration": 0.1
+        },
+        {
+          "word": "frankly",
+          "start_time": 76.32,
+          "duration": 0.36
+        },
+        {
+          "word": "speaking",
+          "start_time": 76.74,
+          "duration": 0.32
+        },
+        {
+          "word": "a",
+          "start_time": 77.12,
+          "duration": 0.02
+        },
+        {
+          "word": "little",
+          "start_time": 77.2,
+          "duration": 0.16
+        },
+        {
+          "word": "bit",
+          "start_time": 77.4,
+          "duration": 0.16
+        },
+        {
+          "word": "lazy",
+          "start_time": 77.6,
+          "duration": 1.1
+        },
+        {
+          "word": "for",
+          "start_time": 78.78,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 78.9,
+          "duration": 0.28
+        },
+        {
+          "word": "if",
+          "start_time": 79.22,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 79.36,
+          "duration": 0.04
+        },
+        {
+          "word": "wanted",
+          "start_time": 79.46,
+          "duration": 0.28
+        },
+        {
+          "word": "to",
+          "start_time": 79.8,
+          "duration": 0.12
+        },
+        {
+          "word": "change",
+          "start_time": 80.0,
+          "duration": 0.3
+        },
+        {
+          "word": "the",
+          "start_time": 80.4,
+          "duration": 0.08
+        },
+        {
+          "word": "size",
+          "start_time": 80.52,
+          "duration": 0.22
+        },
+        {
+          "word": "of",
+          "start_time": 80.8,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 81.0,
+          "duration": 0.2
+        },
+        {
+          "word": "square",
+          "start_time": 81.26,
+          "duration": 0.26
+        },
+        {
+          "word": "i",
+          "start_time": 81.58,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 81.66,
+          "duration": 0.14
+        },
+        {
+          "word": "have",
+          "start_time": 81.84,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 82.04,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 82.16,
+          "duration": 0.26
+        },
+        {
+          "word": "all",
+          "start_time": 82.58,
+          "duration": 0.12
+        },
+        {
+          "word": "of",
+          "start_time": 82.76,
+          "duration": 0.08
+        },
+        {
+          "word": "these",
+          "start_time": 82.9,
+          "duration": 0.26
+        },
+        {
+          "word": "moves",
+          "start_time": 83.3,
+          "duration": 1.42
+        },
+        {
+          "word": "buffeted",
+          "start_time": 84.76,
+          "duration": 3.0
+        },
+        {
+          "word": "to",
+          "start_time": 87.82,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 87.92,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 88.24,
+          "duration": 0.1
+        },
+        {
+          "word": "sides",
+          "start_time": 88.44,
+          "duration": 0.76
+        },
+        {
+          "word": "i",
+          "start_time": 89.38,
+          "duration": 0.08
+        },
+        {
+          "word": "have",
+          "start_time": 89.52,
+          "duration": 0.14
+        },
+        {
+          "word": "a",
+          "start_time": 89.72,
+          "duration": 0.06
+        },
+        {
+          "word": "smaller",
+          "start_time": 89.8,
+          "duration": 0.32
+        },
+        {
+          "word": "square",
+          "start_time": 90.2,
+          "duration": 0.68
+        },
+        {
+          "word": "it",
+          "start_time": 90.98,
+          "duration": 0.18
+        },
+        {
+          "word": "took",
+          "start_time": 91.28,
+          "duration": 0.12
+        },
+        {
+          "word": "a",
+          "start_time": 91.44,
+          "duration": 0.04
+        },
+        {
+          "word": "lot",
+          "start_time": 91.52,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 91.64,
+          "duration": 0.06
+        },
+        {
+          "word": "work",
+          "start_time": 91.76,
+          "duration": 0.2
+        },
+        {
+          "word": "to",
+          "start_time": 92.0,
+          "duration": 0.08
+        },
+        {
+          "word": "get",
+          "start_time": 92.12,
+          "duration": 0.18
+        },
+        {
+          "word": "there",
+          "start_time": 92.38,
+          "duration": 1.28
+        },
+        {
+          "word": "to",
+          "start_time": 93.72,
+          "duration": 0.06
+        },
+        {
+          "word": "address",
+          "start_time": 93.82,
+          "duration": 0.32
+        },
+        {
+          "word": "this",
+          "start_time": 94.22,
+          "duration": 0.24
+        },
+        {
+          "word": "tampassook",
+          "start_time": 94.64,
+          "duration": 0.84
+        },
+        {
+          "word": "called",
+          "start_time": 95.64,
+          "duration": 0.32
+        },
+        {
+          "word": "repeat",
+          "start_time": 96.04,
+          "duration": 1.36
+        },
+        {
+          "word": "repeat",
+          "start_time": 97.46,
+          "duration": 0.42
+        },
+        {
+          "word": "as",
+          "start_time": 97.98,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 98.14,
+          "duration": 0.04
+        },
+        {
+          "word": "block",
+          "start_time": 98.24,
+          "duration": 0.34
+        },
+        {
+          "word": "that",
+          "start_time": 98.7,
+          "duration": 0.14
+        },
+        {
+          "word": "allows",
+          "start_time": 98.9,
+          "duration": 0.28
+        },
+        {
+          "word": "us",
+          "start_time": 99.28,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 99.56,
+          "duration": 0.44
+        },
+        {
+          "word": "run",
+          "start_time": 100.08,
+          "duration": 0.3
+        },
+        {
+          "word": "code",
+          "start_time": 100.48,
+          "duration": 0.38
+        },
+        {
+          "word": "multiple",
+          "start_time": 100.96,
+          "duration": 0.46
+        },
+        {
+          "word": "times",
+          "start_time": 101.52,
+          "duration": 0.78
+        },
+        {
+          "word": "the",
+          "start_time": 102.38,
+          "duration": 0.06
+        },
+        {
+          "word": "exact",
+          "start_time": 102.5,
+          "duration": 0.32
+        },
+        {
+          "word": "same",
+          "start_time": 102.86,
+          "duration": 0.26
+        },
+        {
+          "word": "code",
+          "start_time": 103.22,
+          "duration": 0.32
+        },
+        {
+          "word": "over",
+          "start_time": 103.62,
+          "duration": 0.16
+        },
+        {
+          "word": "and",
+          "start_time": 103.82,
+          "duration": 0.06
+        },
+        {
+          "word": "over",
+          "start_time": 103.92,
+          "duration": 0.38
+        },
+        {
+          "word": "this",
+          "start_time": 104.36,
+          "duration": 0.12
+        },
+        {
+          "word": "is",
+          "start_time": 104.54,
+          "duration": 0.1
+        },
+        {
+          "word": "called",
+          "start_time": 104.68,
+          "duration": 0.22
+        },
+        {
+          "word": "iteration",
+          "start_time": 105.02,
+          "duration": 1.48
+        },
+        {
+          "word": "so",
+          "start_time": 106.58,
+          "duration": 0.52
+        },
+        {
+          "word": "i",
+          "start_time": 107.28,
+          "duration": 0.12
+        },
+        {
+          "word": "get",
+          "start_time": 107.44,
+          "duration": 0.18
+        },
+        {
+          "word": "rid",
+          "start_time": 107.7,
+          "duration": 0.2
+        },
+        {
+          "word": "of",
+          "start_time": 107.98,
+          "duration": 0.16
+        },
+        {
+          "word": "these",
+          "start_time": 108.2,
+          "duration": 0.94
+        },
+        {
+          "word": "moves",
+          "start_time": 109.46,
+          "duration": 0.2
+        },
+        {
+          "word": "and",
+          "start_time": 109.76,
+          "duration": 0.08
+        },
+        {
+          "word": "turns",
+          "start_time": 109.88,
+          "duration": 0.38
+        },
+        {
+          "word": "that",
+          "start_time": 110.3,
+          "duration": 0.1
+        },
+        {
+          "word": "are",
+          "start_time": 110.46,
+          "duration": 0.1
+        },
+        {
+          "word": "duplicated",
+          "start_time": 110.62,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 111.46,
+          "duration": 0.1
+        },
+        {
+          "word": "instead",
+          "start_time": 111.66,
+          "duration": 0.3
+        },
+        {
+          "word": "put",
+          "start_time": 112.04,
+          "duration": 0.12
+        },
+        {
+          "word": "them",
+          "start_time": 112.2,
+          "duration": 0.1
+        },
+        {
+          "word": "inside",
+          "start_time": 112.4,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 112.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 112.92,
+          "duration": 0.1
+        },
+        {
+          "word": "repeat",
+          "start_time": 113.06,
+          "duration": 1.12
+        },
+        {
+          "word": "intelletto",
+          "start_time": 114.26,
+          "duration": 0.44
+        },
+        {
+          "word": "repeat",
+          "start_time": 114.74,
+          "duration": 0.82
+        },
+        {
+          "word": "four",
+          "start_time": 115.66,
+          "duration": 0.24
+        },
+        {
+          "word": "times",
+          "start_time": 116.0,
+          "duration": 1.2
+        },
+        {
+          "word": "then",
+          "start_time": 117.26,
+          "duration": 0.56
+        },
+        {
+          "word": "i",
+          "start_time": 117.9,
+          "duration": 0.04
+        },
+        {
+          "word": "can",
+          "start_time": 117.98,
+          "duration": 0.14
+        },
+        {
+          "word": "get",
+          "start_time": 118.16,
+          "duration": 0.14
+        },
+        {
+          "word": "the",
+          "start_time": 118.36,
+          "duration": 0.08
+        },
+        {
+          "word": "exact",
+          "start_time": 118.52,
+          "duration": 0.56
+        },
+        {
+          "word": "same",
+          "start_time": 119.14,
+          "duration": 0.22
+        },
+        {
+          "word": "effect",
+          "start_time": 119.48,
+          "duration": 0.92
+        },
+        {
+          "word": "i",
+          "start_time": 120.48,
+          "duration": 0.06
+        },
+        {
+          "word": "run",
+          "start_time": 120.6,
+          "duration": 0.2
+        },
+        {
+          "word": "that",
+          "start_time": 120.88,
+          "duration": 0.32
+        },
+        {
+          "word": "i",
+          "start_time": 121.26,
+          "duration": 0.04
+        },
+        {
+          "word": "get",
+          "start_time": 121.34,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 121.5,
+          "duration": 0.14
+        },
+        {
+          "word": "square",
+          "start_time": 121.68,
+          "duration": 0.82
+        },
+        {
+          "word": "and",
+          "start_time": 122.58,
+          "duration": 0.08
+        },
+        {
+          "word": "if",
+          "start_time": 122.72,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 122.84,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 122.96,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 123.14,
+          "duration": 0.08
+        },
+        {
+          "word": "make",
+          "start_time": 123.26,
+          "duration": 0.12
+        },
+        {
+          "word": "it",
+          "start_time": 123.46,
+          "duration": 0.08
+        },
+        {
+          "word": "bigger",
+          "start_time": 123.58,
+          "duration": 2.78
+        },
+        {
+          "word": "i",
+          "start_time": 126.44,
+          "duration": 0.06
+        },
+        {
+          "word": "can",
+          "start_time": 126.54,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 126.7,
+          "duration": 0.18
+        },
+        {
+          "word": "so",
+          "start_time": 126.94,
+          "duration": 1.64
+        },
+        {
+          "word": "no",
+          "start_time": 128.64,
+          "duration": 0.42
+        },
+        {
+          "word": "importantly",
+          "start_time": 129.2,
+          "duration": 1.66
+        },
+        {
+          "word": "the",
+          "start_time": 130.94,
+          "duration": 0.14
+        },
+        {
+          "word": "things",
+          "start_time": 131.14,
+          "duration": 0.24
+        },
+        {
+          "word": "that",
+          "start_time": 131.42,
+          "duration": 0.14
+        },
+        {
+          "word": "come",
+          "start_time": 131.64,
+          "duration": 0.16
+        },
+        {
+          "word": "before",
+          "start_time": 131.88,
+          "duration": 0.26
+        },
+        {
+          "word": "the",
+          "start_time": 132.18,
+          "duration": 0.14
+        },
+        {
+          "word": "peat",
+          "start_time": 132.5,
+          "duration": 0.2
+        },
+        {
+          "word": "will",
+          "start_time": 132.74,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 132.92,
+          "duration": 0.24
+        },
+        {
+          "word": "beforehand",
+          "start_time": 133.26,
+          "duration": 0.7
+        },
+        {
+          "word": "so",
+          "start_time": 134.0,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 134.16,
+          "duration": 0.12
+        },
+        {
+          "word": "pen",
+          "start_time": 134.36,
+          "duration": 0.16
+        },
+        {
+          "word": "down",
+          "start_time": 134.54,
+          "duration": 0.22
+        },
+        {
+          "word": "comes",
+          "start_time": 134.8,
+          "duration": 0.24
+        },
+        {
+          "word": "before",
+          "start_time": 135.14,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 135.96,
+          "duration": 0.08
+        },
+        {
+          "word": "anything",
+          "start_time": 136.12,
+          "duration": 0.28
+        },
+        {
+          "word": "that",
+          "start_time": 136.46,
+          "duration": 0.1
+        },
+        {
+          "word": "happens",
+          "start_time": 136.6,
+          "duration": 0.36
+        },
+        {
+          "word": "after",
+          "start_time": 137.1,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 137.36,
+          "duration": 0.12
+        },
+        {
+          "word": "repeater",
+          "start_time": 137.54,
+          "duration": 3.32
+        },
+        {
+          "word": "example",
+          "start_time": 140.9,
+          "duration": 0.48
+        },
+        {
+          "word": "if",
+          "start_time": 141.46,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 141.74,
+          "duration": 0.36
+        },
+        {
+          "word": "sechemites",
+          "start_time": 142.24,
+          "duration": 2.94
+        },
+        {
+          "word": "after",
+          "start_time": 145.28,
+          "duration": 0.5
+        },
+        {
+          "word": "i",
+          "start_time": 145.86,
+          "duration": 0.06
+        },
+        {
+          "word": "draw",
+          "start_time": 145.98,
+          "duration": 0.2
+        },
+        {
+          "word": "my",
+          "start_time": 146.22,
+          "duration": 0.16
+        },
+        {
+          "word": "square",
+          "start_time": 146.42,
+          "duration": 1.04
+        },
+        {
+          "word": "them",
+          "start_time": 147.52,
+          "duration": 0.12
+        },
+        {
+          "word": "that",
+          "start_time": 147.68,
+          "duration": 0.12
+        },
+        {
+          "word": "will",
+          "start_time": 147.84,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 148.02,
+          "duration": 0.24
+        },
+        {
+          "word": "only",
+          "start_time": 148.34,
+          "duration": 0.24
+        },
+        {
+          "word": "after",
+          "start_time": 148.68,
+          "duration": 0.24
+        },
+        {
+          "word": "all",
+          "start_time": 149.0,
+          "duration": 0.1
+        },
+        {
+          "word": "for",
+          "start_time": 149.16,
+          "duration": 0.2
+        },
+        {
+          "word": "sights",
+          "start_time": 149.4,
+          "duration": 0.28
+        },
+        {
+          "word": "have",
+          "start_time": 149.74,
+          "duration": 0.32
+        },
+        {
+          "word": "been",
+          "start_time": 150.12,
+          "duration": 0.14
+        },
+        {
+          "word": "drawn",
+          "start_time": 150.34,
+          "duration": 0.88
+        },
+        {
+          "word": "ironware",
+          "start_time": 151.3,
+          "duration": 1.16
+        },
+        {
+          "word": "to",
+          "start_time": 152.5,
+          "duration": 0.1
+        },
+        {
+          "word": "squares",
+          "start_time": 152.74,
+          "duration": 0.52
+        },
+        {
+          "word": "three",
+          "start_time": 153.3,
+          "duration": 0.24
+        },
+        {
+          "word": "squares",
+          "start_time": 153.58,
+          "duration": 1.1
+        },
+        {
+          "word": "and",
+          "start_time": 154.8,
+          "duration": 0.14
+        },
+        {
+          "word": "so",
+          "start_time": 154.98,
+          "duration": 0.16
+        },
+        {
+          "word": "on",
+          "start_time": 155.24,
+          "duration": 2.1
+        },
+        {
+          "word": "so",
+          "start_time": 157.4,
+          "duration": 0.14
+        },
+        {
+          "word": "that",
+          "start_time": 157.6,
+          "duration": 0.36
+        },
+        {
+          "word": "it",
+          "start_time": 158.08,
+          "duration": 0.18
+        },
+        {
+          "word": "for",
+          "start_time": 158.32,
+          "duration": 0.2
+        },
+        {
+          "word": "the",
+          "start_time": 158.54,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 158.7,
+          "duration": 0.34
+        },
+        {
+          "word": "block",
+          "start_time": 159.08,
+          "duration": 0.22
+        }
+      ]
+    },
+    {
+      "confidence": -2395.91650390625,
+      "words": [
+        {
+          "word": "little",
+          "start_time": 1.26,
+          "duration": 0.28
+        },
+        {
+          "word": "son",
+          "start_time": 1.68,
+          "duration": 0.4
+        },
+        {
+          "word": "on",
+          "start_time": 2.2,
+          "duration": 0.16
+        },
+        {
+          "word": "the",
+          "start_time": 2.48,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 2.66,
+          "duration": 0.48
+        },
+        {
+          "word": "back",
+          "start_time": 3.24,
+          "duration": 1.12
+        },
+        {
+          "word": "often",
+          "start_time": 4.52,
+          "duration": 0.34
+        },
+        {
+          "word": "times",
+          "start_time": 4.9,
+          "duration": 0.3
+        },
+        {
+          "word": "in",
+          "start_time": 5.3,
+          "duration": 0.18
+        },
+        {
+          "word": "step",
+          "start_time": 5.52,
+          "duration": 0.38
+        },
+        {
+          "word": "we",
+          "start_time": 5.96,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 6.12,
+          "duration": 0.18
+        },
+        {
+          "word": "something",
+          "start_time": 6.34,
+          "duration": 1.12
+        },
+        {
+          "word": "multiple",
+          "start_time": 7.54,
+          "duration": 0.4
+        },
+        {
+          "word": "times",
+          "start_time": 8.02,
+          "duration": 0.72
+        },
+        {
+          "word": "for",
+          "start_time": 8.84,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 8.98,
+          "duration": 0.56
+        },
+        {
+          "word": "to",
+          "start_time": 9.6,
+          "duration": 0.1
+        },
+        {
+          "word": "draw",
+          "start_time": 9.74,
+          "duration": 0.2
+        },
+        {
+          "word": "a",
+          "start_time": 9.98,
+          "duration": 0.02
+        },
+        {
+          "word": "square",
+          "start_time": 10.06,
+          "duration": 0.56
+        },
+        {
+          "word": "we",
+          "start_time": 10.72,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 10.88,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 11.12,
+          "duration": 0.32
+        },
+        {
+          "word": "move",
+          "start_time": 11.58,
+          "duration": 1.02
+        },
+        {
+          "word": "and",
+          "start_time": 12.7,
+          "duration": 0.12
+        },
+        {
+          "word": "then",
+          "start_time": 12.88,
+          "duration": 0.26
+        },
+        {
+          "word": "turn",
+          "start_time": 13.18,
+          "duration": 1.2
+        },
+        {
+          "word": "our",
+          "start_time": 14.52,
+          "duration": 0.14
+        },
+        {
+          "word": "times",
+          "start_time": 14.8,
+          "duration": 0.78
+        },
+        {
+          "word": "preamble",
+          "start_time": 15.64,
+          "duration": 0.48
+        },
+        {
+          "word": "of",
+          "start_time": 16.2,
+          "duration": 0.04
+        },
+        {
+          "word": "five",
+          "start_time": 16.28,
+          "duration": 0.18
+        },
+        {
+          "word": "move",
+          "start_time": 16.5,
+          "duration": 0.18
+        },
+        {
+          "word": "one",
+          "start_time": 16.74,
+          "duration": 0.12
+        },
+        {
+          "word": "hundred",
+          "start_time": 16.9,
+          "duration": 0.44
+        },
+        {
+          "word": "steps",
+          "start_time": 17.4,
+          "duration": 0.34
+        },
+        {
+          "word": "and",
+          "start_time": 17.84,
+          "duration": 0.08
+        },
+        {
+          "word": "then",
+          "start_time": 17.98,
+          "duration": 0.18
+        },
+        {
+          "word": "turn",
+          "start_time": 18.22,
+          "duration": 0.44
+        },
+        {
+          "word": "and",
+          "start_time": 18.78,
+          "duration": 0.4
+        },
+        {
+          "word": "degrees",
+          "start_time": 19.22,
+          "duration": 2.26
+        },
+        {
+          "word": "i",
+          "start_time": 21.56,
+          "duration": 0.1
+        },
+        {
+          "word": "endow",
+          "start_time": 21.76,
+          "duration": 0.58
+        },
+        {
+          "word": "first",
+          "start_time": 22.44,
+          "duration": 1.58
+        },
+        {
+          "word": "then",
+          "start_time": 24.06,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 24.24,
+          "duration": 0.08
+        },
+        {
+          "word": "dragonette",
+          "start_time": 24.34,
+          "duration": 2.58
+        },
+        {
+          "word": "four",
+          "start_time": 27.02,
+          "duration": 0.26
+        },
+        {
+          "word": "sides",
+          "start_time": 27.38,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 27.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 27.92,
+          "duration": 0.08
+        },
+        {
+          "word": "square",
+          "start_time": 28.02,
+          "duration": 1.12
+        },
+        {
+          "word": "but",
+          "start_time": 29.18,
+          "duration": 0.06
+        },
+        {
+          "word": "if",
+          "start_time": 29.3,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 29.42,
+          "duration": 0.08
+        },
+        {
+          "word": "wanted",
+          "start_time": 29.56,
+          "duration": 0.3
+        },
+        {
+          "word": "this",
+          "start_time": 29.94,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 30.14,
+          "duration": 0.08
+        },
+        {
+          "word": "happen",
+          "start_time": 30.26,
+          "duration": 0.28
+        },
+        {
+          "word": "with",
+          "start_time": 30.62,
+          "duration": 0.14
+        },
+        {
+          "word": "just",
+          "start_time": 30.82,
+          "duration": 0.36
+        },
+        {
+          "word": "one",
+          "start_time": 31.3,
+          "duration": 0.14
+        },
+        {
+          "word": "clay",
+          "start_time": 31.54,
+          "duration": 0.42
+        },
+        {
+          "word": "i",
+          "start_time": 32.04,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 32.14,
+          "duration": 0.18
+        },
+        {
+          "word": "have",
+          "start_time": 32.36,
+          "duration": 0.22
+        },
+        {
+          "word": "to",
+          "start_time": 32.66,
+          "duration": 0.32
+        },
+        {
+          "word": "duplicate",
+          "start_time": 33.02,
+          "duration": 0.7
+        },
+        {
+          "word": "my",
+          "start_time": 33.8,
+          "duration": 0.22
+        },
+        {
+          "word": "move",
+          "start_time": 34.18,
+          "duration": 0.46
+        },
+        {
+          "word": "and",
+          "start_time": 34.78,
+          "duration": 0.14
+        },
+        {
+          "word": "turn",
+          "start_time": 34.98,
+          "duration": 0.26
+        },
+        {
+          "word": "blocks",
+          "start_time": 35.32,
+          "duration": 0.98
+        },
+        {
+          "word": "and",
+          "start_time": 36.44,
+          "duration": 0.28
+        },
+        {
+          "word": "that's",
+          "start_time": 36.76,
+          "duration": 0.16
+        },
+        {
+          "word": "a",
+          "start_time": 36.96,
+          "duration": 0.02
+        },
+        {
+          "word": "bit",
+          "start_time": 37.02,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 37.14,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 37.32,
+          "duration": 0.06
+        },
+        {
+          "word": "pain",
+          "start_time": 37.46,
+          "duration": 0.54
+        },
+        {
+          "word": "i",
+          "start_time": 38.1,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 38.22,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 38.38,
+          "duration": 0.08
+        },
+        {
+          "word": "drag",
+          "start_time": 38.52,
+          "duration": 0.22
+        },
+        {
+          "word": "out",
+          "start_time": 38.82,
+          "duration": 0.16
+        },
+        {
+          "word": "move",
+          "start_time": 39.08,
+          "duration": 0.34
+        },
+        {
+          "word": "turn",
+          "start_time": 39.54,
+          "duration": 1.24
+        },
+        {
+          "word": "turn",
+          "start_time": 42.26,
+          "duration": 3.12
+        },
+        {
+          "word": "turn",
+          "start_time": 45.48,
+          "duration": 0.72
+        },
+        {
+          "word": "and",
+          "start_time": 46.28,
+          "duration": 0.06
+        },
+        {
+          "word": "then",
+          "start_time": 46.38,
+          "duration": 0.1
+        },
+        {
+          "word": "of",
+          "start_time": 46.56,
+          "duration": 0.06
+        },
+        {
+          "word": "course",
+          "start_time": 46.68,
+          "duration": 0.28
+        },
+        {
+          "word": "i",
+          "start_time": 47.02,
+          "duration": 0.1
+        },
+        {
+          "word": "would",
+          "start_time": 47.14,
+          "duration": 0.12
+        },
+        {
+          "word": "have",
+          "start_time": 47.28,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 47.48,
+          "duration": 0.08
+        },
+        {
+          "word": "change",
+          "start_time": 47.64,
+          "duration": 0.22
+        },
+        {
+          "word": "all",
+          "start_time": 47.94,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 48.08,
+          "duration": 0.06
+        },
+        {
+          "word": "these",
+          "start_time": 48.18,
+          "duration": 0.18
+        },
+        {
+          "word": "premeditated",
+          "start_time": 48.42,
+          "duration": 5.1
+        },
+        {
+          "word": "it",
+          "start_time": 53.7,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 53.84,
+          "duration": 0.12
+        },
+        {
+          "word": "to",
+          "start_time": 54.0,
+          "duration": 0.06
+        },
+        {
+          "word": "superintend",
+          "start_time": 54.1,
+          "duration": 3.86
+        },
+        {
+          "word": "if",
+          "start_time": 58.02,
+          "duration": 0.08
+        },
+        {
+          "word": "i",
+          "start_time": 58.14,
+          "duration": 0.08
+        },
+        {
+          "word": "do",
+          "start_time": 58.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 58.4,
+          "duration": 2.04
+        },
+        {
+          "word": "a",
+          "start_time": 60.64,
+          "duration": 0.1
+        },
+        {
+          "word": "clear",
+          "start_time": 60.76,
+          "duration": 0.2
+        },
+        {
+          "word": "rout",
+          "start_time": 61.06,
+          "duration": 0.4
+        },
+        {
+          "word": "here",
+          "start_time": 61.5,
+          "duration": 0.76
+        },
+        {
+          "word": "queer",
+          "start_time": 62.32,
+          "duration": 0.22
+        },
+        {
+          "word": "my",
+          "start_time": 62.58,
+          "duration": 0.2
+        },
+        {
+          "word": "screen",
+          "start_time": 62.82,
+          "duration": 0.88
+        },
+        {
+          "word": "on",
+          "start_time": 63.82,
+          "duration": 0.08
+        },
+        {
+          "word": "my",
+          "start_time": 63.96,
+          "duration": 0.1
+        },
+        {
+          "word": "cot",
+          "start_time": 64.1,
+          "duration": 0.12
+        },
+        {
+          "word": "again",
+          "start_time": 64.28,
+          "duration": 0.38
+        },
+        {
+          "word": "and",
+          "start_time": 64.82,
+          "duration": 0.14
+        },
+        {
+          "word": "i",
+          "start_time": 65.06,
+          "duration": 0.06
+        },
+        {
+          "word": "get",
+          "start_time": 65.16,
+          "duration": 0.18
+        },
+        {
+          "word": "that",
+          "start_time": 65.38,
+          "duration": 0.22
+        },
+        {
+          "word": "square",
+          "start_time": 65.66,
+          "duration": 0.3
+        },
+        {
+          "word": "with",
+          "start_time": 66.02,
+          "duration": 0.16
+        },
+        {
+          "word": "just",
+          "start_time": 66.24,
+          "duration": 0.24
+        },
+        {
+          "word": "a",
+          "start_time": 66.56,
+          "duration": 0.08
+        },
+        {
+          "word": "single",
+          "start_time": 66.68,
+          "duration": 0.34
+        },
+        {
+          "word": "run",
+          "start_time": 67.1,
+          "duration": 0.18
+        },
+        {
+          "word": "of",
+          "start_time": 67.3,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 67.48,
+          "duration": 0.18
+        },
+        {
+          "word": "coat",
+          "start_time": 67.74,
+          "duration": 0.52
+        },
+        {
+          "word": "and",
+          "start_time": 68.38,
+          "duration": 0.08
+        },
+        {
+          "word": "that's",
+          "start_time": 68.5,
+          "duration": 0.2
+        },
+        {
+          "word": "nice",
+          "start_time": 68.76,
+          "duration": 1.42
+        },
+        {
+          "word": "but",
+          "start_time": 70.26,
+          "duration": 0.96
+        },
+        {
+          "word": "where",
+          "start_time": 71.28,
+          "duration": 0.16
+        },
+        {
+          "word": "programmers",
+          "start_time": 71.52,
+          "duration": 0.62
+        },
+        {
+          "word": "and",
+          "start_time": 72.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 72.4,
+          "duration": 0.1
+        },
+        {
+          "word": "means",
+          "start_time": 72.54,
+          "duration": 0.14
+        },
+        {
+          "word": "we",
+          "start_time": 72.74,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 72.86,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 73.06,
+          "duration": 0.06
+        },
+        {
+          "word": "do",
+          "start_time": 73.16,
+          "duration": 0.22
+        },
+        {
+          "word": "things",
+          "start_time": 73.48,
+          "duration": 0.28
+        },
+        {
+          "word": "in",
+          "start_time": 73.84,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 73.98,
+          "duration": 0.04
+        },
+        {
+          "word": "way",
+          "start_time": 74.06,
+          "duration": 0.14
+        },
+        {
+          "word": "that's",
+          "start_time": 74.26,
+          "duration": 0.16
+        },
+        {
+          "word": "maintainable",
+          "start_time": 74.46,
+          "duration": 0.8
+        },
+        {
+          "word": "and",
+          "start_time": 75.32,
+          "duration": 0.08
+        },
+        {
+          "word": "efficient",
+          "start_time": 75.5,
+          "duration": 0.58
+        },
+        {
+          "word": "and",
+          "start_time": 76.18,
+          "duration": 0.1
+        },
+        {
+          "word": "frankly",
+          "start_time": 76.32,
+          "duration": 0.36
+        },
+        {
+          "word": "speaking",
+          "start_time": 76.74,
+          "duration": 0.32
+        },
+        {
+          "word": "a",
+          "start_time": 77.12,
+          "duration": 0.02
+        },
+        {
+          "word": "little",
+          "start_time": 77.2,
+          "duration": 0.16
+        },
+        {
+          "word": "bit",
+          "start_time": 77.4,
+          "duration": 0.16
+        },
+        {
+          "word": "lazy",
+          "start_time": 77.6,
+          "duration": 1.1
+        },
+        {
+          "word": "for",
+          "start_time": 78.78,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 78.9,
+          "duration": 0.28
+        },
+        {
+          "word": "if",
+          "start_time": 79.22,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 79.36,
+          "duration": 0.04
+        },
+        {
+          "word": "wanted",
+          "start_time": 79.46,
+          "duration": 0.28
+        },
+        {
+          "word": "to",
+          "start_time": 79.8,
+          "duration": 0.12
+        },
+        {
+          "word": "change",
+          "start_time": 80.0,
+          "duration": 0.3
+        },
+        {
+          "word": "the",
+          "start_time": 80.4,
+          "duration": 0.08
+        },
+        {
+          "word": "size",
+          "start_time": 80.52,
+          "duration": 0.22
+        },
+        {
+          "word": "of",
+          "start_time": 80.8,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 81.0,
+          "duration": 0.2
+        },
+        {
+          "word": "square",
+          "start_time": 81.26,
+          "duration": 0.26
+        },
+        {
+          "word": "i",
+          "start_time": 81.58,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 81.66,
+          "duration": 0.14
+        },
+        {
+          "word": "have",
+          "start_time": 81.84,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 82.04,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 82.16,
+          "duration": 0.26
+        },
+        {
+          "word": "all",
+          "start_time": 82.58,
+          "duration": 0.12
+        },
+        {
+          "word": "of",
+          "start_time": 82.76,
+          "duration": 0.08
+        },
+        {
+          "word": "these",
+          "start_time": 82.9,
+          "duration": 0.26
+        },
+        {
+          "word": "moves",
+          "start_time": 83.3,
+          "duration": 1.42
+        },
+        {
+          "word": "buffeted",
+          "start_time": 84.76,
+          "duration": 3.0
+        },
+        {
+          "word": "to",
+          "start_time": 87.82,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 87.92,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 88.24,
+          "duration": 0.1
+        },
+        {
+          "word": "sides",
+          "start_time": 88.44,
+          "duration": 0.76
+        },
+        {
+          "word": "i",
+          "start_time": 89.38,
+          "duration": 0.08
+        },
+        {
+          "word": "have",
+          "start_time": 89.52,
+          "duration": 0.14
+        },
+        {
+          "word": "a",
+          "start_time": 89.72,
+          "duration": 0.06
+        },
+        {
+          "word": "smaller",
+          "start_time": 89.8,
+          "duration": 0.32
+        },
+        {
+          "word": "square",
+          "start_time": 90.2,
+          "duration": 0.68
+        },
+        {
+          "word": "it",
+          "start_time": 90.98,
+          "duration": 0.18
+        },
+        {
+          "word": "took",
+          "start_time": 91.28,
+          "duration": 0.12
+        },
+        {
+          "word": "a",
+          "start_time": 91.44,
+          "duration": 0.04
+        },
+        {
+          "word": "lot",
+          "start_time": 91.52,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 91.64,
+          "duration": 0.06
+        },
+        {
+          "word": "work",
+          "start_time": 91.76,
+          "duration": 0.2
+        },
+        {
+          "word": "to",
+          "start_time": 92.0,
+          "duration": 0.08
+        },
+        {
+          "word": "get",
+          "start_time": 92.12,
+          "duration": 0.18
+        },
+        {
+          "word": "there",
+          "start_time": 92.38,
+          "duration": 1.28
+        },
+        {
+          "word": "to",
+          "start_time": 93.72,
+          "duration": 0.06
+        },
+        {
+          "word": "address",
+          "start_time": 93.82,
+          "duration": 0.32
+        },
+        {
+          "word": "this",
+          "start_time": 94.22,
+          "duration": 0.24
+        },
+        {
+          "word": "tampassook",
+          "start_time": 94.64,
+          "duration": 0.84
+        },
+        {
+          "word": "called",
+          "start_time": 95.64,
+          "duration": 0.32
+        },
+        {
+          "word": "repeat",
+          "start_time": 96.04,
+          "duration": 1.36
+        },
+        {
+          "word": "repeat",
+          "start_time": 97.46,
+          "duration": 0.42
+        },
+        {
+          "word": "as",
+          "start_time": 97.98,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 98.14,
+          "duration": 0.04
+        },
+        {
+          "word": "block",
+          "start_time": 98.24,
+          "duration": 0.34
+        },
+        {
+          "word": "that",
+          "start_time": 98.7,
+          "duration": 0.14
+        },
+        {
+          "word": "allows",
+          "start_time": 98.9,
+          "duration": 0.28
+        },
+        {
+          "word": "us",
+          "start_time": 99.28,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 99.56,
+          "duration": 0.44
+        },
+        {
+          "word": "run",
+          "start_time": 100.08,
+          "duration": 0.3
+        },
+        {
+          "word": "code",
+          "start_time": 100.48,
+          "duration": 0.38
+        },
+        {
+          "word": "multiple",
+          "start_time": 100.96,
+          "duration": 0.46
+        },
+        {
+          "word": "times",
+          "start_time": 101.52,
+          "duration": 0.78
+        },
+        {
+          "word": "the",
+          "start_time": 102.38,
+          "duration": 0.06
+        },
+        {
+          "word": "exact",
+          "start_time": 102.5,
+          "duration": 0.32
+        },
+        {
+          "word": "same",
+          "start_time": 102.86,
+          "duration": 0.26
+        },
+        {
+          "word": "code",
+          "start_time": 103.22,
+          "duration": 0.32
+        },
+        {
+          "word": "over",
+          "start_time": 103.62,
+          "duration": 0.16
+        },
+        {
+          "word": "and",
+          "start_time": 103.82,
+          "duration": 0.06
+        },
+        {
+          "word": "over",
+          "start_time": 103.92,
+          "duration": 0.38
+        },
+        {
+          "word": "this",
+          "start_time": 104.36,
+          "duration": 0.12
+        },
+        {
+          "word": "is",
+          "start_time": 104.54,
+          "duration": 0.1
+        },
+        {
+          "word": "called",
+          "start_time": 104.68,
+          "duration": 0.22
+        },
+        {
+          "word": "iteration",
+          "start_time": 105.02,
+          "duration": 1.48
+        },
+        {
+          "word": "so",
+          "start_time": 106.58,
+          "duration": 0.52
+        },
+        {
+          "word": "i",
+          "start_time": 107.28,
+          "duration": 0.12
+        },
+        {
+          "word": "get",
+          "start_time": 107.44,
+          "duration": 0.18
+        },
+        {
+          "word": "rid",
+          "start_time": 107.7,
+          "duration": 0.2
+        },
+        {
+          "word": "of",
+          "start_time": 107.98,
+          "duration": 0.16
+        },
+        {
+          "word": "these",
+          "start_time": 108.2,
+          "duration": 0.94
+        },
+        {
+          "word": "moves",
+          "start_time": 109.46,
+          "duration": 0.2
+        },
+        {
+          "word": "and",
+          "start_time": 109.76,
+          "duration": 0.08
+        },
+        {
+          "word": "turns",
+          "start_time": 109.88,
+          "duration": 0.38
+        },
+        {
+          "word": "that",
+          "start_time": 110.3,
+          "duration": 0.1
+        },
+        {
+          "word": "are",
+          "start_time": 110.46,
+          "duration": 0.1
+        },
+        {
+          "word": "duplicated",
+          "start_time": 110.62,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 111.46,
+          "duration": 0.1
+        },
+        {
+          "word": "instead",
+          "start_time": 111.66,
+          "duration": 0.3
+        },
+        {
+          "word": "put",
+          "start_time": 112.04,
+          "duration": 0.12
+        },
+        {
+          "word": "them",
+          "start_time": 112.2,
+          "duration": 0.1
+        },
+        {
+          "word": "inside",
+          "start_time": 112.4,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 112.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 112.92,
+          "duration": 0.1
+        },
+        {
+          "word": "repeat",
+          "start_time": 113.06,
+          "duration": 1.12
+        },
+        {
+          "word": "intelletto",
+          "start_time": 114.26,
+          "duration": 0.44
+        },
+        {
+          "word": "repeat",
+          "start_time": 114.74,
+          "duration": 0.82
+        },
+        {
+          "word": "four",
+          "start_time": 115.66,
+          "duration": 0.24
+        },
+        {
+          "word": "times",
+          "start_time": 116.0,
+          "duration": 1.2
+        },
+        {
+          "word": "then",
+          "start_time": 117.26,
+          "duration": 0.56
+        },
+        {
+          "word": "i",
+          "start_time": 117.9,
+          "duration": 0.04
+        },
+        {
+          "word": "can",
+          "start_time": 117.98,
+          "duration": 0.14
+        },
+        {
+          "word": "get",
+          "start_time": 118.16,
+          "duration": 0.14
+        },
+        {
+          "word": "the",
+          "start_time": 118.36,
+          "duration": 0.08
+        },
+        {
+          "word": "exact",
+          "start_time": 118.52,
+          "duration": 0.56
+        },
+        {
+          "word": "same",
+          "start_time": 119.14,
+          "duration": 0.22
+        },
+        {
+          "word": "effect",
+          "start_time": 119.48,
+          "duration": 0.92
+        },
+        {
+          "word": "i",
+          "start_time": 120.48,
+          "duration": 0.06
+        },
+        {
+          "word": "run",
+          "start_time": 120.6,
+          "duration": 0.2
+        },
+        {
+          "word": "that",
+          "start_time": 120.88,
+          "duration": 0.32
+        },
+        {
+          "word": "i",
+          "start_time": 121.26,
+          "duration": 0.04
+        },
+        {
+          "word": "get",
+          "start_time": 121.34,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 121.5,
+          "duration": 0.14
+        },
+        {
+          "word": "square",
+          "start_time": 121.68,
+          "duration": 0.82
+        },
+        {
+          "word": "and",
+          "start_time": 122.58,
+          "duration": 0.08
+        },
+        {
+          "word": "if",
+          "start_time": 122.72,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 122.84,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 122.96,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 123.14,
+          "duration": 0.08
+        },
+        {
+          "word": "make",
+          "start_time": 123.26,
+          "duration": 0.12
+        },
+        {
+          "word": "it",
+          "start_time": 123.46,
+          "duration": 0.08
+        },
+        {
+          "word": "bigger",
+          "start_time": 123.58,
+          "duration": 2.78
+        },
+        {
+          "word": "i",
+          "start_time": 126.44,
+          "duration": 0.06
+        },
+        {
+          "word": "can",
+          "start_time": 126.54,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 126.7,
+          "duration": 0.18
+        },
+        {
+          "word": "so",
+          "start_time": 126.94,
+          "duration": 1.64
+        },
+        {
+          "word": "no",
+          "start_time": 128.64,
+          "duration": 0.42
+        },
+        {
+          "word": "importantly",
+          "start_time": 129.2,
+          "duration": 1.66
+        },
+        {
+          "word": "the",
+          "start_time": 130.94,
+          "duration": 0.14
+        },
+        {
+          "word": "things",
+          "start_time": 131.14,
+          "duration": 0.24
+        },
+        {
+          "word": "that",
+          "start_time": 131.42,
+          "duration": 0.14
+        },
+        {
+          "word": "come",
+          "start_time": 131.64,
+          "duration": 0.16
+        },
+        {
+          "word": "before",
+          "start_time": 131.88,
+          "duration": 0.26
+        },
+        {
+          "word": "the",
+          "start_time": 132.18,
+          "duration": 0.14
+        },
+        {
+          "word": "peat",
+          "start_time": 132.5,
+          "duration": 0.2
+        },
+        {
+          "word": "will",
+          "start_time": 132.74,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 132.92,
+          "duration": 0.24
+        },
+        {
+          "word": "beforehand",
+          "start_time": 133.26,
+          "duration": 0.7
+        },
+        {
+          "word": "so",
+          "start_time": 134.0,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 134.16,
+          "duration": 0.12
+        },
+        {
+          "word": "pen",
+          "start_time": 134.36,
+          "duration": 0.16
+        },
+        {
+          "word": "down",
+          "start_time": 134.54,
+          "duration": 0.22
+        },
+        {
+          "word": "comes",
+          "start_time": 134.8,
+          "duration": 0.24
+        },
+        {
+          "word": "before",
+          "start_time": 135.14,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 135.96,
+          "duration": 0.08
+        },
+        {
+          "word": "anything",
+          "start_time": 136.12,
+          "duration": 0.28
+        },
+        {
+          "word": "that",
+          "start_time": 136.46,
+          "duration": 0.1
+        },
+        {
+          "word": "happens",
+          "start_time": 136.6,
+          "duration": 0.36
+        },
+        {
+          "word": "after",
+          "start_time": 137.1,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 137.36,
+          "duration": 0.12
+        },
+        {
+          "word": "repeater",
+          "start_time": 137.54,
+          "duration": 3.32
+        },
+        {
+          "word": "example",
+          "start_time": 140.9,
+          "duration": 0.48
+        },
+        {
+          "word": "if",
+          "start_time": 141.46,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 141.74,
+          "duration": 0.36
+        },
+        {
+          "word": "sechemites",
+          "start_time": 142.24,
+          "duration": 2.94
+        },
+        {
+          "word": "after",
+          "start_time": 145.28,
+          "duration": 0.5
+        },
+        {
+          "word": "i",
+          "start_time": 145.86,
+          "duration": 0.06
+        },
+        {
+          "word": "draw",
+          "start_time": 145.98,
+          "duration": 0.2
+        },
+        {
+          "word": "my",
+          "start_time": 146.22,
+          "duration": 0.16
+        },
+        {
+          "word": "square",
+          "start_time": 146.42,
+          "duration": 1.04
+        },
+        {
+          "word": "them",
+          "start_time": 147.52,
+          "duration": 0.12
+        },
+        {
+          "word": "that",
+          "start_time": 147.68,
+          "duration": 0.12
+        },
+        {
+          "word": "will",
+          "start_time": 147.84,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 148.02,
+          "duration": 0.24
+        },
+        {
+          "word": "only",
+          "start_time": 148.34,
+          "duration": 0.24
+        },
+        {
+          "word": "after",
+          "start_time": 148.68,
+          "duration": 0.24
+        },
+        {
+          "word": "all",
+          "start_time": 149.0,
+          "duration": 0.1
+        },
+        {
+          "word": "for",
+          "start_time": 149.16,
+          "duration": 0.2
+        },
+        {
+          "word": "sights",
+          "start_time": 149.4,
+          "duration": 0.28
+        },
+        {
+          "word": "have",
+          "start_time": 149.74,
+          "duration": 0.32
+        },
+        {
+          "word": "been",
+          "start_time": 150.12,
+          "duration": 0.14
+        },
+        {
+          "word": "drawn",
+          "start_time": 150.34,
+          "duration": 0.88
+        },
+        {
+          "word": "ironware",
+          "start_time": 151.3,
+          "duration": 1.16
+        },
+        {
+          "word": "to",
+          "start_time": 152.5,
+          "duration": 0.1
+        },
+        {
+          "word": "squares",
+          "start_time": 152.74,
+          "duration": 0.52
+        },
+        {
+          "word": "three",
+          "start_time": 153.3,
+          "duration": 0.24
+        },
+        {
+          "word": "squares",
+          "start_time": 153.58,
+          "duration": 1.1
+        },
+        {
+          "word": "and",
+          "start_time": 154.8,
+          "duration": 0.14
+        },
+        {
+          "word": "so",
+          "start_time": 154.98,
+          "duration": 0.16
+        },
+        {
+          "word": "on",
+          "start_time": 155.24,
+          "duration": 2.1
+        },
+        {
+          "word": "so",
+          "start_time": 157.4,
+          "duration": 0.14
+        },
+        {
+          "word": "that",
+          "start_time": 157.6,
+          "duration": 0.36
+        },
+        {
+          "word": "it",
+          "start_time": 158.08,
+          "duration": 0.18
+        },
+        {
+          "word": "for",
+          "start_time": 158.32,
+          "duration": 0.2
+        },
+        {
+          "word": "the",
+          "start_time": 158.54,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 158.7,
+          "duration": 0.34
+        },
+        {
+          "word": "block",
+          "start_time": 159.08,
+          "duration": 0.22
+        }
+      ]
+    },
+    {
+      "confidence": -2395.919677734375,
+      "words": [
+        {
+          "word": "little",
+          "start_time": 1.26,
+          "duration": 0.28
+        },
+        {
+          "word": "son",
+          "start_time": 1.68,
+          "duration": 0.4
+        },
+        {
+          "word": "on",
+          "start_time": 2.2,
+          "duration": 0.16
+        },
+        {
+          "word": "the",
+          "start_time": 2.48,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 2.66,
+          "duration": 0.48
+        },
+        {
+          "word": "back",
+          "start_time": 3.24,
+          "duration": 1.12
+        },
+        {
+          "word": "often",
+          "start_time": 4.52,
+          "duration": 0.34
+        },
+        {
+          "word": "times",
+          "start_time": 4.9,
+          "duration": 0.3
+        },
+        {
+          "word": "in",
+          "start_time": 5.3,
+          "duration": 0.18
+        },
+        {
+          "word": "step",
+          "start_time": 5.52,
+          "duration": 0.38
+        },
+        {
+          "word": "we",
+          "start_time": 5.96,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 6.12,
+          "duration": 0.18
+        },
+        {
+          "word": "something",
+          "start_time": 6.34,
+          "duration": 1.12
+        },
+        {
+          "word": "multiple",
+          "start_time": 7.54,
+          "duration": 0.4
+        },
+        {
+          "word": "times",
+          "start_time": 8.02,
+          "duration": 0.72
+        },
+        {
+          "word": "for",
+          "start_time": 8.84,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 8.98,
+          "duration": 0.56
+        },
+        {
+          "word": "to",
+          "start_time": 9.6,
+          "duration": 0.1
+        },
+        {
+          "word": "draw",
+          "start_time": 9.74,
+          "duration": 0.2
+        },
+        {
+          "word": "a",
+          "start_time": 9.98,
+          "duration": 0.02
+        },
+        {
+          "word": "square",
+          "start_time": 10.06,
+          "duration": 0.56
+        },
+        {
+          "word": "we",
+          "start_time": 10.72,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 10.88,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 11.12,
+          "duration": 0.32
+        },
+        {
+          "word": "move",
+          "start_time": 11.58,
+          "duration": 1.02
+        },
+        {
+          "word": "and",
+          "start_time": 12.7,
+          "duration": 0.12
+        },
+        {
+          "word": "then",
+          "start_time": 12.88,
+          "duration": 0.26
+        },
+        {
+          "word": "turn",
+          "start_time": 13.18,
+          "duration": 1.2
+        },
+        {
+          "word": "our",
+          "start_time": 14.52,
+          "duration": 0.14
+        },
+        {
+          "word": "times",
+          "start_time": 14.8,
+          "duration": 0.78
+        },
+        {
+          "word": "preamble",
+          "start_time": 15.64,
+          "duration": 0.48
+        },
+        {
+          "word": "of",
+          "start_time": 16.2,
+          "duration": 0.04
+        },
+        {
+          "word": "fine",
+          "start_time": 16.28,
+          "duration": 0.18
+        },
+        {
+          "word": "move",
+          "start_time": 16.5,
+          "duration": 0.18
+        },
+        {
+          "word": "one",
+          "start_time": 16.74,
+          "duration": 0.12
+        },
+        {
+          "word": "hundred",
+          "start_time": 16.9,
+          "duration": 0.44
+        },
+        {
+          "word": "steps",
+          "start_time": 17.4,
+          "duration": 0.34
+        },
+        {
+          "word": "and",
+          "start_time": 17.84,
+          "duration": 0.08
+        },
+        {
+          "word": "then",
+          "start_time": 17.98,
+          "duration": 0.18
+        },
+        {
+          "word": "turn",
+          "start_time": 18.22,
+          "duration": 0.44
+        },
+        {
+          "word": "and",
+          "start_time": 18.78,
+          "duration": 0.4
+        },
+        {
+          "word": "degrees",
+          "start_time": 19.22,
+          "duration": 2.26
+        },
+        {
+          "word": "i",
+          "start_time": 21.56,
+          "duration": 0.1
+        },
+        {
+          "word": "endow",
+          "start_time": 21.76,
+          "duration": 0.58
+        },
+        {
+          "word": "first",
+          "start_time": 22.44,
+          "duration": 1.58
+        },
+        {
+          "word": "then",
+          "start_time": 24.06,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 24.24,
+          "duration": 0.08
+        },
+        {
+          "word": "dragonette",
+          "start_time": 24.34,
+          "duration": 2.58
+        },
+        {
+          "word": "four",
+          "start_time": 27.02,
+          "duration": 0.26
+        },
+        {
+          "word": "sides",
+          "start_time": 27.38,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 27.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 27.92,
+          "duration": 0.08
+        },
+        {
+          "word": "square",
+          "start_time": 28.02,
+          "duration": 1.12
+        },
+        {
+          "word": "but",
+          "start_time": 29.18,
+          "duration": 0.06
+        },
+        {
+          "word": "if",
+          "start_time": 29.3,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 29.42,
+          "duration": 0.08
+        },
+        {
+          "word": "wanted",
+          "start_time": 29.56,
+          "duration": 0.3
+        },
+        {
+          "word": "this",
+          "start_time": 29.94,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 30.14,
+          "duration": 0.08
+        },
+        {
+          "word": "happen",
+          "start_time": 30.26,
+          "duration": 0.28
+        },
+        {
+          "word": "with",
+          "start_time": 30.62,
+          "duration": 0.14
+        },
+        {
+          "word": "just",
+          "start_time": 30.82,
+          "duration": 0.36
+        },
+        {
+          "word": "one",
+          "start_time": 31.3,
+          "duration": 0.14
+        },
+        {
+          "word": "clay",
+          "start_time": 31.54,
+          "duration": 0.42
+        },
+        {
+          "word": "i",
+          "start_time": 32.04,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 32.14,
+          "duration": 0.18
+        },
+        {
+          "word": "have",
+          "start_time": 32.36,
+          "duration": 0.22
+        },
+        {
+          "word": "to",
+          "start_time": 32.66,
+          "duration": 0.32
+        },
+        {
+          "word": "duplicate",
+          "start_time": 33.02,
+          "duration": 0.7
+        },
+        {
+          "word": "my",
+          "start_time": 33.8,
+          "duration": 0.22
+        },
+        {
+          "word": "move",
+          "start_time": 34.18,
+          "duration": 0.46
+        },
+        {
+          "word": "and",
+          "start_time": 34.78,
+          "duration": 0.14
+        },
+        {
+          "word": "turn",
+          "start_time": 34.98,
+          "duration": 0.26
+        },
+        {
+          "word": "blocks",
+          "start_time": 35.32,
+          "duration": 0.98
+        },
+        {
+          "word": "and",
+          "start_time": 36.44,
+          "duration": 0.28
+        },
+        {
+          "word": "that's",
+          "start_time": 36.76,
+          "duration": 0.16
+        },
+        {
+          "word": "a",
+          "start_time": 36.96,
+          "duration": 0.02
+        },
+        {
+          "word": "bit",
+          "start_time": 37.02,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 37.14,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 37.32,
+          "duration": 0.06
+        },
+        {
+          "word": "pain",
+          "start_time": 37.46,
+          "duration": 0.54
+        },
+        {
+          "word": "i",
+          "start_time": 38.1,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 38.22,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 38.38,
+          "duration": 0.08
+        },
+        {
+          "word": "drag",
+          "start_time": 38.52,
+          "duration": 0.22
+        },
+        {
+          "word": "out",
+          "start_time": 38.82,
+          "duration": 0.16
+        },
+        {
+          "word": "move",
+          "start_time": 39.08,
+          "duration": 0.34
+        },
+        {
+          "word": "turn",
+          "start_time": 39.54,
+          "duration": 1.24
+        },
+        {
+          "word": "turn",
+          "start_time": 42.26,
+          "duration": 3.12
+        },
+        {
+          "word": "turn",
+          "start_time": 45.48,
+          "duration": 0.72
+        },
+        {
+          "word": "and",
+          "start_time": 46.28,
+          "duration": 0.06
+        },
+        {
+          "word": "then",
+          "start_time": 46.38,
+          "duration": 0.1
+        },
+        {
+          "word": "of",
+          "start_time": 46.56,
+          "duration": 0.06
+        },
+        {
+          "word": "course",
+          "start_time": 46.68,
+          "duration": 0.28
+        },
+        {
+          "word": "i",
+          "start_time": 47.02,
+          "duration": 0.1
+        },
+        {
+          "word": "would",
+          "start_time": 47.14,
+          "duration": 0.12
+        },
+        {
+          "word": "have",
+          "start_time": 47.28,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 47.48,
+          "duration": 0.08
+        },
+        {
+          "word": "change",
+          "start_time": 47.64,
+          "duration": 0.22
+        },
+        {
+          "word": "all",
+          "start_time": 47.94,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 48.08,
+          "duration": 0.06
+        },
+        {
+          "word": "these",
+          "start_time": 48.18,
+          "duration": 0.18
+        },
+        {
+          "word": "premeditated",
+          "start_time": 48.42,
+          "duration": 5.1
+        },
+        {
+          "word": "it",
+          "start_time": 53.7,
+          "duration": 0.1
+        },
+        {
+          "word": "have",
+          "start_time": 53.84,
+          "duration": 0.12
+        },
+        {
+          "word": "to",
+          "start_time": 54.0,
+          "duration": 0.06
+        },
+        {
+          "word": "superintend",
+          "start_time": 54.1,
+          "duration": 3.86
+        },
+        {
+          "word": "if",
+          "start_time": 58.02,
+          "duration": 0.08
+        },
+        {
+          "word": "i",
+          "start_time": 58.14,
+          "duration": 0.08
+        },
+        {
+          "word": "do",
+          "start_time": 58.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 58.4,
+          "duration": 2.04
+        },
+        {
+          "word": "a",
+          "start_time": 60.64,
+          "duration": 0.1
+        },
+        {
+          "word": "clear",
+          "start_time": 60.76,
+          "duration": 0.2
+        },
+        {
+          "word": "rout",
+          "start_time": 61.06,
+          "duration": 0.4
+        },
+        {
+          "word": "here",
+          "start_time": 61.5,
+          "duration": 0.76
+        },
+        {
+          "word": "queer",
+          "start_time": 62.32,
+          "duration": 0.22
+        },
+        {
+          "word": "my",
+          "start_time": 62.58,
+          "duration": 0.2
+        },
+        {
+          "word": "screen",
+          "start_time": 62.82,
+          "duration": 0.88
+        },
+        {
+          "word": "on",
+          "start_time": 63.82,
+          "duration": 0.08
+        },
+        {
+          "word": "my",
+          "start_time": 63.96,
+          "duration": 0.1
+        },
+        {
+          "word": "cot",
+          "start_time": 64.1,
+          "duration": 0.12
+        },
+        {
+          "word": "again",
+          "start_time": 64.28,
+          "duration": 0.38
+        },
+        {
+          "word": "and",
+          "start_time": 64.82,
+          "duration": 0.14
+        },
+        {
+          "word": "i",
+          "start_time": 65.06,
+          "duration": 0.06
+        },
+        {
+          "word": "get",
+          "start_time": 65.16,
+          "duration": 0.18
+        },
+        {
+          "word": "that",
+          "start_time": 65.38,
+          "duration": 0.22
+        },
+        {
+          "word": "square",
+          "start_time": 65.66,
+          "duration": 0.3
+        },
+        {
+          "word": "with",
+          "start_time": 66.02,
+          "duration": 0.16
+        },
+        {
+          "word": "just",
+          "start_time": 66.24,
+          "duration": 0.24
+        },
+        {
+          "word": "a",
+          "start_time": 66.56,
+          "duration": 0.08
+        },
+        {
+          "word": "single",
+          "start_time": 66.68,
+          "duration": 0.34
+        },
+        {
+          "word": "run",
+          "start_time": 67.1,
+          "duration": 0.18
+        },
+        {
+          "word": "of",
+          "start_time": 67.3,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 67.48,
+          "duration": 0.18
+        },
+        {
+          "word": "coat",
+          "start_time": 67.74,
+          "duration": 0.52
+        },
+        {
+          "word": "and",
+          "start_time": 68.38,
+          "duration": 0.08
+        },
+        {
+          "word": "that's",
+          "start_time": 68.5,
+          "duration": 0.2
+        },
+        {
+          "word": "nice",
+          "start_time": 68.76,
+          "duration": 1.42
+        },
+        {
+          "word": "but",
+          "start_time": 70.26,
+          "duration": 0.96
+        },
+        {
+          "word": "where",
+          "start_time": 71.28,
+          "duration": 0.16
+        },
+        {
+          "word": "programmers",
+          "start_time": 71.52,
+          "duration": 0.62
+        },
+        {
+          "word": "and",
+          "start_time": 72.26,
+          "duration": 0.1
+        },
+        {
+          "word": "that",
+          "start_time": 72.4,
+          "duration": 0.1
+        },
+        {
+          "word": "means",
+          "start_time": 72.54,
+          "duration": 0.14
+        },
+        {
+          "word": "we",
+          "start_time": 72.74,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 72.86,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 73.06,
+          "duration": 0.06
+        },
+        {
+          "word": "do",
+          "start_time": 73.16,
+          "duration": 0.22
+        },
+        {
+          "word": "things",
+          "start_time": 73.48,
+          "duration": 0.28
+        },
+        {
+          "word": "in",
+          "start_time": 73.84,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 73.98,
+          "duration": 0.04
+        },
+        {
+          "word": "way",
+          "start_time": 74.06,
+          "duration": 0.14
+        },
+        {
+          "word": "that's",
+          "start_time": 74.26,
+          "duration": 0.16
+        },
+        {
+          "word": "maintainable",
+          "start_time": 74.46,
+          "duration": 0.8
+        },
+        {
+          "word": "and",
+          "start_time": 75.32,
+          "duration": 0.08
+        },
+        {
+          "word": "efficient",
+          "start_time": 75.5,
+          "duration": 0.58
+        },
+        {
+          "word": "and",
+          "start_time": 76.18,
+          "duration": 0.1
+        },
+        {
+          "word": "frankly",
+          "start_time": 76.32,
+          "duration": 0.36
+        },
+        {
+          "word": "speaking",
+          "start_time": 76.74,
+          "duration": 0.32
+        },
+        {
+          "word": "a",
+          "start_time": 77.12,
+          "duration": 0.02
+        },
+        {
+          "word": "little",
+          "start_time": 77.2,
+          "duration": 0.16
+        },
+        {
+          "word": "bit",
+          "start_time": 77.4,
+          "duration": 0.16
+        },
+        {
+          "word": "lazy",
+          "start_time": 77.6,
+          "duration": 1.1
+        },
+        {
+          "word": "for",
+          "start_time": 78.78,
+          "duration": 0.08
+        },
+        {
+          "word": "example",
+          "start_time": 78.9,
+          "duration": 0.28
+        },
+        {
+          "word": "if",
+          "start_time": 79.22,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 79.36,
+          "duration": 0.04
+        },
+        {
+          "word": "wanted",
+          "start_time": 79.46,
+          "duration": 0.28
+        },
+        {
+          "word": "to",
+          "start_time": 79.8,
+          "duration": 0.12
+        },
+        {
+          "word": "change",
+          "start_time": 80.0,
+          "duration": 0.3
+        },
+        {
+          "word": "the",
+          "start_time": 80.4,
+          "duration": 0.08
+        },
+        {
+          "word": "size",
+          "start_time": 80.52,
+          "duration": 0.22
+        },
+        {
+          "word": "of",
+          "start_time": 80.8,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 81.0,
+          "duration": 0.2
+        },
+        {
+          "word": "square",
+          "start_time": 81.26,
+          "duration": 0.26
+        },
+        {
+          "word": "i",
+          "start_time": 81.58,
+          "duration": 0.04
+        },
+        {
+          "word": "would",
+          "start_time": 81.66,
+          "duration": 0.14
+        },
+        {
+          "word": "have",
+          "start_time": 81.84,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 82.04,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 82.16,
+          "duration": 0.26
+        },
+        {
+          "word": "all",
+          "start_time": 82.58,
+          "duration": 0.12
+        },
+        {
+          "word": "of",
+          "start_time": 82.76,
+          "duration": 0.08
+        },
+        {
+          "word": "these",
+          "start_time": 82.9,
+          "duration": 0.26
+        },
+        {
+          "word": "moves",
+          "start_time": 83.3,
+          "duration": 1.42
+        },
+        {
+          "word": "buffeted",
+          "start_time": 84.76,
+          "duration": 3.0
+        },
+        {
+          "word": "to",
+          "start_time": 87.82,
+          "duration": 0.06
+        },
+        {
+          "word": "change",
+          "start_time": 87.92,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 88.24,
+          "duration": 0.1
+        },
+        {
+          "word": "sides",
+          "start_time": 88.44,
+          "duration": 0.76
+        },
+        {
+          "word": "i",
+          "start_time": 89.38,
+          "duration": 0.08
+        },
+        {
+          "word": "have",
+          "start_time": 89.52,
+          "duration": 0.14
+        },
+        {
+          "word": "a",
+          "start_time": 89.72,
+          "duration": 0.06
+        },
+        {
+          "word": "smaller",
+          "start_time": 89.8,
+          "duration": 0.32
+        },
+        {
+          "word": "square",
+          "start_time": 90.2,
+          "duration": 0.68
+        },
+        {
+          "word": "it",
+          "start_time": 90.98,
+          "duration": 0.18
+        },
+        {
+          "word": "took",
+          "start_time": 91.28,
+          "duration": 0.12
+        },
+        {
+          "word": "a",
+          "start_time": 91.44,
+          "duration": 0.04
+        },
+        {
+          "word": "lot",
+          "start_time": 91.52,
+          "duration": 0.08
+        },
+        {
+          "word": "of",
+          "start_time": 91.64,
+          "duration": 0.06
+        },
+        {
+          "word": "work",
+          "start_time": 91.76,
+          "duration": 0.2
+        },
+        {
+          "word": "to",
+          "start_time": 92.0,
+          "duration": 0.08
+        },
+        {
+          "word": "get",
+          "start_time": 92.12,
+          "duration": 0.18
+        },
+        {
+          "word": "there",
+          "start_time": 92.38,
+          "duration": 1.28
+        },
+        {
+          "word": "to",
+          "start_time": 93.72,
+          "duration": 0.06
+        },
+        {
+          "word": "address",
+          "start_time": 93.82,
+          "duration": 0.32
+        },
+        {
+          "word": "this",
+          "start_time": 94.22,
+          "duration": 0.24
+        },
+        {
+          "word": "tampassook",
+          "start_time": 94.64,
+          "duration": 0.84
+        },
+        {
+          "word": "called",
+          "start_time": 95.64,
+          "duration": 0.32
+        },
+        {
+          "word": "repeat",
+          "start_time": 96.04,
+          "duration": 1.36
+        },
+        {
+          "word": "repeat",
+          "start_time": 97.46,
+          "duration": 0.42
+        },
+        {
+          "word": "as",
+          "start_time": 97.98,
+          "duration": 0.08
+        },
+        {
+          "word": "a",
+          "start_time": 98.14,
+          "duration": 0.04
+        },
+        {
+          "word": "block",
+          "start_time": 98.24,
+          "duration": 0.34
+        },
+        {
+          "word": "that",
+          "start_time": 98.7,
+          "duration": 0.14
+        },
+        {
+          "word": "allows",
+          "start_time": 98.9,
+          "duration": 0.28
+        },
+        {
+          "word": "us",
+          "start_time": 99.28,
+          "duration": 0.18
+        },
+        {
+          "word": "to",
+          "start_time": 99.56,
+          "duration": 0.44
+        },
+        {
+          "word": "run",
+          "start_time": 100.08,
+          "duration": 0.3
+        },
+        {
+          "word": "code",
+          "start_time": 100.48,
+          "duration": 0.38
+        },
+        {
+          "word": "multiple",
+          "start_time": 100.96,
+          "duration": 0.46
+        },
+        {
+          "word": "times",
+          "start_time": 101.52,
+          "duration": 0.78
+        },
+        {
+          "word": "the",
+          "start_time": 102.38,
+          "duration": 0.06
+        },
+        {
+          "word": "exact",
+          "start_time": 102.5,
+          "duration": 0.32
+        },
+        {
+          "word": "same",
+          "start_time": 102.86,
+          "duration": 0.26
+        },
+        {
+          "word": "code",
+          "start_time": 103.22,
+          "duration": 0.32
+        },
+        {
+          "word": "over",
+          "start_time": 103.62,
+          "duration": 0.16
+        },
+        {
+          "word": "and",
+          "start_time": 103.82,
+          "duration": 0.06
+        },
+        {
+          "word": "over",
+          "start_time": 103.92,
+          "duration": 0.38
+        },
+        {
+          "word": "this",
+          "start_time": 104.36,
+          "duration": 0.12
+        },
+        {
+          "word": "is",
+          "start_time": 104.54,
+          "duration": 0.1
+        },
+        {
+          "word": "called",
+          "start_time": 104.68,
+          "duration": 0.22
+        },
+        {
+          "word": "iteration",
+          "start_time": 105.02,
+          "duration": 1.48
+        },
+        {
+          "word": "so",
+          "start_time": 106.58,
+          "duration": 0.52
+        },
+        {
+          "word": "i",
+          "start_time": 107.28,
+          "duration": 0.12
+        },
+        {
+          "word": "get",
+          "start_time": 107.44,
+          "duration": 0.18
+        },
+        {
+          "word": "rid",
+          "start_time": 107.7,
+          "duration": 0.2
+        },
+        {
+          "word": "of",
+          "start_time": 107.98,
+          "duration": 0.16
+        },
+        {
+          "word": "these",
+          "start_time": 108.2,
+          "duration": 0.94
+        },
+        {
+          "word": "moves",
+          "start_time": 109.46,
+          "duration": 0.2
+        },
+        {
+          "word": "and",
+          "start_time": 109.76,
+          "duration": 0.08
+        },
+        {
+          "word": "turns",
+          "start_time": 109.88,
+          "duration": 0.38
+        },
+        {
+          "word": "that",
+          "start_time": 110.3,
+          "duration": 0.1
+        },
+        {
+          "word": "are",
+          "start_time": 110.46,
+          "duration": 0.1
+        },
+        {
+          "word": "duplicated",
+          "start_time": 110.62,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 111.46,
+          "duration": 0.1
+        },
+        {
+          "word": "instead",
+          "start_time": 111.66,
+          "duration": 0.3
+        },
+        {
+          "word": "put",
+          "start_time": 112.04,
+          "duration": 0.12
+        },
+        {
+          "word": "them",
+          "start_time": 112.2,
+          "duration": 0.1
+        },
+        {
+          "word": "inside",
+          "start_time": 112.4,
+          "duration": 0.28
+        },
+        {
+          "word": "of",
+          "start_time": 112.74,
+          "duration": 0.1
+        },
+        {
+          "word": "a",
+          "start_time": 112.92,
+          "duration": 0.1
+        },
+        {
+          "word": "repeat",
+          "start_time": 113.06,
+          "duration": 1.12
+        },
+        {
+          "word": "intelletto",
+          "start_time": 114.26,
+          "duration": 0.44
+        },
+        {
+          "word": "repeat",
+          "start_time": 114.74,
+          "duration": 0.82
+        },
+        {
+          "word": "four",
+          "start_time": 115.66,
+          "duration": 0.24
+        },
+        {
+          "word": "times",
+          "start_time": 116.0,
+          "duration": 1.2
+        },
+        {
+          "word": "then",
+          "start_time": 117.26,
+          "duration": 0.56
+        },
+        {
+          "word": "i",
+          "start_time": 117.9,
+          "duration": 0.04
+        },
+        {
+          "word": "can",
+          "start_time": 117.98,
+          "duration": 0.14
+        },
+        {
+          "word": "get",
+          "start_time": 118.16,
+          "duration": 0.14
+        },
+        {
+          "word": "the",
+          "start_time": 118.36,
+          "duration": 0.08
+        },
+        {
+          "word": "exact",
+          "start_time": 118.52,
+          "duration": 0.56
+        },
+        {
+          "word": "same",
+          "start_time": 119.14,
+          "duration": 0.22
+        },
+        {
+          "word": "effect",
+          "start_time": 119.48,
+          "duration": 0.92
+        },
+        {
+          "word": "i",
+          "start_time": 120.48,
+          "duration": 0.06
+        },
+        {
+          "word": "run",
+          "start_time": 120.6,
+          "duration": 0.2
+        },
+        {
+          "word": "that",
+          "start_time": 120.88,
+          "duration": 0.32
+        },
+        {
+          "word": "i",
+          "start_time": 121.26,
+          "duration": 0.04
+        },
+        {
+          "word": "get",
+          "start_time": 121.34,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 121.5,
+          "duration": 0.14
+        },
+        {
+          "word": "square",
+          "start_time": 121.68,
+          "duration": 0.82
+        },
+        {
+          "word": "and",
+          "start_time": 122.58,
+          "duration": 0.08
+        },
+        {
+          "word": "if",
+          "start_time": 122.72,
+          "duration": 0.06
+        },
+        {
+          "word": "i",
+          "start_time": 122.84,
+          "duration": 0.08
+        },
+        {
+          "word": "want",
+          "start_time": 122.96,
+          "duration": 0.14
+        },
+        {
+          "word": "to",
+          "start_time": 123.14,
+          "duration": 0.08
+        },
+        {
+          "word": "make",
+          "start_time": 123.26,
+          "duration": 0.12
+        },
+        {
+          "word": "it",
+          "start_time": 123.46,
+          "duration": 0.08
+        },
+        {
+          "word": "bigger",
+          "start_time": 123.58,
+          "duration": 2.78
+        },
+        {
+          "word": "i",
+          "start_time": 126.44,
+          "duration": 0.06
+        },
+        {
+          "word": "can",
+          "start_time": 126.54,
+          "duration": 0.12
+        },
+        {
+          "word": "do",
+          "start_time": 126.7,
+          "duration": 0.18
+        },
+        {
+          "word": "so",
+          "start_time": 126.94,
+          "duration": 1.64
+        },
+        {
+          "word": "no",
+          "start_time": 128.64,
+          "duration": 0.42
+        },
+        {
+          "word": "importantly",
+          "start_time": 129.2,
+          "duration": 1.66
+        },
+        {
+          "word": "the",
+          "start_time": 130.94,
+          "duration": 0.14
+        },
+        {
+          "word": "things",
+          "start_time": 131.14,
+          "duration": 0.24
+        },
+        {
+          "word": "that",
+          "start_time": 131.42,
+          "duration": 0.14
+        },
+        {
+          "word": "come",
+          "start_time": 131.64,
+          "duration": 0.16
+        },
+        {
+          "word": "before",
+          "start_time": 131.88,
+          "duration": 0.26
+        },
+        {
+          "word": "the",
+          "start_time": 132.18,
+          "duration": 0.14
+        },
+        {
+          "word": "peat",
+          "start_time": 132.5,
+          "duration": 0.2
+        },
+        {
+          "word": "will",
+          "start_time": 132.74,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 132.92,
+          "duration": 0.24
+        },
+        {
+          "word": "beforehand",
+          "start_time": 133.26,
+          "duration": 0.7
+        },
+        {
+          "word": "so",
+          "start_time": 134.0,
+          "duration": 0.12
+        },
+        {
+          "word": "my",
+          "start_time": 134.16,
+          "duration": 0.12
+        },
+        {
+          "word": "pen",
+          "start_time": 134.36,
+          "duration": 0.16
+        },
+        {
+          "word": "down",
+          "start_time": 134.54,
+          "duration": 0.22
+        },
+        {
+          "word": "comes",
+          "start_time": 134.8,
+          "duration": 0.24
+        },
+        {
+          "word": "before",
+          "start_time": 135.14,
+          "duration": 0.76
+        },
+        {
+          "word": "and",
+          "start_time": 135.96,
+          "duration": 0.08
+        },
+        {
+          "word": "anything",
+          "start_time": 136.12,
+          "duration": 0.28
+        },
+        {
+          "word": "that",
+          "start_time": 136.46,
+          "duration": 0.1
+        },
+        {
+          "word": "happens",
+          "start_time": 136.6,
+          "duration": 0.36
+        },
+        {
+          "word": "after",
+          "start_time": 137.1,
+          "duration": 0.22
+        },
+        {
+          "word": "the",
+          "start_time": 137.36,
+          "duration": 0.12
+        },
+        {
+          "word": "repeater",
+          "start_time": 137.54,
+          "duration": 3.32
+        },
+        {
+          "word": "example",
+          "start_time": 140.9,
+          "duration": 0.48
+        },
+        {
+          "word": "if",
+          "start_time": 141.46,
+          "duration": 0.1
+        },
+        {
+          "word": "i",
+          "start_time": 141.74,
+          "duration": 0.36
+        },
+        {
+          "word": "sechemites",
+          "start_time": 142.24,
+          "duration": 2.94
+        },
+        {
+          "word": "after",
+          "start_time": 145.28,
+          "duration": 0.5
+        },
+        {
+          "word": "i",
+          "start_time": 145.86,
+          "duration": 0.06
+        },
+        {
+          "word": "draw",
+          "start_time": 145.98,
+          "duration": 0.2
+        },
+        {
+          "word": "my",
+          "start_time": 146.22,
+          "duration": 0.16
+        },
+        {
+          "word": "square",
+          "start_time": 146.42,
+          "duration": 1.04
+        },
+        {
+          "word": "them",
+          "start_time": 147.52,
+          "duration": 0.12
+        },
+        {
+          "word": "that",
+          "start_time": 147.68,
+          "duration": 0.12
+        },
+        {
+          "word": "will",
+          "start_time": 147.84,
+          "duration": 0.14
+        },
+        {
+          "word": "happen",
+          "start_time": 148.02,
+          "duration": 0.24
+        },
+        {
+          "word": "only",
+          "start_time": 148.34,
+          "duration": 0.24
+        },
+        {
+          "word": "after",
+          "start_time": 148.68,
+          "duration": 0.24
+        },
+        {
+          "word": "all",
+          "start_time": 149.0,
+          "duration": 0.1
+        },
+        {
+          "word": "four",
+          "start_time": 149.16,
+          "duration": 0.2
+        },
+        {
+          "word": "sights",
+          "start_time": 149.4,
+          "duration": 0.28
+        },
+        {
+          "word": "have",
+          "start_time": 149.74,
+          "duration": 0.32
+        },
+        {
+          "word": "been",
+          "start_time": 150.12,
+          "duration": 0.14
+        },
+        {
+          "word": "drawn",
+          "start_time": 150.34,
+          "duration": 0.88
+        },
+        {
+          "word": "ironware",
+          "start_time": 151.3,
+          "duration": 1.16
+        },
+        {
+          "word": "to",
+          "start_time": 152.5,
+          "duration": 0.1
+        },
+        {
+          "word": "squares",
+          "start_time": 152.74,
+          "duration": 0.52
+        },
+        {
+          "word": "three",
+          "start_time": 153.3,
+          "duration": 0.24
+        },
+        {
+          "word": "squares",
+          "start_time": 153.58,
+          "duration": 1.1
+        },
+        {
+          "word": "and",
+          "start_time": 154.8,
+          "duration": 0.14
+        },
+        {
+          "word": "so",
+          "start_time": 154.98,
+          "duration": 0.16
+        },
+        {
+          "word": "on",
+          "start_time": 155.24,
+          "duration": 2.1
+        },
+        {
+          "word": "so",
+          "start_time": 157.4,
+          "duration": 0.14
+        },
+        {
+          "word": "that",
+          "start_time": 157.6,
+          "duration": 0.36
+        },
+        {
+          "word": "it",
+          "start_time": 158.08,
+          "duration": 0.18
+        },
+        {
+          "word": "for",
+          "start_time": 158.32,
+          "duration": 0.2
+        },
+        {
+          "word": "the",
+          "start_time": 158.54,
+          "duration": 0.12
+        },
+        {
+          "word": "repeat",
+          "start_time": 158.7,
+          "duration": 0.34
+        },
+        {
+          "word": "block",
+          "start_time": 159.08,
+          "duration": 0.22
+        }
+      ]
+    }
+  ]
+}
