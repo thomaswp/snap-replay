@@ -430,10 +430,11 @@ export class Playback {
             if (active.length > 0) {
                 this.currentText = active[active.length - 1];
                 this.currentText.div.addClass('highlight');
-                let scroll = this.$script.scrollTop() + 
-                    this.currentText.div.position().top - this.$script.position().top;
-                this.$script.stop();
-                this.$script.animate({
+                let $parent = this.$script.parent()
+                let scroll = $parent.scrollTop() + 
+                    this.currentText.div.position().top - $parent.position().top;
+                $parent.stop();
+                $parent.animate({
                     scrollTop: scroll,
                 }, 500);
                 // TODO: At some point need to calculate relative duration to 
