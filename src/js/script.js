@@ -77,11 +77,16 @@ export class Script {
         words.push(null);
         const MAX_SEG_GAP = 0.5;
         const MAX_WORDS = 15;
+        const MAX_WORD_DURATION = 2;
         let lastWordTime = words[0].start_time;
         let startWordIndex = 0;
         words.forEach((word, index) => {
+            if (word) {
+                word.duration = Math.min(word.duration, MAX_WORD_DURATION)
+            }
+
             if (word && word.start_time - lastWordTime <= MAX_SEG_GAP &&
-                    index - startWordIndex + 1< MAX_WORDS) {
+                    index - startWordIndex + 1 < MAX_WORDS) {
                 lastWordTime = word.start_time + word.duration;
                 return;
             }
