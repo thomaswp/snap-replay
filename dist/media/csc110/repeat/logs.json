@@ -2245,7 +2245,7 @@
     {
         "type": "waitForQuestion",
         "data": {
-            "id": "q1-finished"
+            "id": "q1"
         },
         "timeDelta": 13932
     },

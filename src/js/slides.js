@@ -58,6 +58,7 @@ export class Slides {
             if (this.onQFinished) {
                 this.onQFinished(id);
             }
+            // We use skipping to the answer as a way to mark the start of the q
             Slides.recordEvent('waitForQuestion', {
                 id: id,
             });
@@ -65,7 +66,7 @@ export class Slides {
 
         deck.on('slidechanged', event => {
             // Skip this if we're going to the end of a question.
-            if (event.currentSlide.classList.contains('q-finished')) {
+            if (event.currentSlide.dataset.state === 'q-finished') {
                 return;
             }
             Slides.recordEvent('slideChanged', {
@@ -90,6 +91,7 @@ export class Slides {
     }
 
     createRecord(record) {
+        // console.log("Creating", record);
         let data = record.data;
         switch (record.type) {
             case 'slideChanged':
@@ -105,6 +107,9 @@ export class Slides {
                     setTimeout(callback, 1);
                 };
             case 'waitForQuestion':
+                // Recorded when the recorder goes to the answer slide
+                // (that slideChanged event is skipped) to mark when
+                // the question should be posed
                 return (callback, fast) => {
                     if (fast) {
                         this.setSlideByID(data.id);
@@ -114,6 +119,8 @@ export class Slides {
                     setTimeout(callback, 1);
                 };
             case 'questionPause':
+                // Recorded when the [?] button is pressed to indicate
+                // the start of a modify question
                 return (callback, fast) => {
                     if (!fast) {
                         this.onQStarted(data.id, true);
@@ -121,6 +128,9 @@ export class Slides {
                     setTimeout(callback, 1);
                 };
             case 'questionAnswered':
+                // Recorded when the [check] button is pressed to indicate
+                // the recorder has finished demonstrating the answer to a
+                // modify question
                 return (callback, fast) => {
                     setTimeout(callback, 1);
                 };

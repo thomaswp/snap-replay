@@ -469,10 +469,6 @@ events:
     timeDelta: 13.932000000000016
   - type: log
     description: slideChanged
-    logIndex: 115
-    timeDelta: 0.0009999999999763531
-  - type: log
-    description: slideChanged
     logIndex: 116
     timeDelta: 6.817000000000007
   - type: log
