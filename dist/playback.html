@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <iframe id="isnap" src="isnap/snap.html" width="100%" frameBorder="0"></iframe>
+        <iframe id="isnap" width="100%" frameBorder="0"></iframe>
         <div id="slides" class="minimized hidden">
             <div class="reveal">
                 <div class="slides">
@@ -58,6 +58,14 @@
                 <!-- &nwarr; -->
                 <i id="slides-toggle-icon" class="bi bi-arrow-up-left"></i>
             </button>
+            <div>
+                <i 
+                    id="login-warning" 
+                    class="bi bi-exclamation-triangle-fill hidden" 
+                    data-bs-toggle="tooltip"
+                    title="You are not logged in. Your progress will not be saved."
+                ></i>
+            </div>
             <div class="scrub-container">
                 <button id="play" class="playpause"></button>
                 <div id="scrubber-bg">
@@ -88,6 +96,7 @@
                 if (searchParams.has('video')) {
                     sample = searchParams.get('video');
                 }
+                $('#isnap').prop('src', 'isnap/snap.html?assignment=' + sample.replace('/', '_'));
                 let playback = window.playback = new Playback('media/' + sample + '/');
                 $('#play').click(() => {
                     playback.togglePlay();

@@ -246,6 +246,11 @@ export class Playback {
         $('.text').removeClass('.highlight');
     }
 
+    log(message, data) {
+        if (!this.Trace) return;
+        this.Trace.log(message, data);
+    }
+
     resetSnap() {
         if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
@@ -259,7 +264,15 @@ export class Playback {
             };
             this.snapWindow.Trace.addLoggingHandler('Block.snapped', handler);
             this.snapWindow.Trace.addLoggingHandler('InputSlot.edited', handler);
-
+            
+            if (!this.Trace) {
+                this.Trace = new this.snapWindow.DBLogger(1000);
+                let id = this.Trace.userInfo().userID;
+                if (!id || id.length == 0) {
+                    $('#login-warning').removeClass('hidden');
+                }
+                this.log('Playback.started');
+            }
         }
         this.currentLogIndex = 0;
         this.playingLog = null;

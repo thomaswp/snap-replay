@@ -1,6 +1,6 @@
 # The Repeat Block
 
-![](repeat.png)
+![](img/repeat.png)
 
 <!--
 Notes:

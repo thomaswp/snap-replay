@@ -99,6 +99,13 @@ body {
     height: 20%;
 }
 
+#login-warning {
+    font-size: 16pt;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: rgb(121, 7, 7);
+}
 
 .text.highlight {
     font-weight: bold;
@@ -135,6 +142,10 @@ button.hidden {
 }
 
 div.hidden {
+    display: none;
+}
+
+i.hidden {
     display: none;
 }
 
