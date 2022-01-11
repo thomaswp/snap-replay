@@ -8,9 +8,11 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^5.1.3",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "json-rpc-2.0": "^0.2.18",
+    "popper.js": "^1.16.1",
     "reveal.js": "^4.1.3",
     "yaml": "^1.10.2"
   },

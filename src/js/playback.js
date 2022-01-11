@@ -60,7 +60,7 @@ export class Playback {
         //     this.update();
         // });
 
-        let noop = () => {};
+        let noop = () => { };
         navigator.mediaSession.setActionHandler('play', noop);
         navigator.mediaSession.setActionHandler('pause', noop);
         navigator.mediaSession.setActionHandler('seekbackward', noop);
@@ -127,7 +127,7 @@ export class Playback {
         $('#script').toggleClass('hidden', visible);
         $('#question').toggleClass('hidden', !visible);
         if (visible) {
-            $('#question-hint,#q-modal-hint').toggleClass('hidden', 
+            $('#question-hint,#q-modal-hint').toggleClass('hidden',
                 !this.slides.hasHint(this.askingQuestion));
             let image = this.path + 'img/' + this.askingQuestion + '.png';
             $('#solution-image').attr('src', image);
@@ -192,18 +192,18 @@ export class Playback {
     static getDuration = function (url, next) {
         var _player = new Audio(url);
         _player.addEventListener("durationchange", function (e) {
-            if (this.duration!=Infinity) {
-               var duration = this.duration
-               _player.remove();
-               next(duration);
+            if (this.duration != Infinity) {
+                var duration = this.duration
+                _player.remove();
+                next(duration);
             };
-        }, false);      
+        }, false);
         _player.load();
-        _player.currentTime = 24*60*60; //fake big time
+        _player.currentTime = 24 * 60 * 60; //fake big time
         _player.volume = 0;
         try {
             _player.play();
-        } catch {}
+        } catch { }
         //waiting...
     };
 
@@ -213,7 +213,7 @@ export class Playback {
         this.highlights = [];
         this.events.forEach(event => {
             if (event.type === Script.LOG || event.type === Script.CONTROL) {
-                this.logs.push(event);    
+                this.logs.push(event);
                 return;
             } else if (event.type === Script.HIGHLIGHT) {
                 this.highlights.push(event);
@@ -264,7 +264,7 @@ export class Playback {
             };
             this.snapWindow.Trace.addLoggingHandler('Block.snapped', handler);
             this.snapWindow.Trace.addLoggingHandler('InputSlot.edited', handler);
-            
+
             if (!this.Trace) {
                 this.Trace = new this.snapWindow.DBLogger(1000);
                 let id = this.Trace.userInfo().userID;
@@ -363,7 +363,7 @@ export class Playback {
     setDuration(duration) {
         this.recorder = this.snapWindow.recorder;
         this.askingQuestion = null;
-        
+
         if (!this.recorder) return;
         this.setConstructQuestionPanelVisible(false);
         if (this.playing) {
@@ -382,10 +382,26 @@ export class Playback {
 
     finishSettingDuration() {
         this.updateEvents();
-        if (this.wasPlaying)  {
+        if (this.wasPlaying) {
             setTimeout(() => this.play(), 1);
         }
         this.wasPlaying = false;
+    }
+
+    showFinishedModal() {
+        if (!this.code) this.code = this.makeCode(10);
+        $('#finished-code').text(this.code);
+        $('#show-finished-modal').click();
+    }
+
+    makeCode(length) {
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        var charactersLength = characters.length;
+        let result = '';
+        for (var i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
     }
 
     update() {
@@ -395,7 +411,10 @@ export class Playback {
         this.updateScrubberBG();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
-        if (duration > this.duration) this.pause();
+        if (duration > this.duration - 0.1) {
+            this.showFinishedModal();
+            this.pause();
+        }
     }
 
     updateScrubberBG() {
@@ -444,7 +463,7 @@ export class Playback {
                 this.currentText = active[active.length - 1];
                 this.currentText.div.addClass('highlight');
                 let $parent = this.$script.parent()
-                let scroll = $parent.scrollTop() + 
+                let scroll = $parent.scrollTop() +
                     this.currentText.div.position().top - $parent.position().top;
                 $parent.stop();
                 $parent.animate({
@@ -454,20 +473,20 @@ export class Playback {
                 // find the right time in the audio
                 // The edited events should all use deltas (so you can easily delete),
                 // but the audio needs to keep a reference to the start/end time in the original file
-                if (this.playing)  {
+                if (this.playing) {
                     let time = this.currentText.audioStart + durationS - this.currentText.startTime;
                     if (isNaN(time) || !isFinite(time)) {
                         console.error('NaN time', time, this.currentText, this.currentText.audioStart, durationS, this.currentText.startTime);
                         return;
                     }
                     this.audio.currentTime = time;
-                    console.log('Audio to ', this.audio.currentTime);
+                    // console.log('Audio to ', this.audio.currentTime);
                     this.audio.play();
                 }
             }
         }
     }
-   
+
     handleEvent(event, fast) {
         if (event.description === 'videoPause') {
             if (!fast) this.pause();
@@ -518,7 +537,7 @@ export class Playback {
             this.update();
             return;
         }
-        
+
         this.nextTimeout = null;
         // console.log('Event: ', event);
         let record = this.script.getLog(event);
