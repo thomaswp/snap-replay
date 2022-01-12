@@ -1,6 +1,14 @@
 const Reveal = require('../../node_modules/reveal.js').default;
 const Markdown = require('../../node_modules/reveal.js/plugin/markdown/markdown.esm.js').default;
 
+if (!window.Trace) {
+    window.Trace = {
+        log: (message, data) => {
+            console.info('Logging:', message, data);
+        }
+    }
+}
+
 export class Slides {
     constructor(path, useControls) {
         this.path = path;
@@ -139,7 +147,10 @@ export class Slides {
     }
 
     showHint(questionID) {
-        console.log(questionID);
+        Trace.log('Slides.showHint', {
+            'id': questionID,
+        });
+        // console.log(questionID);
         this.setSlideByID(questionID + '-hint');
         this.setMaximized(true);
     }
@@ -164,6 +175,9 @@ export class Slides {
 
     toggleMaximized() {
         this.setMaximized(!this.maximized);
+        Trace.log('Slides.toggle', {
+            'showing': this.maximized,
+        });
     }
 
     static recordEvent(type, data) {

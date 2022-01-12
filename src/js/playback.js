@@ -5,6 +5,12 @@ const { Slides } = require('./slides');
 const { Script } = require('./script');
 const { rpcClient } = require('./rpc');
 
+window.Trace = {
+    log: (message, data) => {
+        console.info('Logging:', message, data);
+    }
+}
+
 export class Playback {
 
     // 0 because we do this in the script itself now
@@ -77,6 +83,11 @@ export class Playback {
         $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion));
         $('#q-modal-hint').on('click', () => this.slides.showHint(this.askingQuestion));
 
+        setInterval(() => {
+            if (!this.playing) return;
+            Trace.log('Playback.updatePlaying', this.getCurrentDuration());
+        }, 2000);
+
         // console.log('sending echo to', rpcClient);
         // rpcClient
         //     .request("echo", { text: "Hello, World!" })
@@ -100,6 +111,10 @@ export class Playback {
     }
 
     waitForAnswer(id, userControlled) {
+        Trace.log('Playback.startingQuestion', {
+            id: id,
+            type: userControlled ? 'programming' : 'MCQ',
+        })
         if (this.answeredQs.includes(id)) {
             // console.log("Skipping answered", id);
             if (!userControlled) {
@@ -118,6 +133,7 @@ export class Playback {
     }
 
     loadCheckpoint() {
+        Trace.log('Playback.userResetCode');
         if (this.checkpoint) {
             this.recorder.constructor.resetSnap(this.checkpoint);
         }
@@ -148,6 +164,10 @@ export class Playback {
 
     answerReceived(id, skipSolution) {
         if (!this.askingQuestion) return;
+        Trace.log('Playback.answerReceived', {
+            id: id,
+            skipSolution: skipSolution,
+        });
         // console.log("Answered", id);
         this.setConstructQuestionPanelVisible(false);
         this.answeredQs.push(id);
@@ -232,6 +252,7 @@ export class Playback {
     restart() {
         if (!this.script) return;
         this.resetSnap();
+        Trace.log('Playback.restart');
         this.time = 0;
         this.clearCurrentText();
         let duration = Math.max(...this.events.map(e => e.endTime)) * 1000 + Playback.BUFFER_MS;
@@ -246,9 +267,13 @@ export class Playback {
         $('.text').removeClass('.highlight');
     }
 
-    log(message, data) {
-        if (!this.Trace) return;
-        this.Trace.log(message, data);
+    getStatus() {
+        return {
+            currentTime: this.getCurrentDuration(),
+            duration: this.duration,
+            playing: this.playing,
+            logIndex: this.currentLogIndex,
+        }
     }
 
     resetSnap() {
@@ -260,18 +285,36 @@ export class Playback {
             this.snapWindow.Trace = new this.snapWindow.Logger(1000);
             let handler = () => {
                 this.snapEdits++
+                // console.log('Edited:', this.snapEdits);
                 this.checkEnableShowSolution();
+                if (!this.playing) {
+                    Trace.log('Playback.snapEdited', {
+                        edits: this.snapEdits,
+                    });
+                }
             };
             this.snapWindow.Trace.addLoggingHandler('Block.snapped', handler);
             this.snapWindow.Trace.addLoggingHandler('InputSlot.edited', handler);
 
-            if (!this.Trace) {
-                this.Trace = new this.snapWindow.DBLogger(1000);
-                let id = this.Trace.userInfo().userID;
+            if (!this.loggingCreated) {
+                window.Trace = new this.snapWindow.DBLogger(1000);
+                this.loggingCreated = true;
+
+                const getStatus = () => this.getStatus();
+                const oldLog = Trace.log;
+                const trace = Trace;
+                window.Trace.log = (message, data, saveImmediately, forceLogCode) => {
+                    if (data == null) data = {};
+                    if (typeof data === 'object') {
+                        data.status = getStatus();
+                    }
+                    oldLog.call(trace, message, data, saveImmediately, forceLogCode);
+                }
+                let id = window.Trace.userInfo().userID;
                 if (!id || id.length == 0) {
                     $('#login-warning').removeClass('hidden');
                 }
-                this.log('Playback.started');
+                window.Trace.log('Playback.started');
             }
         }
         this.currentLogIndex = 0;
@@ -295,21 +338,28 @@ export class Playback {
         //     }, 1);
         //     return;
         // }
+        Trace.log('Playback.snapFocused');
         this.clearHighlights();
-        if (this.getCurrentDuration() > 0) {
-            this.warnResume = true;
-        }
         if (this.playing) {
             this.pause();
             this.snapEdits = 0;
+        }
+        if (this.getCurrentDuration() > 0) {
+            this.warnResume = true;
         }
     }
 
     togglePlay() {
         if (this.playing) {
             this.pause();
+            Trace.log('Playback.pauseButton', {
+                'successful': !this.playing,
+            });
         } else {
             this.play();
+            Trace.log('Playback.playButton', {
+                'successful': this.playing,
+            });
         }
     }
 
@@ -381,6 +431,9 @@ export class Playback {
     }
 
     finishSettingDuration() {
+        Trace.log('Playback.scrub', {
+            'time': this.duration,
+        });
         this.updateEvents();
         if (this.wasPlaying) {
             setTimeout(() => this.play(), 1);
@@ -390,6 +443,9 @@ export class Playback {
 
     showFinishedModal() {
         if (!this.code) this.code = this.makeCode(10);
+        Trace.log('Playback.finishedModal', {
+            'code': this.code,
+        });
         $('#finished-code').text(this.code);
         $('#show-finished-modal').click();
     }
@@ -406,6 +462,11 @@ export class Playback {
 
     update() {
         if (!this.playing) return;
+        var elem = document.activeElement;
+        if(elem && elem.id === 'isnap'){
+            this.snapFocused();
+            return;
+        }
         let duration = this.getCurrentDuration();
         this.maxDuration = Math.max(this.maxDuration, duration);
         this.updateScrubberBG();
