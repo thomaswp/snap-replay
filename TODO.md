@@ -14,15 +14,14 @@
 
 * Time in/remaining
 * Questions
-* Log-ins
-* Logging
-* Progress tracking
+* Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
 
 ## Testing:
 
 * Variables
 * Conditionals
-* Procedures
+* Procedures 
+   * Using custom blocks!
 
 ## Editing:
 

@@ -470,19 +470,45 @@ export class Playback {
     update() {
         if (!this.playing) return;
         var elem = document.activeElement;
-        if(elem && elem.id === 'isnap'){
+        if (elem && elem.id === 'isnap') {
+            // Detect if Snap was focused by the user
+            // Assumes event-driven focus was corrected in checkForFocus
             this.snapFocused();
-            return;
         }
         let duration = this.getCurrentDuration();
         this.maxDuration = Math.max(this.maxDuration, duration);
         this.updateScrubberBG();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
+        // TODO: This may not be robust enough if focus comes later, but
+        // seems to be working for now. The best way may be to detect
+        // focus events with isTrusted == true, which have to come from the user.
+        this.checkForFocus();
+        // Wait 1 ms, just in case...
+        setTimeout(() => {
+            this.checkForFocus();
+        }, 1);
         if (duration > this.duration - 0.1) {
             this.showFinishedModal();
             this.pause();
         }
+    }
+
+    // Check if something in the events caused Snap to focus
+    // and if so, blur it so we can detect a user-driven focus
+    checkForFocus() {
+        var elem = document.activeElement;
+        if (!elem || elem.id !== 'isnap') return; // No focus
+
+        // Could blur snap element, but that shouldn't be necessary
+        // const snapElement = this.snapWindow.document.activeElement;
+        // console.log('Defocusing snap element', snapElement);
+        // snapElement.blur();
+
+        // Refocus this window so we can detect future changes
+        this.$scrubber.focus();
+        console.log('Reset window focus to', document.activeElement);
+        // console.log(document.activeElement, this.snapWindow.document.activeElement);
     }
 
     updateScrubberBG() {
