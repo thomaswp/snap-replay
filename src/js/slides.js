@@ -15,6 +15,7 @@ export class Slides {
         this.onQFinished = null;
         this.onQStarted = null;
         this.useControls = useControls;
+        this.logSlideChanges = true;
     }
 
     loadMarkdown(markdown) {
@@ -73,15 +74,19 @@ export class Slides {
         });
 
         deck.on('slidechanged', event => {
+            const slideData = {
+                id: event.currentSlide.id,
+                indexh: event.indexh,
+                indexv: event.indexv,
+            };
+            if (this.logSlideChanges) {
+                Trace.log('Slides.userChangedSlide', slideData)
+            }
             // Skip this if we're going to the end of a question.
             if (event.currentSlide.dataset.state === 'q-finished') {
                 return;
             }
-            Slides.recordEvent('slideChanged', {
-                id: event.currentSlide.id,
-                indexh: event.indexh,
-                indexv: event.indexv,
-            });
+            Slides.recordEvent('slideChanged', slideData);
         });
     }
 
@@ -104,9 +109,11 @@ export class Slides {
         switch (record.type) {
             case 'slideChanged':
                 return (callback, fast) => {
+                    this.logSlideChanges = false;
                     if (!this.setSlideByID(data.id)) {
                         this.deck.slide(data.indexh, data.indexv);
                     }
+                    this.logSlideChanges = true;
                     setTimeout(callback, 1);
                 };
             case 'slidesToggled':

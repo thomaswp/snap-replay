@@ -13,6 +13,8 @@ window.Trace = {
 
 export class Playback {
 
+    static DB_LOG = true;
+
     // 0 because we do this in the script itself now
     static BUFFER_MS = 0;
 
@@ -182,6 +184,7 @@ export class Playback {
                 let time = event.endTime * 1000;
                 // console.log(this.getCurrentDuration(), '->', time);
                 this.setDuration(time);
+                break;
             }
         }
         this.askingQuestion = null;
@@ -287,7 +290,7 @@ export class Playback {
                 this.snapEdits++
                 // console.log('Edited:', this.snapEdits);
                 this.checkEnableShowSolution();
-                if (!this.playing) {
+                if (this.warnResume || this.askingQuestion) {
                     Trace.log('Playback.snapEdited', {
                         edits: this.snapEdits,
                     });
@@ -297,7 +300,11 @@ export class Playback {
             this.snapWindow.Trace.addLoggingHandler('InputSlot.edited', handler);
 
             if (!this.loggingCreated) {
-                window.Trace = new this.snapWindow.DBLogger(1000);
+                if (Playback.DB_LOG) {
+                    window.Trace = new this.snapWindow.DBLogger(1000);
+                } else {
+                    window.Trace = new this.snapWindow.ConsoleLogger(10);
+                }
                 this.loggingCreated = true;
 
                 const getStatus = () => this.getStatus();
