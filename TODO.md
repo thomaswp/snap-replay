@@ -23,7 +23,8 @@
 * Conditionals: just test thoroughly
 * Procedures
    * Changing block types
-   * Adding variable inputs
+   * Using inputs variables
+   * The created reporter (record/set id)
 
 ## Editing:
 
