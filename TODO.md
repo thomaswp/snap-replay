@@ -15,11 +15,12 @@
 * Time in/remaining
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
+* Config for maxplayback, show code, logging, etc.
 
 ## Testing:
 
-* Variables
-* Conditionals
+* Variables: script vars
+* Conditionals: just test thoroughly
 * Procedures 
    * Using custom blocks!
 

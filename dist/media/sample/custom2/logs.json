@@ -12,125 +12,69 @@
             "index": 16,
             "highlight": false
         },
-        "timeDelta": 12
+        "timeDelta": 1
     },
     {
         "type": "blockType_newBlock",
         "data": {},
-        "timeDelta": 1171
+        "timeDelta": 910
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "BlockDialogMorph",
-            "value": "d"
+            "value": "t"
         },
-        "timeDelta": 1320
+        "timeDelta": 1317
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "BlockDialogMorph",
-            "value": "dr"
+            "value": "te"
         },
-        "timeDelta": 175
+        "timeDelta": 62
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "BlockDialogMorph",
-            "value": "dra"
+            "value": "tes"
         },
-        "timeDelta": 84
+        "timeDelta": 167
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "BlockDialogMorph",
-            "value": "draw"
+            "value": "test"
         },
-        "timeDelta": 63
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw"
-        },
-        "timeDelta": 172
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw s"
-        },
-        "timeDelta": 181
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw sq"
-        },
-        "timeDelta": 198
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw squ"
-        },
-        "timeDelta": 119
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw squa"
-        },
-        "timeDelta": 109
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw squar"
-        },
-        "timeDelta": 120
-    },
-    {
-        "type": "inputTyped",
-        "data": {
-            "input": "BlockDialogMorph",
-            "value": "draw square"
-        },
-        "timeDelta": 54
+        "timeDelta": 87
     },
     {
         "type": "blockType_ok",
         "data": {
             "message": "BlockTypeDialog.ok"
         },
-        "timeDelta": 1338
+        "timeDelta": 141
     },
     {
         "type": "blockEditor_start",
         "data": {
-            "spec": "draw square",
+            "spec": "test",
             "category": "motion",
             "type": "command",
-            "guid": "2c363215-9890-4980-8743-b5106463b1df",
+            "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
             "message": "BlockEditor.start"
         },
-        "timeDelta": 17
+        "timeDelta": 10
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
                 "selector": "forward",
-                "id": 31,
+                "id": 34,
                 "template": false,
                 "spec": "move %n steps",
                 "objType": "BlockMorph"
@@ -138,15 +82,16 @@
             "lastReplacedInput": null,
             "lastDropTarget": {
                 "point": {
-                    "x": 641,
-                    "y": 439.8,
+                    "x": 495,
+                    "y": 395.8,
                     "objType": "Point"
                 },
                 "element": {
                     "selector": null,
-                    "id": 30,
+                    "id": 33,
                     "template": false,
                     "spec": "",
+                    "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
                     "objType": "BlockMorph"
                 },
                 "loc": "bottom",
@@ -171,10 +116,10 @@
             "action": null,
             "situation": {
                 "origin": {
-                    "spec": "draw square",
+                    "spec": "test",
                     "category": "motion",
                     "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
+                    "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
                     "source": "Editor",
                     "objType": "ScriptsMorph"
                 },
@@ -186,284 +131,39 @@
                 "objType": "Object"
             }
         },
-        "timeDelta": 3323
+        "timeDelta": 2083
     },
     {
-        "type": "inputSlotEdit",
+        "type": "blockEditor_ok",
         "data": {
-            "id": {
-                "selector": "forward",
-                "id": 31,
-                "template": false,
-                "spec": "move %n steps",
-                "argIndex": 0,
-                "argType": "object",
-                "objType": "Object"
-            },
-            "text": "100",
-            "value": "100"
+            "spec": "test",
+            "category": "motion",
+            "type": "command",
+            "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
+            "message": "BlockEditor.ok"
         },
-        "timeDelta": 2565
+        "timeDelta": 854
     },
     {
-        "type": "blockDrop",
+        "type": "blockEditor_apply",
         "data": {
-            "lastDroppedBlock": {
-                "selector": "turn",
-                "id": 32,
-                "template": false,
-                "spec": "turn %clockwise %n degrees",
-                "objType": "BlockMorph"
-            },
-            "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 641,
-                    "y": 471.3,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": "forward",
-                    "id": 31,
-                    "template": false,
-                    "spec": "move %n steps",
-                    "objType": "BlockMorph"
-                },
-                "loc": "bottom",
-                "type": "block",
-                "objType": "Object"
-            },
-            "lastPreservedBlocks": null,
-            "lastNextBlock": null,
-            "lastWrapParent": null,
-            "lastOrigin": {
-                "origin": {
-                    "source": "Palette",
-                    "objType": "FrameMorph"
-                },
-                "position": {
-                    "x": 7.5,
-                    "y": 50,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            },
-            "action": null,
-            "situation": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 10,
-                    "y": 106,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            }
+            "spec": "test",
+            "category": "motion",
+            "type": "command",
+            "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
+            "message": "BlockEditor.apply"
         },
-        "timeDelta": 717
-    },
-    {
-        "type": "inputSlotEdit",
-        "data": {
-            "id": {
-                "selector": "turn",
-                "id": 32,
-                "template": false,
-                "spec": "turn %clockwise %n degrees",
-                "argIndex": 0,
-                "argType": "object",
-                "objType": "Object"
-            },
-            "text": "90",
-            "value": "90"
-        },
-        "timeDelta": 2950
-    },
-    {
-        "type": "changeCategory",
-        "data": {
-            "value": "control",
-            "message": "IDE.changeCategory"
-        },
-        "timeDelta": 80
-    },
-    {
-        "type": "blockDrop",
-        "data": {
-            "lastDroppedBlock": {
-                "selector": "doRepeat",
-                "id": 74,
-                "template": false,
-                "spec": "repeat %n %loop",
-                "objType": "BlockMorph"
-            },
-            "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 641,
-                    "y": 439.8,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": null,
-                    "id": 30,
-                    "template": false,
-                    "spec": "",
-                    "objType": "BlockMorph"
-                },
-                "loc": "bottom",
-                "type": "block",
-                "objType": "Object"
-            },
-            "lastPreservedBlocks": null,
-            "lastNextBlock": {
-                "selector": "forward",
-                "id": 31,
-                "template": false,
-                "spec": "move %n steps",
-                "objType": "BlockMorph"
-            },
-            "lastWrapParent": null,
-            "lastOrigin": {
-                "origin": {
-                    "source": "Palette",
-                    "objType": "FrameMorph"
-                },
-                "position": {
-                    "x": 7.5,
-                    "y": 709,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            },
-            "action": null,
-            "situation": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 10,
-                    "y": 74.5,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            }
-        },
-        "timeDelta": 4050
-    },
-    {
-        "type": "blockDrop",
-        "data": {
-            "lastDroppedBlock": {
-                "selector": "forward",
-                "id": 31,
-                "template": false,
-                "spec": "move %n steps",
-                "objType": "BlockMorph"
-            },
-            "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 651.5,
-                    "y": 471.3,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": "doRepeat",
-                    "id": 74,
-                    "template": false,
-                    "spec": "repeat %n %loop",
-                    "argIndex": 1,
-                    "argType": "object",
-                    "objType": "ArgMorph"
-                },
-                "loc": "bottom",
-                "type": "slot",
-                "objType": "Object"
-            },
-            "lastPreservedBlocks": null,
-            "lastNextBlock": null,
-            "lastWrapParent": null,
-            "lastOrigin": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 10,
-                    "y": 134.5,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            },
-            "action": null,
-            "situation": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 20.5,
-                    "y": 106,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            }
-        },
-        "timeDelta": 942
-    },
-    {
-        "type": "inputSlotEdit",
-        "data": {
-            "id": {
-                "selector": "doRepeat",
-                "id": 74,
-                "template": false,
-                "spec": "repeat %n %loop",
-                "argIndex": 0,
-                "argType": "object",
-                "objType": "Object"
-            },
-            "text": "4",
-            "value": "4"
-        },
-        "timeDelta": 2279
-    },
-    {
-        "type": "changeCategory",
-        "data": {
-            "value": "motion",
-            "message": "IDE.changeCategory"
-        },
-        "timeDelta": 4616
+        "timeDelta": 1
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
                 "selector": "evaluateCustomBlock",
-                "id": 75,
+                "id": 36,
                 "template": false,
-                "spec": "draw square",
+                "spec": "test",
+                "guid": "aefe093a-edc1-4613-bf21-02c2e2112ac0",
                 "objType": "BlockMorph"
             },
             "lastReplacedInput": null,
@@ -491,77 +191,36 @@
                     "objType": "ScriptsMorph"
                 },
                 "position": {
-                    "x": 139.5,
-                    "y": 77.16666666666688,
+                    "x": 290.5,
+                    "y": 200.16666666666688,
                     "objType": "Point"
                 },
                 "objType": "Object"
             }
         },
-        "timeDelta": 3465
+        "timeDelta": 1904
     },
     {
         "type": "run",
         "data": {
             "selector": "evaluateCustomBlock",
-            "id": 75,
+            "id": 36,
             "template": false,
-            "spec": "draw square",
+            "spec": "test",
             "message": "Block.clickRun"
         },
-        "timeDelta": 640
-    },
-    {
-        "type": "blockEditor_ok",
-        "data": {
-            "spec": "draw square",
-            "category": "motion",
-            "type": "command",
-            "guid": "2c363215-9890-4980-8743-b5106463b1df",
-            "message": "BlockEditor.apply"
-        },
-        "timeDelta": 1375
-    },
-    {
-        "type": "blockEditor_apply",
-        "data": {
-            "spec": "draw square",
-            "category": "motion",
-            "type": "command",
-            "guid": "2c363215-9890-4980-8743-b5106463b1df",
-            "message": "BlockEditor.apply"
-        },
-        "timeDelta": 3
+        "timeDelta": 1367
     },
     {
         "type": "run",
         "data": {
             "selector": "evaluateCustomBlock",
-            "id": 75,
+            "id": 36,
             "template": false,
-            "spec": "draw square",
+            "spec": "test",
             "message": "Block.clickRun"
         },
-        "timeDelta": 1096
-    },
-    {
-        "type": "menu",
-        "data": {
-            "parent": {
-                "selector": "evaluateCustomBlock",
-                "id": 76,
-                "template": true,
-                "spec": "draw square",
-                "objType": "BlockMorph"
-            },
-            "open": true,
-            "position": {
-                "x": 97,
-                "y": 862,
-                "objType": "Point"
-            }
-        },
-        "timeDelta": 2545
+        "timeDelta": 479
     },
     {
         "type": "menuItemSelect",
@@ -569,348 +228,12 @@
             "index": 1,
             "highlight": true
         },
-        "timeDelta": 63
+        "timeDelta": 1745
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
-            "highlight": false
-        },
-        "timeDelta": 112
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 3,
-            "highlight": true
-        },
-        "timeDelta": 32
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 3,
-            "highlight": false
-        },
-        "timeDelta": 72
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 4,
-            "highlight": true
-        },
-        "timeDelta": 1
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 4,
-            "highlight": false
-        },
-        "timeDelta": 71
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
-            "highlight": false
-        },
-        "timeDelta": 139
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 6,
-            "highlight": true
-        },
-        "timeDelta": 1
-    },
-    {
-        "type": "menu",
-        "data": {
-            "parent": null,
-            "open": false,
-            "position": {
-                "x": 147,
-                "y": 935,
-                "objType": "Point"
-            }
-        },
-        "timeDelta": 435
-    },
-    {
-        "type": "blockEditor_start",
-        "data": {
-            "spec": "draw square",
-            "category": "motion",
-            "type": "command",
-            "guid": "2c363215-9890-4980-8743-b5106463b1df",
-            "message": "BlockEditor.start"
-        },
-        "timeDelta": 1
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 6,
-            "highlight": false
-        },
-        "timeDelta": 169
-    },
-    {
-        "type": "changeCategory",
-        "data": {
-            "value": "pen",
-            "message": "IDE.changeCategory"
-        },
-        "timeDelta": 1264
-    },
-    {
-        "type": "blockDrop",
-        "data": {
-            "lastDroppedBlock": {
-                "selector": "down",
-                "id": 101,
-                "template": false,
-                "spec": "pen down",
-                "objType": "BlockMorph"
-            },
-            "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 641,
-                    "y": 439.8,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": null,
-                    "id": 78,
-                    "template": false,
-                    "spec": "",
-                    "objType": "BlockMorph"
-                },
-                "loc": "bottom",
-                "type": "block",
-                "objType": "Object"
-            },
-            "lastPreservedBlocks": null,
-            "lastNextBlock": {
-                "selector": "doRepeat",
-                "id": 74,
-                "template": false,
-                "spec": "repeat %n %loop",
-                "objType": "BlockMorph"
-            },
-            "lastWrapParent": null,
-            "lastOrigin": {
-                "origin": {
-                    "source": "Palette",
-                    "objType": "FrameMorph"
-                },
-                "position": {
-                    "x": 7.5,
-                    "y": 56.83333333333334,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            },
-            "action": null,
-            "situation": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 10,
-                    "y": 74.5,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            }
-        },
-        "timeDelta": 2376
-    },
-    {
-        "type": "blockDrop",
-        "data": {
-            "lastDroppedBlock": {
-                "selector": "up",
-                "id": 111,
-                "template": false,
-                "spec": "pen up",
-                "objType": "BlockMorph"
-            },
-            "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 641,
-                    "y": 531.1666666666666,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": "doRepeat",
-                    "id": 74,
-                    "template": false,
-                    "spec": "repeat %n %loop",
-                    "objType": "BlockMorph"
-                },
-                "loc": "bottom",
-                "type": "block",
-                "objType": "Object"
-            },
-            "lastPreservedBlocks": null,
-            "lastNextBlock": null,
-            "lastWrapParent": null,
-            "lastOrigin": {
-                "origin": {
-                    "source": "Palette",
-                    "objType": "FrameMorph"
-                },
-                "position": {
-                    "x": 7.5,
-                    "y": 92.16666666666666,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            },
-            "action": null,
-            "situation": {
-                "origin": {
-                    "spec": "draw square",
-                    "category": "motion",
-                    "type": "command",
-                    "guid": "2c363215-9890-4980-8743-b5106463b1df",
-                    "source": "Editor",
-                    "objType": "ScriptsMorph"
-                },
-                "position": {
-                    "x": 10,
-                    "y": 211.33333333333331,
-                    "objType": "Point"
-                },
-                "objType": "Object"
-            }
-        },
-        "timeDelta": 3221
-    },
-    {
-        "type": "blockEditor_apply",
-        "data": {
-            "spec": "draw square",
-            "category": "motion",
-            "type": "command",
-            "guid": "2c363215-9890-4980-8743-b5106463b1df",
-            "message": "BlockEditor.apply"
-        },
-        "timeDelta": 578
-    },
-    {
-        "type": "run",
-        "data": {
-            "selector": "evaluateCustomBlock",
-            "id": 75,
-            "template": false,
-            "spec": "draw square",
-            "message": "Block.clickRun"
-        },
-        "timeDelta": 1281
-    },
-    {
-        "type": "run",
-        "data": {
-            "selector": "clear",
-            "id": 82,
-            "template": true,
-            "spec": "clear",
-            "message": "Block.clickRun"
-        },
-        "timeDelta": 2287
-    },
-    {
-        "type": "run",
-        "data": {
-            "selector": "evaluateCustomBlock",
-            "id": 75,
-            "template": false,
-            "spec": "draw square",
-            "message": "Block.clickRun"
-        },
-        "timeDelta": 1544
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 1,
-            "highlight": true
-        },
-        "timeDelta": 2169
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 1,
-            "highlight": false
-        },
-        "timeDelta": 39
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 3,
-            "highlight": true
-        },
-        "timeDelta": 1
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 3,
-            "highlight": false
-        },
-        "timeDelta": 23
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 4,
-            "highlight": true
-        },
-        "timeDelta": 1
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 4,
-            "highlight": false
-        },
-        "timeDelta": 23
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
             "highlight": false
         },
         "timeDelta": 16
@@ -918,7 +241,23 @@
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 6,
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 8
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 8
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
             "highlight": true
         },
         "timeDelta": 0
@@ -926,106 +265,138 @@
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 6,
+            "index": 4,
             "highlight": false
-        },
-        "timeDelta": 16
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 8,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 8,
-            "highlight": false
-        },
-        "timeDelta": 24
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 9,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 9,
-            "highlight": false
-        },
-        "timeDelta": 24
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 10,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 10,
-            "highlight": false
-        },
-        "timeDelta": 24
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 11,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 11,
-            "highlight": false
-        },
-        "timeDelta": 48
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 12,
-            "highlight": true
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 12,
-            "highlight": false
-        },
-        "timeDelta": 98
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 14,
-            "highlight": true
         },
         "timeDelta": 17
     },
     {
         "type": "menuItemSelect",
         "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 27
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 11,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 11,
+            "highlight": false
+        },
+        "timeDelta": 13
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 7
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
             "index": 14,
             "highlight": false
         },
-        "timeDelta": 69
+        "timeDelta": 32
     },
     {
         "type": "menuItemSelect",
@@ -1041,7 +412,7 @@
             "index": 15,
             "highlight": false
         },
-        "timeDelta": 72
+        "timeDelta": 32
     },
     {
         "type": "menuItemSelect",
@@ -1057,7 +428,7 @@
             "index": 16,
             "highlight": false
         },
-        "timeDelta": 112
+        "timeDelta": 47
     },
     {
         "type": "menuItemSelect",
@@ -1065,7 +436,7 @@
             "index": 18,
             "highlight": true
         },
-        "timeDelta": 64
+        "timeDelta": 24
     },
     {
         "type": "menu",
@@ -1073,11 +444,11 @@
             "parent": null,
             "open": false,
             "position": {
-                "x": 190,
-                "y": 238,
+                "x": 186,
+                "y": 243,
                 "objType": "Point"
             }
         },
-        "timeDelta": 472
+        "timeDelta": 481
     }
 ]

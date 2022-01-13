@@ -507,7 +507,7 @@ export class Playback {
 
         // Refocus this window so we can detect future changes
         this.$scrubber.focus();
-        console.log('Reset window focus to', document.activeElement);
+        // console.log('Reset window focus to', document.activeElement);
         // console.log(document.activeElement, this.snapWindow.document.activeElement);
     }
 
@@ -563,7 +563,7 @@ export class Playback {
                 $parent.animate({
                     scrollTop: scroll,
                 }, 500);
-                // TODO: At some point need to calculate relative duration to 
+                // TODO: At some point need to calculate relative duration to
                 // find the right time in the audio
                 // The edited events should all use deltas (so you can easily delete),
                 // but the audio needs to keep a reference to the start/end time in the original file
