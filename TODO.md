@@ -21,11 +21,12 @@
 
 * Variables: script vars
 * Conditionals: just test thoroughly
-* Procedures 
-   * Using custom blocks!
+* Procedures
+   * Changing block types
+   * Adding variable inputs
 
 ## Editing:
 
 * Audio transcription editing support
 * Splicing in new content
-* Debugging features to 
+* Debugging features to

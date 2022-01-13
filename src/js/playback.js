@@ -467,10 +467,19 @@ export class Playback {
         return result;
     }
 
+    isFastForwarding(event) {
+        if (!event) {
+            event = this.logs[this.currentLogIndex]
+        }
+        if (!event) return false;
+        let durationS = this.getCurrentDuration() / 1000;
+        return durationS - event.startTime > 0.25
+    }
+
     update() {
         if (!this.playing) return;
         var elem = document.activeElement;
-        if (elem && elem.id === 'isnap') {
+        if (elem && elem.id === 'isnap' && !this.isFastForwarding()) {
             // Detect if Snap was focused by the user
             // Assumes event-driven focus was corrected in checkForFocus
             this.snapFocused();
@@ -624,7 +633,7 @@ export class Playback {
         }
 
         // We go faster if the playback is more than .25s behind
-        let fast = durationS - event.startTime > 0.25;
+        let fast = this.isFastForwarding(event);
 
         if (this.handleEvent(event, fast)) {
             this.currentLogIndex++;
