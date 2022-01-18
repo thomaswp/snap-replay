@@ -19,7 +19,8 @@
 
 ## Testing:
 
-* Variables: script vars
+* Variables:
+  * Script vars / renaming
 * Conditionals: just test thoroughly
 * Procedures
    * Changing block types

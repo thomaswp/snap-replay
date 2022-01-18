@@ -1,0 +1,617 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 65
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "xPosition",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 1032
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 760
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 152
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 160
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 10,
+            "template": true,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 649
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "yPosition",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 1135
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1128
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 144
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "forward",
+            "id": 9,
+            "template": true,
+            "spec": "move %n steps",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 136
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "yPosition",
+            "visible": false,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 3375
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "xPosition",
+            "visible": false,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 385
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "variables",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 1168
+    },
+    {
+        "type": "varDialog_prompt",
+        "data": {
+            "message": "VariableDialogMorph.prompt"
+        },
+        "timeDelta": 1219
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "t"
+        },
+        "timeDelta": 875
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "te"
+        },
+        "timeDelta": 107
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "tes"
+        },
+        "timeDelta": 105
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test"
+        },
+        "timeDelta": 95
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test"
+        },
+        "timeDelta": 187
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test 1"
+        },
+        "timeDelta": 85
+    },
+    {
+        "type": "varDialog_accept",
+        "data": {
+            "message": "VariableDialogMorph.accept"
+        },
+        "timeDelta": 137
+    },
+    {
+        "type": "sprite_toggleVariableWatcher",
+        "data": {
+            "varName": "test 1",
+            "isGlobal": true,
+            "visible": true,
+            "message": "SpriteMorph.toggleVariableWatcher"
+        },
+        "timeDelta": 3
+    },
+    {
+        "type": "varDialog_prompt",
+        "data": {
+            "message": "VariableDialogMorph.prompt"
+        },
+        "timeDelta": 1244
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "t"
+        },
+        "timeDelta": 92
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "te"
+        },
+        "timeDelta": 79
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "tes"
+        },
+        "timeDelta": 162
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test"
+        },
+        "timeDelta": 92
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test"
+        },
+        "timeDelta": 1164
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "VariableDialogMorph",
+            "value": "test 2"
+        },
+        "timeDelta": 422
+    },
+    {
+        "type": "varDialog_accept",
+        "data": {
+            "message": "VariableDialogMorph.accept"
+        },
+        "timeDelta": 641
+    },
+    {
+        "type": "sprite_toggleVariableWatcher",
+        "data": {
+            "varName": "test 2",
+            "isGlobal": true,
+            "visible": true,
+            "message": "SpriteMorph.toggleVariableWatcher"
+        },
+        "timeDelta": 3
+    },
+    {
+        "type": "sprite_toggleVariableWatcher",
+        "data": {
+            "varName": "test 2",
+            "isGlobal": true,
+            "visible": false,
+            "message": "SpriteMorph.toggleVariableWatcher"
+        },
+        "timeDelta": 2416
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doSetVar",
+                "id": 154,
+                "template": false,
+                "spec": "set %var to %s",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 140.83333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 178.5,
+                    "y": 124.83333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 3386
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true
+        },
+        "timeDelta": 833
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 456,
+                "y": 283,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 270
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doSetVar",
+                "id": 154,
+                "template": false,
+                "spec": "set %var to %s",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "item": "test 1",
+            "value": "test 1"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false
+        },
+        "timeDelta": 7
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doSetVar",
+                "id": 154,
+                "template": false,
+                "spec": "set %var to %s",
+                "argIndex": 1,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "10",
+            "value": "10"
+        },
+        "timeDelta": 2505
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "doSetVar",
+            "id": 154,
+            "template": false,
+            "spec": "set %var to %s",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 70
+    },
+    {
+        "type": "sprite_toggleVariableWatcher",
+        "data": {
+            "varName": "test 1",
+            "isGlobal": true,
+            "visible": false,
+            "message": "SpriteMorph.toggleVariableWatcher"
+        },
+        "timeDelta": 1752
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 1592
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 16
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false
+        },
+        "timeDelta": 7
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false
+        },
+        "timeDelta": 17
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false
+        },
+        "timeDelta": 24
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 23
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 47
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 10
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 39
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false
+        },
+        "timeDelta": 40
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 15
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 157,
+                "y": 213,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 408
+    }
+]
