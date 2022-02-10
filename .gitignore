@@ -1,4 +1,12 @@
 node_modules
 dist/js
 dist/css/reveal.js
+
+# IDE project files 
 .vscode
+*.code-workspace
+.idea/
+*.iml
+
+# OS specific
+.DS_Store
