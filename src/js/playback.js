@@ -328,8 +328,8 @@ export class Playback {
         this.playingLog = null;
         this.recorder = this.snapWindow.recorder;
         if (this.snapWindow.recorder) {
-            this.recorder.constructor.resetSnap(this.script.startXML);
             this.recorder.constructor.setRecordScale(this.script.config.blockScale);
+            this.recorder.constructor.resetSnap(this.script.startXML);
             this.recorder.constructor.setOnClickCallback(
                 (x, y) => this.clickHighlight.trigger(x, y));
         }
