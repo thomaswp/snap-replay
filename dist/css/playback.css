@@ -19,11 +19,11 @@ body {
     box-sizing: border-box;
     width: 0;
     height: 40px;
-  
+
     border-color: transparent transparent transparent #202020;
     transition: 100ms all ease;
     cursor: pointer;
-  
+
     border-style: solid;
     border-width: 20px 0 20px 32px;
 
@@ -139,11 +139,24 @@ body {
     transform: scale(0, 0);
     transition: transform 0.15s linear;
 }
+
 #clickHighlight.down {
     transform: scale(0.5, 0.5);
     /* opacity: 0.3; */
 }
 
+#cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 25px;
+    transition-timing-function: ease-in-out;
+}
+
+#cursor.moving {
+    opacity: 1;
+}
 
 button.hidden {
     display: none;

@@ -5,7 +5,7 @@
 * Figure out why loading is low (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 
 ## Recording Features:
-
+* Mouse movement seems really important
 * Comments
 * Finish custom blocks
 * Finish variables (script, local)

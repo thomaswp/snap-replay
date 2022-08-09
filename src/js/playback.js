@@ -13,7 +13,7 @@ window.Trace = {
 
 export class Playback {
 
-    static DB_LOG = true;
+    static DB_LOG = false;
 
     // 0 because we do this in the script itself now
     static BUFFER_MS = 0;
@@ -210,6 +210,34 @@ export class Playback {
             plot.classList.add('down');
             setTimeout(() => plot.classList.remove('down'), 200);
         }
+
+        const FADE_TIMEOUT = 3000;
+        const FADE_DURATION = 0.3;
+
+        let cursor = this.cursor = document.createElement('img');
+        cursor.id = 'cursor';
+        cursor.setAttribute('src', 'img/cursor.png');
+        document.body.appendChild(cursor);
+        let lastTimeout = null;
+        let lastX = 0, lastY = 0;
+        cursor.moveTo = (x, y, duration) => {
+            if (lastX == x && lastY == y) return;
+            lastX = x;
+            lastY = y;
+            duration = duration || 0.75;
+            cursor.classList.add('moving');
+            cursor.style.transition =
+                `transform ${duration}s, opacity ${FADE_DURATION}s`;
+            cursor.style.transform = `translate(${x}px, ${y}px)`;
+            if (lastTimeout) clearTimeout(lastTimeout);
+            lastTimeout = setTimeout(() => cursor.classList.remove('moving'),
+                FADE_TIMEOUT);
+        }
+    }
+
+    simulateClick(x, y) {
+        this.clickHighlight.trigger(x, y);
+        // this.cursor.moveTo(x, y, 0.1);
     }
 
     static getDuration = function (url, next) {
@@ -331,7 +359,7 @@ export class Playback {
             this.recorder.constructor.resetSnap(this.script.startXML);
             this.recorder.constructor.setRecordScale(this.script.config.blockScale);
             this.recorder.constructor.setOnClickCallback(
-                (x, y) => this.clickHighlight.trigger(x, y));
+                (x, y) => this.simulateClick(x, y));
         }
     }
 
@@ -605,6 +633,19 @@ export class Playback {
         return `#${eventIndex} "${log.description}" + ${delta}s`;
     }
 
+    getRecordFromEvent(event) {
+        let record = this.script.getLog(event);
+        // console.log('Playing', record);
+        // First, try to see if the Slides class can replay this
+        let slidesRecord = this.slides ? this.slides.loadRecord(record) : null;
+        if (slidesRecord == null) {
+            [record] = this.recorder.loadRecords([record]);
+        } else {
+            record = slidesRecord;
+        }
+        return record;
+    }
+
     updateLogs(noReset) {
         if (this.playingLog || this.warnResume) return;
 
@@ -623,6 +664,9 @@ export class Playback {
 
         let event = this.logs[this.currentLogIndex];
         if (!event) return;
+
+        this.checkCursorMovement();
+
         if (durationS < event.startTime) {
             if (this.nextTimeout) return;
             let nextTime = (event.startTime - durationS) * 1000;
@@ -643,15 +687,9 @@ export class Playback {
 
         this.nextTimeout = null;
         // console.log('Event: ', event);
-        let record = this.script.getLog(event);
-        // console.log('Playing', record);
-        // First, try to see if the Slides class can replay this
-        let slidesRecord = this.slides ? this.slides.loadRecord(record) : null;
-        if (slidesRecord == null) {
-            [record] = this.recorder.loadRecords([record]);
-        } else {
-            record = slidesRecord;
-        }
+
+        let record = this.getRecordFromEvent(event);
+
         this.playingLog = event;
         this.playingAction = true;
         try {
@@ -666,6 +704,33 @@ export class Playback {
         }
         this.playingAction = false;
         this.currentLogIndex++;
+
+        this.checkCursorMovement();
+    }
+
+    checkCursorMovement() {
+        const MAX_CURSOR_AHEAD = 1;
+        const DEFAULT_TRANSITION = 0.75;
+
+        let durationS = this.getCurrentDuration() / 1000;
+
+        let index = this.currentLogIndex;
+        while (index < this.logs.length) {
+            let event = this.logs[index];
+            index++;
+            if (!event) continue;
+            let timeUntil = event.startTime - durationS;
+            if (timeUntil < 0) timeUntil = 0;
+            if (timeUntil > MAX_CURSOR_AHEAD) break;
+            let record = this.getRecordFromEvent(event);
+            if (!record.getCursor) continue; // Skip slides events
+            let cursor = record.getCursor();
+            // console.log('cursor', cursor);
+            if (!cursor) continue;
+            let duration = Math.min(DEFAULT_TRANSITION, timeUntil);
+            this.cursor.moveTo(cursor.x, cursor.y, duration);
+            break;
+        }
     }
 
     updateHighlights() {
