@@ -231,7 +231,7 @@ export class Playback {
             cursor.style.transition =
                 `transform ${duration}s, opacity ${FADE_DURATION}s`;
             cursor.style.transform = `translate(${x}px, ${y}px)`;
-            cursor.activate;            
+            cursor.activate();
         }
 
         let lastTimeout = null;
@@ -788,7 +788,7 @@ export class Playback {
     }
 
     setHighlight(blockID, highlighted) {
-        var block = this.recorder.constructor.getBlock(blockID);
+        var block = this.recorder.constructor.getBlock({id: blockID});
         // console.log('setHighlight', blockID, highlighted, block);
         if (!block) return;
         if (highlighted) {
