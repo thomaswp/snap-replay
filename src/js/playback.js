@@ -173,6 +173,8 @@ export class Playback {
         // console.log("Answered", id);
         this.setConstructQuestionPanelVisible(false);
         this.answeredQs.push(id);
+        // Reset Snap, since we need to overwrite their changes
+        this.resetSnap();
         if (skipSolution) {
             // console.log('skipping...');
             for (let i = this.currentLogIndex; i < this.events.length; i++) {
@@ -188,7 +190,6 @@ export class Playback {
             }
         }
         this.askingQuestion = null;
-        this.snapEdits = 0;
         this.play();
     }
 
@@ -369,6 +370,7 @@ export class Playback {
         this.currentLogIndex = 0;
         this.playingLog = null;
         this.recorder = this.snapWindow.recorder;
+        this.snapEdits = 0;
         if (this.snapWindow.recorder) {
             this.recorder.constructor.resetSnap(this.script.startXML);
             this.recorder.constructor.setRecordScale(this.script.config.blockScale);
