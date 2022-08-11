@@ -195,43 +195,57 @@ export class Playback {
     createClickHighlight() {
         // create a DIV element, give it an ID and add it
         // to the body
-        this.clickHighlight = document.createElement('div');
-        this.clickHighlight.id = 'clickHighlight';
+        var clickHighlight = this.clickHighlight = document.createElement('div');
+        clickHighlight.id = 'clickHighlight';
         document.body.appendChild(this.clickHighlight);
-        // define offset as half the width of the DIV
-        // (this is needed to put the mouse cursor in
-        // its centre)
-        var plot = this.clickHighlight;
-        var offset = plot.offsetWidth / 2;
-        // move the DIV to x and y with the correct offset
-        this.clickHighlight.trigger = (x, y) => {
-            plot.style.left = x - offset + 'px';
-            plot.style.top = y - offset + 'px';
-            plot.classList.add('down');
-            setTimeout(() => plot.classList.remove('down'), 200);
-        }
-
-        const FADE_TIMEOUT = 3000;
-        const FADE_DURATION = 0.3;
 
         let cursor = this.cursor = document.createElement('img');
         cursor.id = 'cursor';
         cursor.setAttribute('src', 'img/cursor.png');
         document.body.appendChild(cursor);
-        let lastTimeout = null;
+
+        // define offset as half the width of the DIV
+        // (this is needed to put the mouse cursor in
+        // its centre)
+        var offset = clickHighlight.offsetWidth / 2;
+        // move the DIV to x and y with the correct offset
+        clickHighlight.trigger = (x, y) => {
+            clickHighlight.style.left = x - offset + 'px';
+            clickHighlight.style.top = y - offset + 'px';
+            clickHighlight.classList.add('down');
+            setTimeout(() => clickHighlight.classList.remove('down'), 200);
+            cursor.activate();
+        }
+
+        const FADE_DURATION = 0.3;
+        const FADE_TIMEOUT = 3000;
+
         let lastX = 0, lastY = 0;
         cursor.moveTo = (x, y, duration) => {
             if (lastX == x && lastY == y) return;
             lastX = x;
             lastY = y;
             duration = duration || 0.75;
-            cursor.classList.add('moving');
             cursor.style.transition =
                 `transform ${duration}s, opacity ${FADE_DURATION}s`;
             cursor.style.transform = `translate(${x}px, ${y}px)`;
+            cursor.activate;            
+        }
+
+        let lastTimeout = null;
+        cursor.activate = function() {
+            cursor.classList.add('moving');
             if (lastTimeout) clearTimeout(lastTimeout);
             lastTimeout = setTimeout(() => cursor.classList.remove('moving'),
                 FADE_TIMEOUT);
+        }
+
+        cursor.hide = function() {
+            cursor.classList.add('hidden');
+        }
+
+        cursor.show = function() {
+            cursor.classList.remove('hidden');
         }
     }
 
@@ -375,6 +389,7 @@ export class Playback {
         // }
         Trace.log('Playback.snapFocused');
         this.clearHighlights();
+        this.cursor.hide();
         if (this.playing) {
             this.pause();
             this.snapEdits = 0;
@@ -424,6 +439,7 @@ export class Playback {
             this.restart();
         }
         $('#play').addClass('pause');
+        this.cursor.show();
         this.playStartTime = new Date().getTime();
         this.playing = true;
         this.clearCurrentText();
@@ -436,6 +452,7 @@ export class Playback {
     pause() {
         if (!this.playing) return;
         $('#play').removeClass('pause');
+        this.cursor.hide();
         this.playStartDuration = this.getCurrentDuration();
         this.audio.pause();
         this.playing = false;
@@ -634,6 +651,7 @@ export class Playback {
     }
 
     getRecordFromEvent(event) {
+        if (!event) return null;
         let record = this.script.getLog(event);
         // console.log('Playing', record);
         // First, try to see if the Slides class can replay this
@@ -711,6 +729,7 @@ export class Playback {
     checkCursorMovement() {
         const MAX_CURSOR_AHEAD = 1;
         const DEFAULT_TRANSITION = 0.75;
+        const PRE_CURSOR_AHEAD = 0.15;
 
         let durationS = this.getCurrentDuration() / 1000;
 
@@ -721,15 +740,27 @@ export class Playback {
             if (!event) continue;
             let timeUntil = event.startTime - durationS;
             if (timeUntil < 0) timeUntil = 0;
-            if (timeUntil > MAX_CURSOR_AHEAD) break;
+            if (timeUntil > MAX_CURSOR_AHEAD + PRE_CURSOR_AHEAD) break;
             let record = this.getRecordFromEvent(event);
             if (!record.getCursor) continue; // Skip slides events
-            let cursor = record.getCursor();
+
+            if (this.isFastForwarding(event)) return;
+
+            let cursor = null;
+            // If there's a pre-cursor position, and we're still a ways out 
+            // from the event, use that
+            if (timeUntil > PRE_CURSOR_AHEAD) cursor = record.getPreCursor();
+            if (cursor == null) {
+                // Otherwise use the cursor position
+                cursor = record.getCursor();
+            }
+
             // console.log('cursor', cursor);
-            if (!cursor) continue;
-            let duration = Math.min(DEFAULT_TRANSITION, timeUntil);
-            this.cursor.moveTo(cursor.x, cursor.y, duration);
-            break;
+            if (cursor) {
+                let duration = Math.min(DEFAULT_TRANSITION, timeUntil);
+                this.cursor.moveTo(cursor.x, cursor.y, duration);
+                break;
+            }
         }
     }
 

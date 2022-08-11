@@ -158,6 +158,10 @@ body {
     opacity: 1;
 }
 
+#cursor.hidden {
+    opacity: 0;
+}
+
 button.hidden {
     display: none;
 }
