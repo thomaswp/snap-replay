@@ -81,8 +81,8 @@ export class Playback {
         $('#question-reset').on('click', () => this.loadCheckpoint());
         $('#question-hint').on('click', () => this.slides.showHint(this.askingQuestion));
         $('#question-finished').on('click', () => this.setCheckWorkVisible(true));
-        $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion, true));
-        $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion));
+        $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion, true, true));
+        $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion, true));
         $('#q-modal-hint').on('click', () => this.slides.showHint(this.askingQuestion));
 
         setInterval(() => {
@@ -109,7 +109,7 @@ export class Playback {
         this.slides = new Slides(this.path, false);
         this.slides.loadMarkdown(this.script.slidesMD);
         this.slides.onQStarted = (id, userControlled) => this.waitForAnswer(id, userControlled);
-        this.slides.onQFinished = (id) => this.answerReceived(id);
+        this.slides.onQFinished = (id) => this.answerReceived(id, false);
     }
 
     waitForAnswer(id, userControlled) {
@@ -164,17 +164,18 @@ export class Playback {
         $('#question-check-work').toggleClass('hidden', !visible);
     }
 
-    answerReceived(id, skipSolution) {
+    answerReceived(id, resetSnap, skipSolution) {
         if (!this.askingQuestion) return;
         Trace.log('Playback.answerReceived', {
             id: id,
+            resetSnap: resetSnap,
             skipSolution: skipSolution,
         });
         // console.log("Answered", id);
         this.setConstructQuestionPanelVisible(false);
         this.answeredQs.push(id);
-        // Reset Snap, since we need to overwrite their changes
-        this.resetSnap();
+        // Reset Snap for modify questions, since we need to overwrite their changes
+        if(resetSnap) this.resetSnap();
         if (skipSolution) {
             // console.log('skipping...');
             for (let i = this.currentLogIndex; i < this.events.length; i++) {
