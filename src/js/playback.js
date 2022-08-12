@@ -730,13 +730,43 @@ export class Playback {
     }
 
     checkCursorMovement() {
+        // How far ahead of an event to start moving the cursor to 
+        // the appointed location, if possible
         const MAX_CURSOR_AHEAD = 1;
+        // How slowly to move the cursor if there's time before
+        // the event. The cursor will arrive at the appointed
+        // location up to MAX_CURSOR_AHEAD - DEFAULT_TRANSITION
+        // seconds before the event takes palce
         const DEFAULT_TRANSITION = 0.75;
-        const PRE_CURSOR_AHEAD = 0.15;
+        // If there's a pre-cursor position, this will be used
+        // instead of the cursor position up until this many
+        // seconds before the event.
+        // This is currently only used for block move events
+        // so it's just a few frames
+        const PRE_CURSOR_AHEAD = 1.5 / 60; // 1-2 frames
 
         let durationS = this.getCurrentDuration() / 1000;
 
+        const BLOCK_DRAG_DURATION_S = 
+            this.recorder.constructor.BLOCK_DRAG_DURATION_MS / 1000.0;
+
+
         let index = this.currentLogIndex;
+
+        if (index > 0) {
+            let lastEvent = this.logs[index - 1];
+            // If the last event occurred less than a drag ago...
+            if (lastEvent && lastEvent.startTime + BLOCK_DRAG_DURATION_S > durationS) {
+                let lastRecord = this.getRecordFromEvent(lastEvent);
+                // If the record was a block drop, give it time to finish the cursor
+                // move before moving to the next event...
+                if (lastRecord.type === 'blockDrop') {
+                    console.log('Allowing block drop to finish...');
+                    return;
+                }
+            }
+        }
+        
         while (index < this.logs.length) {
             let event = this.logs[index];
             index++;
@@ -749,6 +779,7 @@ export class Playback {
 
             if (this.isFastForwarding(event)) return;
 
+            let duration = Math.min(DEFAULT_TRANSITION, timeUntil);
             let cursor = null;
             // If there's a pre-cursor position, and we're still a ways out 
             // from the event, use that
@@ -756,11 +787,16 @@ export class Playback {
             if (cursor == null) {
                 // Otherwise use the cursor position
                 cursor = record.getCursor();
+                if (record.type === 'blockDrop') {
+                    // For blockDrop, we actually want to move the cursor to the
+                    // event location *after* the event takes place, so we take
+                    // the duration of the block movement, rather than the time
+                    // until the drag event starts
+                    duration = BLOCK_DRAG_DURATION_S;
+                }
             }
 
-            // console.log('cursor', cursor);
             if (cursor) {
-                let duration = Math.min(DEFAULT_TRANSITION, timeUntil);
                 this.cursor.moveTo(cursor.x, cursor.y, duration);
                 break;
             }
