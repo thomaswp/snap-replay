@@ -60,6 +60,7 @@
     background-color: #333;
     border-radius: 10px;
     padding: 5px;
+    white-space: nowrap;
 }
 
 .reveal .quiz a {
@@ -86,4 +87,8 @@
 
 .reveal p img {
     margin: inherit;
+}
+
+.reveal strong {
+    color: #7d7dff
 }
