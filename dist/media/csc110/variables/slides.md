@@ -8,25 +8,14 @@
 
 <!--
 Notes:
-- Draw a square manually, show challenge with resizing
-- Repeat slide
-- Show how to make a repeat square
-- Visible step to show how it works
-- Modify task to triangle
-- Show code after repeat
-- Quiz
+* Name: score
+* Slide: Major blocks
+* Initialize: 0 at green flag
+* Update: +1 when clicked
+* Use: Say score
+* Slides: Recipe, Types of data
+* Modify Task:
 -->
-
----
-## Variables
-
-Variables allow the computer to remember things like:
-
-* How many sides should the shape have?
-* What is the player's name?
-* What are the (x, y) coordinates of the button on the screen?
-
-A computer can **store** a value in a variable, **get** the current value, or **modify** the value.
 
 ---
 ## Variable Blocks
@@ -36,6 +25,16 @@ These are the primary blocks used with variables
 * ![](img/set.png) **Sets** a variable to the given value (e.g. 0)
 * ![](img/change.png) **Changes** a variable, increasing its value by the input (or decreasing if negative)
 * ![](img/get.png) **Uses** the variable in another block.
+
+---
+## Using Variables
+
+Follow this *recipe* when using a variable:
+
+1. **Create** the variable and give it a descriptive name.
+2. **Initialize** the variable to a starting value (e.g. when the play button is pressed).
+3. **Change** the variable value when appropriate.
+4. **Use** the variable value in your code.
 
 ---
 ## Types of Data
@@ -49,90 +48,28 @@ Variables can store different types of data:
 
 
 ---
-<!-- .slide: id="triangle" -->
-## Modify: Make a Triangle
+<!-- .slide: id="jumps" -->
+## Modify: Count Jumps
 
-**Goal**: Modify the current code so that it draws a *triangle* instead of a square:
+**Goal**: Create a new variable called `jumps` that counts the number of times
+the sprite has jumped, starting at 0.
 
-![](img/triangle.png)
+![](img/jumps.gif)
 
 <div class="quiz">
 
-[Hints](#/triangle-hint)
+[Hints](#/jumps-hint)
 
 </div>
 
 v---v
-<!-- .slide: id="triangle-hint" -->
+<!-- .slide: id="jumps-hint" -->
 ## Hints
 
-* You will need to change two blocks' *inputs*, but not the structure of the code.
-* After drawing the 3 sides of a triangle, the Sprite should have turned 360 degrees. How much should it turn each time?
+Follow the variable recipe:
 
-[Back](#/triangle)
+1. Create the variable using the "Make a variable" button under the "Variables" tab.
+2. Give it a starting value (0) when the green flag is clicked.
+3. Increase the value (by 1) whenever the sprite jumps (the `go to` block).
 
-
-
-
----
-<!-- .slide: id="q1" -->
-## Knowledge Check: Repeat
-What will the following code say when it runs?
-
-<div class="container">
-
-<div class="col">
-
-![](img/q1.png)
-
-</div>
-
-<div class="col quiz">
-
-[A) One Two Three Four](#/a)
-
-[B) One Two Three Four One Two Three Four](#/b)
-
-[C) One Two Two Three Three Four](#/c)
-
-[D) One Two Three Two Three Four](#/d)
-
-</div>
-</div>
-
-v---v
-<!-- .slide: id="a" -->
-## A
-
-Incorrect: Remember, the `Repeat` block causes the code inside of it to run multiple times.
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="b" -->
-## B
-
-Incorrect: Remember, the `Repeat` block only affects code inside of it.
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="c" -->
-## C
-
-Incorrect: Remember, the `Repeat` runs the code inside of it *in order*!
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="d" data-background-color="#3333aa" -->
-## D
-
-Correct! Only the code inside of the loop gets repeated.
-
-<button class="navigate-right btn btn-success">Continue</button>
-
-
----
-<!-- .slide: id="q1-finished" data-state="q-finished" -->
-## Good job!
+[Back](#/jumps)

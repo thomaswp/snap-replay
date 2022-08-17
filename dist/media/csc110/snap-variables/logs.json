@@ -1,0 +1,1368 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false
+        },
+        "timeDelta": 47
+    },
+    {
+        "type": "slidesToggled",
+        "data": {
+            "value": true
+        },
+        "timeDelta": 3149
+    },
+    {
+        "type": "slideChanged",
+        "data": {
+            "id": "",
+            "indexh": 1,
+            "indexv": 0
+        },
+        "timeDelta": 5431
+    },
+    {
+        "type": "slideChanged",
+        "data": {
+            "id": "",
+            "indexh": 2,
+            "indexv": 0
+        },
+        "timeDelta": 24503
+    },
+    {
+        "type": "slidesToggled",
+        "data": {
+            "value": false
+        },
+        "timeDelta": 38209
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "xPosition",
+                "id": 25,
+                "template": false,
+                "spec": "x position",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 29.833333333333336,
+                "y": 709.1666666666667,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 14625
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "xPosition",
+                "id": 25,
+                "template": false,
+                "spec": "x position",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 29.833333333333336,
+                    "y": 597.8333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 215.83333333333337,
+                    "y": 84.8333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 1024
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "yPosition",
+                "id": 26,
+                "template": false,
+                "spec": "y position",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 29.833333333333336,
+                "y": 735.5000000000001,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 1251
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "yPosition",
+                "id": 26,
+                "template": false,
+                "spec": "y position",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 29.833333333333336,
+                    "y": 624.1666666666667,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 405.83333333333337,
+                    "y": 88.16666666666677,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 899
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "xPosition",
+            "id": 25,
+            "template": false,
+            "spec": "x position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 3084
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "yPosition",
+            "id": 26,
+            "template": false,
+            "spec": "y position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 2252
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": 103,
+            "y": -73
+        },
+        "timeDelta": 12809
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "xPosition",
+            "id": 25,
+            "template": false,
+            "spec": "x position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 3655
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "yPosition",
+            "id": 26,
+            "template": false,
+            "spec": "y position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 2936
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "setXPosition",
+                "id": 27,
+                "template": false,
+                "spec": "set x to %n",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 528.3333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 19672
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "setXPosition",
+                "id": 27,
+                "template": false,
+                "spec": "set x to %n",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 417,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 176.5,
+                    "y": 213.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 577
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "setYPosition",
+                "id": 28,
+                "template": false,
+                "spec": "set y to %n",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 609.3333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 1063
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "setYPosition",
+                "id": 28,
+                "template": false,
+                "spec": "set y to %n",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 498,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 384.5,
+                    "y": 208.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 760
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setXPosition",
+                "id": 27,
+                "template": false,
+                "spec": "set x to %n",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "100",
+            "value": "100"
+        },
+        "timeDelta": 5760
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "setXPosition",
+            "id": 27,
+            "template": false,
+            "spec": "set x to %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 88
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "xPosition",
+            "id": 25,
+            "template": false,
+            "spec": "x position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 2480
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "setYPosition",
+                "id": 28,
+                "template": false,
+                "spec": "set y to %n",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "50",
+            "value": "50"
+        },
+        "timeDelta": 7332
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "setYPosition",
+            "id": 28,
+            "template": false,
+            "spec": "set y to %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 76
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "yPosition",
+            "id": 26,
+            "template": false,
+            "spec": "y position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1128
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "xPosition",
+            "id": 25,
+            "template": false,
+            "spec": "x position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 18800
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "yPosition",
+            "id": 26,
+            "template": false,
+            "spec": "y position",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 856
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "xPosition",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 4562
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "yPosition",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 965
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": 95,
+            "y": -3
+        },
+        "timeDelta": 11531
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": 34,
+            "y": -74
+        },
+        "timeDelta": 918
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": -81,
+            "y": -91
+        },
+        "timeDelta": 888
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": -140,
+            "y": -21
+        },
+        "timeDelta": 1192
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": -102,
+            "y": 44
+        },
+        "timeDelta": 839
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": 77,
+            "y": 95
+        },
+        "timeDelta": 1665
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "changeXPosition",
+                "id": 29,
+                "template": false,
+                "spec": "change x by %n",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 487.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 12514
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "changeXPosition",
+                "id": 29,
+                "template": false,
+                "spec": "change x by %n",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 376.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 158.5,
+                    "y": 316.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 921
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "changeYPosition",
+                "id": 30,
+                "template": false,
+                "spec": "change y by %n",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 568.8333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 972
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "changeYPosition",
+                "id": 30,
+                "template": false,
+                "spec": "change y by %n",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 457.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 374.5,
+                    "y": 316.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 945
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "setXPosition",
+            "id": 27,
+            "template": false,
+            "spec": "set x to %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 5648
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 4592
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 736
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 864
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "changeXPosition",
+                "id": 29,
+                "template": false,
+                "spec": "change x by %n",
+                "argIndex": 0,
+                "argType": "object",
+                "objType": "Object"
+            },
+            "text": "-10",
+            "value": "-10"
+        },
+        "timeDelta": 3677
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1587
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 632
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 648
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 743
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 770
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 695
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 824
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 673
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "changeXPosition",
+            "id": 29,
+            "template": false,
+            "spec": "change x by %n",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 647
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "direction",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 16624
+    },
+    {
+        "type": "spriteDropped",
+        "data": {
+            "sprite": {
+                "name": "Sprite",
+                "objType": "SpriteMorph"
+            },
+            "x": 7,
+            "y": 10
+        },
+        "timeDelta": 2488
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 10,
+            "template": true,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 4904
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 10,
+            "template": true,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 672
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 10,
+            "template": true,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 1176
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "turn",
+                "id": 31,
+                "template": false,
+                "spec": "turn %clockwise %n degrees",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 161.33333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 1729
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "turn",
+                "id": 31,
+                "template": false,
+                "spec": "turn %clockwise %n degrees",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 50,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 143.5,
+                    "y": 409,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 858
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 31,
+            "template": false,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 2797
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 31,
+            "template": false,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 736
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 31,
+            "template": false,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 912
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 31,
+            "template": false,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 744
+    },
+    {
+        "type": "run",
+        "data": {
+            "selector": "turn",
+            "id": 31,
+            "template": false,
+            "spec": "turn %clockwise %n degrees",
+            "message": "Block.clickRun"
+        },
+        "timeDelta": 920
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "xPosition",
+            "visible": false,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 2432
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "yPosition",
+            "visible": false,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 504
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "direction",
+            "visible": false,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 579
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "sensing",
+            "message": "IDE.changeCategory"
+        },
+        "timeDelta": 4456
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "reportMouseX",
+                "id": 55,
+                "template": false,
+                "spec": "mouse x",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 29.833333333333336,
+                "y": 307.1666666666667,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 5337
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportMouseX",
+                "id": 55,
+                "template": false,
+                "spec": "mouse x",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 29.833333333333336,
+                    "y": 195.83333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 150.83333333333337,
+                    "y": 493.83333333333337,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 532
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "reportMouseY",
+                "id": 56,
+                "template": false,
+                "spec": "mouse y",
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 29.833333333333336,
+                "y": 333.5,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed"
+        },
+        "timeDelta": 839
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "reportMouseY",
+                "id": 56,
+                "template": false,
+                "spec": "mouse y",
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 29.833333333333336,
+                    "y": 222.16666666666666,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 267.83333333333337,
+                    "y": 493.16666666666663,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            }
+        },
+        "timeDelta": 905
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "reportMouseX",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 5936
+    },
+    {
+        "type": "sprite_toggleWatcher",
+        "data": {
+            "selector": "reportMouseY",
+            "visible": true,
+            "message": "SpriteMorph.toggleWatcher"
+        },
+        "timeDelta": 655
+    },
+    {
+        "type": "videoPause",
+        "data": {},
+        "timeDelta": 24426
+    },
+    {
+        "type": "slidesToggled",
+        "data": {
+            "value": true
+        },
+        "timeDelta": 24870
+    },
+    {
+        "type": "slideChanged",
+        "data": {
+            "id": "q1",
+            "indexh": 3,
+            "indexv": 0
+        },
+        "timeDelta": 1458
+    },
+    {
+        "type": "waitForQuestion",
+        "data": {
+            "id": "q1-finished"
+        },
+        "timeDelta": 29833
+    },
+    {
+        "type": "slidesToggled",
+        "data": {
+            "value": false
+        },
+        "timeDelta": 5117
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true
+        },
+        "timeDelta": 4474
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false
+        },
+        "timeDelta": 30
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false
+        },
+        "timeDelta": 29
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false
+        },
+        "timeDelta": 61
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false
+        },
+        "timeDelta": 63
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false
+        },
+        "timeDelta": 61
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 156,
+                "y": 202,
+                "objType": "Point"
+            }
+        },
+        "timeDelta": 348
+    }
+]

@@ -1,6 +1,6 @@
 ## Bugs:
 
-* Allow gifs for Modify task images.
+* Allow gifs for Modify task images. (!)
 * Don't crash when comments are added.
 * Figure out why loading is low (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 
@@ -8,10 +8,13 @@
 * Comments
 * Finish custom blocks
 * Finish variables (script, local)
+* Scroll to blocks in palette (!!)
+* Fix block drag-n-drop bug where it goes to the pallete again (!)
 
 ## Replayer Features:
 
-* Time in/remaining
+* Time in/remaining (!)
+* Shrink bottom bar (!)
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
 * Config for maxplayback, show code, logging, etc.
