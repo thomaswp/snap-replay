@@ -51,10 +51,10 @@ Variables can store different types of data:
 <!-- .slide: id="jumps" -->
 ## Modify: Count Jumps
 
-**Goal**: Create a new variable called `jumps` that counts the number of times
+**Goal**: Create a new variable, `jumps`, that counts the number of times
 the sprite has jumped, starting at 0.
 
-![](img/jumps.gif)
+<img src="img/jumps.gif" width="45%">
 
 <div class="quiz">
 
@@ -68,8 +68,9 @@ v---v
 
 Follow the variable recipe:
 
-1. Create the variable using the "Make a variable" button under the "Variables" tab.
-2. Give it a starting value (0) when the green flag is clicked.
-3. Increase the value (by 1) whenever the sprite jumps (the `go to` block).
+1. **Create** the variable using the "Make a variable" button under the "Variables" tab.
+2. **Initialize** The variable with a starting value (0) when the green flag is clicked.
+3. **Change** the value (by 1) whenever the sprite jumps (the `go to` block).
+4. **Use** the value -- right now we just view it with the watcher.
 
 [Back](#/jumps)

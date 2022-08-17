@@ -15,6 +15,7 @@
 
 * Time in/remaining (!)
 * Shrink bottom bar (!)
+* Volume
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
 * Config for maxplayback, show code, logging, etc.
