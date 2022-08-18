@@ -80,9 +80,9 @@
                 <i id="slides-toggle-icon" class="bi bi-arrow-up-left"></i>
             </button>
             <div>
-                <i 
-                    id="login-warning" 
-                    class="bi bi-exclamation-triangle-fill hidden" 
+                <i
+                    id="login-warning"
+                    class="bi bi-exclamation-triangle-fill hidden"
                     data-bs-toggle="tooltip"
                     title="You are not logged in. Your progress will not be saved."
                 ></i>
@@ -113,7 +113,7 @@
                 })
 
                 let searchParams = new URLSearchParams(window.location.search)
-                let sample = 'csc110/repeat';
+                let sample = 'csc110/loops/repeat';
                 if (searchParams.has('video')) {
                     sample = searchParams.get('video');
                 }
