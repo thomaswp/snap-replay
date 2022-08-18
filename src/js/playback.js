@@ -761,7 +761,7 @@ export class Playback {
                 // If the record was a block drop, give it time to finish the cursor
                 // move before moving to the next event...
                 if (lastRecord.type === 'blockDrop') {
-                    console.log('Allowing block drop to finish...');
+                    // console.log('Allowing block drop to finish...');
                     return;
                 }
             }

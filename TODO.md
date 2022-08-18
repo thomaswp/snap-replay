@@ -10,9 +10,11 @@
 * Finish variables (script, local)
 * Scroll to blocks in palette (!!)
 * Fix block drag-n-drop bug where it goes to the pallete again (!)
+* Misc mouse movements: editor buttons, sprite dragging
+* Editing custom blocks (!!)
 
 ## Replayer Features:
-
+* Custom block editor resizing (!)
 * Time in/remaining (!)
 * Shrink bottom bar (!)
 * Volume
