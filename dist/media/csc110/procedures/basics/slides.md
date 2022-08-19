@@ -11,7 +11,8 @@ Draw at (-125,-125), (25, -125) and (-50, 25)
 Slide: Why use procedures?
 Add an input for size
 Modify: Tower + Solution
-Stepping: show that the code is run in the procedure when it gets there
+Emphasize  that the code is run in the procedure when it gets there
+MCQ
 -->
 
 ---
@@ -47,8 +48,9 @@ Procedures are useful when we want to:
 
 **Goal**: Modify the block so it takes an x and y coordinate for the square:
 
-<img src="img/tower-code.png" width="50%">
-<img src="img/tower.png" width="50%">
+<img src="img/tower-code.png" width="45%">
+
+<img src="img/tower.png" width="40%">
 
 <div class="quiz">
 
@@ -61,7 +63,7 @@ v---v
 ## Hints
 
 * Remember you should right-click on your block and select "edit" from the menu.
-* You can add an input by pressing the [+] button: <img src="img/add-squares.png" width="60%">
+* You can add an input by pressing the [+] button: <img src="img/add-input.png" width="45%">
 * Once you create an input (e.g. the x-coordinate square), you can use it in your code.
 * The `go to X __ Y __` block will be useful.
 
@@ -80,9 +82,9 @@ Given the definition of `say ___ twice` below, what will the following code say 
 
 <div class="col">
 
-![](img/q1-block.png)
+<p><img src="img/q1-block.png" width="60%"></p>
 
-![](img/q1-script.png)
+<p><img src="img/q1-script.png" width="60%"></p>
 
 </div>
 
