@@ -4,6 +4,14 @@
 
 <!--
 Notes:
+Draw a square
+Slides: Motivation & Procedures
+Show how to draw a square with a procedure
+Draw at (-125,-125), (25, -125) and (-50, 25)
+Slide: Why use procedures?
+Add an input for size
+Modify: Tower + Solution
+Stepping: show that the code is run in the procedure when it gets there
 -->
 
 ---
@@ -34,53 +42,61 @@ Procedures are useful when we want to:
 
 
 ---
-<!-- .slide: id="triangle" -->
-## Modify: Make a Triangle
+<!-- .slide: id="tower" -->
+## Modify: Make a Tower
 
-**Goal**: Modify the current code so that it draws a *triangle* instead of a square:
+**Goal**: Modify the block so it takes an x and y coordinate for the square:
 
-![](img/triangle.png)
+<img src="img/tower-code.png" width="50%">
+<img src="img/tower.png" width="50%">
 
 <div class="quiz">
 
-[Hints](#/triangle-hint)
+[Hints](#/tower-hint)
 
 </div>
 
 v---v
-<!-- .slide: id="triangle-hint" -->
+<!-- .slide: id="tower-hint" -->
 ## Hints
 
-* You will need to change two blocks' *inputs*, but not the structure of the code.
-* After drawing the 3 sides of a triangle, the Sprite should have turned 360 degrees. How much should it turn each time?
+* Remember you should right-click on your block and select "edit" from the menu.
+* You can add an input by pressing the [+] button: <img src="img/add-squares.png" width="60%">
+* Once you create an input (e.g. the x-coordinate square), you can use it in your code.
+* The `go to X __ Y __` block will be useful.
 
-[Back](#/triangle)
+[Back](#/tower)
 
 
 
 
 ---
 <!-- .slide: id="q1" -->
-## Knowledge Check: Repeat
-What will the following code say when it runs?
+## Knowledge Check: Custom blocks
+Given the definition of `say ___ twice` below, what will the following code say when it runs?
+
 
 <div class="container">
 
 <div class="col">
 
-![](img/q1.png)
+![](img/q1-block.png)
+
+![](img/q1-script.png)
 
 </div>
 
 <div class="col quiz">
 
-[A) One Two Three Four](#/a)
+[A) Apple Banana Cherry](#/a)
 
-[B) One Two Three Four One Two Three Four](#/b)
+[B) Apple Banana Banana Cherry](#/b)
 
-[C) One Two Two Three Three Four](#/c)
+[C) Apple Banana and Banana Cherry](#/c)
 
-[D) One Two Three Two Three Four](#/d)
+[D) Banana and Banana Apple Cherry](#/d)
+
+[E) Apple Cherry](#/e)
 
 </div>
 </div>
@@ -89,7 +105,8 @@ v---v
 <!-- .slide: id="a" -->
 ## A
 
-Incorrect: Remember, the `Repeat` block causes the code inside of it to run multiple times.
+Incorrect: Remember, when we use our `say ___ twice` block, it runs the code inside that block,
+which is different from the `say` block.
 
 [Try again?](#/q1)
 
@@ -97,26 +114,36 @@ v---v
 <!-- .slide: id="b" -->
 ## B
 
-Incorrect: Remember, the `Repeat` block only affects code inside of it.
+Incorrect: Look closer at exactly how the `say ___ twice` block is defined.
+How many things are said?
 
 [Try again?](#/q1)
 
 v---v
-<!-- .slide: id="c" -->
+<!-- .slide: id="c" data-background-color="#3333aa" -->
 ## C
 
-Incorrect: Remember, the `Repeat` runs the code inside of it *in order*!
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="d" data-background-color="#3333aa" -->
-## D
-
-Correct! Only the code inside of the loop gets repeated.
+Correct! We run the code in order, and move to the code in the `say ___ twice`
+block when we get there.
 
 <button class="navigate-right btn btn-success">Continue</button>
 
+v---v
+<!-- .slide: id="d" -->
+## D
+
+Incorrect: Remember, we run the code in the order of the script, and move to the
+code in the `say ___ twice` block when we get there.
+
+[Try again?](#/q1)
+
+v---v
+<!-- .slide: id="e" -->
+## E
+
+Incorrect: Remember, when we use our `say ___ twice` block, it runs the code inside that block.
+
+[Try again?](#/q1)
 
 ---
 <!-- .slide: id="q1-finished" data-state="q-finished" -->
