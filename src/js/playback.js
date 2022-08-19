@@ -147,8 +147,16 @@ export class Playback {
         if (visible) {
             $('#question-hint,#q-modal-hint').toggleClass('hidden',
                 !this.slides.hasHint(this.askingQuestion));
-            let image = this.path + 'img/' + this.askingQuestion + '.png';
-            $('#solution-image').attr('src', image);
+            let imagePath = this.path + 'img/' + this.askingQuestion;
+            let $img = $('#solution-image');
+            $img.attr('src', imagePath + '.png');
+            // If we fail to load the .png...
+            let once = true;
+            $img.on('error', () => {
+                // Try a .gif
+                if (once) $img.attr('src', imagePath + '.gif');
+                once = false;
+            });
             $('.q-modal-solution-wrapper').attr('data-bs-original-title', 'Try the problem first.');
             $('.enabled-on-try').attr('disabled', true);
         }

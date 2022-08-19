@@ -4,7 +4,6 @@
 * Don't crash when comments are added.
 * Figure out why loading is low (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 * Editing inputs still can pause the replay (esp. when FFing)
-* Image resizing in Check your Work dialog (!)
 
 ## Recording Features:
 * Comments
@@ -20,6 +19,7 @@
 * Shrink bottom bar (!)
 * Disable playback until loaded (!)
 * Hint about minimizing slides during modify task (!)
+* Warning to use Chrome (!)
 * Volume
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
@@ -32,7 +32,6 @@
 * Conditionals: just test thoroughly
 * Procedures
    * Changing block types
-   * Using inputs variables
    * The created reporter (record/set id)
 
 ## Editing:
