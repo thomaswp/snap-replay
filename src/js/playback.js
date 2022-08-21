@@ -144,6 +144,7 @@ export class Playback {
     setConstructQuestionPanelVisible(visible) {
         $('#script').toggleClass('hidden', visible);
         $('#question').toggleClass('hidden', !visible);
+        $('body').toggleClass('bigbar', visible);
         if (visible) {
             $('#question-hint,#q-modal-hint').toggleClass('hidden',
                 !this.slides.hasHint(this.askingQuestion));

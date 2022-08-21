@@ -5,7 +5,12 @@ body {
 
 #isnap {
     width: 100%;
-    height: calc(100% - 152px);
+    height: calc(100% - 67px);
+    transition: height 0.5s;
+}
+
+.bigbar #isnap {
+    height: calc(100% - 112px);
 }
 
 .playpause.pause {

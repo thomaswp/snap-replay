@@ -5,17 +5,26 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    height: calc(100% - 150px);
+    height: calc(100% - 65px);
     transition: all 0.5s ease;
     z-index: 2;
 }
 
 #slides.minimized {
-    top: calc(100% - 280px);
+    top: calc(100% - 195px);
     left: calc(100% - 205px);
     width: 198px;
     height: 123px;
     border: 1px solid rgb(26, 0, 75);
+}
+
+.bigbar #slides {
+    height: calc(100% - 110px);
+}
+
+.bigbar #slides.minimized {
+    top: calc(100% - 240px);
+    height: 123px;
 }
 
 #slides.hidden {
