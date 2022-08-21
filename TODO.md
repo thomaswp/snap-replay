@@ -3,6 +3,7 @@
 * Don't crash when comments are added.
 * Figure out why loading is slow (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 * Editing inputs still can pause the replay (esp. when FFing)
+* Disable media play/pause or make it do the right thing.
 
 ## Recording Features:
 * Comments
@@ -14,7 +15,6 @@
 ## Replayer Features:
 * Custom block editor resizing (!)
 * Time in/remaining (!)
-* Shrink bottom bar (!)
 * Disable playback until loaded (!)
 * Hint about minimizing slides during modify task (!)
 * Warning to use Chrome (!)

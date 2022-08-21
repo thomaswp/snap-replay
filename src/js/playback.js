@@ -14,11 +14,21 @@ window.Trace = {
 export class Playback {
 
     static DB_LOG = false;
+    static PROGRESS_TRACKING = false;
 
     // 0 because we do this in the script itself now
     static BUFFER_MS = 0;
 
     constructor(path) {
+        try {
+            Playback.DB_LOG = (process.env.DB_LOG === 'true');
+            Playback.PROGRESS_TRACKING =
+                (process.env.PROGRESS_TRACKING === 'true');
+        } catch (e) {
+            console.error("Error reading .env file");
+            console.error(e)
+        }
+
         this.path = path;
         this.snapWindow = document.getElementById('isnap').contentWindow;
         $(this.snapWindow).on('click mousedown', () => this.snapFocused());
@@ -313,8 +323,9 @@ export class Playback {
         this.clearCurrentText();
         let duration = Math.max(...this.events.map(e => e.endTime)) * 1000 + Playback.BUFFER_MS;
         this.duration = Math.max(this.duration, duration);
-        // TODO: make this configurable...
-        this.maxDuration = this.duration;
+        if (!Playback.PROGRESS_TRACKING) {
+            this.maxDuration = this.duration;
+        }
         this.updateScrubberBG();
         this.$scrubber.attr('max', Math.round(this.duration));
         this.playStartDuration = 0;
