@@ -1,15 +1,13 @@
 ## Bugs:
 
-* Allow gifs for Modify task images. (!)
 * Don't crash when comments are added.
-* Figure out why loading is low (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
+* Figure out why loading is slow (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 * Editing inputs still can pause the replay (esp. when FFing)
 
 ## Recording Features:
 * Comments
 * Finish custom blocks
 * Finish variables (script, local)
-* Scroll to blocks in palette (!!)
 * Fix block drag-n-drop bug where it goes to the pallete again (!)
 * Misc mouse movements: editor buttons, sprite dragging
 
@@ -20,6 +18,8 @@
 * Disable playback until loaded (!)
 * Hint about minimizing slides during modify task (!)
 * Warning to use Chrome (!)
+* Backup zoom video link (!)
+* Better code: hashed assignmentID + hashed userID + checksum (+)
 * Volume
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
