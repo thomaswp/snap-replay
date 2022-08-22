@@ -213,6 +213,7 @@ export class Playback {
         $('#script').toggleClass('hidden', visible);
         $('#question').toggleClass('hidden', !visible);
         $('body').toggleClass('bigbar', visible);
+        $('#slides-toggle').toggleClass('blinking', visible);
         if (visible) {
             $('#question-hint,#q-modal-hint').toggleClass('hidden',
                 !this.slides.hasHint(this.askingQuestion));

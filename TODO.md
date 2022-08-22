@@ -14,7 +14,6 @@
 
 ## Replayer Features:
 * Custom block editor resizing (!)
-* Hint about minimizing slides during modify task (!)
 * Better code: hashed assignmentID + hashed userID + checksum (+)
 * Volume
 * Questions

@@ -33,7 +33,7 @@ export class Slides {
                 smartLists: true,
             }
         });
-        this.deck = deck; 
+        this.deck = deck;
 
         let path = this.path;
         deck.on('ready', event => {
@@ -46,7 +46,7 @@ export class Slides {
         $('#slides').removeClass('hidden');
         $('#slides-toggle').removeClass('hidden');
         $('#slides-toggle').attr('title', 'Toggle the slides.');
-        
+
         $('#slides-toggle').on('click', () => {
             this.toggleMaximized();
         });
@@ -207,6 +207,7 @@ export class Slides {
         }
         $('#slides-toggle-icon').toggleClass('bi-arrow-up-left', !maximized);
         $('#slides-toggle-icon').toggleClass('bi-arrow-down-right', maximized);
+        if (!maximized) $('#slides-toggle').removeClass('blinking');
         setTimeout(() => this.deck.layout(), 500);
     }
 }

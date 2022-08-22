@@ -46,6 +46,12 @@
     font-size: large;
 }
 
+#slides-toggle.blinking {
+    animation: blinker 1s ease-in-out infinite alternate;
+}
+/* @keyframes blinker { to { background-color: rgb(122, 124, 0); } } */
+@keyframes blinker { to { opacity: 0; } }
+
 #slides-toggle.hidden {
     display: none;
 }
