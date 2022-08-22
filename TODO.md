@@ -4,7 +4,6 @@
 * Figure out why loading is slow (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 * Editing inputs still can pause the replay (esp. when FFing)
 * Disable media play/pause or make it do the right thing.
-* Scrolling horizontal is too agressive (!)
 
 ## Recording Features:
 * Comments
