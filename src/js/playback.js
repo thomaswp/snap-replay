@@ -64,7 +64,7 @@ export class Playback {
         this.highlights = [];
         this.playingAction = false;
         this.answeredQs = [];
-        this.maxDuration = 0;
+        this.maxDuration = this.getCachedMaxDuration();
 
         $('body').keyup((e) => {
             if (e.keyCode == 32) {
@@ -315,6 +315,29 @@ export class Playback {
         });
     }
 
+    getStorageKey(suffix) {
+        return this.path + "_" + suffix;
+    }
+
+    setMaxDuration(maxDuration) {
+        this.maxDuration = maxDuration;
+        if (localStorage) {
+            let key = this.getStorageKey('maxDuration');
+            localStorage.setItem(key, `${this.maxDuration}`);
+        }
+    }
+
+    getCachedMaxDuration() {
+        if (!localStorage) return 0;
+        let key = this.getStorageKey('maxDuration');
+        let duration = localStorage.getItem(key);
+        if (duration == null) return 0;
+        try {
+            return parseInt(duration);
+        } catch {}
+        return 0;
+    }
+
     restart() {
         if (!this.script) return;
         this.resetSnap();
@@ -553,7 +576,7 @@ export class Playback {
             this.snapFocused();
         }
         let duration = this.getCurrentDuration();
-        this.maxDuration = Math.max(this.maxDuration, duration);
+        this.setMaxDuration(Math.max(this.maxDuration, duration));
         this.updateScrubberBG();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
