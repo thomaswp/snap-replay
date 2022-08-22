@@ -102,6 +102,7 @@ export class Playback {
         // HACK: TODO: Make this actually configurable
         const videoTable = {
             'media/csc110/loops/repeat/': 'https://drive.google.com/file/d/1bDNN6rAlNwcl-nNHlwgHCHB0o5jwXsln/view?usp=sharing',
+            'media/csc110/procedures/basics/': 'https://drive.google.com/open?id=1-ILgfur1TOnO2FpoIilWKHmYV8IcKMaB&authuser=twprice%40ncsu.edu&usp=drive_fs',
         };
         let link = videoTable[path]
         if (link) {
