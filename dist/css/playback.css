@@ -3,6 +3,31 @@ body {
     overflow: hidden;
 }
 
+#loading {
+    background-color: black;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading p {
+    color: #eee;
+    font-size: 4em;
+}
+
+#loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 #isnap {
     width: 100%;
     height: calc(100% - 67px);

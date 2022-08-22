@@ -340,6 +340,7 @@ export class Playback {
 
     restart() {
         if (!this.script) return;
+        $('#loading').addClass('hidden');
         this.resetSnap();
         Trace.log('Playback.restart');
         this.time = 0;
