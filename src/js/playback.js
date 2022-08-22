@@ -33,7 +33,6 @@ export class Playback {
 
         this.path = path;
         this.snapWindow = document.getElementById('isnap').contentWindow;
-        $(this.snapWindow).on('click mousedown', () => this.snapFocused());
         this.loader = new ScriptLoader(path);
         this.loader.loadAudio('#audio');
         this.loader.onLoaded = (script) => {
@@ -45,6 +44,13 @@ export class Playback {
             this.createSlides();
         }
         $('#isnap').on('load', () => {
+            let interactionListener = (e) => {
+                // console.log(e);
+                // console.trace();
+                if (e.isTrusted) this.snapFocused();
+            };
+            this.snapWindow.addEventListener('click', interactionListener);
+            this.snapWindow.addEventListener('mousedown', interactionListener);
             if (this.snapWindow.recorder) {
                 this.restart();
             } else {
@@ -496,6 +502,9 @@ export class Playback {
         //     }, 1);
         //     return;
         // }
+
+        // We already know Snap is focused
+        if (this.warnResume) return;
         Trace.log('Playback.snapFocused');
         this.clearHighlights();
         this.cursor.hide();
@@ -503,9 +512,8 @@ export class Playback {
             this.pause();
             this.snapEdits = 0;
         }
-        if (this.getCurrentDuration() > 0) {
-            this.warnResume = true;
-        }
+        // This needs to come after pausing, which resets it
+        this.warnResume = true;
     }
 
     togglePlay() {
@@ -686,25 +694,32 @@ export class Playback {
 
     update() {
         if (!this.playing) return;
-        var elem = document.activeElement;
-        if (elem && elem.id === 'isnap' && !this.isFastForwarding()) {
-            // Detect if Snap was focused by the user
-            // Assumes event-driven focus was corrected in checkForFocus
-            this.snapFocused();
-        }
+
+
+        // Since we should in theory catch any snap focused events now, we
+        // shouldn't need this anymore.
+        // var elem = document.activeElement;
+        // if (elem && elem.id === 'isnap' && !this.isFastForwarding()) {
+        //     // Detect if Snap was focused by the user
+        //     // Assumes event-driven focus was corrected in checkForFocus
+        //     this.snapFocused();
+        // }
+
         let duration = this.getCurrentDuration();
         this.setMaxDuration(Math.max(this.maxDuration, duration));
         this.updateScrubberBG();
         this.$scrubber.val(Math.round(this.getCurrentDuration()));
         this.updateEvents();
-        // TODO: This may not be robust enough if focus comes later, but
-        // seems to be working for now. The best way may be to detect
-        // focus events with isTrusted == true, which have to come from the user.
-        this.checkForFocus();
-        // Wait 1 ms, just in case...
+
+        // If we're playing and Snap has focus, we remove that focus. This
+        // assumes the focus came from a replay event, since any user-driven
+        // focus events should pause playback.
+        // We remove focus to ensure future, user focus events get detected.
         setTimeout(() => {
-            this.checkForFocus();
+            // Wait 1 ms, just in case...
+            this.removeSnapFocus();
         }, 1);
+
         if (duration > this.duration - 0.1) {
             this.showFinishedModal();
             this.pause();
@@ -714,7 +729,7 @@ export class Playback {
 
     // Check if something in the events caused Snap to focus
     // and if so, blur it so we can detect a user-driven focus
-    checkForFocus() {
+    removeSnapFocus() {
         var elem = document.activeElement;
         if (!elem || elem.id !== 'isnap') return; // No focus
 
