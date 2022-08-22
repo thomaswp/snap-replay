@@ -14,11 +14,7 @@
 
 ## Replayer Features:
 * Custom block editor resizing (!)
-* Time in/remaining (!)
-* Disable playback until loaded (!)
 * Hint about minimizing slides during modify task (!)
-* Warning to use Chrome (!)
-* Backup zoom video link (!)
 * Better code: hashed assignmentID + hashed userID + checksum (+)
 * Volume
 * Questions

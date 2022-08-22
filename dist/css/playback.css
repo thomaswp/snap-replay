@@ -217,3 +217,32 @@ i.button-icon {
     display: block;
     width: 100%;
 }
+
+#time {
+    float: left;
+    font-size: 0.8em;
+    margin-top: -20px;
+    margin-left: 60px;
+    color: #555;
+}
+
+#problems {
+    float: right;
+    font-size: 0.8em;
+    margin-top: -20px;
+    margin-right: 50px;
+    color: #555;
+}
+
+#problems a {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+#problems a:hover {
+    opacity: 1;
+}
+
+p.hidden {
+    display: none;
+}

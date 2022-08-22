@@ -64,6 +64,27 @@
             </div>
             <!-- Quick hack b/c of bootstrap/query configuration weirdness -->
             <button id="show-finished-modal" class="hidden" data-bs-toggle="modal" data-bs-target="#finishedModal"></button>
+
+            <div class="modal fade" id="issuesModal" tabindex="-1" aria-labelledby="issuesModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="issuesModalLabel">Video Issues</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Sorry for the technical problems! Please what went wrong on Piazza so we can fix it.</p>
+                            <p>You can try refreshing the page buffering to where you left off.</p>
+                            <p id="video-link-line" class="hidden">If the problem persists, you can watch a traditional video <a id="video-link" target="_blank">here</a>.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick hack b/c of bootstrap/query configuration weirdness -->
+            <button id="show-issues-modal" class="hidden" data-bs-toggle="modal" data-bs-target="#issuesModal"></button>
         </div>
         <iframe id="isnap" width="100%" frameBorder="0"></iframe>
         <div id="slides" class="minimized hidden">
@@ -96,6 +117,8 @@
                     <input id="scrubber" type="range" min="0" max="100" value="0" width="80%">
                 </div>
             </div>
+            <p id="time"></p>
+            <p id="problems"><a id="issuesLink" href="#">Problems viewing the video?</a></p>
             <div class="script-area">
                 <div id="script" class="script">
                 </div>
