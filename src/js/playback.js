@@ -24,6 +24,8 @@ export class Playback {
             Playback.DB_LOG = (process.env.DB_LOG === 'true');
             Playback.PROGRESS_TRACKING =
                 (process.env.PROGRESS_TRACKING === 'true');
+            $('#moodle-link').attr('href', process.env.MOODLE_LINK);
+            $('#piazza-link').attr('href', process.env.PIAZZA_LINK);
         } catch (e) {
             console.error("Error reading .env file");
             console.error(e)
@@ -99,14 +101,13 @@ export class Playback {
         $('#issuesLink').on('click', () => this.showIssuesModal());
         // HACK: TODO: Make this actually configurable
         const videoTable = {
-            'media/csc110/loops/repeat/': 'https://www.google.com',
+            'media/csc110/loops/repeat/': 'https://drive.google.com/file/d/1bDNN6rAlNwcl-nNHlwgHCHB0o5jwXsln/view?usp=sharing',
         };
         let link = videoTable[path]
         if (link) {
             $('#video-link').attr('href', link);
             $('#video-link-line').removeClass('hidden');
         }
-        console.log(path, link);
 
         setInterval(() => {
             if (!this.playing) return;
@@ -623,7 +624,7 @@ export class Playback {
     }
 
     showFinishedModal() {
-        if (!this.code) this.code = this.makeCode(10);
+        if (!this.code) this.code = this.makeCode();
         Trace.log('Playback.finishedModal', {
             'code': this.code,
         });
@@ -631,7 +632,39 @@ export class Playback {
         $('#show-finished-modal').click();
     }
 
-    makeCode(length) {
+    makeCode() {
+        let userID = 'none';
+        if (this.snapWindow && this.snapWindow.userID) {
+            userID = this.snapWindow.userID;
+        }
+        let assignmentID = this.path;
+        const DIGITS = 4;
+        const MOD = 10000;
+        let userIDHash = this.getHash(userID) % MOD;
+        let assignmentIDHash = this.getHash(assignmentID) % MOD;
+        let checksum = userIDHash + assignmentIDHash;
+        checksum = this.leftPadNum(checksum % MOD, DIGITS);
+        userIDHash = this.leftPadNum(userIDHash, DIGITS);
+        assignmentIDHash = this.leftPadNum(assignmentIDHash, DIGITS);
+        return `${userIDHash}-${assignmentIDHash}-${checksum}`;
+    }
+
+    getHash(input) {
+        var hash = 0, len = input.length;
+        for (var i = 0; i < len; i++) {
+            hash  = ((hash << 5) - hash) + input.charCodeAt(i);
+            hash |= 0; // to 32bit integer
+        }
+        return hash;
+    }
+
+    leftPadNum(num, digits) {
+        let str = '' + num;
+        while (str.length < digits) str = '0' + str;
+        return str;
+    }
+
+    makeRandomCode(length) {
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         var charactersLength = characters.length;
         let result = '';
