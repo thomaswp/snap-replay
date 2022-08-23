@@ -117,7 +117,8 @@ export class Playback {
         }
 
         setInterval(() => {
-            if (!this.playing) return;
+            // Only log ticks if logging to a DB, just for clutter removal
+            if (!this.playing || !Playback.DB_LOG) return;
             Trace.log('Playback.updatePlaying', this.getCurrentDuration());
         }, 2000);
 

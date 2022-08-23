@@ -784,11 +784,18 @@
         "timeDelta": 880
     },
     {
+        "type": "popupMessage",
+        "data": {
+            "text": "Try running the code a few times. Does the Sprite stop only when it hits the right edge, or all the edges?"
+        },
+        "timeDelta": 5985
+    },
+    {
         "type": "slidesToggled",
         "data": {
             "value": true
         },
-        "timeDelta": 8985
+        "timeDelta": 3000
     },
     {
         "type": "slideChanged",
@@ -1418,11 +1425,18 @@
         "timeDelta": 936
     },
     {
+        "type": "popupMessage",
+        "data": {
+            "text": "Try running the code a few times with different values instead of 150, like 50 or -25. How does this change the Sprite's behavior?"
+        },
+        "timeDelta": 4500
+    },
+    {
         "type": "slidesToggled",
         "data": {
             "value": true
         },
-        "timeDelta": 8584
+        "timeDelta": 4084
     },
     {
         "type": "slideChanged",

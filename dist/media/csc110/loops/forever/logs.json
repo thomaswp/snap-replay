@@ -1338,5 +1338,12 @@
             }
         },
         "timeDelta": 6532
+    },
+    {
+        "type": "popupMessage",
+        "data": {
+            "text": "Try clicking your mouse in the Snap window to stop the Sprite. Then run the script again (by clicking it) and try again."
+        },
+        "timeDelta": 23000
     }
 ]
