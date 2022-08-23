@@ -561,6 +561,7 @@ export class Playback {
         this.playing = true;
         this.clearCurrentText();
         this.update();
+        if (this.tickTimeout) clearInterval(this.tickTimeout);
         this.tickTimeout = setInterval(() => {
             this.update();
         }, 50);
