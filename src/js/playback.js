@@ -440,9 +440,6 @@ export class Playback {
         if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
-            // Clear console logging
-            // TODO: may want to remove this for deploy
-            this.snapWindow.Trace = new this.snapWindow.Logger(1000);
             let handler = () => {
                 this.snapEdits++
                 // console.log('Edited:', this.snapEdits);
