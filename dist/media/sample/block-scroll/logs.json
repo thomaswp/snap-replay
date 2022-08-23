@@ -1,0 +1,1052 @@
+[
+    {
+        "type": "setBlockScale",
+        "data": {
+            "scale": 1.5,
+            "_recordID": "037974fa-60e1-47a2-83d0-03af25072152"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": false,
+            "_recordID": "5f77c400-916c-4aa9-b89b-cdac42b5e7cf"
+        },
+        "timeDelta": 5
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 25,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "33f59d4b-1b55-409e-b89e-49178b710f1a"
+        },
+        "timeDelta": 1465
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 25,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 28.5,
+                    "y": 68.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "5b56d9ca-8837-43de-84f3-d8200d285997"
+        },
+        "timeDelta": 690
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "e2f732a0-d3c7-4df8-995e-2aa1b0ed0cc9"
+        },
+        "timeDelta": 845
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 494.5,
+                    "y": 193.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "35c89ec5-1daf-4b27-ac29-4b734ab3f767"
+        },
+        "timeDelta": 1088
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 27,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "741ef2e5-a7a0-4b13-ab41-b0d5272cdf5d"
+        },
+        "timeDelta": 2224
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 27,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 623.64404296875,
+                    "y": 258.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "264eab61-2027-4f1f-9952-940a666763e3"
+        },
+        "timeDelta": 640
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 28,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "6c5563a7-9430-4c54-b03a-67caec79defd"
+        },
+        "timeDelta": 2408
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 28,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 758.2880859375,
+                    "y": 297.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "57cbe167-06a9-4b4a-8171-323809ec344f"
+        },
+        "timeDelta": 801
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 29,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "eee6bd07-09fc-4dc9-af1a-b2b807e9557e"
+        },
+        "timeDelta": 4368
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 29,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 235,
+                    "y": 195.83333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 25,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 10,
+                    "y": 88.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "78799d9e-0d97-4617-9d0c-575dfa03c512"
+        },
+        "timeDelta": 728
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 30,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "0584a0e4-9969-4198-b9dd-c0f27f3c52e1"
+        },
+        "timeDelta": 702
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 30,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 701,
+                    "y": 320.83333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 26,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 476,
+                    "y": 213.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "8025b120-8c37-4d0c-b75f-397cdebd49d3"
+        },
+        "timeDelta": 1185
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 31,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "f5e68fcf-679b-4764-94d4-6d21650199ec"
+        },
+        "timeDelta": 1480
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 31,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 620.14404296875,
+                    "y": 373.83333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 27,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 605.14404296875,
+                    "y": 278,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "39308733-913f-4cec-a13a-f44570f19741"
+        },
+        "timeDelta": 792
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 32,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 120.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "f82381fe-5fe1-496f-a273-c1da9da0bde8"
+        },
+        "timeDelta": 1336
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 32,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 630.35595703125,
+                    "y": 412.83333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 28,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 9.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 758.2880859375,
+                    "y": 317,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "229568f5-359c-46a1-b8a8-6723fc34253c"
+        },
+        "timeDelta": 760
+    },
+    {
+        "type": "blockType_newBlock",
+        "data": {
+            "_recordID": "655b06f8-2159-42c5-a652-cbcc15aa351b"
+        },
+        "timeDelta": 6096
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "t",
+            "_recordID": "dbeb4e9a-de89-423d-be8f-c5cc3d8f967c"
+        },
+        "timeDelta": 1369
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "te",
+            "_recordID": "f104338a-6f73-48f1-b4d4-d4921ad98a5a"
+        },
+        "timeDelta": 118
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "tes",
+            "_recordID": "5db7f6c4-954d-40ad-9423-02869c8e728d"
+        },
+        "timeDelta": 142
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "BlockDialogMorph",
+            "value": "test",
+            "_recordID": "bb25a26c-7c79-4921-9d19-f8bca84a3b2b"
+        },
+        "timeDelta": 142
+    },
+    {
+        "type": "blockType_ok",
+        "data": {
+            "message": "BlockTypeDialog.ok",
+            "_recordID": "75535fd0-1585-4d5b-9237-6660c32aa56e"
+        },
+        "timeDelta": 453
+    },
+    {
+        "type": "blockEditor_start",
+        "data": {
+            "spec": "test",
+            "category": "motion",
+            "type": "command",
+            "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+            "isGlobal": true,
+            "message": "BlockEditor.start",
+            "_recordID": "266fd1df-2628-45db-a9b2-c77d0361cf64"
+        },
+        "timeDelta": 9
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 677,
+                "y": 260.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "11815f02-a4b2-4d9b-9544-538e38d53d00"
+        },
+        "timeDelta": 3998
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 476,
+                    "y": 157.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "spec": "test",
+                    "category": "motion",
+                    "type": "command",
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "isGlobal": true,
+                    "source": "Editor",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 506,
+                    "y": 93.03333333333336,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "095a0d75-dc19-4efc-9347-ef2b04303c15"
+        },
+        "timeDelta": 602
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 25,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 211,
+                "y": 135.83333333333343,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "2f708cef-ad93-4510-a022-a9ebfba080e0"
+        },
+        "timeDelta": 1054
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 25,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 289,
+                    "y": 443.8,
+                    "objType": "Point"
+                },
+                "element": {
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "objType": "PrototypeHatBlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 10,
+                    "y": 32.500000000000085,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "spec": "test",
+                    "category": "motion",
+                    "type": "command",
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "isGlobal": true,
+                    "source": "Editor",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 10,
+                    "y": 74.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "038a18d4-96a8-4848-8e92-cd74c97a8e86"
+        },
+        "timeDelta": 666
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 27,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 806.14404296875,
+                "y": 325.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "263c61bc-bf9b-48a6-b3c8-9bda24ca6677"
+        },
+        "timeDelta": 2950
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 27,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 547,
+                    "y": 547.3333333333334,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 30,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Sprite",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 605.14404296875,
+                    "y": 222.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "spec": "test",
+                    "category": "motion",
+                    "type": "command",
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "isGlobal": true,
+                    "source": "Editor",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 506,
+                    "y": 156.03333333333336,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "ee740408-7799-476d-98dc-24cecd0878d4"
+        },
+        "timeDelta": 842
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 823,
+                "y": 435.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "ff8b3f56-8669-4c91-9cbb-0f1042d6a7dc"
+        },
+        "timeDelta": 1414
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "forward",
+                "id": 26,
+                "template": false,
+                "spec": "move %n steps",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 351,
+                    "y": 484.80000000000007,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "forward",
+                    "id": 29,
+                    "template": false,
+                    "spec": "move %n steps",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "spec": "test",
+                    "category": "motion",
+                    "type": "command",
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "isGlobal": true,
+                    "source": "Editor",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 506,
+                    "y": 93.03333333333336,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "spec": "test",
+                    "category": "motion",
+                    "type": "command",
+                    "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+                    "isGlobal": true,
+                    "source": "Editor",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 10,
+                    "y": 137.50000000000006,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "6a602843-fe4c-47fd-abb9-80597ec6da28"
+        },
+        "timeDelta": 1057
+    },
+    {
+        "type": "blockEditor_ok",
+        "data": {
+            "spec": "test",
+            "category": "motion",
+            "type": "command",
+            "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+            "isGlobal": true,
+            "message": "BlockEditor.ok",
+            "_recordID": "a4e27c11-00c0-43db-9f9d-75ce1d672af2"
+        },
+        "timeDelta": 1305
+    },
+    {
+        "type": "blockEditor_apply",
+        "data": {
+            "spec": "test",
+            "category": "motion",
+            "type": "command",
+            "guid": "2ecbd90a-5591-4d70-a72f-494470861dad",
+            "isGlobal": true,
+            "message": "BlockEditor.apply",
+            "_recordID": "a92d3c15-c2f7-41cc-bdec-350247caed65"
+        },
+        "timeDelta": 1
+    }
+]
