@@ -829,17 +829,38 @@ export class Playback {
         return `#${eventIndex} "${log.description}" + ${delta}s`;
     }
 
+    showPopupMessage(data) {
+        this.pause();
+        $('#message-modal-text').html(data.text);
+        $('#show-message-modal').click();
+    }
+
+    tryLoadPlaybackRecord(record) {
+        if (!record) return null;
+        let fn;
+        let data = record.data;
+        if (record.type === 'popupMessage') {
+            fn = (callback, fast) => {
+                if (!fast) this.showPopupMessage(data);
+                setTimeout(callback, 1);
+            }
+        }
+        if (fn) return {
+            'replay': fn,
+        };
+    }
+
     getRecordFromEvent(event) {
         if (!event) return null;
         let record = this.script.getLog(event);
         // console.log('Playing', record);
         // First, try to see if the Slides class can replay this
         let slidesRecord = this.slides ? this.slides.loadRecord(record) : null;
-        if (slidesRecord == null) {
-            [record] = this.recorder.loadRecords([record]);
-        } else {
-            record = slidesRecord;
-        }
+        if (slidesRecord) return slidesRecord;
+        let playbackRecord = this.tryLoadPlaybackRecord(record);
+        if (playbackRecord) return playbackRecord;
+
+        [record] = this.recorder.loadRecords([record]);
         return record;
     }
 

@@ -417,6 +417,13 @@
         "timeDelta": 5145
     },
     {
+        "type": "popupMessage",
+        "data": {
+            "text": "Practice starting the script by clicking on it, and then stopping it by clicking it again or clicking the red Stop button."
+        },
+        "timeDelta": 3500
+    },
+    {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
@@ -458,7 +465,7 @@
                 "objType": "Object"
             }
         },
-        "timeDelta": 13520
+        "timeDelta": 10020
     },
     {
         "type": "blockDrop",

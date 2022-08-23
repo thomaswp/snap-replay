@@ -86,6 +86,26 @@
             </div>
             <!-- Quick hack b/c of bootstrap/query configuration weirdness -->
             <button id="show-issues-modal" class="hidden" data-bs-toggle="modal" data-bs-target="#issuesModal"></button>
+
+            <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="messageModalLabel">Your Turn</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="message-modal-text"></p>
+                            <p>When you're done, press play to continue the video.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick hack b/c of bootstrap/query configuration weirdness -->
+            <button id="show-message-modal" class="hidden" data-bs-toggle="modal" data-bs-target="#messageModal"></button>
         </div>
         <iframe id="isnap" width="100%" frameBorder="0"></iframe>
         <div id="slides" class="minimized hidden">
