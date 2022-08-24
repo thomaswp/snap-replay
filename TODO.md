@@ -13,11 +13,15 @@
 
 ## Replayer Features:
 * Custom block editor resizing (!)
-* Better code: hashed assignmentID + hashed userID + checksum (+)
+* Allow answering MCQs before pause. (!)
+* Log JS errors
+* Star rating + feedback on code dialog
+* Buffer Snap on reset before restarting playback.
 * Volume
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
 * Config for maxplayback, show code, logging, etc.
+* Let scrubbing happen up to unanswered questions or the end
 
 ## Testing:
 
