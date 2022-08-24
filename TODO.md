@@ -14,7 +14,8 @@
 ## Replayer Features:
 * Custom block editor resizing (!)
 * Allow answering MCQs before pause. (!)
-* Log JS errors
+* Log JS errors (!)
+* Add self-explain prompt
 * Star rating + feedback on code dialog
 * Buffer Snap on reset before restarting playback.
 * Volume
