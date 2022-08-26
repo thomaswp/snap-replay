@@ -719,6 +719,22 @@ export class Playback {
         //     this.snapFocused();
         // }
 
+        // If we we're currently fast-forwarding, don't advance playback yet
+        if (this.isFastForwarding()) {
+            let timePlayed = new Date().getTime() - this.playStartTime;
+            // But if somehow this happened mid-playback, just ignore it, since
+            // this might just be Snap being laggy...
+            if (timePlayed < 1000) {
+                // console.log('Pausing...', timePlayed);
+                this.playStartTime -= timePlayed;
+                $('#loading').removeClass('hidden');
+                this.audio.pause();
+            }
+        } else {
+            $('#loading').addClass('hidden');
+            this.startAudio();
+        }
+
         let duration = this.getCurrentDuration();
         this.setMaxDuration(Math.max(this.maxDuration, duration));
         this.updateScrubberBG();
@@ -810,22 +826,30 @@ export class Playback {
                 $parent.animate({
                     scrollTop: scroll,
                 }, 500);
-                // TODO: At some point need to calculate relative duration to
-                // find the right time in the audio
-                // The edited events should all use deltas (so you can easily delete),
-                // but the audio needs to keep a reference to the start/end time in the original file
-                if (this.playing) {
-                    let time = this.currentText.audioStart + durationS - this.currentText.startTime;
-                    if (isNaN(time) || !isFinite(time)) {
-                        console.error('NaN time', time, this.currentText, this.currentText.audioStart, durationS, this.currentText.startTime);
-                        return;
-                    }
-                    this.audio.currentTime = time;
-                    // console.log('Audio to ', this.audio.currentTime);
-                    this.audio.play();
-                }
+                this.startAudio();
             }
         }
+    }
+
+    startAudio() {
+        if (!this.audio.paused || !this.playing || !this.currentText) return;
+        // TODO: At some point need to calculate relative duration to
+        // find the right time in the audio
+        // The edited events should all use deltas (so you can easily delete),
+        // but the audio needs to keep a reference to the start/end time in the original file
+        let durationS = this.getCurrentDuration() / 1000;
+        let time = this.currentText.audioStart +
+            durationS - this.currentText.startTime;
+        if (isNaN(time) || !isFinite(time)) {
+            console.error(
+                'NaN time', time, this.currentText,
+                this.currentText.audioStart, durationS,
+                this.currentText.startTime);
+            return;
+        }
+        this.audio.currentTime = time;
+        // console.log('Audio to ', this.audio.currentTime);
+        this.audio.play();
     }
 
     handleEvent(event, fast) {
