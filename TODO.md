@@ -11,7 +11,6 @@
 * Fix block drag-n-drop bug where it goes to the pallete again (!)
 * Misc mouse movements: sprite dragging
 * Scrolling for variable blocks is wrong (!)
-* say + input doesn't work on repeat -- need to FF say blocks (!!)
 
 ## Replayer Features:
 * Custom block editor resizing (!)
