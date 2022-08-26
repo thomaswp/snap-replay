@@ -114,11 +114,11 @@ export class Playback {
             // Procedures
             'media/csc110/procedures/basics/': 'https://drive.google.com/open?id=1-ILgfur1TOnO2FpoIilWKHmYV8IcKMaB&authuser=twprice%40ncsu.edu&usp=drive_fs',
             // Variables
-            'media/csc110/variables/snap-variables/': '', // TODO!!
+            'media/csc110/variables/snap-variables/': 'https://drive.google.com/file/d/17JcjIGuSG99kT8sQA7MrZ_KpDX6usIAM/view?usp=sharing',
             'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
             'media/csc110/variables/var-loop-recipe/': 'https://drive.google.com/file/d/16BP77DmEEB8GwkF87S57Ty2dz0pXyGCN/view?usp=sharing',
             // IDE
-            'media/csc110/variables/clines/': '', // TODO!!
+            'media/csc110/api/clones/': '', 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
         };
         let link = videoTable[path]
         if (link) {
