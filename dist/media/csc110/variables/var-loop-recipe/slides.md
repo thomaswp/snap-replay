@@ -60,7 +60,7 @@ Follow the variable + loop recipe:
 3. **Change** the variable value when appropriate **inside the loop**: add 1
 4. **Use** the variable value in your code, **after** the loop: say the average (sum / count)
 
-[Back](#/jumps)
+[Back](#/average)
 
 
 ---
