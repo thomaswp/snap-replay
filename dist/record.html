@@ -73,6 +73,16 @@
                     let path = 'media/' + video + '/';
                     let slides = new Slides(path, true);
                     slides.loadURL(path + 'slides.md');
+
+                    $.get({
+                        url: path + 'start.xml',
+                        dataType: 'text',
+                    }, data => {
+                        setTimeout(() => {
+                            document.getElementById('isnap')
+                                    .contentWindow.ide.rawOpenProjectString(data);
+                        }, 750);
+                    });
                 }
                 $('#video-pause').on('click', () => {
                     Slides.recordEvent('videoPause', {});

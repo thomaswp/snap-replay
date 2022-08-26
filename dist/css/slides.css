@@ -111,3 +111,8 @@
 .reveal strong {
     color: #7d7dff
 }
+
+.reveal table {
+    color: white;
+    font-size: 1em;
+}

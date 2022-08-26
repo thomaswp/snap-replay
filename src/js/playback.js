@@ -107,8 +107,18 @@ export class Playback {
         $('#issuesLink').on('click', () => this.showIssuesModal());
         // HACK: TODO: Make this actually configurable
         const videoTable = {
+            // Loops
             'media/csc110/loops/repeat/': 'https://drive.google.com/file/d/1bDNN6rAlNwcl-nNHlwgHCHB0o5jwXsln/view?usp=sharing',
+            'media/csc110/loops/forever/': 'https://drive.google.com/file/d/10ADXro2E_59fXwJ8B3MJtFEpTduM6utQ/view?usp=sharing',
+            'media/csc110/loops/repeatUntil/': 'https://drive.google.com/file/d/1Pfn9bLfbRN8tSSWXqMqwjnVcgiink1Wf/view?usp=sharing',
+            // Procedures
             'media/csc110/procedures/basics/': 'https://drive.google.com/open?id=1-ILgfur1TOnO2FpoIilWKHmYV8IcKMaB&authuser=twprice%40ncsu.edu&usp=drive_fs',
+            // Variables
+            'media/csc110/variables/snap-variables/': '', // TODO!!
+            'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
+            'media/csc110/variables/var-loop-recipe/': 'https://drive.google.com/file/d/16BP77DmEEB8GwkF87S57Ty2dz0pXyGCN/view?usp=sharing',
+            // IDE
+            'media/csc110/variables/clines/': '', // TODO!!
         };
         let link = videoTable[path]
         if (link) {
