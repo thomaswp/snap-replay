@@ -9,14 +9,13 @@
 * Finish custom blocks
 * Finish variables (script, local)
 * Fix block drag-n-drop bug where it goes to the pallete again (!)
-* Misc mouse movements: editor buttons, sprite dragging
+* Misc mouse movements: sprite dragging
 * Scrolling for variable blocks is wrong (!)
-* say + input doesn't work on repeat -- need to FF say blocks (!)
+* say + input doesn't work on repeat -- need to FF say blocks (!!)
 * Popups, e.g. from running blocks, should go away (!)
 
 ## Replayer Features:
 * Custom block editor resizing (!)
-* Allow answering MCQs before pause. (!)
 * Log JS errors (!)
 * Add self-explain prompt
 * Star rating + feedback on code dialog

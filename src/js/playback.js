@@ -211,6 +211,11 @@ export class Playback {
             }
             return;
         }
+        if (!userControlled && id.endsWith('-finished')) {
+            // Set the slide to the question slide, in case they're not already
+            // on it...
+            this.slides.setSlideByID(id.slice(0, id.length - 9));
+        }
         // console.log("Asking", id);
         this.askingQuestion = id;
         this.pause();
