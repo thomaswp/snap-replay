@@ -12,14 +12,12 @@
 * Misc mouse movements: sprite dragging
 * Scrolling for variable blocks is wrong (!)
 * say + input doesn't work on repeat -- need to FF say blocks (!!)
-* Popups, e.g. from running blocks, should go away (!)
 
 ## Replayer Features:
 * Custom block editor resizing (!)
 * Log JS errors (!)
 * Add self-explain prompt
 * Star rating + feedback on code dialog
-* Buffer Snap on reset before restarting playback. This should fix some playback issues. (!!)
 * Volume
 * Questions
 * Progress tracking: `(SELECT MAX(CAST(data AS int)) FROM 'replay' WHERE message='Playback.updatePlaying')`
