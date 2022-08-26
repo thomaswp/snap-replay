@@ -118,7 +118,7 @@ export class Playback {
             'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
             'media/csc110/variables/var-loop-recipe/': 'https://drive.google.com/file/d/16BP77DmEEB8GwkF87S57Ty2dz0pXyGCN/view?usp=sharing',
             // IDE
-            'media/csc110/api/clones/': '', 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
+            'media/csc110/api/clones/': 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
         };
         let link = videoTable[path]
         if (link) {
