@@ -15,6 +15,7 @@
 ## Replayer Features:
 * Custom block editor resizing (!)
 * Log JS errors (!)
+* Self-explanation prompts should be movable so code is visible/interactive
 * Add self-explain prompt
 * Star rating + feedback on code dialog
 * Volume
