@@ -113,6 +113,7 @@ export class Playback {
             'media/csc110/loops/repeatUntil/': 'https://drive.google.com/file/d/1Pfn9bLfbRN8tSSWXqMqwjnVcgiink1Wf/view?usp=sharing',
             // Procedures
             'media/csc110/procedures/basics/': 'https://drive.google.com/open?id=1-ILgfur1TOnO2FpoIilWKHmYV8IcKMaB&authuser=twprice%40ncsu.edu&usp=drive_fs',
+            'media/csc110/procedures/use-cases/': 'https://ncsu.zoom.us/rec/share/AbM2WkhUoolnBp3Izc3pEHLzc5d00Q1SSadd2K4xYIwcWRct-mvUBd5ftLgD6hla.3GINHjsx9yhYb8qG',
             // Variables
             'media/csc110/variables/snap-variables/': 'https://drive.google.com/file/d/17JcjIGuSG99kT8sQA7MrZ_KpDX6usIAM/view?usp=sharing',
             'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
@@ -678,7 +679,7 @@ export class Playback {
             hash  = ((hash << 5) - hash) + input.charCodeAt(i);
             hash |= 0; // to 32bit integer
         }
-        return hash;
+        return Math.abs(hash);
     }
 
     leftPadNum(num, digits) {
@@ -870,6 +871,8 @@ export class Playback {
     showPopupMessage(data) {
         this.pause();
         $('#message-modal-text').html(data.text);
+        $('#self-explanation-container').toggleClass('hidden', !data.explain);
+        $('#self-explanation').val("");
         $('#show-message-modal').click();
     }
 

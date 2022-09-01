@@ -246,3 +246,7 @@ i.button-icon {
 p.hidden {
     display: none;
 }
+
+#self-explanation {
+    width: 100%;
+}
