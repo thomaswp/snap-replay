@@ -75,6 +75,7 @@ export class Playback {
         this.maxDuration = this.getCachedMaxDuration();
 
         $('body').keyup((e) => {
+            if (this.warnResume || this.isModalShowing()) return false;
             if (e.keyCode == 32) {
                 this.togglePlay();
             }
@@ -102,6 +103,13 @@ export class Playback {
         $('#q-modal-finished').on('click', () => this.answerReceived(this.askingQuestion, true, true));
         $('#q-modal-solution').on('click', () => this.answerReceived(this.askingQuestion, true));
         $('#q-modal-hint').on('click', () => this.slides.showHint(this.askingQuestion));
+
+        $('#message-modal-close').on('click', () => {
+            let explain = $('#self-explanation').val();
+            Trace.log('Playback.popupMessageClosed', {
+                'explanation': explain,
+            });
+        });
 
 
         $('#issuesLink').on('click', () => this.showIssuesModal());
@@ -153,6 +161,12 @@ export class Playback {
                 'video link below.'
             );
         }
+    }
+
+    isModalShowing() {
+        return $('.modal').toArray().some(
+            modal => modal.classList.contains('show')
+        );
     }
 
     isChromeDesktop() {
@@ -869,6 +883,7 @@ export class Playback {
     }
 
     showPopupMessage(data) {
+        Trace.log('Playback.popupMessage', data)
         this.pause();
         $('#message-modal-text').html(data.text);
         $('#self-explanation-container').toggleClass('hidden', !data.explain);
