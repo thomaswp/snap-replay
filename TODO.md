@@ -16,6 +16,7 @@
 * Custom block editor resizing (!)
 * Log JS errors (!)
 * Self-explanation prompts should be movable so code is visible/interactive
+* Copy code buttun for final code
 * Add self-explain prompt
 * Star rating + feedback on code dialog
 * Volume
