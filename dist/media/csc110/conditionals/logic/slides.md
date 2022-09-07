@@ -46,8 +46,9 @@ v---v
 <!-- .slide: id="modify-hint" -->
 ## Hints
 
-* You will need to if/else blocks for this, one inside another.
-* Make a flowchart: which decision comes first: the x-position or the y-position?
+* You will need two if/else blocks for this, one inside another.
+* You will also need the `>` and `mouse y` blocks.
+* Make a flowchart to select the color based on the mouse x and y: which decision comes first: the x-position or the y-position?
 
 [Back](#/modify)
 

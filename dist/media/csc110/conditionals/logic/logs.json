@@ -25,8 +25,9 @@
         "timeDelta": 16800
     },
     {
-        "type": "videoPause",
+        "type": "popupMessage",
         "data": {
+            "text": "Try moving your cursor onto the stage. What does the Sprite do?",
             "_recordID": "24464186-02ff-483c-bed1-9cad00997695"
         },
         "timeDelta": 13231
@@ -742,8 +743,9 @@
         "timeDelta": 3039
     },
     {
-        "type": "videoPause",
+        "type": "popupMessage",
         "data": {
+            "text": "Try drawing on the stage by holding down the mouse button.",
             "_recordID": "3c71a8eb-2392-46e8-b87e-b69f52bdb2aa"
         },
         "timeDelta": 16120
@@ -1423,8 +1425,9 @@
         "timeDelta": 2884
     },
     {
-        "type": "videoPause",
+        "type": "popupMessage",
         "data": {
+            "text": "Try drawing across the stage. What colors show up where?",
             "_recordID": "9201e64d-057c-4ca8-9350-e3804fe05a24"
         },
         "timeDelta": 9680
