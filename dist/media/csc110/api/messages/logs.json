@@ -3,7 +3,7 @@
         "type": "setBlockScale",
         "data": {
             "scale": 1.5,
-            "_recordID": "be505648-2f2c-43ff-a594-1895c1b3d59f"
+            "_recordID": "370232d6-2077-43b3-9022-c52dfb2660c3"
         },
         "timeDelta": 0
     },
@@ -12,78 +12,118 @@
         "data": {
             "index": 16,
             "highlight": false,
-            "_recordID": "b18ceae3-ab06-47fd-8ce1-420598b872f2"
+            "_recordID": "cb5b67df-8bd0-46f3-a583-34fce37a24e5"
         },
-        "timeDelta": 2
+        "timeDelta": 96
     },
     {
         "type": "IDE_selectSprite",
         "data": {
-            "value": "Stage",
+            "value": "Go",
             "message": "IDE.selectSprite",
-            "_recordID": "8b783f7c-86ba-42b2-993e-acda973a2204"
+            "_recordID": "51e1752c-cb80-4fda-8bc9-b70c6bd10169"
         },
-        "timeDelta": 837
+        "timeDelta": 16638
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Mover",
+            "message": "IDE.selectSprite",
+            "_recordID": "89cacf87-0b74-4508-9d18-24d4e7c91dc7"
+        },
+        "timeDelta": 719
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Go",
+            "message": "IDE.selectSprite",
+            "_recordID": "2e9c2bf3-c698-4af8-967b-c183cdce60cd"
+        },
+        "timeDelta": 12280
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Stop",
+            "message": "IDE.selectSprite",
+            "_recordID": "a17d8fbc-318a-4e9f-a536-9568142658be"
+        },
+        "timeDelta": 608
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Mover",
+            "message": "IDE.selectSprite",
+            "_recordID": "11504ebb-8799-46f0-8d69-2d1c26854337"
+        },
+        "timeDelta": 800
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "5fb33246-77b9-4c2b-85d1-b56b0a1dc5bb"
+        },
+        "timeDelta": 2353
+    },
+    {
+        "type": "stop",
+        "data": {
+            "message": "IDE.stop",
+            "_recordID": "6c12c6ad-0773-467f-955c-222dcb0b46c7"
+        },
+        "timeDelta": 10896
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Stop",
+            "message": "IDE.selectSprite",
+            "_recordID": "7b2f0acf-9267-422f-a951-81297768f488"
+        },
+        "timeDelta": 1159
     },
     {
         "type": "changeCategory",
         "data": {
             "value": "control",
             "message": "IDE.changeCategory",
-            "_recordID": "c700fc44-12ca-4f5d-ad27-6dbae5702c57"
+            "_recordID": "f93b3936-5837-4af2-8778-046a3b8cd424"
         },
-        "timeDelta": 1648
+        "timeDelta": 11209
     },
     {
         "type": "block_grabbed",
         "data": {
             "id": {
-                "selector": "receiveMessage",
-                "id": 64,
+                "selector": "receiveInteraction",
+                "id": 178,
                 "template": false,
-                "spec": "when I receive %msgHat",
+                "spec": "when I am %interaction",
                 "isPrototype": false,
                 "objType": "Object"
             },
             "origin": {
                 "x": 7.5,
-                "y": 356.33333333333337,
+                "y": 241.33333333333334,
                 "objType": "Point"
             },
             "message": "Block.grabbed",
-            "_recordID": "5f2e2330-4154-46fd-b0df-452ac6e2b71c"
+            "_recordID": "0861cbb8-0a97-46e4-ab6e-266e361fe7dc"
         },
-        "timeDelta": 2295
-    },
-    {
-        "type": "block_grabbed",
-        "data": {
-            "id": {
-                "selector": "receiveGo",
-                "id": 65,
-                "template": false,
-                "spec": "when %greenflag clicked",
-                "isPrototype": false,
-                "objType": "Object"
-            },
-            "origin": {
-                "x": 7.5,
-                "y": 120.83333333333334,
-                "objType": "Point"
-            },
-            "message": "Block.grabbed",
-            "_recordID": "ac06a109-d748-4088-a8c1-4b64fe44220c"
-        },
-        "timeDelta": 1113
+        "timeDelta": 4465
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
-                "selector": "receiveGo",
-                "id": 65,
+                "selector": "receiveInteraction",
+                "id": 178,
                 "template": false,
-                "spec": "when %greenflag clicked",
+                "spec": "when I am %interaction",
                 "isPrototype": false,
                 "objType": "BlockMorph"
             },
@@ -99,7 +139,7 @@
                 },
                 "position": {
                     "x": 7.5,
-                    "y": 9.5,
+                    "y": 130,
                     "objType": "Point"
                 },
                 "objType": "Object"
@@ -107,26 +147,27 @@
             "action": null,
             "situation": {
                 "origin": {
-                    "source": "Stage",
+                    "source": "Sprite",
+                    "spriteName": "Stop",
                     "objType": "ScriptsMorph"
                 },
                 "position": {
-                    "x": 130.5,
-                    "y": 149.5,
+                    "x": 121.5,
+                    "y": 148,
                     "objType": "Point"
                 },
                 "objType": "Object"
             },
-            "_recordID": "c2a112a4-d338-46a5-94f7-844d432e424e"
+            "_recordID": "75783c51-af42-47e7-b48a-3970b2b5a29d"
         },
-        "timeDelta": 257
+        "timeDelta": 375
     },
     {
         "type": "block_grabbed",
         "data": {
             "id": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
@@ -138,40 +179,23 @@
                 "objType": "Point"
             },
             "message": "Block.grabbed",
-            "_recordID": "38f444ae-c3a3-4db4-b08e-f6952dc1cac2"
+            "_recordID": "072a4d61-85fb-48da-9e3c-3f4fc7593cb1"
         },
-        "timeDelta": 672
+        "timeDelta": 16503
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
                 "objType": "BlockMorph"
             },
             "lastReplacedInput": null,
-            "lastDropTarget": {
-                "point": {
-                    "x": 355.5,
-                    "y": 309.33333333333337,
-                    "objType": "Point"
-                },
-                "element": {
-                    "selector": "receiveGo",
-                    "id": 65,
-                    "template": false,
-                    "spec": "when %greenflag clicked",
-                    "isPrototype": false,
-                    "objType": "BlockMorph"
-                },
-                "loc": "bottom",
-                "type": "block",
-                "objType": "Object"
-            },
+            "lastDropTarget": null,
             "lastPreservedBlocks": null,
             "lastNextBlock": null,
             "lastWrapParent": null,
@@ -190,26 +214,27 @@
             "action": null,
             "situation": {
                 "origin": {
-                    "source": "Stage",
+                    "source": "Sprite",
+                    "spriteName": "Stop",
                     "objType": "ScriptsMorph"
                 },
                 "position": {
-                    "x": 130.5,
-                    "y": 201.50000000000003,
+                    "x": 137.5,
+                    "y": 289.5,
                     "objType": "Point"
                 },
                 "objType": "Object"
             },
-            "_recordID": "d51a1ad9-c774-4822-8bd6-2f3063bf75f9"
+            "_recordID": "52b8b71d-51bb-447a-a836-1397d149df42"
         },
-        "timeDelta": 591
+        "timeDelta": 456
     },
     {
         "type": "inputSlot_dropDownMenu",
         "data": {
             "id": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
@@ -217,36 +242,36 @@
                 "objType": "Object"
             },
             "message": "InputSlotMorph.dropDownMenu",
-            "_recordID": "2c2cbf6c-f8a0-44f5-8f17-3eeab2415b24"
+            "_recordID": "82cd739d-2f63-4d04-a6ef-673a4f81e764"
         },
-        "timeDelta": 400
+        "timeDelta": 7488
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
             "highlight": true,
-            "_recordID": "1375a22e-048b-49df-900b-3867fc0491b7"
+            "_recordID": "97cf211c-55b3-449e-ac47-9f1c436b98f5"
         },
-        "timeDelta": 105
+        "timeDelta": 571
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
             "highlight": false,
-            "_recordID": "2ed24d83-7ab1-4df7-90e9-4a337f020132"
+            "_recordID": "e75519a6-078b-4630-ad63-94e189af82b1"
         },
-        "timeDelta": 7
+        "timeDelta": 154
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 2,
             "highlight": true,
-            "_recordID": "88362a9c-8a6d-4bab-bbdc-fb2f90e23bae"
+            "_recordID": "e89a9219-5c87-40b1-8e91-a5d4c64a2403"
         },
-        "timeDelta": 1
+        "timeDelta": 0
     },
     {
         "type": "menu",
@@ -254,20 +279,20 @@
             "parent": null,
             "open": false,
             "position": {
-                "x": 480,
-                "y": 355,
+                "x": 479,
+                "y": 437,
                 "objType": "Point"
             },
-            "_recordID": "71c91637-755b-425f-afc8-ac8c7c581011"
+            "_recordID": "4c3a269d-d1c8-42bb-bf99-3d96155673d8"
         },
-        "timeDelta": 463
+        "timeDelta": 1275
     },
     {
         "type": "inputSlot_showNewMessageDialog",
         "data": {
             "id": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
@@ -275,16 +300,16 @@
                 "objType": "Object"
             },
             "message": "InputSlotMorph.showNewMessageDialog",
-            "_recordID": "fe33bbba-d68b-49db-8178-4cdfab9ce28e"
+            "_recordID": "ef2635e9-0f72-475e-b203-ed59e5f2aafa"
         },
-        "timeDelta": 1
+        "timeDelta": 0
     },
     {
         "type": "inputSlotEdit",
         "data": {
             "id": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
@@ -292,92 +317,193 @@
                 "objType": "Object"
             },
             "noClick": true,
-            "_recordID": "86c44537-83c1-424b-8e8c-2d4b453cac99"
+            "_recordID": "712e9a11-6e61-48f2-8bd7-6544004ac937"
         },
-        "timeDelta": 7
+        "timeDelta": 5
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 2,
             "highlight": false,
-            "_recordID": "fccd4ae0-2d22-47c7-bba6-5c3737fc9a60"
+            "_recordID": "4422dd21-2d41-4e64-b78c-6d309ff601ee"
         },
-        "timeDelta": 64
+        "timeDelta": 210
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "DialogBoxMorph",
             "key": "promptMessage namenull",
-            "value": "t",
-            "_recordID": "9d0d2b82-3717-407d-8337-2a60be025bff"
+            "value": "s",
+            "_recordID": "3859d3ff-5a42-4ff6-a159-e4267c2788b2"
         },
-        "timeDelta": 399
+        "timeDelta": 1738
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "DialogBoxMorph",
             "key": "promptMessage namenull",
-            "value": "te",
-            "_recordID": "16a10fbb-1abb-446b-a907-0be5562d5aa0"
+            "value": "st",
+            "_recordID": "648c3a01-8a31-49e5-95a1-17b3cc0a7434"
         },
-        "timeDelta": 60
+        "timeDelta": 336
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "DialogBoxMorph",
             "key": "promptMessage namenull",
-            "value": "tes",
-            "_recordID": "53a8a551-ef96-4090-a00d-6060b92464cf"
+            "value": "sto",
+            "_recordID": "452eb378-9178-44e8-bc8f-b47e22496ac9"
         },
-        "timeDelta": 163
+        "timeDelta": 269
     },
     {
         "type": "inputTyped",
         "data": {
             "input": "DialogBoxMorph",
             "key": "promptMessage namenull",
-            "value": "test",
-            "_recordID": "7b09b9b8-c392-48d8-ba1c-bfae9f507001"
+            "value": "stop",
+            "_recordID": "000e080d-0315-47ea-8777-50a3aae06ae3"
         },
-        "timeDelta": 94
+        "timeDelta": 239
     },
     {
         "type": "inputSlot_setToNewMessage",
         "data": {
             "id": {
                 "selector": "doBroadcast",
-                "id": 66,
+                "id": 179,
                 "template": false,
                 "spec": "broadcast %msg",
                 "isPrototype": false,
                 "argIndex": 0,
                 "objType": "Object"
             },
-            "value": "test",
+            "value": "stop",
             "message": "InputSlotMorph.setToNewMessage",
-            "_recordID": "46fdf0c6-cb19-4372-8394-57c2b3d82a4a"
+            "_recordID": "a8124aae-d772-487a-b47c-92911b4962d8"
         },
-        "timeDelta": 80
+        "timeDelta": 443
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 179,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 338.5,
+                "y": 392.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "5a0a46ac-b0da-4eca-9583-80fb0f02e606"
+        },
+        "timeDelta": 2198
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doBroadcast",
+                "id": 179,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 346.5,
+                    "y": 306.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveInteraction",
+                    "id": 178,
+                    "template": false,
+                    "spec": "when I am %interaction",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 137.5,
+                    "y": 289.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 121.5,
+                    "y": 198.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "2e7634b1-473a-4636-ad1c-48e6794eb48d"
+        },
+        "timeDelta": 731
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "49c69518-77ea-4ad0-8f83-066817918b02"
+        },
+        "timeDelta": 5047
+    },
+    {
+        "type": "stop",
+        "data": {
+            "message": "IDE.stop",
+            "_recordID": "8b270e20-e141-4d6d-bc19-93c393c4e9f2"
+        },
+        "timeDelta": 10192
     },
     {
         "type": "IDE_selectSprite",
         "data": {
-            "value": "Sprite",
+            "value": "Mover",
             "message": "IDE.selectSprite",
-            "_recordID": "7b9b56a0-9059-48b7-84be-21bdf0c9571e"
+            "_recordID": "c6da9c3e-46f7-41bc-887e-ee3305349aa1"
         },
-        "timeDelta": 1148
+        "timeDelta": 6360
     },
     {
         "type": "block_grabbed",
         "data": {
             "id": {
                 "selector": "receiveMessage",
-                "id": 108,
+                "id": 221,
                 "template": false,
                 "spec": "when I receive %msgHat",
                 "isPrototype": false,
@@ -389,16 +515,16 @@
                 "objType": "Point"
             },
             "message": "Block.grabbed",
-            "_recordID": "b78f1abf-d97e-4e40-80d9-796590506507"
+            "_recordID": "3805e608-ebf1-4ce8-aead-c0578a7777c2"
         },
-        "timeDelta": 1856
+        "timeDelta": 7908
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
                 "selector": "receiveMessage",
-                "id": 108,
+                "id": 221,
                 "template": false,
                 "spec": "when I receive %msgHat",
                 "isPrototype": false,
@@ -425,26 +551,26 @@
             "situation": {
                 "origin": {
                     "source": "Sprite",
-                    "spriteName": "Sprite",
+                    "spriteName": "Mover",
                     "objType": "ScriptsMorph"
                 },
                 "position": {
-                    "x": 86.5,
-                    "y": 192.00000000000003,
+                    "x": 527.5,
+                    "y": 128.00000000000003,
                     "objType": "Point"
                 },
                 "objType": "Object"
             },
-            "_recordID": "6a1ac9b4-4943-4703-b48c-ee079804092f"
+            "_recordID": "fc12d165-1ad7-4e5c-924b-569029c20a2e"
         },
-        "timeDelta": 273
+        "timeDelta": 596
     },
     {
         "type": "inputSlot_dropDownMenu",
         "data": {
             "id": {
                 "selector": "receiveMessage",
-                "id": 108,
+                "id": 221,
                 "template": false,
                 "spec": "when I receive %msgHat",
                 "isPrototype": false,
@@ -452,34 +578,34 @@
                 "objType": "Object"
             },
             "message": "InputSlotMorph.dropDownMenu",
-            "_recordID": "fb7d5dbc-5e20-45d7-9d82-d7f7d0268cd2"
+            "_recordID": "698253af-1d5a-49ec-8353-08c80228cd23"
         },
-        "timeDelta": 638
+        "timeDelta": 8248
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
             "highlight": true,
-            "_recordID": "06554504-b822-4abb-b4b4-d0680d4ff81b"
+            "_recordID": "d79eaf88-942c-435f-a587-6e72636c4bf7"
         },
-        "timeDelta": 81
+        "timeDelta": 9514
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
             "highlight": false,
-            "_recordID": "3eb85616-a9f7-4fc2-9a52-e511ad4108ff"
+            "_recordID": "a68a5d45-ed8c-4163-98b8-99bfb2d47188"
         },
-        "timeDelta": 144
+        "timeDelta": 124
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 2,
             "highlight": true,
-            "_recordID": "06262b42-6fcb-41f3-ad10-30dedf6f611c"
+            "_recordID": "6bad064d-7b7c-461f-a74d-e1967eb89ad2"
         },
         "timeDelta": 0
     },
@@ -488,18 +614,18 @@
         "data": {
             "index": 2,
             "highlight": false,
-            "_recordID": "68d8b31e-6bea-46b2-b907-6f2b4aa1e47d"
+            "_recordID": "b700246e-f5be-4d21-9b08-722027ccf114"
         },
-        "timeDelta": 120
+        "timeDelta": 153
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 3,
             "highlight": true,
-            "_recordID": "a82a8024-fb78-410b-bd7b-f140da09de80"
+            "_recordID": "96063d0e-b412-4a57-9fda-1615ea980bb2"
         },
-        "timeDelta": 1
+        "timeDelta": 0
     },
     {
         "type": "menu",
@@ -507,30 +633,30 @@
             "parent": null,
             "open": false,
             "position": {
-                "x": 483,
-                "y": 383,
+                "x": 924,
+                "y": 314,
                 "objType": "Point"
             },
-            "_recordID": "d9252b98-a8c7-4331-b31c-02ad8f45b0e2"
+            "_recordID": "83678ab0-9c4d-4c31-9eaa-bb85b9d8f1cd"
         },
-        "timeDelta": 319
+        "timeDelta": 849
     },
     {
         "type": "inputSlotEdit",
         "data": {
             "id": {
                 "selector": "receiveMessage",
-                "id": 108,
+                "id": 221,
                 "template": false,
                 "spec": "when I receive %msgHat",
                 "isPrototype": false,
                 "argIndex": 0,
                 "objType": "Object"
             },
-            "item": "test",
-            "value": "test",
+            "item": "stop",
+            "value": "stop",
             "noClick": true,
-            "_recordID": "d9462716-4595-4850-8aa0-56e64466cbbc"
+            "_recordID": "b06dada4-5efb-4463-bf6b-a75a6e6a4134"
         },
         "timeDelta": 1
     },
@@ -539,61 +665,52 @@
         "data": {
             "index": 3,
             "highlight": false,
-            "_recordID": "3d2ca3ba-7165-47f2-b182-ca1f00772c8e"
+            "_recordID": "1d5d80a8-9566-4e73-a28f-802e1af88ace"
         },
-        "timeDelta": 7
-    },
-    {
-        "type": "changeCategory",
-        "data": {
-            "value": "motion",
-            "message": "IDE.changeCategory",
-            "_recordID": "342bd33d-ae92-460f-9a54-2cc05ca93bbb"
-        },
-        "timeDelta": 1296
+        "timeDelta": 172
     },
     {
         "type": "block_grabbed",
         "data": {
             "id": {
-                "selector": "forward",
-                "id": 109,
+                "selector": "doStopThis",
+                "id": 222,
                 "template": false,
-                "spec": "move %n steps",
+                "spec": "stop %stopChoices",
                 "isPrototype": false,
                 "objType": "Object"
             },
             "origin": {
                 "x": 7.5,
-                "y": 120.83333333333334,
+                "y": 658,
                 "objType": "Point"
             },
             "message": "Block.grabbed",
-            "_recordID": "a1a1de6f-b118-40df-9406-33398745fba5"
+            "_recordID": "0e1a6965-1f33-461c-9643-de7a3371a1e1"
         },
-        "timeDelta": 407
+        "timeDelta": 8862
     },
     {
         "type": "blockDrop",
         "data": {
             "lastDroppedBlock": {
-                "selector": "forward",
-                "id": 109,
+                "selector": "doStopThis",
+                "id": 222,
                 "template": false,
-                "spec": "move %n steps",
+                "spec": "stop %stopChoices",
                 "isPrototype": false,
                 "objType": "BlockMorph"
             },
             "lastReplacedInput": null,
             "lastDropTarget": {
                 "point": {
-                    "x": 311.5,
-                    "y": 350.33333333333337,
+                    "x": 752.5,
+                    "y": 286.33333333333337,
                     "objType": "Point"
                 },
                 "element": {
                     "selector": "receiveMessage",
-                    "id": 108,
+                    "id": 221,
                     "template": false,
                     "spec": "when I receive %msgHat",
                     "isPrototype": false,
@@ -613,7 +730,7 @@
                 },
                 "position": {
                     "x": 7.5,
-                    "y": 9.5,
+                    "y": 1186.6666666666665,
                     "objType": "Point"
                 },
                 "objType": "Object"
@@ -622,242 +739,189 @@
             "situation": {
                 "origin": {
                     "source": "Sprite",
-                    "spriteName": "Sprite",
+                    "spriteName": "Mover",
                     "objType": "ScriptsMorph"
                 },
                 "position": {
-                    "x": 86.5,
-                    "y": 242.50000000000003,
+                    "x": 527.5,
+                    "y": 178.50000000000003,
                     "objType": "Point"
                 },
                 "objType": "Object"
             },
-            "_recordID": "c3a974ce-f5ac-4dc0-a86b-a77ab5a5052a"
+            "_recordID": "dfdadfd5-1897-43fa-8b50-fce4bdf2cb6b"
         },
-        "timeDelta": 649
+        "timeDelta": 1110
     },
     {
-        "type": "run",
+        "type": "inputSlot_dropDownMenu",
         "data": {
-            "message": "IDE.greenFlag",
-            "_recordID": "aeb25cbc-4e85-488b-935e-abd66e7c2924"
+            "id": {
+                "selector": "doStopThis",
+                "id": 222,
+                "template": false,
+                "spec": "stop %stopChoices",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "41c42a5d-d718-41fb-bcb5-f2aa6b9e72ea"
         },
-        "timeDelta": 825
-    },
-    {
-        "type": "run",
-        "data": {
-            "message": "IDE.greenFlag",
-            "_recordID": "2da709a5-0b51-422b-ba0e-ff775f750c75"
-        },
-        "timeDelta": 351
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 1,
-            "highlight": true,
-            "_recordID": "2c281da3-2a38-4060-b9d5-ecf08ed8ff97"
-        },
-        "timeDelta": 1330
+        "timeDelta": 8695
     },
     {
         "type": "menuItemSelect",
         "data": {
             "index": 1,
-            "highlight": false,
-            "_recordID": "8ed39022-2ebd-409c-aec6-4db0f41e1397"
-        },
-        "timeDelta": 21
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 3,
             "highlight": true,
-            "_recordID": "01a0da15-0e5b-4d27-9d52-5fe08951aaef"
+            "_recordID": "e2a520c5-b36c-45da-89fa-b8e8c8cbcacc"
         },
-        "timeDelta": 0
+        "timeDelta": 746
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 3,
+            "index": 1,
             "highlight": false,
-            "_recordID": "d3517470-9471-41f4-8c03-88138720a758"
+            "_recordID": "3c1011b5-f48c-4cfa-bb9a-aa44262443fa"
         },
-        "timeDelta": 16
+        "timeDelta": 186
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 4,
+            "index": 2,
             "highlight": true,
-            "_recordID": "ccd94b90-393b-43de-a064-6137c4ca26de"
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 4,
-            "highlight": false,
-            "_recordID": "6b2ebacc-0568-41b8-9a4f-00e510485839"
-        },
-        "timeDelta": 16
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
-            "highlight": true,
-            "_recordID": "2b23a098-5dc3-4206-8f79-0d3dbf6f83f0"
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 5,
-            "highlight": false,
-            "_recordID": "7a2cfef9-11f1-4d29-bb7e-4277fdcfc6c4"
-        },
-        "timeDelta": 24
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 6,
-            "highlight": true,
-            "_recordID": "da5398eb-9294-43ab-a3b4-118df81e41b2"
-        },
-        "timeDelta": 0
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 6,
-            "highlight": false,
-            "_recordID": "4ac0cb4a-d367-4ebc-90dd-f45a2dc58b9c"
-        },
-        "timeDelta": 16
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 8,
-            "highlight": true,
-            "_recordID": "47c4fb63-61f3-4edd-b52c-bc0a59f55cf5"
-        },
-        "timeDelta": 8
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 8,
-            "highlight": false,
-            "_recordID": "8d328444-2f8f-40ae-8047-f1eda56be395"
-        },
-        "timeDelta": 48
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 9,
-            "highlight": true,
-            "_recordID": "ac7770fd-962e-45e0-833f-613ae9e3544e"
+            "_recordID": "6c3dbd19-a1b5-40fa-8735-039d8533bea6"
         },
         "timeDelta": 1
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 9,
+            "index": 2,
             "highlight": false,
-            "_recordID": "73677dfe-58d2-4d44-bd5b-521d3e79611b"
+            "_recordID": "06deba86-1baa-414c-83f0-2744fb03cbff"
         },
-        "timeDelta": 32
+        "timeDelta": 246
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 10,
+            "index": 3,
             "highlight": true,
-            "_recordID": "e054d5c5-c9b0-45e0-9527-63564702649a"
+            "_recordID": "341e6163-9591-424e-82f4-a0de42959526"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "54619872-278f-4503-841d-424aa1832c0a"
+        },
+        "timeDelta": 402
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "2344c7ec-b378-4023-974b-4a30b64e5e71"
         },
         "timeDelta": 0
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 10,
+            "index": 4,
             "highlight": false,
-            "_recordID": "fda6a762-ebe3-4b35-9c78-50e919f861fb"
+            "_recordID": "d95d8792-cef6-4626-a394-e202fd839976"
         },
-        "timeDelta": 48
+        "timeDelta": 1022
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 12,
+            "index": 3,
             "highlight": true,
-            "_recordID": "a87fdf9e-fce5-4b66-84bc-5e0ad07988f8"
-        },
-        "timeDelta": 7
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 12,
-            "highlight": false,
-            "_recordID": "55da2593-399d-4907-be6d-5e172a032098"
-        },
-        "timeDelta": 72
-    },
-    {
-        "type": "menuItemSelect",
-        "data": {
-            "index": 13,
-            "highlight": true,
-            "_recordID": "66d14445-b473-44a0-8b58-13bb58421cfa"
+            "_recordID": "f02bf555-35f6-4ef8-97b6-38d0559d9bad"
         },
         "timeDelta": 0
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 13,
+            "index": 3,
             "highlight": false,
-            "_recordID": "b43a05d1-53f1-4f8f-950a-d722eca5e67f"
+            "_recordID": "852fc468-c931-4e3c-8609-f9eadaae3024"
         },
-        "timeDelta": 89
+        "timeDelta": 2441
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 14,
+            "index": 4,
             "highlight": true,
-            "_recordID": "ed12d71f-d368-4605-b0aa-94f53b92c7a0"
+            "_recordID": "aaaad5f6-2062-4aa3-a91d-ac993125f573"
         },
         "timeDelta": 0
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 14,
+            "index": 4,
             "highlight": false,
-            "_recordID": "d630adae-086f-4bd1-8d39-30e5076ecf29"
+            "_recordID": "7ccc71d5-358f-46a1-8fae-1a9f85c4823b"
         },
-        "timeDelta": 161
+        "timeDelta": 281
     },
     {
         "type": "menuItemSelect",
         "data": {
-            "index": 16,
+            "index": 5,
             "highlight": true,
-            "_recordID": "b8057283-7968-48f7-9339-48846f1cf32a"
+            "_recordID": "63f16a32-51d0-4d03-8541-27370a3ea980"
         },
-        "timeDelta": 39
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false,
+            "_recordID": "d0cc7367-9c5c-4d17-81fb-9cbc82120969"
+        },
+        "timeDelta": 93
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true,
+            "_recordID": "267e925d-4d8d-4782-867d-7d7a39f60b72"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false,
+            "_recordID": "61322762-1ca5-4f43-913d-33a1525952b7"
+        },
+        "timeDelta": 806
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": true,
+            "_recordID": "555d87e3-5c2a-4359-8579-8f3a6d9e8ee4"
+        },
+        "timeDelta": 0
     },
     {
         "type": "menu",
@@ -865,12 +929,2294 @@
             "parent": null,
             "open": false,
             "position": {
-                "x": 187,
-                "y": 205,
+                "x": 919,
+                "y": 387,
                 "objType": "Point"
             },
-            "_recordID": "ca94a9e9-6ad5-4b6b-a205-a34a83f09bab"
+            "_recordID": "dfe98b9d-dad4-47b5-904f-3695ba8ece75"
         },
-        "timeDelta": 480
+        "timeDelta": 1744
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doStopThis",
+                "id": 222,
+                "template": false,
+                "spec": "stop %stopChoices",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "all but this script",
+            "value": "all but this script",
+            "noClick": true,
+            "_recordID": "31d42436-baa0-4ed8-b60e-3a0f73918d9d"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 5,
+            "highlight": false,
+            "_recordID": "326000e1-f40c-4b46-a8b0-cb24ff1931ce"
+        },
+        "timeDelta": 51
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "8fa68752-f47d-4f14-8d3c-00e8c2df65ad"
+        },
+        "timeDelta": 4363
+    },
+    {
+        "type": "popupMessage",
+        "data": {
+            "text": "Click the red circle to stop the Mover sprite.",
+            "_recordID": "c7e3b88e-a80e-47bc-af7a-98b95624304c"
+        },
+        "timeDelta": 12689
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Stop",
+            "message": "IDE.selectSprite",
+            "_recordID": "259befb3-a188-403c-97c3-9586da780e99"
+        },
+        "timeDelta": 8791
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Mover",
+            "message": "IDE.selectSprite",
+            "_recordID": "44a8fead-b5de-4b34-898a-37b625ee62d0"
+        },
+        "timeDelta": 13936
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Go",
+            "message": "IDE.selectSprite",
+            "_recordID": "f5633c4c-a1f3-4f70-b758-daa26ca14beb"
+        },
+        "timeDelta": 22328
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveInteraction",
+                "id": 264,
+                "template": false,
+                "spec": "when I am %interaction",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 241.33333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "2b995b2e-47a7-4d7c-a04b-0acaaf2940f7"
+        },
+        "timeDelta": 1381
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveInteraction",
+                "id": 264,
+                "template": false,
+                "spec": "when I am %interaction",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 130,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 164.5,
+                    "y": 113,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "11a7d489-681c-4039-a065-9cf18ace7540"
+        },
+        "timeDelta": 604
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 427.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "90fda803-55f2-485e-8567-58325b89de57"
+        },
+        "timeDelta": 848
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 389.5,
+                    "y": 271.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveInteraction",
+                    "id": 264,
+                    "template": false,
+                    "spec": "when I am %interaction",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 316.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 164.5,
+                    "y": 163.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "2b0db23a-3bc0-4529-bdc5-c7c1be82a479"
+        },
+        "timeDelta": 639
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "b894932b-0c03-43da-98c7-6bc3dab457cf"
+        },
+        "timeDelta": 1824
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "aa0aeb83-447d-4210-82d7-caa85bd72564"
+        },
+        "timeDelta": 343
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "6c2b0e98-d196-4557-b9ca-567ddf7061d9"
+        },
+        "timeDelta": 96
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "a8b5cbb6-b290-49d7-a779-37f4051e3b92"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "1d88e763-d0d3-4b49-869c-f2458a012222"
+        },
+        "timeDelta": 29
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "b7439cbc-eefa-45f2-afc5-da9163455ba6"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 503,
+                "y": 334,
+                "objType": "Point"
+            },
+            "_recordID": "dbcf38eb-2ac8-4ee4-886a-b5ce76803627"
+        },
+        "timeDelta": 517
+    },
+    {
+        "type": "inputSlot_showNewMessageDialog",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.showNewMessageDialog",
+            "_recordID": "0c918a1c-f58e-4ec5-8e13-c0f0bdb9fcf1"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "noClick": true,
+            "_recordID": "4b502094-db29-4ee7-a5d9-52864f2ebe51"
+        },
+        "timeDelta": 6
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false,
+            "_recordID": "f978ebfd-3641-46be-b18e-b8f655922917"
+        },
+        "timeDelta": 96
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "DialogBoxMorph",
+            "key": "promptMessage namenull",
+            "value": "g",
+            "_recordID": "5429d757-5bad-4d79-8577-62dd8448b459"
+        },
+        "timeDelta": 1073
+    },
+    {
+        "type": "inputTyped",
+        "data": {
+            "input": "DialogBoxMorph",
+            "key": "promptMessage namenull",
+            "value": "go",
+            "_recordID": "b0db91e7-895e-43ef-a9c1-39ec4ad23df6"
+        },
+        "timeDelta": 148
+    },
+    {
+        "type": "inputSlot_setToNewMessage",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 265,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "value": "go",
+            "message": "InputSlotMorph.setToNewMessage",
+            "_recordID": "a2f88538-2bb3-416d-ad56-52acde0f7e82"
+        },
+        "timeDelta": 502
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Mover",
+            "message": "IDE.selectSprite",
+            "_recordID": "ffec22aa-ea15-4923-b4c6-a57edf070be8"
+        },
+        "timeDelta": 6718
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 266,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 354.33333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "50791dff-19a0-4b45-8694-34189ab162bb"
+        },
+        "timeDelta": 6313
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveMessage",
+                "id": 266,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 243.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Mover",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 410.5,
+                    "y": 261,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "41ebcd19-6b40-476f-99e3-c14381722e53"
+        },
+        "timeDelta": 648
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 266,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "c238fc00-8189-4695-a425-f954a8be67cc"
+        },
+        "timeDelta": 727
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "43923147-3463-4dc5-bd75-cc413beb520a"
+        },
+        "timeDelta": 605
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "dd92bf23-cf74-4ed4-9cd7-6467f47ef30e"
+        },
+        "timeDelta": 123
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "5a969fee-46e0-4633-996e-d2a47e0377b3"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "a19d3d67-9d60-41f7-8810-45e51d1f4642"
+        },
+        "timeDelta": 123
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "be20af72-ad51-47ca-bdb7-96729f05ba22"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "d4991c51-319e-499d-8d5e-03b17781d216"
+        },
+        "timeDelta": 184
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "95a3dce5-5952-4e98-8d28-6aac23184852"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false,
+            "_recordID": "32db7e47-c0ff-4973-be33-3bdd3ebfb753"
+        },
+        "timeDelta": 343
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "2d24fe8f-55cb-4565-93e3-3426e5f6fca9"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 810,
+                "y": 452,
+                "objType": "Point"
+            },
+            "_recordID": "ec3a93d9-b4af-4811-9a6e-f4b36ddb12cd"
+        },
+        "timeDelta": 463
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 266,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "go",
+            "value": "go",
+            "noClick": true,
+            "_recordID": "063c5b02-9356-4ab9-b2a3-29b290a15cd2"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "a76e0d67-a81c-4e8e-9448-10a888041b17"
+        },
+        "timeDelta": 837
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "doFaceTowards",
+                "id": 85,
+                "template": false,
+                "spec": "point towards %dst",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 351.5,
+                "y": 245.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "030fc25c-ee88-4af8-b4c5-12c9f8ebc1cc"
+        },
+        "timeDelta": 9195
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doFaceTowards",
+                "id": 85,
+                "template": false,
+                "spec": "point towards %dst",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 635.5,
+                    "y": 419.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveMessage",
+                    "id": 266,
+                    "template": false,
+                    "spec": "when I receive %msgHat",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Mover",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 150.5,
+                    "y": 142.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Mover",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 410.5,
+                    "y": 311.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "bb57970b-e74a-4246-ae3a-30ff6fcd231b"
+        },
+        "timeDelta": 1159
+    },
+    {
+        "type": "videoPause",
+        "data": {
+            "_recordID": "e7d3fbfa-0fdf-4e30-ae45-57184fee2ac7"
+        },
+        "timeDelta": 17216
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "f84d6f1b-39f8-4438-945e-87872ad30702"
+        },
+        "timeDelta": 9527
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "c06c23de-5ce8-4bbf-9cd6-b478c93f83af"
+        },
+        "timeDelta": 840
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 267,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 425.83333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "08c3cf0e-1688-4058-a510-66890899a1ed"
+        },
+        "timeDelta": 11886
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "doBroadcast",
+                "id": 267,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 375.5,
+                    "y": 250.33333333333334,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveGo",
+                    "id": 82,
+                    "template": false,
+                    "spec": "when %greenflag clicked",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 314.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Mover",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 150.5,
+                    "y": 142.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "17a790fd-92b5-4c86-8512-fcd6716c3418"
+        },
+        "timeDelta": 756
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 267,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "dd0b0aeb-c701-4062-b4fb-b72ef9abe35a"
+        },
+        "timeDelta": 3566
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "e5f3f178-ede9-46f7-902f-24f50523b9cf"
+        },
+        "timeDelta": 448
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "b06f0f7a-7216-4401-ab88-e782eb9504ed"
+        },
+        "timeDelta": 215
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "9a4fbdf9-9257-4de4-8f18-75a00d8b4f17"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 483,
+                "y": 296,
+                "objType": "Point"
+            },
+            "_recordID": "7b544526-f19f-4e28-b29e-530b4ee4cc2b"
+        },
+        "timeDelta": 434
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "doBroadcast",
+                "id": 267,
+                "template": false,
+                "spec": "broadcast %msg",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "go",
+            "value": "go",
+            "noClick": true,
+            "_recordID": "d5be6b7c-ab92-4729-8716-d335e853b66c"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "fb19d12e-0414-4151-acb1-3bfb97346897"
+        },
+        "timeDelta": 60
+    },
+    {
+        "type": "run",
+        "data": {
+            "message": "IDE.greenFlag",
+            "_recordID": "1a84af10-87d9-4a28-a65a-b4a2758d849c"
+        },
+        "timeDelta": 3570
+    },
+    {
+        "type": "stop",
+        "data": {
+            "message": "IDE.stop",
+            "_recordID": "697b7e08-34da-429c-b961-697794d9039b"
+        },
+        "timeDelta": 12441
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Stop",
+            "message": "IDE.selectSprite",
+            "_recordID": "c3c8418b-f6d4-4394-98b0-8ecdd0e4514f"
+        },
+        "timeDelta": 52639
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 268,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 356.33333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "0d694526-c353-4ac9-a06e-3a86585b0a53"
+        },
+        "timeDelta": 6414
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveMessage",
+                "id": 268,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 245.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 349.5,
+                    "y": 136.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "e26d6526-3500-4ada-810e-29facfeb4313"
+        },
+        "timeDelta": 803
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 268,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "e4e478f3-ab5d-4b43-a32c-8e7514f159a2"
+        },
+        "timeDelta": 641
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "b16a4bd3-5162-49e2-a312-caf27c73eb5b"
+        },
+        "timeDelta": 197
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "7e19964e-d79f-4146-90a0-bf3b55e4e8ea"
+        },
+        "timeDelta": 157
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "84a717ea-2b37-40f2-8b29-de8b9265737e"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "73993cef-f79e-407c-87f3-222928d962d2"
+        },
+        "timeDelta": 216
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "f791c77a-01bd-4b12-b476-97c909f32396"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "0e2adfc3-db18-4c13-8f20-6b91307431e0"
+        },
+        "timeDelta": 371
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "b96bae08-8669-4599-846a-b64eeaf7feb1"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 753,
+                "y": 339,
+                "objType": "Point"
+            },
+            "_recordID": "522d56b6-237c-4dbb-8fd1-f873beeb9da8"
+        },
+        "timeDelta": 385
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 268,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "stop",
+            "value": "stop",
+            "noClick": true,
+            "_recordID": "96670aec-78a8-43d0-904c-2b68bd078935"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false,
+            "_recordID": "443d8e2d-fe52-4015-bf4a-1d376e94faf0"
+        },
+        "timeDelta": 146
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "IDE.changeCategory",
+            "_recordID": "41921ebd-224f-4783-8a61-a32010459bee"
+        },
+        "timeDelta": 2239
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "hide",
+                "id": 291,
+                "template": false,
+                "spec": "hide",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 836.0000000000001,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "bcaffa11-b9f8-4835-9db8-76d22838cbe1"
+        },
+        "timeDelta": 2620
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "hide",
+                "id": 291,
+                "template": false,
+                "spec": "hide",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 574.5,
+                    "y": 294.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveMessage",
+                    "id": 268,
+                    "template": false,
+                    "spec": "when I receive %msgHat",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 724.6666666666667,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 349.5,
+                    "y": 186.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "20178ad2-67c0-4df0-b3a5-ae9f7b9bdc9e"
+        },
+        "timeDelta": 956
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "control",
+            "message": "IDE.changeCategory",
+            "_recordID": "67afc7bc-bac1-45d4-b07f-044163e2be42"
+        },
+        "timeDelta": 8039
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 292,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 356.33333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "960541fd-e510-4398-9f97-5210b722a639"
+        },
+        "timeDelta": 3388
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveMessage",
+                "id": 292,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 245.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 356.5,
+                    "y": 235.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "1f76d92d-4767-4484-8ae0-d2e6391eae66"
+        },
+        "timeDelta": 1284
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 292,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "f4209699-2f3d-4de2-a87f-cc05dba2aace"
+        },
+        "timeDelta": 520
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "7a243428-cee6-4c63-93bb-858c733f8b9e"
+        },
+        "timeDelta": 110
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "954623c9-2755-4838-ad5c-fc809e772465"
+        },
+        "timeDelta": 62
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "2bf9c13d-c4a4-466c-abc3-5a1c2d080b24"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "73f8cf8c-2c6c-4ea4-b24d-7286782b01cf"
+        },
+        "timeDelta": 93
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "7dba72c4-39f5-4653-b59e-c18ad76d4608"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 730,
+                "y": 427,
+                "objType": "Point"
+            },
+            "_recordID": "ce670604-cbd9-4a4d-8f97-ce079e0f586f"
+        },
+        "timeDelta": 583
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 292,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "go",
+            "value": "go",
+            "noClick": true,
+            "_recordID": "c68f2ea4-13b0-42c2-ad1c-12f147cdfa0f"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "a8b201e9-85ae-4e85-95b9-8f13a9847cb1"
+        },
+        "timeDelta": 98
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "IDE.changeCategory",
+            "_recordID": "eace69e4-0193-4e60-a3a1-a25c368cb6f8"
+        },
+        "timeDelta": 1414
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "show",
+                "id": 293,
+                "template": false,
+                "spec": "show",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 800.6666666666667,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "1bce67ec-710f-4aeb-8866-9a9cb578ec50"
+        },
+        "timeDelta": 1562
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "show",
+                "id": 293,
+                "template": false,
+                "spec": "show",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 581.5,
+                    "y": 393.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveMessage",
+                    "id": 292,
+                    "template": false,
+                    "spec": "when I receive %msgHat",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 689.3333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Stop",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 356.5,
+                    "y": 285.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "fc70f1b3-6ede-4899-a392-17550b25469a"
+        },
+        "timeDelta": 911
+    },
+    {
+        "type": "videoPause",
+        "data": {
+            "_recordID": "2f51eb38-1559-411b-9ab0-d69880a20079"
+        },
+        "timeDelta": 16880
+    },
+    {
+        "type": "IDE_selectSprite",
+        "data": {
+            "value": "Go",
+            "message": "IDE.selectSprite",
+            "_recordID": "f5b200bd-a6c6-4c1e-aa7d-27c8ef793633"
+        },
+        "timeDelta": 5703
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "control",
+            "message": "IDE.changeCategory",
+            "_recordID": "1f6dc9d9-4c1f-412f-8ea0-6612da26d037"
+        },
+        "timeDelta": 904
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 316,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 356.33333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "ff59929d-0983-4888-b422-7f9f8c6593f2"
+        },
+        "timeDelta": 1702
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveMessage",
+                "id": 316,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 245.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 446.5,
+                    "y": 126.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "14dfb750-40cc-41e6-a722-f05456a3f128"
+        },
+        "timeDelta": 492
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 316,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "de861af4-1bef-4442-84c1-bfce46a547fe"
+        },
+        "timeDelta": 558
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "9f18a8c9-e8f5-49c4-8b40-dc3772c26125"
+        },
+        "timeDelta": 182
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "5f083c9f-1935-4b77-bb1d-2337f9609df1"
+        },
+        "timeDelta": 94
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "cbd097a4-6ce0-4d75-b5ef-2e2ecc53f102"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "716ecf86-158f-44f6-8bd8-7d72257d41a2"
+        },
+        "timeDelta": 184
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "15b861ea-9d12-491d-bfd9-5dfc2f6443ed"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "9bae308c-0e95-46d0-943c-61815d344ab9"
+        },
+        "timeDelta": 863
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "305b948c-127f-4cb1-93ca-437988af3e20"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 843,
+                "y": 330,
+                "objType": "Point"
+            },
+            "_recordID": "48971cef-b6e9-41b5-b8f8-2ba628328058"
+        },
+        "timeDelta": 373
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 316,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "stop",
+            "value": "stop",
+            "noClick": true,
+            "_recordID": "0917112d-b168-428d-ac81-5c7730500049"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false,
+            "_recordID": "d03d8c19-e1c8-45e6-9b7f-6f3455f3633a"
+        },
+        "timeDelta": 126
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "sound",
+            "message": "IDE.changeCategory",
+            "_recordID": "3ff6c84e-cb70-499f-81d7-840074f64598"
+        },
+        "timeDelta": 2362
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "IDE.changeCategory",
+            "_recordID": "288c7055-934d-4bae-8fb2-bb585e7cc3d3"
+        },
+        "timeDelta": 448
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "show",
+                "id": 337,
+                "template": false,
+                "spec": "show",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 800.6666666666667,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "f0340953-6782-4ec8-a622-9f98eec3a9ab"
+        },
+        "timeDelta": 1583
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "show",
+                "id": 337,
+                "template": false,
+                "spec": "show",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 671.5,
+                    "y": 284.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveMessage",
+                    "id": 316,
+                    "template": false,
+                    "spec": "when I receive %msgHat",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 689.3333333333334,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 446.5,
+                    "y": 176.50000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "e1b65cd1-d366-46c9-8729-3131fed488d5"
+        },
+        "timeDelta": 698
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "control",
+            "message": "IDE.changeCategory",
+            "_recordID": "de82d796-1b23-420e-b212-cbd56d80ea27"
+        },
+        "timeDelta": 862
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveKey",
+                "id": 338,
+                "template": false,
+                "spec": "when %keyHat key pressed",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 181.83333333333334,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "e3b3c3e2-5520-4be5-94af-0a4e616346d3"
+        },
+        "timeDelta": 1996
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 339,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 356.33333333333337,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "01e6d1a7-5a10-4199-ac9f-df87c7766d1d"
+        },
+        "timeDelta": 2046
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "receiveMessage",
+                "id": 339,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": null,
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 245.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 440.5,
+                    "y": 233.00000000000003,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "1ddeed69-18fd-4e59-b8c7-f839db3ae893"
+        },
+        "timeDelta": 600
+    },
+    {
+        "type": "inputSlot_dropDownMenu",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 339,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "message": "InputSlotMorph.dropDownMenu",
+            "_recordID": "453984ca-d7b0-4827-a45e-960ec15a2452"
+        },
+        "timeDelta": 470
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "5c345963-412b-4c3e-bb79-46e676266ab2"
+        },
+        "timeDelta": 104
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "6cdd801d-fbcc-4fdc-98ad-d0ea4c221f7c"
+        },
+        "timeDelta": 61
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": true,
+            "_recordID": "92ec20ee-f82d-45ee-9b49-4bb300a6fa85"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 2,
+            "highlight": false,
+            "_recordID": "a6c7e096-5dd0-4c9d-8aaf-fadf005c1e1a"
+        },
+        "timeDelta": 155
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "8867188c-a988-406d-9a67-f1326f82a609"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 826,
+                "y": 420,
+                "objType": "Point"
+            },
+            "_recordID": "22917da0-3891-4e7a-8824-eb9ea2d630ec"
+        },
+        "timeDelta": 265
+    },
+    {
+        "type": "inputSlotEdit",
+        "data": {
+            "id": {
+                "selector": "receiveMessage",
+                "id": 339,
+                "template": false,
+                "spec": "when I receive %msgHat",
+                "isPrototype": false,
+                "argIndex": 0,
+                "objType": "Object"
+            },
+            "item": "go",
+            "value": "go",
+            "noClick": true,
+            "_recordID": "ca6cc6c0-b1be-4097-8030-b163440bee4f"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "8c9e19fa-c9bf-4012-b6c9-64efcd928645"
+        },
+        "timeDelta": 77
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "motion",
+            "message": "IDE.changeCategory",
+            "_recordID": "381e2c8e-71fc-4f5c-8df7-47455f19053e"
+        },
+        "timeDelta": 1139
+    },
+    {
+        "type": "changeCategory",
+        "data": {
+            "value": "looks",
+            "message": "IDE.changeCategory",
+            "_recordID": "cd723309-9712-4605-b338-39d5beccc301"
+        },
+        "timeDelta": 408
+    },
+    {
+        "type": "block_grabbed",
+        "data": {
+            "id": {
+                "selector": "hide",
+                "id": 340,
+                "template": false,
+                "spec": "hide",
+                "isPrototype": false,
+                "objType": "Object"
+            },
+            "origin": {
+                "x": 7.5,
+                "y": 836.0000000000001,
+                "objType": "Point"
+            },
+            "message": "Block.grabbed",
+            "_recordID": "20d31e3c-8a00-4621-b4f8-d9d2a8fc8f37"
+        },
+        "timeDelta": 1745
+    },
+    {
+        "type": "blockDrop",
+        "data": {
+            "lastDroppedBlock": {
+                "selector": "hide",
+                "id": 340,
+                "template": false,
+                "spec": "hide",
+                "isPrototype": false,
+                "objType": "BlockMorph"
+            },
+            "lastReplacedInput": null,
+            "lastDropTarget": {
+                "point": {
+                    "x": 665.5,
+                    "y": 391.33333333333337,
+                    "objType": "Point"
+                },
+                "element": {
+                    "selector": "receiveMessage",
+                    "id": 339,
+                    "template": false,
+                    "spec": "when I receive %msgHat",
+                    "isPrototype": false,
+                    "objType": "BlockMorph"
+                },
+                "loc": "bottom",
+                "type": "block",
+                "objType": "Object"
+            },
+            "lastPreservedBlocks": null,
+            "lastNextBlock": null,
+            "lastWrapParent": null,
+            "lastOrigin": {
+                "origin": {
+                    "source": "Palette",
+                    "objType": "FrameMorph"
+                },
+                "position": {
+                    "x": 7.5,
+                    "y": 724.6666666666667,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "action": null,
+            "situation": {
+                "origin": {
+                    "source": "Sprite",
+                    "spriteName": "Go",
+                    "objType": "ScriptsMorph"
+                },
+                "position": {
+                    "x": 440.5,
+                    "y": 283.5,
+                    "objType": "Point"
+                },
+                "objType": "Object"
+            },
+            "_recordID": "892391d0-150d-47a5-9332-06f742d6af77"
+        },
+        "timeDelta": 703
+    },
+    {
+        "type": "videoPause",
+        "data": {
+            "_recordID": "0ad2dda3-127e-4c89-a234-6478fd1fe6bf"
+        },
+        "timeDelta": 10848
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": true,
+            "_recordID": "2b03dd02-97ea-48f4-afac-71817ef0be7a"
+        },
+        "timeDelta": 46695
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 1,
+            "highlight": false,
+            "_recordID": "798dc1f6-25a3-4d55-b1c0-c868cb3b10ec"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": true,
+            "_recordID": "1248b75b-94e9-465e-9b97-96a6c9cb82c0"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 3,
+            "highlight": false,
+            "_recordID": "db5966bb-6a7b-41ba-9d16-2458776fef79"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": true,
+            "_recordID": "56d36eab-8265-4281-a365-33e385962145"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 4,
+            "highlight": false,
+            "_recordID": "ca4aabcb-ea7e-4c0f-bd34-234f3fde1e60"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": true,
+            "_recordID": "c650ddfd-b310-472e-9a98-2e7edb6b3574"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 6,
+            "highlight": false,
+            "_recordID": "42a7fb50-6845-4f0c-b50f-466448dd6b88"
+        },
+        "timeDelta": 32
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": true,
+            "_recordID": "02eea0b7-2328-49c6-9db4-a4b2bb75eaca"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 8,
+            "highlight": false,
+            "_recordID": "1a0bf3a5-0d8b-4f95-818c-ab5a6c5429be"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": true,
+            "_recordID": "18748e24-928b-44f2-91f1-fb4052294714"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 9,
+            "highlight": false,
+            "_recordID": "fa96c2ce-cf3a-4c7e-a7e2-9f9ed3748859"
+        },
+        "timeDelta": 31
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": true,
+            "_recordID": "d9e8feba-b1a4-48c9-a60c-58ced01c8915"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 10,
+            "highlight": false,
+            "_recordID": "61397120-da30-4d0e-9f4d-077c333a130e"
+        },
+        "timeDelta": 61
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": true,
+            "_recordID": "821297ad-2468-45d8-b6d6-df9f751e01f0"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 12,
+            "highlight": false,
+            "_recordID": "f45649bd-e61a-4db6-adf4-66225b183888"
+        },
+        "timeDelta": 30
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": true,
+            "_recordID": "765942ca-a7fb-437e-bc8e-329866b4dc91"
+        },
+        "timeDelta": 0
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 13,
+            "highlight": false,
+            "_recordID": "aac85bc9-a93d-4dc2-86fd-1092d2fb3172"
+        },
+        "timeDelta": 61
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": true,
+            "_recordID": "3ff86e91-adc5-4eab-bd8e-c3273e667181"
+        },
+        "timeDelta": 1
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 14,
+            "highlight": false,
+            "_recordID": "aaa8a8ae-5087-428b-930c-8c7ca9c49dbc"
+        },
+        "timeDelta": 121
+    },
+    {
+        "type": "menuItemSelect",
+        "data": {
+            "index": 16,
+            "highlight": true,
+            "_recordID": "81c55ade-746b-4adb-9c30-fb4efb828218"
+        },
+        "timeDelta": 35
+    },
+    {
+        "type": "menu",
+        "data": {
+            "parent": null,
+            "open": false,
+            "position": {
+                "x": 180,
+                "y": 206,
+                "objType": "Point"
+            },
+            "_recordID": "d2f8cc65-e67c-441c-8bec-4e45214c7114"
+        },
+        "timeDelta": 537
     }
 ]
