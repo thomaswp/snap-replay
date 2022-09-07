@@ -126,6 +126,9 @@ export class Playback {
             'media/csc110/variables/snap-variables/': 'https://drive.google.com/file/d/17JcjIGuSG99kT8sQA7MrZ_KpDX6usIAM/view?usp=sharing',
             'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
             'media/csc110/variables/var-loop-recipe/': 'https://drive.google.com/file/d/16BP77DmEEB8GwkF87S57Ty2dz0pXyGCN/view?usp=sharing',
+            // Conditinals
+            'media/csc110/conditionals/basics/': 'https://ncsu.zoom.us/rec/share/87YM-NwlOiBgUz4AujaBq9vb5CviDZR0VPcgt61-UOKJg72oQV4hzrko_lhNDc8Z.nmJ-uMZgk9X_Y_3y',
+            'media/csc110/conditionals/logic/': '#', // TODO!
             // IDE
             'media/csc110/api/clones/': 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
         };

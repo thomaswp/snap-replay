@@ -3,6 +3,7 @@
 * Don't crash when comments are added.
 * Figure out why loading is slow (probably b/c loading audio twice for duration...), speed it up (e.g. buffering?), add load icon
 * Disable media play/pause or make it do the right thing.
+* Sometimes the "Loading" screen doesn't go away at the end of a video
 
 ## Recording Features:
 * Comments

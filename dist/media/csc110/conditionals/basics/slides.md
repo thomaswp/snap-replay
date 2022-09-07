@@ -112,36 +112,3 @@ Incorrect: Will the outer condition be true or false when `answer` = 5? To say "
 <!-- .slide: id="q-input-finished" data-state="q-finished" -->
 ## Good job!
 
----
-<!-- .slide: id="modify" -->
-## Modify: Flag of Benin
-
-**Goal**: Modify the current code so that the colors match the flag of Benin.
-
-<div class="container">
-<div class="col">
-
-![](img/flag.png)
-
-</div>
-<div class="col">
-
-![](img/modify.gif)
-
-</div>
-</div>
-
-<div class="quiz">
-
-[Hints](#/modify-hint)
-
-</div>
-
-v---v
-<!-- .slide: id="modify-hint" -->
-## Hints
-
-* You will need to if/else blocks for this, one inside another.
-* Make a flowchart: which decision comes first: the x-position or the y-position?
-
-[Back](#/modify)
