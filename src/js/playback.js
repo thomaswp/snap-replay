@@ -129,6 +129,8 @@ export class Playback {
             // Conditinals
             'media/csc110/conditionals/basics/': 'https://ncsu.zoom.us/rec/share/87YM-NwlOiBgUz4AujaBq9vb5CviDZR0VPcgt61-UOKJg72oQV4hzrko_lhNDc8Z.nmJ-uMZgk9X_Y_3y',
             'media/csc110/conditionals/logic/': 'https://ncsu.zoom.us/rec/share/OZPSQ0DB_fuOs2OjgqQFw_MB3WjTXXWuL4DrlIIhM21tQKeRZzBTVbHxLY06znFR.zyL4EIjiqOqdAwhj?startTime=1662557018000', // TODO!
+            // Lists
+            'media/csc110/lists/basics/': 'https://ncsu.zoom.us/rec/share/K4KTprP66IlFeByfvCUChMBNQqfSCxUY-3gVDK9qGWln02zJdIcDRkEUBqlIyT_x.yt7e18npFGqCxnTU?startTime=1662988453000',
             // IDE
             'media/csc110/api/clones/': 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
             'media/csc110/api/messages/': 'https://ncsu.zoom.us/rec/share/OJVDJEH9ECjnFOxxIKEkT55-X9Fhi8DFhsQn1b7g5z0yy-CvXv9pPGve-p5MAl9h.kMjTyltwTB85kMnJ?startTime=1662580888000',

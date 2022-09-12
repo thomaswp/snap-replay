@@ -1,6 +1,21 @@
 # Lists
+![](img/list.png)
+
 <!--
 Notes:
+Demonstrate: Create list
+* Show different types in list
+Slides: Indexes
+Demonstrate: item, length, contains
+Slides: Reporters
+Demonstrate: set, add, delete, insert
+Slide: Commands
+Quiz
+Demonstrate: Add
+Modify: Add only if not contains
+Demonstrate: Remove
+
+
 
 -->
 ---
@@ -8,6 +23,8 @@ Notes:
 Each item in the list has an **index**, starting at 1.
 
 ![](img/list.png)
+
+| 1 | 2 | 3 |
 
 * The item at **index 2** is **b**.
 * The **index of a** in the list is 1.
@@ -60,6 +77,7 @@ To read information about lists, we use these **reporter** blocks:
 * ![](img/list.png) <br/> **Creates** a new list with the given items: [a, b, c].
 * ![](img/item.png) <br/> Gets the **list item** at the given index: a.
 * ![](img/length.png) <br/> Gets the **length** of the given list: 3.
+* ![](img/contains.png) <br/> Reports true if the list includes the given element at least once: false.
 
 
 ---
@@ -94,7 +112,7 @@ What will the sprite say after this code is run?
 
 [C) c, c](#/c)
 
-[D) d, nothing](#/d)
+[D) d, [nothing]](#/d)
 
 </div>
 </div>
@@ -135,57 +153,29 @@ Incorrect: Remember that in Snap, indexes start at 1, so the third item to start
 <!-- .slide: id="q1-finished" data-state="q-finished" -->
 ## Good job!
 
-<div class="container">
-<div class="col">
-
-![](img/q1.png)
-
-</div>
-
-<div class="col">
-
-| Repeat | `value` | `total` |
-| ------ | ------- | ------- |
-| before | 5       | 0       |
-| 1      | 4       | 4       |
-| 2      | 3       | 7       |
-| 3      | 2       | 9       |
-| after  | 2       | 9       |
-
-</div>
-</div>
-
-
-
 
 ---
-<!-- .slide: id="average" -->
-## Modify: Average
+<!-- .slide: id="modify" -->
+## Modify: Contains Check
 
-**Goal**: Create a new variable, `count`, that counts the number of times
-the user has entered a number. Then, after the user has said 'stop',
-say the average of all the numbers.
+**Goal**: Modify the code for adding a new contact so it checks whether a
+contact **already exists**, and if so warns the user and *does not* add the contact.
 
-Example: If the user says `4`, `2`, `5`, `3`, `stop` the sprite should say:
-
-> Average: 3.5
+<img width="50%" src="img/modify.gif">
 
 <div class="quiz">
 
-[Hints](#/average-hint)
+[Hints](#/modify-hint)
 
 </div>
 
 v---v
-<!-- .slide: id="average-hint" -->
+<!-- .slide: id="modify-hint" -->
 ## Hints
 
-Follow the variable + loop recipe:
+* You will need the `__ contains __` block, under the variables category.
+* You will also need an `if / else` block.
+* Remember, the contact should only be added if it is not already contained in the contact list.
 
-1. **Create** the variable and give it a descriptive name: "count"
-2. **Initialize** the variable to a starting value **before the loop**: 0
-3. **Change** the variable value when appropriate **inside the loop**: add 1
-4. **Use** the variable value in your code, **after** the loop: say the average (sum / count)
-
-[Back](#/average)
+[Back](#/modify)
 
