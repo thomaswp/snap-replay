@@ -4236,11 +4236,20 @@
         "timeDelta": 1924
     },
     {
-        "type": "videoPause",
+        "type": "popupMessage",
         "data": {
+            "text": "Try clicking the [+] sprite and adding a contact to the list.",
             "_recordID": "ae81fca8-e3df-4a88-b219-4ae392f0beba"
         },
         "timeDelta": 25102
+    },
+    {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 6231
     },
     {
         "type": "inputPromptEdited",
@@ -4248,7 +4257,7 @@
             "value": "M",
             "_recordID": "e59fe1f9-0f20-4081-8b42-8df56507db30"
         },
-        "timeDelta": 9231
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptEdited",
@@ -4267,12 +4276,20 @@
         "timeDelta": 347
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 7812
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "H",
             "_recordID": "da66042b-26dd-4ed1-ab32-f24975647584"
         },
-        "timeDelta": 10812
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptEdited",
@@ -5042,12 +5059,20 @@
         "timeDelta": 835
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 1326
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "H",
             "_recordID": "c1d27bd1-cd8d-44c6-a2b8-59ba757db938"
         },
-        "timeDelta": 4326
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptEdited",
@@ -5197,12 +5222,20 @@
         "timeDelta": 4142
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 553
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "H",
             "_recordID": "b2a57d46-4d88-4763-9491-eec2897b55b4"
         },
-        "timeDelta": 2553
+        "timeDelta": 2000
     },
     {
         "type": "inputPromptEdited",
@@ -5245,12 +5278,20 @@
         "timeDelta": 606
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 6114
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "o",
             "_recordID": "e853a3b4-aa70-4442-ad7b-04dafaa667bc"
         },
-        "timeDelta": 9114
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptEdited",
@@ -5285,12 +5326,20 @@
         "timeDelta": 504
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Add",
+            "interaction": "clicked"
+        },
+        "timeDelta": 1244
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "M",
             "_recordID": "fc215fa1-0e7f-41e0-b37f-df53f1bbad4c"
         },
-        "timeDelta": 3744
+        "timeDelta": 2500
     },
     {
         "type": "inputPromptEdited",
@@ -6187,12 +6236,20 @@
         "timeDelta": 859
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Remove",
+            "interaction": "clicked"
+        },
+        "timeDelta": 28503
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "2",
             "_recordID": "bc710169-3cbf-40f4-a2ee-987dc5e9ee5c"
         },
-        "timeDelta": 31503
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptAccept",
@@ -6203,12 +6260,20 @@
         "timeDelta": 1495
     },
     {
+        "type": "sprite_receiveUserInteraction",
+        "data": {
+            "name": "Remove",
+            "interaction": "clicked"
+        },
+        "timeDelta": 5167
+    },
+    {
         "type": "inputPromptEdited",
         "data": {
             "value": "1",
             "_recordID": "efd006a4-f7cb-48c5-b85f-741dc0ad4a0e"
         },
-        "timeDelta": 8167
+        "timeDelta": 3000
     },
     {
         "type": "inputPromptAccept",
