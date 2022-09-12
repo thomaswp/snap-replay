@@ -742,15 +742,13 @@ export class Playback {
 
         // If we we're currently fast-forwarding, don't advance playback yet
         if (this.isFastForwarding()) {
-            let timePlayed = new Date().getTime() - this.playStartTime;
-            // But if somehow this happened mid-playback, just ignore it, since
-            // this might just be Snap being laggy...
-            if (timePlayed < 1000) {
-                // console.log('Pausing...', timePlayed);
-                this.playStartTime -= timePlayed;
-                $('#loading').removeClass('hidden');
-                this.audio.pause();
-            }
+            // console.log('Pausing...',
+            //     this.getCurrentDuration() / 1000,
+            //     this.logs[this.currentLogIndex].startTime
+            // );
+            this.playStartTime = new Date().getTime();
+            $('#loading').removeClass('hidden');
+            this.audio.pause();
         } else {
             $('#loading').addClass('hidden');
             this.startAudio();
