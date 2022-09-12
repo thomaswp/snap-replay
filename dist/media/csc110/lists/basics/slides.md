@@ -74,6 +74,91 @@ To read information about lists, we use these **reporter** blocks:
 
 
 ---
+<!-- .slide: id="q1" -->
+## Knowledge Check: Lists
+What will the sprite say after this code is run?
+
+<div class="container">
+
+<div class="col">
+
+![](img/q1.png)
+
+</div>
+
+<div class="col quiz">
+
+[A) b, c](#/a)
+
+[B) c, d](#/b)
+
+[C) c, c](#/c)
+
+[D) d, nothing](#/d)
+
+</div>
+</div>
+
+v---v
+<!-- .slide: id="a" -->
+## A
+
+Incorrect: Remember, items are added to the *end* of a list.
+
+[Try again?](#/q1)
+
+v---v
+<!-- .slide: id="b" data-background-color="#3333aa" -->
+## B
+
+Correct: c is the third item in the list until b is deleted; then it's d.
+
+<button class="navigate-right btn btn-success">Continue</button>
+
+v---v
+<!-- .slide: id="c" -->
+## C
+
+Incorrect: Remember, when an item (e.g. #2) is deleted, all items after it (e.g. c) shift to the left, and their index changes.
+
+[Try again?](#/q1)
+
+v---v
+<!-- .slide: id="d" -->
+## D
+
+Incorrect: Remember that in Snap, indexes start at 1, so the third item to start with is c, not d.
+
+[Try again?](#/q1)
+
+---
+<!-- .slide: id="q1-finished" data-state="q-finished" -->
+## Good job!
+
+<div class="container">
+<div class="col">
+
+![](img/q1.png)
+
+</div>
+
+<div class="col">
+
+| Repeat | `value` | `total` |
+| ------ | ------- | ------- |
+| before | 5       | 0       |
+| 1      | 4       | 4       |
+| 2      | 3       | 7       |
+| 3      | 2       | 9       |
+| after  | 2       | 9       |
+
+</div>
+</div>
+
+
+
+
+---
 <!-- .slide: id="average" -->
 ## Modify: Average
 
@@ -103,87 +188,4 @@ Follow the variable + loop recipe:
 4. **Use** the variable value in your code, **after** the loop: say the average (sum / count)
 
 [Back](#/average)
-
-
----
-<!-- .slide: id="q1" -->
-## Knowledge Check: Variable + Loop
-What will the sprite say after this code is run?
-
-<div class="container">
-
-<div class="col">
-
-![](img/q1.png)
-
-</div>
-
-<div class="col quiz">
-
-[A) 2, 6](#/a)
-
-[B) 2, 15](#/b)
-
-[C) 5, 0](#/c)
-
-[D) 2, 9](#/d)
-
-</div>
-</div>
-
-v---v
-<!-- .slide: id="a" -->
-## A
-
-Incorrect: Remember, `total` changes by the *current* value of value, which is different each time the loop runs.
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="b" -->
-## B
-
-Incorrect: Remember, `total` changes by the *current* value of value, which is different each time the loop runs.
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="c" -->
-## C
-
-Incorrect: Remember, the variables change values in the loop before being said.
-
-[Try again?](#/q1)
-
-v---v
-<!-- .slide: id="d" data-background-color="#3333aa" -->
-## D
-
-Correct!
-
-<button class="navigate-right btn btn-success">Continue</button>
-
----
-<!-- .slide: id="q1-finished" data-state="q-finished" -->
-## Good job!
-
-<div class="container">
-<div class="col">
-
-![](img/q1.png)
-
-</div>
-
-<div class="col">
-
-| Repeat | `value` | `total` |
-| ------ | ------- | ------- |
-| before | 5       | 0       |
-| 1      | 4       | 4       |
-| 2      | 3       | 7       |
-| 3      | 2       | 9       |
-| after  | 2       | 9       |
-
-</div>
-</div>
 
