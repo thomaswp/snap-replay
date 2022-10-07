@@ -136,6 +136,7 @@ export class Playback {
             // IDE
             'media/csc110/api/clones/': 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
             'media/csc110/api/messages/': 'https://ncsu.zoom.us/rec/share/OJVDJEH9ECjnFOxxIKEkT55-X9Fhi8DFhsQn1b7g5z0yy-CvXv9pPGve-p5MAl9h.kMjTyltwTB85kMnJ?startTime=1662580888000',
+            'media/csc110/api/tell/': 'https://ncsu.zoom.us/rec/share/FSkGm4MxzDgVlJlATSp5vX7NXuPN01qPVXMteKY-wlZubfnp-Ph7TNDdVSjrUzI.7eTt-M-JVz9vm8hq?startTime=1664977057000',
         };
         let link = videoTable[path]
         if (link) {
