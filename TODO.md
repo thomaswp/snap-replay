@@ -1,3 +1,7 @@
+## Video Issues
+* repeat: Skip solution doesn't work
+* repeatUntil: MCQ gets skipped somehow
+
 ## Bugs:
 
 * Don't crash when comments are added.

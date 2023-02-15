@@ -110,6 +110,9 @@ export class Slides {
             case 'slideChanged':
                 return (callback, fast) => {
                     this.logSlideChanges = false;
+                    if (!fast) {
+                        Trace.log('Slides.videoChangedSlides', data);
+                    }
                     if (!this.setSlideByID(data.id)) {
                         this.deck.slide(data.indexh, data.indexv);
                     }
