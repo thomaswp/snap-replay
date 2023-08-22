@@ -64,7 +64,7 @@ v---v
 
 * Remember you should right-click on your block and select "edit" from the menu.
 * You can add an input by pressing the [+] button: <img src="img/add-input.png" width="45%">
-* Once you create an input (e.g. the x-coordinate square), you can use it in your code.
+* Once you create an input (e.g. the x-coordinate of the square), you can use it in your code.
 * The `go to X __ Y __` block will be useful.
 
 [Back](#/tower)
