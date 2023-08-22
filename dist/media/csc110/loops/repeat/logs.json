@@ -1825,12 +1825,19 @@
         "timeDelta": 4159
     },
     {
+        "type": "questionAnswered",
+        "data": {
+            "id": "triangle"
+        },
+        "timeDelta": 6000
+    },
+    {
         "type": "changeCategory",
         "data": {
             "value": "pen",
             "message": "IDE.changeCategory"
         },
-        "timeDelta": 71152
+        "timeDelta": 65152
     },
     {
         "type": "blockDrop",
