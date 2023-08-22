@@ -3580,6 +3580,14 @@
         "timeDelta": 1129
     },
     {
+        "type": "popupMessage",
+        "data": {
+            "text": "What size squares will be drawn when this code is run? Answer, then check your answer by running it.",
+            "explain": true
+        },
+        "timeDelta": 1800
+    },
+    {
         "type": "run",
         "data": {
             "selector": "gotoXY",
@@ -3590,7 +3598,7 @@
             "message": "Block.clickRun",
             "_recordID": "3d96ec37-93ce-44a7-a2a7-53ddd3282569"
         },
-        "timeDelta": 2147
+        "timeDelta": 347
     },
     {
         "type": "inputSlotEdit",

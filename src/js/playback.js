@@ -72,6 +72,7 @@ export class Playback {
         this.highlights = [];
         this.playingAction = false;
         this.answeredQs = [];
+        this.shownPopups = [];
         this.maxDuration = this.getCachedMaxDuration();
 
         $('body').keyup((e) => {
@@ -890,10 +891,27 @@ export class Playback {
         let log = this.logs[Math.min(this.currentLogIndex - 1, this.logs.length - 1)];
         let eventIndex = this.events.indexOf(log);
         let delta = this.getCurrentDuration() / 1000 - log.startTime
-        return `#${eventIndex} (id: "${log.id}") "${log.description}" + ${delta}s`;
+        let record = this.getRecordFromEvent(log);
+        return {
+            'event-index': eventIndex,
+            'description': log.description,
+            'record-id': record ? record.data._recordID : null,
+            'record-data': record ? record.data : null,
+            'offset': delta,
+        }
     }
 
     showPopupMessage(data) {
+        let event = this.logs[this.currentLogIndex];
+        if (event && event.description === 'popupMessage') {
+            if (this.shownPopups.includes(event)) {
+                return;
+            } else {
+                this.shownPopups.push(event);
+            }
+        } else {
+            console.warn('Unknown popup event', event);
+        }
         Trace.log('Playback.popupMessage', data)
         this.pause();
         $('#message-modal-text').html(data.text);
