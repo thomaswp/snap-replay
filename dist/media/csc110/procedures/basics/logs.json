@@ -2558,6 +2558,14 @@
         "timeDelta": 1144
     },
     {
+        "type": "popupMessage",
+        "data": {
+            "text": "Now you try moving the top-right square to the bottom-right corner. First, make a prediction about what (x, y) coordinates will do that.",
+            "explain": true
+        },
+        "timeDelta": 4000
+    },
+    {
         "type": "menu",
         "data": {
             "parent": null,
@@ -2569,7 +2577,7 @@
             },
             "_recordID": "119bf667-651d-47c8-800b-76c8d9563033"
         },
-        "timeDelta": 5850
+        "timeDelta": 1850
     },
     {
         "type": "menu",

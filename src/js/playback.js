@@ -111,6 +111,10 @@ export class Playback {
             });
         });
 
+        $("#messageModal").draggable({
+            handle: ".modal-header"
+        });
+
 
         $('#issuesLink').on('click', () => this.showIssuesModal());
         // HACK: TODO: Make this actually configurable
@@ -886,7 +890,7 @@ export class Playback {
         let log = this.logs[Math.min(this.currentLogIndex - 1, this.logs.length - 1)];
         let eventIndex = this.events.indexOf(log);
         let delta = this.getCurrentDuration() / 1000 - log.startTime
-        return `#${eventIndex} "${log.description}" + ${delta}s`;
+        return `#${eventIndex} (id: "${log.id}") "${log.description}" + ${delta}s`;
     }
 
     showPopupMessage(data) {

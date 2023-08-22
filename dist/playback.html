@@ -87,10 +87,10 @@
             <!-- Quick hack b/c of bootstrap/query configuration weirdness -->
             <button id="show-issues-modal" class="hidden" data-bs-toggle="modal" data-bs-target="#issuesModal"></button>
 
-            <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+            <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header" style="cursor: grab">
                             <h5 class="modal-title" id="messageModalLabel">Your Turn</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>

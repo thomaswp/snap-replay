@@ -250,3 +250,5 @@ p.hidden {
 #self-explanation {
     width: 100%;
 }
+
+.modal-backdrop { opacity: 0.1 !important; }
