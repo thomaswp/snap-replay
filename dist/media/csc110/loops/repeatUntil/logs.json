@@ -791,6 +791,13 @@
         "timeDelta": 5985
     },
     {
+        "type": "interventionStart",
+        "data": {
+            "type": "modify"
+        },
+        "timeDelta": 0
+    },
+    {
         "type": "slidesToggled",
         "data": {
             "value": true
@@ -2289,6 +2296,13 @@
             "id": "goDown"
         },
         "timeDelta": 8968
+    },
+    {
+        "type": "interventionEnd",
+        "data": {
+            "type": "modify"
+        },
+        "timeDelta": 0
     },
     {
         "type": "changeCategory",

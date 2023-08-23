@@ -39,6 +39,7 @@ export class Playback {
             this.script = script;
             this.events = script.getEvents();
             console.log(this.events);
+            this.filterEvents();
             this.addScript();
             this.restart();
             this.createSlides();
@@ -425,6 +426,63 @@ export class Playback {
             event.div = $div;
             this.$script.append($div);
         });
+    }
+
+    // TODO: So, this works, but it also skips events that need to happen in the
+    // replay...
+    // so I need a different solution.
+    filterEvents() {
+        let lastTextEvent = null;
+        for (let i = 0; i < this.events.length; i++) {
+            let event = this.events[i];
+            if (event.type === 'text') lastTextEvent = event;
+            if (event.description !== 'interventionStart') continue;
+
+            // TODO: Get the actual log and data for intervention type
+
+            let startIndex = i;
+            let startTime = event.startTime;
+            let endIndex = this.events.slice(i + 1).findIndex(
+                e => e.description === 'interventionEnd') + i + 1;
+            if (endIndex == -1) {
+                console.warn('interventionStart without matching end', event);
+            }
+            let endEvent = this.events[endIndex];
+            let endTime = endEvent.endTime;
+            let duration = endTime - startTime;
+
+            let deleted = this.events.splice(startIndex,
+                endIndex - startIndex + 1);
+            console.log('Removing events', deleted);
+
+            this.events.forEach(e => {
+                if (e.startTime > startTime) e.startTime -= duration;
+            });
+            i--;
+
+            if (lastTextEvent && lastTextEvent.endTime > startTime) {
+                let audioDuration = lastTextEvent.audioEnd - lastTextEvent.audioStart;
+                let originalTextEndTime = lastTextEvent.endTime;
+                lastTextEvent.audioEnd = lastTextEvent.audioStart +
+                    startTime - lastTextEvent.startTime;
+                lastTextEvent.endTime = startTime;
+                console.log('modifying text event', lastTextEvent);
+                if (originalTextEndTime > endTime) {
+                    let shortenedDuration = audioDuration - duration;
+                    let newTextEvent = Object.create(lastTextEvent);
+                    newTextEvent.startTime = startTime
+                    newTextEvent.endTime = startTime + shortenedDuration;
+                    newTextEvent.audioStart = lastTextEvent.audioEnd + duration;
+                    newTextEvent.audioEnd = newTextEvent.audioStart +
+                        shortenedDuration;
+                    this.events.splice(startIndex, 0, newTextEvent);
+                    lastTextEvent = newTextEvent;
+                    console.log('inserting text event', newTextEvent);
+                }
+            }
+        }
+
+
     }
 
     getStorageKey(suffix) {
@@ -895,7 +953,7 @@ export class Playback {
         return {
             'event-index': eventIndex,
             'description': log.description,
-            'record-id': record ? record.data._recordID : null,
+            'record-id': (record && record.data) ? record.data._recordID : null,
             'record-data': record ? record.data : null,
             'offset': delta,
         }
