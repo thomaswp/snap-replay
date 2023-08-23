@@ -145,8 +145,8 @@ export class Playback {
         };
         let link = videoTable[path]
         if (link) {
-            $('#video-link').attr('href', link);
-            $('#video-link-line').removeClass('hidden');
+            $('.video-link').attr('href', link);
+            $('.video-link-line').removeClass('hidden');
         }
 
         setInterval(() => {

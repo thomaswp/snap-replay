@@ -20,8 +20,12 @@ body {
 
 #loading p {
     color: #eee;
+}
+
+.loading-big {
     font-size: 4em;
 }
+
 
 #loading.hidden {
     opacity: 0;
