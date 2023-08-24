@@ -795,14 +795,14 @@
         "data": {
             "type": "modify"
         },
-        "timeDelta": 0
+        "timeDelta": 100
     },
     {
         "type": "slidesToggled",
         "data": {
             "value": true
         },
-        "timeDelta": 3000
+        "timeDelta": 2900
     },
     {
         "type": "slideChanged",
@@ -2302,7 +2302,7 @@
         "data": {
             "type": "modify"
         },
-        "timeDelta": 0
+        "timeDelta": 3000
     },
     {
         "type": "changeCategory",
@@ -2310,7 +2310,7 @@
             "value": "sensing",
             "message": "IDE.changeCategory"
         },
-        "timeDelta": 17209
+        "timeDelta": 14209
     },
     {
         "type": "blockDrop",

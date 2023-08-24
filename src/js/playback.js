@@ -19,6 +19,8 @@ export class Playback {
     // 0 because we do this in the script itself now
     static BUFFER_MS = 0;
 
+    static FASTFORWARDING_BUFFER = 0.25;
+
     constructor(path) {
         try {
             Playback.DB_LOG = (process.env.DB_LOG === 'true');
@@ -451,14 +453,21 @@ export class Playback {
             let endTime = endEvent.endTime;
             let duration = endTime - startTime;
 
-            let deleted = this.events.splice(startIndex,
-                endIndex - startIndex + 1);
-            console.log('Removing events', deleted);
+            let toSquash = this.events.slice(startIndex, endIndex + 1);
+            toSquash.forEach(e => {
+                e.fast = true;
+                e.startTime = e.endTime = startTime;
+                e.timeDelta = 0;
+            });
+            console.log('Squashing events', toSquash);
 
             this.events.forEach(e => {
-                if (e.startTime > startTime) e.startTime -= duration;
+                if (e.startTime > startTime) {
+                    e.startTime -= duration;
+                    e.endTime -= duration;
+                }
             });
-            i--;
+            i = endIndex;
 
             if (lastTextEvent && lastTextEvent.endTime > startTime) {
                 let audioDuration = lastTextEvent.audioEnd - lastTextEvent.audioStart;
@@ -469,13 +478,13 @@ export class Playback {
                 console.log('modifying text event', lastTextEvent);
                 if (originalTextEndTime > endTime) {
                     let shortenedDuration = audioDuration - duration;
-                    let newTextEvent = Object.create(lastTextEvent);
+                    let newTextEvent = Object.assign({}, lastTextEvent);
                     newTextEvent.startTime = startTime
                     newTextEvent.endTime = startTime + shortenedDuration;
                     newTextEvent.audioStart = lastTextEvent.audioEnd + duration;
                     newTextEvent.audioEnd = newTextEvent.audioStart +
                         shortenedDuration;
-                    this.events.splice(startIndex, 0, newTextEvent);
+                    this.events.splice(i + 1, 0, newTextEvent);
                     lastTextEvent = newTextEvent;
                     console.log('inserting text event', newTextEvent);
                 }
@@ -539,6 +548,7 @@ export class Playback {
     }
 
     resetSnap() {
+        console.log("resetting!");
         if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
@@ -784,13 +794,39 @@ export class Playback {
         return result;
     }
 
+
     isFastForwarding(event) {
+        return this.howFarAheadOfEventIsPlayback(event) >
+            Playback.FASTFORWARDING_BUFFER
+    }
+
+    howFarAheadOfEventIsPlayback(event) {
         if (!event) {
-            event = this.logs[this.currentLogIndex]
+            event = this.logs[this.currentLogIndex];
         }
-        if (!event) return false;
+        if (!event) return 0;
         let durationS = this.getCurrentDuration() / 1000;
-        return durationS - event.startTime > 0.25
+        return durationS - event.startTime;
+    }
+
+    delayPlayback() {
+        // let ahead = this.howFarAheadOfEventIsPlayback() -
+        //     Playback.FASTFORWARDING_BUFFER;
+        // if (ahead <= 0) return;
+        // console.log('delaying FF playback',
+        //     this.playStartTime, this.playStartTime - ahead);
+        // this.playStartTime += ahead;
+
+        // TODO: This doesn't work either. I think the solution *may* be to
+        // simply say that the delay can't make you go back further than
+        // the most recent event to have occurred
+
+        // To delay playback, pretend the player just started playing 0.25s ago,
+        // so the video time doesn't get too far ahead of the replay.
+        // However, we cap that at the actual play time, to prevent it from
+        // pushing the playStartTime backwards in the beginning.
+        this.playStartTime = Math.max(this.playStartTime,
+            new Date().getTime() - Playback.FASTFORWARDING_BUFFER);
     }
 
     update() {
@@ -812,7 +848,12 @@ export class Playback {
             //     this.getCurrentDuration() / 1000,
             //     this.logs[this.currentLogIndex].startTime
             // );
-            this.playStartTime = new Date().getTime();
+
+            // Goal: if we're fast forwarding, we don't want the audio/events
+            // to progress while the player catches up. So we want to cap
+            // this.currentDuration(). However, we don't want to accidentally
+            // trigger a reset either.
+            this.delayPlayback()
             $('#loading').removeClass('hidden');
             this.audio.pause();
         } else {
@@ -942,6 +983,12 @@ export class Playback {
             if (!fast) this.pause();
             return true;
         }
+        if (event.description === 'interventionStart' ||
+            event.description === 'interventionEnd'
+        ) {
+            Trace.log('Playback.' + event.description);
+            return true;
+        }
         return false;
     }
 
@@ -1009,12 +1056,15 @@ export class Playback {
 
     updateLogs(noReset) {
         if (this.playingLog || this.warnResume) return;
+        console.log(this.currentLogIndex);
 
         let durationS = this.getCurrentDuration() / 1000;
         if (this.currentLogIndex > 0) {
             let lastLog = this.logs[this.currentLogIndex - 1];
             if (lastLog.startTime > durationS) {
-                if (noReset) {
+                // Maybe solves it but I don't think so...
+                // seems to stop all resetting?
+                if (noReset || lastLog.fast) {
                     return;
                 }
                 this.resetSnap();
@@ -1038,7 +1088,8 @@ export class Playback {
         }
 
         // We go faster if the playback is more than .25s behind
-        let fast = this.isFastForwarding(event);
+        // or if this is a squashed event we want to skip through
+        let fast = this.isFastForwarding(event) || event.fast;
 
         if (this.handleEvent(event, fast)) {
             this.currentLogIndex++;
