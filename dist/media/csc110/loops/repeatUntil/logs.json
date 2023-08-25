@@ -791,18 +791,11 @@
         "timeDelta": 5985
     },
     {
-        "type": "interventionStart",
-        "data": {
-            "type": "modify"
-        },
-        "timeDelta": 100
-    },
-    {
         "type": "slidesToggled",
         "data": {
             "value": true
         },
-        "timeDelta": 2900
+        "timeDelta": 3000
     },
     {
         "type": "slideChanged",
@@ -1439,11 +1432,18 @@
         "timeDelta": 4500
     },
     {
+        "type": "interventionStart",
+        "data": {
+            "type": "modify"
+        },
+        "timeDelta": 100
+    },
+    {
         "type": "slidesToggled",
         "data": {
             "value": true
         },
-        "timeDelta": 4084
+        "timeDelta": 3984
     },
     {
         "type": "slideChanged",
