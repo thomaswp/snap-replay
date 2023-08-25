@@ -430,9 +430,7 @@ export class Playback {
         });
     }
 
-    // TODO: So, this works, but it also skips events that need to happen in the
-    // replay...
-    // so I need a different solution.
+    // Filters out events (e.g., from an intervention) as needed
     filterEvents() {
         let lastTextEvent = null;
         for (let i = 0; i < this.events.length; i++) {
@@ -548,7 +546,6 @@ export class Playback {
     }
 
     resetSnap() {
-        console.log("resetting!");
         if (this.slides) this.slides.reset();
         this.highlightedBlocks = []
         if (this.snapWindow.ide) {
@@ -843,10 +840,7 @@ export class Playback {
             //     this.logs[this.currentLogIndex].startTime
             // );
 
-            // Goal: if we're fast forwarding, we don't want the audio/events
-            // to progress while the player catches up. So we want to cap
-            // this.currentDuration(). However, we don't want to accidentally
-            // trigger a reset either.
+            // Delay playback, so the video time doesn't get ahead of events
             this.delayPlayback()
             $('#loading').removeClass('hidden');
             this.audio.pause();
@@ -1050,14 +1044,11 @@ export class Playback {
 
     updateLogs(noReset) {
         if (this.playingLog || this.warnResume) return;
-        console.log(this.currentLogIndex);
 
         let durationS = this.getCurrentDuration() / 1000;
         if (this.currentLogIndex > 0) {
             let lastLog = this.logs[this.currentLogIndex - 1];
             if (lastLog.startTime > durationS) {
-                // Maybe solves it but I don't think so...
-                // seems to stop all resetting?
                 if (noReset) {
                     return;
                 }
