@@ -810,23 +810,17 @@ export class Playback {
     }
 
     delayPlayback() {
-        // let ahead = this.howFarAheadOfEventIsPlayback() -
-        //     Playback.FASTFORWARDING_BUFFER;
-        // if (ahead <= 0) return;
-        // console.log('delaying FF playback',
-        //     this.playStartTime, this.playStartTime - ahead);
-        // this.playStartTime += ahead;
+        let ahead = this.howFarAheadOfEventIsPlayback();
+        if (ahead <= 0) return;
 
-        // TODO: This doesn't work either. I think the solution *may* be to
-        // simply say that the delay can't make you go back further than
-        // the most recent event to have occurred
-
-        // To delay playback, pretend the player just started playing 0.25s ago,
-        // so the video time doesn't get too far ahead of the replay.
-        // However, we cap that at the actual play time, to prevent it from
-        // pushing the playStartTime backwards in the beginning.
-        this.playStartTime = Math.max(this.playStartTime,
-            new Date().getTime() - Playback.FASTFORWARDING_BUFFER);
+        // Adjust playStartTime to set the currentDuration to either:
+        // 1) the play event's start time (if fast-forwading, so ahead is
+        //    large), by setting playStartTime to now; or,
+        // 2) the most recent event to play back's start time (if skipping
+        //    events)
+        // whichever is further ahead.
+        this.playStartTime = Math.min(
+            this.playStartTime + ahead, new Date().getTime());
     }
 
     update() {
@@ -1064,7 +1058,7 @@ export class Playback {
             if (lastLog.startTime > durationS) {
                 // Maybe solves it but I don't think so...
                 // seems to stop all resetting?
-                if (noReset || lastLog.fast) {
+                if (noReset) {
                     return;
                 }
                 this.resetSnap();
