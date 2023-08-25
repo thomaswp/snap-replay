@@ -451,6 +451,8 @@ export class Playback {
             let endTime = endEvent.endTime;
             let duration = endTime - startTime;
 
+            console.log("Skipping duration", duration);
+
             let toSquash = this.events.slice(startIndex, endIndex + 1);
             toSquash.forEach(e => {
                 e.fast = true;
@@ -470,18 +472,22 @@ export class Playback {
             if (lastTextEvent && lastTextEvent.endTime > startTime) {
                 let audioDuration = lastTextEvent.audioEnd - lastTextEvent.audioStart;
                 let originalTextEndTime = lastTextEvent.endTime;
+                let originalAudioEnd = lastTextEvent.audioEnd;
                 lastTextEvent.audioEnd = lastTextEvent.audioStart +
                     startTime - lastTextEvent.startTime;
                 lastTextEvent.endTime = startTime;
                 console.log('modifying text event', lastTextEvent);
                 if (originalTextEndTime > endTime) {
-                    let shortenedDuration = audioDuration - duration;
                     let newTextEvent = Object.assign({}, lastTextEvent);
-                    newTextEvent.startTime = startTime
-                    newTextEvent.endTime = startTime + shortenedDuration;
+                    // The audio should restart right after the skip
+                    newTextEvent.startTime = startTime;
+                    // Skip over the duration of the skip
                     newTextEvent.audioStart = lastTextEvent.audioEnd + duration;
-                    newTextEvent.audioEnd = newTextEvent.audioStart +
-                        shortenedDuration;
+                    // But still play until the end
+                    newTextEvent.audioEnd = originalAudioEnd;
+                    // Set the end time to start + duration
+                    newTextEvent.endTime = newTextEvent.startTime +
+                        newTextEvent.audioEnd - newTextEvent.audioStart;
                     this.events.splice(i + 1, 0, newTextEvent);
                     lastTextEvent = newTextEvent;
                     console.log('inserting text event', newTextEvent);
