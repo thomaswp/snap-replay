@@ -72,7 +72,7 @@ export class Playback {
         this.highlights = [];
         this.playingAction = false;
         this.answeredQs = [];
-        this.shownPopups = [];
+        this.completedSingularEvents = [];
         this.maxDuration = this.getCachedMaxDuration();
 
         $('body').keyup((e) => {
@@ -612,6 +612,7 @@ export class Playback {
     pause() {
         if (!this.playing) return;
         $('#play').removeClass('pause');
+        $('#loading').addClass('hidden');
         this.cursor.hide();
         this.playStartDuration = this.getCurrentDuration();
         this.audio.pause();
@@ -881,7 +882,15 @@ export class Playback {
 
     handleEvent(event, fast) {
         if (event.description === 'videoPause') {
-            if (!fast) this.pause();
+            // Show each pause only once
+            if (this.completedSingularEvents.includes(event)) {
+                return true;
+            }
+            if (!fast) {
+                this.pause();
+                // Only count it if we actually pause
+                this.completedSingularEvents.push(event);
+            }
             return true;
         }
         return false;
@@ -904,10 +913,10 @@ export class Playback {
     showPopupMessage(data) {
         let event = this.logs[this.currentLogIndex];
         if (event && event.description === 'popupMessage') {
-            if (this.shownPopups.includes(event)) {
+            if (this.completedSingularEvents.includes(event)) {
                 return;
             } else {
-                this.shownPopups.push(event);
+                this.completedSingularEvents.push(event);
             }
         } else {
             console.warn('Unknown popup event', event);
