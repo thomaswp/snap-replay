@@ -693,7 +693,10 @@ export class Playback {
         let assignmentID = this.path;
         const DIGITS = 4;
         const MOD = 10000;
-        let userIDHash = this.getHash(userID) % MOD;
+        let userIDHash = this.getHash(userID)
+        // Add some more transformations because the hash function seems
+        // to collide a lot with strings that start the same...
+        userIDHash = Math.abs((userIDHash * userIDHash) | 0) % MOD;
         let assignmentIDHash = this.getHash(assignmentID) % MOD;
         let checksum = userIDHash + assignmentIDHash;
         checksum = this.leftPadNum(checksum % MOD, DIGITS);
