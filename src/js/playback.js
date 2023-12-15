@@ -696,11 +696,11 @@ export class Playback {
         let userIDHash = this.getHash(userID)
         // Add some more transformations because the hash function seems
         // to collide a lot with strings that start the same...
-        userIDHash = Math.abs((userIDHash * userIDHash) | 0) % MOD;
+        userIDHash = Math.abs((userIDHash * userIDHash) | 0) % (MOD * 100);
         let assignmentIDHash = this.getHash(assignmentID) % MOD;
         let checksum = userIDHash + assignmentIDHash;
         checksum = this.leftPadNum(checksum % MOD, DIGITS);
-        userIDHash = this.leftPadNum(userIDHash, DIGITS);
+        userIDHash = this.leftPadNum(userIDHash, DIGITS + 2);
         assignmentIDHash = this.leftPadNum(assignmentIDHash, DIGITS);
         return `${userIDHash}-${assignmentIDHash}-${checksum}`;
     }
