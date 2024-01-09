@@ -248,6 +248,11 @@ export class Playback {
         // console.log("Asking", id);
         this.askingQuestion = id;
         this.pause();
+        // Make sure the time doesn't go past this event, since that might cause
+        // the question finished event to play immediately after
+        if (this.playingLog) {
+            this.setDurationAfterPause(this.playingLog.startTime * 1000);
+        }
         if (userControlled) {
             this.setConstructQuestionPanelVisible(true);
             let ide = this.snapWindow.ide;
@@ -621,6 +626,15 @@ export class Playback {
         this.warnResume = false;
         clearInterval(this.tickTimeout);
         this.tickTimeout = null;
+    }
+
+    setDurationAfterPause(duration) {
+        if (this.playing) {
+            console.warn("Can only be called when paused");
+            return;
+        }
+        this.playStartDuration = duration;
+        this.$scrubber.val(Math.round(duration));
     }
 
     setDuration(duration) {
