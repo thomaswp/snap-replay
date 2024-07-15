@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Assignments List</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Video Assignments</h1>
+        <ul id="assignments-list" class="list-group"></ul>
+    </div>
+
+    <!-- jQuery and Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const playback = 'playback.html';
+
+
+const assignments = {
+    'video_repeat': {
+        name: 'Loops - The Repeat Block',
+        //hint: 'Video 1',
+        link: playback + '?video=csc110/loops/repeat',
+    },
+    'video_procedures-basics': {
+        name: 'Procedures - The Basics',
+        //hint: 'Video 3',
+        link: playback + '?video=csc110/procedures/basics',
+    },
+    'video_forever': {
+        name: 'Loops - The Forever Block',
+        link: playback + '?video=csc110/loops/forever',
+    },
+    'video_repeatUntil': {
+        name: 'Loops - The RepeatUntil Block',
+        link: playback + '?video=csc110/loops/repeatUntil',
+    },
+    'video_snap-variables': {
+        name: 'Variables - Snap\'s Variables',
+        link: playback + '?video=csc110/variables/snap-variables',
+    },
+    'video_variables': {
+        name: 'Variables - Custom Variables',
+        link: playback + '?video=csc110/variables/variables',
+    },
+    'video_var-loop-recipe': {
+        name: 'Variables - Variables & Loops',
+        link: playback + '?video=csc110/variables/var-loop-recipe',
+    },
+    'video_clones': {
+        name: 'Snap - Clones',
+        link: playback + '?video=csc110/api/clones',
+    },
+    'video_procedures-use-cases': {
+        name: 'Procedures - Use Cases',
+        link: playback + '?video=csc110/procedures/use-cases',
+    },
+    'video_conditionals-basics': {
+        name: 'Conditionals - Basics',
+        link: playback + '?video=csc110/conditionals/basics',
+    },
+    'video_conditionals-logic': {
+        name: 'Conditionals - Logic',
+        link: playback + '?video=csc110/conditionals/logic',
+    },
+    'video_api-messages': {
+        name: 'Snap - Message Passing',
+        link: playback + '?video=csc110/api/messages',
+    },
+    'video_lists-basics': {
+        name: 'Lists - Basics',
+        link: playback + '?video=csc110/lists/basics',
+    },
+    'video_lists-filter': {
+        name: 'Lists - Filter Recipe',
+        link: playback + '?video=csc110/lists/filter',
+    },
+    'video_lists-any': {
+        name: 'Lists - Any/All Recipe',
+        link: playback + '?video=csc110/lists/any',
+    },
+    'video_api-tell': {
+        name: 'Snap - The Tell Block',
+        link: playback + '?video=csc110/api/tell',
+    },
+};
+
+        $(document).ready(function() {
+            var $list = $('#assignments-list');
+            $.each(assignments, function(key, assignment) {
+                var $item = $('<li class="list-group-item"></li>');
+                var $link = $('<a href="' + assignment.link + '" target="_blank"></a>').text(assignment.name);
+                $item.append($link);
+                $list.append($item);
+            });
+        });
+    </script>
+</body>
+</html>
