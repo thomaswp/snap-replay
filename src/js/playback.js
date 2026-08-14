@@ -121,16 +121,16 @@ export class Playback {
         // HACK: TODO: Make this actually configurable
         const videoTable = {
             // Loops
-            'media/csc110/loops/repeat/': 'https://drive.google.com/file/d/1bDNN6rAlNwcl-nNHlwgHCHB0o5jwXsln/view?usp=sharing',
-            'media/csc110/loops/forever/': 'https://drive.google.com/file/d/10ADXro2E_59fXwJ8B3MJtFEpTduM6utQ/view?usp=sharing',
-            'media/csc110/loops/repeatUntil/': 'https://drive.google.com/file/d/1Pfn9bLfbRN8tSSWXqMqwjnVcgiink1Wf/view?usp=sharing',
+            'media/csc110/loops/repeat/': 'https://youtu.be/rqSWZqyYFeg',
+            'media/csc110/loops/forever/': 'https://youtu.be/AzVJZHkxB7A',
+            'media/csc110/loops/repeatUntil/': 'https://youtu.be/VX7zs6Ac6Uk',
             // Procedures
-            'media/csc110/procedures/basics/': 'https://drive.google.com/open?id=1-ILgfur1TOnO2FpoIilWKHmYV8IcKMaB&authuser=twprice%40ncsu.edu&usp=drive_fs',
+            'media/csc110/procedures/basics/': 'https://youtu.be/gswRlHOUdJc',
             'media/csc110/procedures/use-cases/': 'https://ncsu.zoom.us/rec/share/AbM2WkhUoolnBp3Izc3pEHLzc5d00Q1SSadd2K4xYIwcWRct-mvUBd5ftLgD6hla.3GINHjsx9yhYb8qG',
             // Variables
-            'media/csc110/variables/snap-variables/': 'https://drive.google.com/file/d/17JcjIGuSG99kT8sQA7MrZ_KpDX6usIAM/view?usp=sharing',
-            'media/csc110/variables/variables/': 'https://drive.google.com/file/d/1-FE4ZznMvtx2YCLNmXOiQlCz15-q7uZ3/view?usp=sharing',
-            'media/csc110/variables/var-loop-recipe/': 'https://drive.google.com/file/d/16BP77DmEEB8GwkF87S57Ty2dz0pXyGCN/view?usp=sharing',
+            'media/csc110/variables/snap-variables/': 'https://youtu.be/Q5zinjwJqZw',
+            'media/csc110/variables/variables/': 'https://youtu.be/sDeqb2KkwkY',
+            'media/csc110/variables/var-loop-recipe/': 'https://youtu.be/NRjWCMvwrbA',
             // Conditinals
             'media/csc110/conditionals/basics/': 'https://ncsu.zoom.us/rec/share/87YM-NwlOiBgUz4AujaBq9vb5CviDZR0VPcgt61-UOKJg72oQV4hzrko_lhNDc8Z.nmJ-uMZgk9X_Y_3y',
             'media/csc110/conditionals/logic/': 'https://ncsu.zoom.us/rec/share/OZPSQ0DB_fuOs2OjgqQFw_MB3WjTXXWuL4DrlIIhM21tQKeRZzBTVbHxLY06znFR.zyL4EIjiqOqdAwhj?startTime=1662557018000', // TODO!
@@ -139,7 +139,7 @@ export class Playback {
             'media/csc110/lists/filter/': 'https://ncsu.zoom.us/rec/share/Rg_0SXVKzA835cH4FvXKHuVlr7rw2tz_BgR14cEskqJffXUqJnGI2edM0CRHSkBO.TfGb3E8drEXIosDc?startTime=1663122413000',
             'media/csc110/lists/any/': 'https://ncsu.zoom.us/rec/share/KMsYCZwbrrJDcc8XG92oqByQcqzAxEbgaad_fTmFEoYrmWJjJ_X6TICsf70a08Fd.x7vMIy5WxEBe_tba?startTime=1663125503000', //TODO
             // IDE
-            'media/csc110/api/clones/': 'https://drive.google.com/file/d/1AP7_iCqLRNfQnpZB2rfNH2txfosZU_u7/view?usp=sharing',
+            'media/csc110/api/clones/': 'https://youtu.be/tCkAk84cYNk',
             'media/csc110/api/messages/': 'https://ncsu.zoom.us/rec/share/OJVDJEH9ECjnFOxxIKEkT55-X9Fhi8DFhsQn1b7g5z0yy-CvXv9pPGve-p5MAl9h.kMjTyltwTB85kMnJ?startTime=1662580888000',
             'media/csc110/api/tell/': 'https://ncsu.zoom.us/rec/share/FSkGm4MxzDgVlJlATSp5vX7NXuPN01qPVXMteKY-wlZubfnp-Ph7TNDdVSjrUzI.7eTt-M-JVz9vm8hq?startTime=1664977057000',
         };
