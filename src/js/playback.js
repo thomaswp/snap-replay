@@ -981,7 +981,8 @@ export class Playback {
         let durationS = this.getCurrentDuration() / 1000;
         if (this.currentLogIndex > 0) {
             let lastLog = this.logs[this.currentLogIndex - 1];
-            if (lastLog.startTime > durationS) {
+            // We use 0.0001 instead of 0 to avoid floating point rounding issues
+            if (lastLog.startTime - durationS > 0.0001) {
                 if (noReset) {
                     return;
                 }
